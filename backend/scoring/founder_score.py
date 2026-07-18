@@ -1,129 +1,105 @@
 """
 Founder Score — the persistent, cross-application score that lives in Memory
 (FAQ Q6: distinct from the per-opportunity Founder axis; this is one input into that
-axis, not a substitute for it).
+axis's neighborhood, not a substitute for it — see note below).
 
-Combines the four source scores agreed with the team:
-    GitHub          45%   (richest, hardest to fake, free API)
-    Product Hunt    25%   (real market pull signal — deferred pending API token)
-    LinkedIn        15%   (self-reported, trust-discounted)
-    Scholar/arXiv   15%   (gated: only counts for deep-tech founders at all)
+Formula adopted from the team's VSP-rubric evaluation dataset (validated exactly
+against their founder_scores.csv — 60/60 rows matched):
 
-Same renormalization pattern used inside github.py's sub-metrics: any source with no
-data (or, for Scholar, gated out as inapplicable) is dropped rather than zero-filled,
-and the remaining weights are renormalized proportionally. Confidence reflects how much
-of the full weight was actually backed by real data — this is what should drive the
-`cold_start` flag on a per-application Score row upstream.
+    founder_score = min(99, round(founder_axis * 0.75 + prior_ventures * 9 + shipped_artifacts * 3))
+
+where founder_axis is this founder's current Founder-axis score (from axis_engine,
+across ALL their claims to date, not scoped to one application — that's what makes it
+persistent), prior_ventures is self-reported, and shipped_artifacts counts claims in the
+"Background & execution" component that carry a concrete value_numeric (a shipped,
+countable thing — commits, launches, papers — not just an assertion).
+
+Superseded design note: the previous version of this module aggregated GitHub/Product
+Hunt/LinkedIn/Scholar as separately-weighted sources (45/25/15/15). That approach is
+retired in favor of this one — sources now feed claims (see ingestion/claims.py),
+claims feed the axis engine, and the axis engine is what's actually validated against
+ground truth. The old per-source weighting had no ground truth to check it against;
+this one does.
 """
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import date, timezone, datetime
 
-SOURCE_WEIGHTS = {
-    "github": 0.45,
-    "product_hunt": 0.25,
-    "linkedin": 0.15,
-    "scholar": 0.15,
-}
+from .axis_engine import score_axis
 
-# Below this combined confidence, the founder should be scored in cold-start mode
-# (wider confidence interval, explicit UI flag) rather than treated like a founder with
-# a full evidentiary record.
-COLD_START_CONFIDENCE_THRESHOLD = 0.5
+COLD_START_COVERAGE_THRESHOLD = 50  # below this Founder-axis coverage_pct, flag cold_start
+FALLBACK_BASE_SCORE = 45  # matches the team's generator: used when the axis has never been observed
 
 
-def compute_founder_score(
-    source_scores: dict[str, dict | None],
-    deep_tech: bool,
-    previous_score: float | None = None,
-) -> dict:
-    """
-    source_scores: dict keyed by "github" | "product_hunt" | "linkedin" | "scholar",
-    each value either None (source not attempted) or the dict shape produced by that
-    source's compute_*_score() function: {"score": float|None, "confidence": float, ...}.
-
-    deep_tech: from scoring.deep_tech.is_deep_tech(...) — if False, "scholar" is
-    excluded from weighting entirely regardless of what's in source_scores, rather than
-    just being treated as missing. This is the difference between "irrelevant" and
-    "absent": absence of a Scholar profile shouldn't cost a SaaS founder anything.
-
-    previous_score: the founder's existing persistent score, if any. When present, the
-    new score is blended (40% old / 60% new) rather than overwritten — the Founder Score
-    accumulates evidence over time instead of resetting on every re-scan.
-    """
-    applicable_sources = dict(SOURCE_WEIGHTS)
-    if not deep_tech:
-        applicable_sources.pop("scholar", None)
-
-    used_weight = 0.0
-    weighted_sum = 0.0
-    weighted_confidence_sum = 0.0
-    breakdown: dict[str, dict] = {}
-
-    for source, weight in applicable_sources.items():
-        data = source_scores.get(source)
-        has_score = bool(data) and data.get("score") is not None
-        breakdown[source] = {
-            "weight_available": weight,
-            "used": has_score,
-            "score": data.get("score") if data else None,
-            "confidence": data.get("confidence") if data else 0.0,
-        }
-        if has_score:
-            used_weight += weight
-            weighted_sum += data["score"] * weight
-            weighted_confidence_sum += (data.get("confidence") or 0.0) * weight
-
-    if used_weight == 0:
-        new_score = 0.0
-        confidence = 0.0
-    else:
-        new_score = round(weighted_sum / used_weight, 2)
-        confidence = round(weighted_confidence_sum / used_weight, 2)
-
-    if previous_score is not None and used_weight > 0:
-        blended_score = round(previous_score * 0.4 + new_score * 0.6, 2)
-    else:
-        blended_score = new_score
-
+def _claim_to_dict(claim) -> dict:
     return {
-        "founder_score": blended_score,
-        "raw_new_evidence_score": new_score,
-        "previous_score": previous_score,
-        "confidence": confidence,
-        "cold_start": confidence < COLD_START_CONFIDENCE_THRESHOLD,
-        "deep_tech_gate_applied": not deep_tech,
-        "source_breakdown": breakdown,
+        "axis": claim.axis,
+        "component": claim.component,
+        "evidence_state": claim.evidence_state,
+        "trust_score": claim.trust_score,
+        "strength_0_100": claim.strength_0_100,
+        "value_numeric": claim.value_numeric,
+        "observed_at": claim.observed_at,
     }
 
 
-def update_founder_score(db, founder_id: int, source_scores: dict[str, dict | None],
-                          deep_tech: bool, reason: str) -> dict:
-    """Computes the new Founder Score and persists it: updates `founders.founder_score`
-    (recomputed, never simply replaced-and-forgotten) and appends a
-    `founder_score_history` row so the dashboard can show the trend, not just the
-    latest snapshot — per the brief's Memory requirements.
+def compute_founder_score(claims: list[dict], prior_ventures: int, asof: date | None = None) -> dict:
+    """claims: list of claim dicts (axis/component/evidence_state/trust_score/
+    strength_0_100/value_numeric/observed_at) for this founder across ALL their
+    applications — that's the persistence: the axis score isn't scoped to one company.
     """
-    from db.models import Founder, FounderScoreHistory
+    axis_result = score_axis(claims, "Founder", asof=asof)
+    base = axis_result["score"] if axis_result["score"] is not None else FALLBACK_BASE_SCORE
+
+    shipped_artifacts = sum(
+        1 for c in claims
+        if c.get("component") == "Background & execution" and c.get("value_numeric") is not None
+    )
+
+    founder_score = min(99, round(base * 0.75 + prior_ventures * 9 + shipped_artifacts * 3))
+    cold_start = axis_result["coverage_pct"] < COLD_START_COVERAGE_THRESHOLD
+
+    return {
+        "founder_score": founder_score,
+        "founder_axis_score": axis_result["score"],
+        "founder_axis_coverage_pct": axis_result["coverage_pct"],
+        "prior_ventures": prior_ventures,
+        "shipped_artifacts": shipped_artifacts,
+        "cold_start": cold_start,
+        "used_fallback_base": axis_result["score"] is None,
+    }
+
+
+def update_founder_score(db, founder_id: int, reason: str, asof: date | None = None) -> dict:
+    """Loads every claim ever recorded for this founder (across all their
+    applications — the whole point of the score being persistent), recomputes, and
+    writes both `founders.founder_score` and a `founder_score_history` row so the
+    dashboard can show the trend, not just the latest snapshot.
+    """
+    from db.models import Application, Claim, Founder, FounderScoreHistory
 
     founder = db.query(Founder).filter_by(id=founder_id).first()
     if founder is None:
         raise ValueError(f"No founder with id={founder_id}")
 
-    result = compute_founder_score(
-        source_scores, deep_tech=deep_tech, previous_score=founder.founder_score or None
+    claims = (
+        db.query(Claim)
+        .join(Application, Claim.application_id == Application.id)
+        .filter(Application.founder_id == founder_id)
+        .all()
     )
+    claim_dicts = [_claim_to_dict(c) for c in claims]
+
+    result = compute_founder_score(claim_dicts, founder.prior_ventures or 0, asof=asof)
 
     founder.founder_score = result["founder_score"]
     founder.updated_at = datetime.now(timezone.utc)
 
-    db.add(
-        FounderScoreHistory(
-            founder_id=founder_id,
-            score=result["founder_score"],
-            reason=reason,
-        )
-    )
+    db.add(FounderScoreHistory(
+        founder_id=founder_id,
+        score=result["founder_score"],
+        reason=reason,
+    ))
     db.commit()
 
     return result

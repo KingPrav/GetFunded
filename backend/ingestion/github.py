@@ -303,10 +303,30 @@ def compute_github_score(github_data: dict, target_keywords: set[str] | None = N
     if not repos:
         confidence = 0.1  # profile exists but no owned repos — very thin signal
 
+    # Raw countable numbers, separate from the 0-10 sub-scores — needed downstream by
+    # ingestion/claims.py to populate `value_numeric` on claims (a claim only counts as
+    # a "shipped artifact" in the Founder Score formula if it carries a real number, not
+    # just a 0-10 score).
+    total_commits = sum(
+        sum(r["commit_activity_52w"]) for r in repos if r.get("commit_activity_52w")
+    )
+    star_velocities = [
+        r.get("stargazers_count", 0) / max(_months_since(r["created_at"]), 1.0)
+        for r in repos if r.get("created_at")
+    ]
+    contributor_counts = [r["contributors_count"] for r in repos if r.get("contributors_count") is not None]
+    raw_metrics = {
+        "total_commits_52w": total_commits,
+        "best_star_velocity_per_month": round(max(star_velocities), 2) if star_velocities else 0.0,
+        "avg_contributors": round(sum(contributor_counts) / len(contributor_counts), 2) if contributor_counts else None,
+        "repos_considered_count": len(repos),
+    }
+
     return {
         "source": "github",
         "score": overall,
         "confidence": confidence,
+        "raw_metrics": raw_metrics,
         "sub_scores": sub_scores,
         "data_present": data_present,
         "repos_considered": [r["full_name"] for r in repos],

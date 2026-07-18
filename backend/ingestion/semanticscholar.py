@@ -127,6 +127,10 @@ def compute_scholar_score(scholar_data: dict) -> dict:
         "note": f"Matched \"{scholar_data.get('matched_name')}\" by name only — unverified, "
                 "no affiliation cross-check performed.",
         "profile_url": scholar_data.get("profile_url"),
+        "raw_metrics": {
+            "paper_count": papers, "citation_count": citations, "h_index": h_index,
+            "matched_name": scholar_data.get("matched_name"),
+        },
     }
 
 

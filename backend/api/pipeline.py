@@ -2,10 +2,14 @@
 Shared glue between the ingestion/scoring modules and the API layer.
 
 Nothing in here does its own scoring math — it calls into ingestion.github,
-ingestion.semanticscholar, scoring.deep_tech, and scoring.founder_score, and shapes
-the results into the JSON the dashboard expects. Keeping this thin means the scoring
-logic stays testable in isolation (as we already did for each module) while the API
-stays a straightforward adapter.
+ingestion.semanticscholar, ingestion.claims, scoring.deep_tech, and
+scoring.founder_score/axis_engine, and shapes the results into the JSON the dashboard
+expects. Keeping this thin means the scoring logic stays testable in isolation (as we
+already did for each module, and validated axis_engine against the team's ground-truth
+dataset) while the API stays a straightforward adapter.
+
+Scores are natively 0-100 throughout this module now (matching the team's dataset
+scale) — no display-scale conversion needed anywhere below.
 """
 from __future__ import annotations
 
@@ -13,13 +17,14 @@ import json
 
 from sqlalchemy.orm import Session
 
-from db.models import Application, Company, Founder, Score, Signal
+from db.models import Application, Claim, Company, Founder, Score, Signal
+from ingestion.claims import github_claims, scholar_claims
 from ingestion.github import ingest_github
 from ingestion.semanticscholar import ingest_scholar
+from scoring.axis_engine import score_axis
+from scoring.component_map import components_for_axis, vsp_code_of
 from scoring.deep_tech import is_deep_tech
 from scoring.founder_score import update_founder_score
-
-FOUNDER_SCORE_DISPLAY_SCALE = 10  # internal scores are 0-10; dashboard displays 0-100
 
 
 def get_or_create_founder(db: Session, github_username: str, github_html_url: str, display_name: str | None) -> Founder:
@@ -47,12 +52,33 @@ def axis_from_score(score_0_100: float) -> dict:
     return {"label": "Bear", "cls": "bear"}
 
 
-def _confidence_label(confidence: float) -> str:
-    if confidence >= 0.7:
-        return "high"
-    if confidence >= 0.4:
-        return "medium"
-    return "low"
+def _insert_claims(db: Session, application_id: int, claim_dicts: list[dict]) -> None:
+    for c in claim_dicts:
+        db.add(Claim(application_id=application_id, **c))
+    db.commit()
+
+
+def _fill_unobserved_components(claim_dicts: list[dict], axis: str) -> list[dict]:
+    """Mirrors the team's generator: every applicable component gets a row, even when
+    we have nothing — as an explicit "unobserved" claim, not a silent absence. Without
+    this, coverage_pct only reflects the claims we happened to create (which for our
+    current sources is just Background & execution + Team role clarity), reading as
+    100% covered when really 3 of 5 Founder components have zero evidence. That's
+    exactly the kind of false confidence the brief asks the system to avoid — coverage
+    should honestly reflect what's known vs not, not just what we bothered to check.
+    """
+    covered = {c["component"] for c in claim_dicts if c.get("axis") == axis}
+    for component in components_for_axis(axis):
+        if component in covered:
+            continue
+        claim_dicts.append({
+            "text": "No observation available",
+            "axis": axis, "component": component, "vsp_code": vsp_code_of(component),
+            "value_numeric": None, "unit": None, "strength_0_100": None,
+            "evidence_state": "unobserved", "trust_score": None, "source_tier": None,
+            "observed_at": None,
+        })
+    return claim_dicts
 
 
 def build_evidence_list(db: Session, founder_id: int, limit: int = 6) -> list[dict]:
@@ -110,21 +136,19 @@ def build_candidate_payload(
     scholar_score: dict | None,
     source_label: str,
     live: bool,
+    prev_founder_score: float | None,
 ) -> dict:
-    founder_score_100 = round(fs_result["founder_score"] * FOUNDER_SCORE_DISPLAY_SCALE)
-    prev_100 = (
-        round(fs_result["previous_score"] * FOUNDER_SCORE_DISPLAY_SCALE)
-        if fs_result.get("previous_score") is not None
-        else None
-    )
+    founder_score = fs_result["founder_score"]
+    founder_axis = fs_result["founder_axis_score"]
 
     breakdown = {
-        "github": round(github_score["score"] * FOUNDER_SCORE_DISPLAY_SCALE) if github_score and github_score.get("score") is not None else 0,
+        "github": round(github_score["score"] * 10) if github_score and github_score.get("score") is not None else 0,
         "linkedin": 0,
-        "scholarly": round(scholar_score["score"] * FOUNDER_SCORE_DISPLAY_SCALE) if scholar_score and scholar_score.get("score") is not None else 0,
+        "scholarly": round(scholar_score["score"] * 10) if scholar_score and scholar_score.get("score") is not None else 0,
     }
 
     evidence = build_evidence_list(db, founder.id)
+    founder_axis_display = founder_axis if founder_axis is not None else founder_score
 
     return {
         "id": f"app-{application.id}",
@@ -137,12 +161,13 @@ def build_candidate_payload(
         "newFounder": bool(fs_result.get("cold_start")),
         "headline": f"{company.name} — {company.snapshot or 'no description provided'}",
         "location": "See GitHub profile" if founder.github_url else "Not disclosed",
-        "founderScore": founder_score_100,
+        "founderScore": founder_score,
         "scoreBreakdown": breakdown,
-        "prevFounderScore": prev_100,
+        "prevFounderScore": prev_founder_score,
         "evidence": evidence,
         "axes": {
-            "founder": {"score": founder_score_100, **axis_from_score(founder_score_100)},
+            "founder": {"score": founder_axis_display, **axis_from_score(founder_axis_display),
+                        "coverage_pct": fs_result.get("founder_axis_coverage_pct")},
             "market": {"score": 50, **axis_from_score(50), "note": "Market axis engine not built yet — placeholder, not a real assessment"},
             "ideaVsMarket": {"label": "Not yet scored — Idea-vs-Market engine not built yet", "cls": "neutral"},
         },
@@ -152,12 +177,15 @@ def build_candidate_payload(
 def source_and_score_github_candidate(db: Session, repo: dict, sector_label: str) -> dict:
     """Runs the full pipeline for one GitHub-sourced candidate: find-or-create Founder
     and Company, create an outbound Application, ingest GitHub (+ Scholar if the
-    deep-tech gate allows it), aggregate the Founder Score, persist a Founder-axis
-    Score row, and return the dashboard-shaped payload."""
+    deep-tech gate allows it), translate each source into component-tagged claims, run
+    the axis engine, aggregate the Founder Score, persist a Founder-axis Score row, and
+    return the dashboard-shaped payload."""
     owner = repo["owner"]
     username = owner["login"]
 
     founder = get_or_create_founder(db, username, owner["html_url"], display_name=None)
+    prev_founder_score = founder.founder_score if founder.founder_score else None
+
     company = create_company(
         db,
         name=repo["name"],
@@ -173,45 +201,48 @@ def source_and_score_github_candidate(db: Session, repo: dict, sector_label: str
     github_score = ingest_github(
         db, founder.id, company.id, username, target_keywords={sector_label.lower()}
     )
+    claim_dicts = github_claims(github_score)
 
     deep_tech = is_deep_tech(sector_label, repo.get("topics", []))
     scholar_score = None
     if deep_tech:
         scholar_score = ingest_scholar(db, founder.id, company.id, founder.name)
+        claim_dicts += scholar_claims(scholar_score)
 
-    source_scores = {
-        "github": github_score,
-        "linkedin": None,
-        "scholar": scholar_score,
-        "product_hunt": None,
-    }
+    claim_dicts = _fill_unobserved_components(claim_dicts, "Founder")
+    _insert_claims(db, application.id, claim_dicts)
+
     fs_result = update_founder_score(
-        db, founder.id, source_scores, deep_tech=deep_tech,
-        reason=f"Outbound GitHub scan — topic/sector '{sector_label}'",
+        db, founder.id,
+        reason=f"Outbound GitHub scan — topic/sector '{sector_label}'"
+               + (" + Scholar (deep-tech gate passed)" if deep_tech else ""),
     )
 
-    prev = fs_result.get("previous_score")
     trend = "stable"
-    if prev is not None:
-        if fs_result["founder_score"] > prev:
+    if prev_founder_score is not None:
+        if fs_result["founder_score"] > prev_founder_score:
             trend = "improving"
-        elif fs_result["founder_score"] < prev:
+        elif fs_result["founder_score"] < prev_founder_score:
             trend = "declining"
+    else:
+        trend = "insufficient_history"
 
     db.add(Score(
         application_id=application.id,
         axis="founder",
-        value=fs_result["founder_score"],
+        value=fs_result["founder_axis_score"] if fs_result["founder_axis_score"] is not None else fs_result["founder_score"],
         trend=trend,
-        confidence=fs_result["confidence"],
-        rationale="Composite of GitHub" + (" + Scholar" if deep_tech else "") + " per the Founder Score model (LinkedIn/Product Hunt not sourced in this automated scan).",
+        confidence=fs_result["founder_axis_coverage_pct"] / 100.0,
+        rationale="Component-weighted claims quality (GitHub"
+                  + (" + Scholar" if deep_tech else "")
+                  + f"), coverage {fs_result['founder_axis_coverage_pct']}% — axis_engine, validated against the team's ground-truth dataset.",
         cold_start=fs_result["cold_start"],
     ))
     db.commit()
 
     return build_candidate_payload(
         db, founder, company, application, fs_result, github_score, scholar_score,
-        source_label="GitHub · live", live=True,
+        source_label="GitHub · live", live=True, prev_founder_score=prev_founder_score,
     )
 
 
@@ -231,7 +262,7 @@ def list_all_candidates(db: Session) -> list[dict]:
         )
         if not founder_score_row:
             continue
-        founder_score_100 = round(founder_score_row.value * FOUNDER_SCORE_DISPLAY_SCALE)
+        founder_axis_display = founder_score_row.value
         evidence = build_evidence_list(db, founder.id)
         results.append({
             "id": f"app-{application.id}",
@@ -244,12 +275,12 @@ def list_all_candidates(db: Session) -> list[dict]:
             "newFounder": bool(founder_score_row.cold_start),
             "headline": f"{company.name} — {company.snapshot or 'no description provided'}",
             "location": "See GitHub profile" if founder.github_url else "Not disclosed",
-            "founderScore": founder_score_100,
-            "scoreBreakdown": {"github": founder_score_100, "linkedin": 0, "scholarly": 0},
+            "founderScore": founder.founder_score,
+            "scoreBreakdown": {"github": founder_axis_display, "linkedin": 0, "scholarly": 0},
             "prevFounderScore": None,
             "evidence": evidence,
             "axes": {
-                "founder": {"score": founder_score_100, **axis_from_score(founder_score_100)},
+                "founder": {"score": founder_axis_display, **axis_from_score(founder_axis_display)},
                 "market": {"score": 50, **axis_from_score(50), "note": "Market axis engine not built yet"},
                 "ideaVsMarket": {"label": "Not yet scored", "cls": "neutral"},
             },

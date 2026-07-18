@@ -48,6 +48,12 @@ class Founder(Base):
     # Recomputed, not replaced, whenever a new application/signal links to this founder.
     founder_score: Mapped[float] = mapped_column(Float, default=0.0)
 
+    # Inputs to the founder_score formula (adopted from the team's VSP-rubric dataset):
+    # founder_score = min(99, round(founder_axis*0.75 + prior_ventures*9 + shipped_artifacts*3))
+    # prior_ventures is self-reported/inferred; shipped_artifacts is derived from claims
+    # at scoring time, not stored here.
+    prior_ventures: Mapped[int] = mapped_column(Integer, default=0)
+
     created_at: Mapped[datetime] = mapped_column(DateTime, default=_utcnow)
     updated_at: Mapped[datetime] = mapped_column(
         DateTime, default=_utcnow, onupdate=_utcnow
@@ -169,9 +175,16 @@ class Score(Base):
 
 
 class Claim(Base):
-    """One atomic assertion in a memo (e.g. "$50K ARR"). Carries its own Trust Score and
-    points back to the Signal that supports it. If unsupported, must be flagged as a gap
-    (e.g. "Cap table: not disclosed") rather than silently omitted."""
+    """One atomic assertion (e.g. "$50K ARR" or "14 consecutive weekly updates").
+    Carries its own Trust Score and points back to the Signal that supports it. If
+    unsupported, must be flagged as a gap (e.g. "Cap table: not disclosed") rather than
+    silently omitted.
+
+    Schema adopted from the team's VSP-rubric evaluation dataset (component_map.csv /
+    claims.csv), so claims aggregate into axis scores the same way here as in that
+    dataset — this is what makes our axis_engine directly validatable against their
+    ground-truth axis_scores.csv.
+    """
 
     __tablename__ = "claims"
 
@@ -182,8 +195,22 @@ class Claim(Base):
     signal_id: Mapped[int | None] = mapped_column(ForeignKey("signals.id"), nullable=True)
 
     text: Mapped[str] = mapped_column(Text, nullable=False)
-    trust_score: Mapped[float | None] = mapped_column(Float, nullable=True)
+    trust_score: Mapped[float | None] = mapped_column(Float, nullable=True)  # 0-100
     is_gap: Mapped[bool] = mapped_column(Boolean, default=False)
+
+    # Component-based scoring fields (see scoring/component_map.py for the full list).
+    axis: Mapped[str | None] = mapped_column(String, nullable=True)  # Founder | Market & traction | Idea-vs-market | Diligence
+    component: Mapped[str | None] = mapped_column(String, nullable=True)  # e.g. "Background & execution"
+    vsp_code: Mapped[str | None] = mapped_column(String, nullable=True)
+    value_numeric: Mapped[float | None] = mapped_column(Float, nullable=True)
+    unit: Mapped[str | None] = mapped_column(String, nullable=True)
+    strength_0_100: Mapped[float | None] = mapped_column(Float, nullable=True)
+    # verified | self_asserted | contradicted | unobserved | gap_flagged
+    evidence_state: Mapped[str] = mapped_column(String, default="self_asserted")
+    verification_count: Mapped[int] = mapped_column(Integer, default=0)
+    contradicts_claim_id: Mapped[int | None] = mapped_column(ForeignKey("claims.id"), nullable=True)
+    source_tier: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    observed_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
 
     created_at: Mapped[datetime] = mapped_column(DateTime, default=_utcnow)
 
