@@ -24,6 +24,7 @@ Design notes / heuristic limitations (documented, not hidden):
 """
 from __future__ import annotations
 
+import json
 import os
 import time
 from datetime import datetime, timezone
@@ -82,6 +83,25 @@ def fetch_owned_repos(username: str, max_repos: int = 8) -> list[dict]:
         return []
     non_forks = [r for r in body if not r.get("fork")]
     return non_forks[:max_repos]
+
+
+def search_repos_by_topic(topic: str, limit: int = 5, created_after: str = "2024-01-01") -> list[dict]:
+    """Outbound sourcing entrypoint: recently-created, recently-updated repos tagged
+    with `topic`. This is the "Identify" half of outbound sourcing — scanning for
+    founders before they've applied, scored the same way as an inbound application
+    once we pull the owner's full profile."""
+    status, body = _get(
+        f"{GITHUB_API}/search/repositories",
+        params={
+            "q": f"topic:{topic} created:>{created_after}",
+            "sort": "updated",
+            "order": "desc",
+            "per_page": limit,
+        },
+    )
+    if status != 200 or not isinstance(body, dict):
+        return []
+    return body.get("items", [])
 
 
 def fetch_commit_activity(owner: str, repo: str, retries: int = 1) -> list[int] | None:
@@ -319,7 +339,7 @@ def ingest_github(db, founder_id: int, company_id: int | None, username: str,
             company_id=company_id,
             type="github_profile",
             source_url=profile.get("html_url"),
-            raw_content=str(profile),
+            raw_content=json.dumps(profile, default=str),
         )
     )
 
@@ -330,7 +350,7 @@ def ingest_github(db, founder_id: int, company_id: int | None, username: str,
                 company_id=company_id,
                 type="github_repo",
                 source_url=repo.get("html_url"),
-                raw_content=str(repo),
+                raw_content=json.dumps(repo, default=str),
             )
         )
 

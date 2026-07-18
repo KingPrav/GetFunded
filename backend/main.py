@@ -1,10 +1,17 @@
 """VC Brain — FastAPI entrypoint.
 
-Step 1 scope: boot the app, initialize the schema, expose a health check.
-No business routes yet — those come once the schema is confirmed working.
+Boots the app, initializes the schema, mounts the API routers, and serves the
+dashboard frontend from the same origin (so there's no CORS setup needed — open one
+URL locally and the whole thing works).
 """
-from fastapi import FastAPI
+import os
 
+from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+
+from api.decision import router as decision_router
+from api.screening import router as screening_router
+from api.sourcing import router as sourcing_router
 from db.database import init_db
 
 app = FastAPI(title="VC Brain", version="0.1.0")
@@ -18,3 +25,12 @@ def on_startup():
 @app.get("/health")
 def health():
     return {"status": "ok", "service": "vc-brain-backend"}
+
+
+app.include_router(sourcing_router)
+app.include_router(screening_router)
+app.include_router(decision_router)
+
+_frontend_dir = os.path.join(os.path.dirname(__file__), "..", "frontend")
+if os.path.isdir(_frontend_dir):
+    app.mount("/", StaticFiles(directory=_frontend_dir, html=True), name="frontend")

@@ -17,6 +17,7 @@ against the pitch deck, left as a future improvement.
 """
 from __future__ import annotations
 
+import json
 import math
 
 import requests
@@ -145,7 +146,7 @@ def ingest_scholar(db, founder_id: int, company_id: int | None, founder_name: st
                 company_id=company_id,
                 type="scholar_profile",
                 source_url=scholar_data.get("profile_url"),
-                raw_content=str(scholar_data),
+                raw_content=json.dumps(scholar_data, default=str),
             )
         )
         db.commit()

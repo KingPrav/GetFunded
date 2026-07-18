@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The VC Brain — Founder Dossier</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --paper: #EEF1EE;
+  --paper-raised: #F8FAF8;
+  --ink: #14181C;
+  --ink-soft: #4B5450;
+  --line: #C7CEC9;
+  --signal: #2F6F4E;
+  --signal-soft: #DCEBE2;
+  --alert: #A6392D;
+  --alert-soft: #F3DEDB;
+  --gold: #B08D3E;
+  --gold-soft: #F1E7CE;
+  --radius: 3px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.app { display: grid; grid-template-columns: 300px 1fr; min-height: 100vh; }
+
+.rail {
+  background: var(--paper-raised);
+  border-right: 1px solid var(--line);
+  padding: 28px 22px;
+}
+
+.brand {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  margin: 0 0 2px 0;
+}
+.brand .num { color: var(--signal); font-variant-numeric: tabular-nums; }
+.brand-sub {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin-bottom: 26px;
+}
+
+.rail h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin: 22px 0 10px 0;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.rail h3:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+
+label {
+  display: block;
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+select, input[type=text], input[type=number] {
+  width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  padding: 7px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+input[type=range] { width: 100%; margin-bottom: 4px; }
+.range-val { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--signal); text-align: right; margin-top: -8px; margin-bottom: 12px;}
+
+.main { padding: 28px 36px; max-width: 1100px; }
+
+.tabs { display: flex; gap: 2px; margin-bottom: 24px; border-bottom: 1px solid var(--line); }
+.tab {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 10px 16px;
+  cursor: pointer;
+  color: var(--ink-soft);
+  border-bottom: 2px solid transparent;
+  user-select: none;
+}
+.tab.active { color: var(--ink); border-bottom-color: var(--signal); }
+.tab .n { color: var(--gold); margin-right: 6px; }
+
+.panel { display: none; }
+.panel.active { display: block; }
+
+h1.page-title {
+  font-family: 'Fraunces', serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+.page-sub { color: var(--ink-soft); margin-bottom: 20px; font-size: 13px; }
+
+button.primary {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--ink);
+  color: var(--paper-raised);
+  border: none;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+button.primary:hover { background: var(--signal); }
+button.primary:disabled { background: var(--line); color: var(--ink-soft); cursor: wait; }
+
+button.ghost {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 7px 12px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+button.ghost:hover { border-color: var(--ink); }
+
+.query-row { display: flex; gap: 8px; margin-bottom: 18px; }
+.query-row input { flex: 1; }
+
+.source-row { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+
+.candidates { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  position: relative;
+}
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.card-name { font-family: 'Fraunces', serif; font-weight: 600; font-size: 16px; margin: 0; }
+.card-meta { font-size: 11.5px; color: var(--ink-soft); margin-top: 2px; }
+.tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 6px;
+  border-radius: 2px;
+  display: inline-block;
+}
+.tag.live { background: var(--signal-soft); color: var(--signal); }
+.tag.sim { background: var(--gold-soft); color: var(--gold); }
+.tag.new { background: var(--signal-soft); color: var(--signal); margin-left: 4px; }
+.tag.established { background: var(--alert-soft); color: var(--alert); margin-left: 4px; }
+
+.filter-row { display: flex; align-items: center; gap: 8px; margin: 4px 0 16px 0; }
+.filter-row input[type=checkbox] { width: auto; margin: 0; }
+.filter-row label { margin: 0; font-size: 12px; color: var(--ink); cursor: pointer; }
+
+.canvas-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 10px 0 4px 0;
+}
+.canvas-cell { background: var(--paper-raised); padding: 12px; min-height: 90px; }
+.canvas-cell .cc-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gold);
+  margin-bottom: 6px;
+  display: block;
+}
+.canvas-cell p { margin: 0; font-size: 12px; }
+.cc-partners, .cc-activities, .cc-resources { grid-row: span 1; }
+.cc-value { grid-row: 1 / 3; }
+.cc-relationships, .cc-channels, .cc-segments { grid-row: span 1; }
+.cc-costs, .cc-revenue { grid-column: span 2; }
+
+.qbox { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; margin: 6px 0; }
+.qbox .qn { font-family: 'IBM Plex Mono', monospace; color: var(--gold); margin-right: 6px; }
+
+.alloc-bar { display: flex; height: 22px; border-radius: 2px; overflow: hidden; margin: 10px 0; border: 1px solid var(--line); }
+.alloc-seg { display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; color: #fff; }
+
+/* the seal — signature element: an assay stamp carrying the Founder Score */
+.seal {
+  width: 54px; height: 54px; border-radius: 50%;
+  border: 2px solid var(--ink);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  position: relative;
+}
+.seal::before {
+  content: '';
+  position: absolute; inset: 4px;
+  border: 1px dashed var(--line);
+  border-radius: 50%;
+}
+.seal .score { font-size: 16px; font-weight: 600; line-height: 1; }
+.seal .lbl { font-size: 6.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.seal.up { border-color: var(--signal); }
+.seal.down { border-color: var(--alert); }
+
+.axes { display: flex; gap: 6px; margin: 12px 0; }
+.axis {
+  flex: 1;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 6px 8px;
+  background: #fff;
+}
+.axis .axis-label { font-family: 'IBM Plex Mono', monospace; font-size: 9px; text-transform: uppercase; color: var(--ink-soft); letter-spacing: 0.04em;}
+.axis .axis-val { font-weight: 600; font-size: 13px; margin-top: 2px; }
+.axis .axis-val.bull { color: var(--signal); }
+.axis .axis-val.bear { color: var(--alert); }
+.axis .axis-val.neutral { color: var(--gold); }
+.trend { font-size: 10px; margin-left: 4px; }
+
+.card-desc { font-size: 12.5px; color: var(--ink-soft); margin: 8px 0 12px 0; }
+
+.evidence-list { list-style: none; padding: 0; margin: 0 0 12px 0; font-size: 11.5px; }
+.evidence-list li { display: flex; gap: 6px; padding: 4px 0; border-top: 1px solid var(--line); }
+.evidence-list li:first-child { border-top: none; }
+.conf { font-family: 'IBM Plex Mono', monospace; font-size: 9px; text-transform: uppercase; padding: 1px 5px; border-radius: 2px; flex-shrink: 0; height: fit-content; }
+.conf.high { background: var(--signal-soft); color: var(--signal); }
+.conf.medium { background: var(--gold-soft); color: var(--gold); }
+.conf.low { background: var(--alert-soft); color: var(--alert); }
+
+.card-actions { display: flex; gap: 8px; }
+
+.rationale-box {
+  background: var(--gold-soft);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  font-size: 11.5px;
+  color: #6b551f;
+  margin-bottom: 10px;
+}
+
+.empty {
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+.memo-select { margin-bottom: 18px; }
+
+.memo {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+}
+.memo-banner {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--ink); color: var(--paper-raised);
+  padding: 14px 18px; border-radius: var(--radius); margin-bottom: 20px;
+}
+.memo-banner .amt { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 700; }
+.memo-banner .amt .lbl { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; display: block; color: #9aa89f; letter-spacing: 0.05em; }
+.memo h2 { font-family: 'Fraunces', serif; font-size: 15px; font-weight: 600; border-top: 1px solid var(--line); padding-top: 14px; margin: 20px 0 8px 0; }
+.memo h2:first-of-type { border-top: none; padding-top: 0; }
+.memo p, .memo li { font-size: 13px; color: var(--ink); }
+.memo .gap { color: var(--alert); font-style: italic; }
+.memo ul { margin: 4px 0; padding-left: 18px; }
+
+.loading-line { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-soft); }
+.footnote { font-size: 11px; color: var(--ink-soft); margin-top: 24px; border-top: 1px solid var(--line); padding-top: 12px; }
+.backend-note { font-size: 11px; color: var(--ink-soft); line-height: 1.6; margin: 0 0 8px 0; }
+</style>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- THESIS ENGINE RAIL -->
+  <div class="rail">
+    <p class="brand"><span class="num">02</span> The VC Brain</p>
+    <p class="brand-sub">New founders · $100K checks</p>
+
+    <h3>Thesis Engine</h3>
+    <div class="filter-row">
+      <input type="checkbox" id="thesis-new-only" checked>
+      <label for="thesis-new-only">New founders only</label>
+    </div>
+    <label>Sectors</label>
+    <select id="thesis-sector">
+      <option>All sectors</option>
+      <option>AI infrastructure</option>
+      <option>Developer tools</option>
+      <option>Vertical AI agents</option>
+      <option>Robotics</option>
+      <option>Biotech</option>
+      <option>Climate</option>
+      <option>Fintech</option>
+    </select>
+
+    <label>Stage</label>
+    <select id="thesis-stage">
+      <option>Pre-seed</option>
+      <option>Seed</option>
+      <option>Series A</option>
+    </select>
+
+    <label>Geography</label>
+    <select id="thesis-geo">
+      <option>Global</option>
+      <option>US only</option>
+      <option>Europe</option>
+      <option>Berlin / DACH</option>
+    </select>
+
+    <label>Check size (USD)</label>
+    <input type="number" id="thesis-check" value="100000">
+
+    <label>Target ownership (%)</label>
+    <input type="range" id="thesis-ownership" min="1" max="20" value="7">
+    <div class="range-val" id="thesis-ownership-val">7%</div>
+
+    <label>Risk appetite</label>
+    <input type="range" id="thesis-risk" min="1" max="5" value="3">
+    <div class="range-val" id="thesis-risk-val">Balanced</div>
+
+    <h3>Memory</h3>
+    <p style="font-size:11.5px; color:var(--ink-soft); margin:0;">
+      <span id="mem-count">0</span> founders tracked. Loaded from the backend database on
+      page load — Founder Scores persist across refreshes and never reset.
+    </p>
+
+    <h3>Status</h3>
+    <p class="backend-note">
+      GitHub sourcing and scoring run for real through the local FastAPI backend
+      (GitHub API + Semantic Scholar, gated to deep-tech founders).<br>
+      LinkedIn is founder self-pasted text only — scraping LinkedIn violates its Terms
+      of Service, so this is intentional, not a shortcut.<br>
+      Screening queries and memo drafting use Claude when <code>ANTHROPIC_API_KEY</code>
+      is set on the backend; otherwise a transparent deterministic fallback runs instead.
+    </p>
+    <button class="ghost" id="btn-test-connection" style="width:100%;">Test backend connection</button>
+    <p id="connection-status" style="font-size:11px; color:var(--ink-soft); margin:6px 0 0 0;"></p>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="tabs">
+      <div class="tab active" data-tab="sourcing"><span class="n">01</span>Sourcing</div>
+      <div class="tab" data-tab="screening"><span class="n">02</span>Screening</div>
+      <div class="tab" data-tab="diligence"><span class="n">03</span>Diligence</div>
+      <div class="tab" data-tab="decision"><span class="n">04</span>Decision</div>
+    </div>
+
+    <!-- SOURCING -->
+    <div class="panel active" id="panel-sourcing">
+      <h1 class="page-title">Sourcing</h1>
+      <p class="page-sub">Surface first-time, pre-seed founders before they start fundraising, sized for a $100K first check. Outbound scans below, or log an inbound application.</p>
+
+      <div class="source-row">
+        <button class="primary" id="btn-scan-github">Scan GitHub across all sectors</button>
+        <button class="ghost" id="btn-scan-outbound">Pull simulated cross-sector signals</button>
+        <button class="ghost" id="btn-add-inbound">Log an inbound application</button>
+      </div>
+
+      <div id="sourcing-status" class="loading-line"></div>
+      <div class="candidates" id="sourcing-results"></div>
+    </div>
+
+    <!-- SCREENING -->
+    <div class="panel" id="panel-screening">
+      <h1 class="page-title">Screening</h1>
+      <p class="page-sub">Three axes, scored independently, never averaged. Ask a compound question to re-rank.</p>
+
+      <div class="query-row">
+        <input type="text" id="query-input" placeholder="e.g. technical founder, Berlin, AI infra, enterprise traction, no prior VC backing, top-tier accelerator">
+        <button class="primary" id="btn-query">Ask the Brain</button>
+      </div>
+      <div id="query-status" class="loading-line"></div>
+
+      <div class="candidates" id="screening-results"></div>
+    </div>
+
+    <!-- DILIGENCE -->
+    <div class="panel" id="panel-diligence">
+      <h1 class="page-title">Diligence</h1>
+      <p class="page-sub">Every claim traces to evidence with a confidence level. Nothing is asserted without a source.</p>
+      <div class="candidates" id="diligence-results"></div>
+    </div>
+
+    <!-- DECISION -->
+    <div class="panel" id="panel-decision">
+      <h1 class="page-title">Decision</h1>
+      <p class="page-sub">Pick a founder and draft the business memo for a $100K first check. Missing data is flagged, never invented.</p>
+
+      <div class="memo-select">
+        <select id="memo-founder-select"><option value="">Select a founder to draft a business memo</option></select>
+        <button class="primary" id="btn-draft-memo" style="margin-left:8px;">Draft business memo</button>
+      </div>
+      <div id="memo-status" class="loading-line"></div>
+      <div id="memo-output"></div>
+    </div>
+
+    <div class="footnote">
+      Data Architecture is weighted 30% of this challenge, Intelligence 25%, Utility 30%, UX 15%.
+      Build the sourcing and Founder Score depth first, the reasoning layer second, polish last.
+    </div>
+  </div>
+</div>
+
+<script>
+// ---------- STATE ----------
+// candidates keyed by a stable id. Real (GitHub-sourced) candidates are persisted
+// server-side in the database and reloaded on page load below — this object is a
+// client-side cache of that, not the source of truth anymore.
+const store = { candidates: {} };
+
+function thesis() {
+  return {
+    sector: document.getElementById('thesis-sector').value,
+    stage: document.getElementById('thesis-stage').value,
+    geo: document.getElementById('thesis-geo').value,
+    check: Number(document.getElementById('thesis-check').value),
+    ownership: Number(document.getElementById('thesis-ownership').value),
+    risk: Number(document.getElementById('thesis-risk').value),
+    newFoundersOnly: document.getElementById('thesis-new-only').checked,
+  };
+}
+
+function isNewFounder(raw) {
+  const followers = raw.followers || 0;
+  const repos = raw.publicRepos || 0;
+  const stars = raw.stars || 0;
+  return followers < 600 && repos < 50 && stars < 4000;
+}
+
+function applyNewFounderFilter(list) {
+  const t = thesis();
+  if (!t.newFoundersOnly) return list;
+  return list.filter(c => c.newFounder !== false);
+}
+
+const riskLabels = {1:'Very conservative', 2:'Conservative', 3:'Balanced', 4:'Aggressive', 5:'Very aggressive'};
+document.getElementById('thesis-ownership').addEventListener('input', e => {
+  document.getElementById('thesis-ownership-val').textContent = e.target.value + '%';
+});
+document.getElementById('thesis-risk').addEventListener('input', e => {
+  document.getElementById('thesis-risk-val').textContent = riskLabels[e.target.value];
+});
+
+document.getElementById('btn-test-connection').addEventListener('click', async () => {
+  const el = document.getElementById('connection-status');
+  el.textContent = 'Testing...';
+  try {
+    const res = await fetch('/health');
+    if (res.ok) {
+      const data = await res.json();
+      el.textContent = 'Backend reachable: ' + data.service + ' (' + data.status + ').';
+    } else {
+      el.textContent = 'Backend responded with status ' + res.status + '.';
+    }
+  } catch (err) {
+    el.textContent = 'Could not reach the backend. Is uvicorn running on this same origin?';
+  }
+});
+
+// ---------- LOAD MEMORY FROM BACKEND ON PAGE LOAD ----------
+async function loadCandidatesFromBackend() {
+  try {
+    const res = await fetch('/api/sourcing/candidates');
+    if (!res.ok) return;
+    const data = await res.json();
+    for (const c of data.candidates) store.candidates[c.id] = c;
+    document.getElementById('mem-count').textContent = Object.keys(store.candidates).length;
+    renderCandidates('sourcing-results', applyNewFounderFilter(Object.values(store.candidates)));
+  } catch (err) {
+    // backend not reachable yet on first paint — fine, user can still use simulated buttons
+  }
+}
+loadCandidatesFromBackend();
+
+// ---------- TABS ----------
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+    if (tab.dataset.tab === 'screening') renderCandidates('screening-results', applyNewFounderFilter(Object.values(store.candidates)));
+    if (tab.dataset.tab === 'diligence') renderCandidates('diligence-results', applyNewFounderFilter(Object.values(store.candidates)), true);
+    if (tab.dataset.tab === 'decision') refreshMemoSelect();
+  });
+});
+
+function axisFromScore(score) {
+  if (score >= 66) return { label: 'Bullish', cls: 'bull' };
+  if (score >= 40) return { label: 'Neutral', cls: 'neutral' };
+  return { label: 'Bear', cls: 'bear' };
+}
+
+// simple deterministic hash — used only for the two client-only simulated demo paths
+// below, never for real GitHub-sourced candidates (those are scored entirely by the
+// backend's founder_score module).
+function seedFrom(str) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) { h = (h * 31 + str.charCodeAt(i)) >>> 0; }
+  return h;
+}
+
+// ---------- REAL GITHUB SOURCING, VIA THE BACKEND ----------
+document.getElementById('btn-scan-github').addEventListener('click', async () => {
+  const status = document.getElementById('sourcing-status');
+  status.textContent = 'Scanning GitHub via the backend (GitHub API + gated Semantic Scholar lookups)...';
+  try {
+    const res = await fetch('/api/sourcing/scan-github', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(thesis()),
+    });
+    if (!res.ok) throw new Error('backend returned ' + res.status);
+    const data = await res.json();
+    for (const c of data.candidates) store.candidates[c.id] = c;
+    document.getElementById('mem-count').textContent = Object.keys(store.candidates).length;
+    status.textContent = 'Pulled ' + data.added + ' candidates through the backend, persisted to Memory.' +
+      (data.errors && data.errors.length ? ' (' + data.errors.length + ' repos skipped due to errors.)' : '');
+    renderCandidates('sourcing-results', applyNewFounderFilter(Object.values(store.candidates)));
+  } catch (err) {
+    status.textContent = 'Backend sourcing failed (' + err.message + '). Make sure uvicorn is running ' +
+      '(cd backend && uvicorn main:app --reload) and this page was opened from that server, not as a bare file.';
+  }
+});
+
+// ---------- SIMULATED MULTI-SOURCE OUTBOUND (client-only demo variety; explicitly labeled) ----------
+document.getElementById('btn-scan-outbound').addEventListener('click', () => {
+  const sims = [
+    { name: 'Priya Nataraj', handle: '@priyan', source: 'outbound-arxiv', sourceLabel: 'arXiv · simulated', sector: 'AI infrastructure',
+      headline: 'Co-author, "Sparse retrieval for long-context agents" (2026)', location: 'Cambridge, MA' },
+    { name: 'Tomas Reyes', handle: '@treyes', source: 'outbound-producthunt', sourceLabel: 'Product Hunt · simulated', sector: 'Fintech',
+      headline: 'Launched "Fieldnote", #3 Product of the Day, expense tracking for freelancers', location: 'Berlin, DE' },
+    { name: 'Ada Whitfield', handle: '@adawhitfield', source: 'outbound-patent', sourceLabel: 'Patent filing · simulated', sector: 'Robotics',
+      headline: 'Filed provisional patent, on-device model compression for edge robotics', location: 'Not disclosed' },
+    { name: 'Kwame Asante', handle: '@kasante', source: 'outbound-scholar', sourceLabel: 'Semantic Scholar · simulated', sector: 'Biotech',
+      headline: 'PhD researcher, spinning out a protein-folding startup from lab work', location: 'Basel, CH' },
+  ];
+  for (const s of sims) {
+    const id = 'sim-' + s.handle;
+    const h = seedFrom(s.handle);
+    const founderScore = 35 + (h % 45); // simulated range, clearly labeled as such below
+    store.candidates[id] = {
+      ...s, id, live: false, newFounder: true, founderScore,
+      scoreBreakdown: { github: 20 + (h % 20), linkedin: 30 + (h % 40), scholarly: h % 3 === 0 ? 40 + (h % 30) : 0 },
+      prevFounderScore: null,
+      evidence: [
+        { claim: 'Simulated cross-sector signal', conf: 'low', note: 'not backed by a real API call — demo variety for sectors we have not wired real ingestion for yet (Product Hunt, patents)' },
+      ],
+      axes: {
+        founder: { score: founderScore, ...axisFromScore(founderScore) },
+        market: { score: 50, ...axisFromScore(50), note: 'simulated' },
+        ideaVsMarket: { label: 'Early signal, cold-start case', cls: 'neutral' },
+      },
+    };
+  }
+  document.getElementById('mem-count').textContent = Object.keys(store.candidates).length;
+  document.getElementById('sourcing-status').textContent = 'Added simulated candidates spanning AI infra, fintech, robotics, and biotech — for demo variety only, not persisted server-side.';
+  renderCandidates('sourcing-results', applyNewFounderFilter(Object.values(store.candidates)));
+});
+
+document.getElementById('btn-add-inbound').addEventListener('click', () => {
+  const id = 'inbound-' + Date.now();
+  store.candidates[id] = {
+    id, name: 'Inbound applicant #' + (Object.keys(store.candidates).length + 1), handle: 'first-time founder',
+    source: 'inbound', sourceLabel: 'Inbound application', live: false, newFounder: true,
+    headline: 'Deck submitted, no public track record yet — this is the cold-start case the brief asks you to handle',
+    location: 'Self-reported',
+    founderScore: 30, scoreBreakdown: { github: 0, linkedin: 0, scholarly: 0 }, prevFounderScore: null,
+    evidence: [
+      { claim: 'Company name and deck submitted', conf: 'high', note: 'minimum application bar per the brief' },
+      { claim: 'No GitHub, no funding, no scholarly record found', conf: 'low', note: 'absence of signal, do not penalize by default — score on the deck and any public footprint instead' },
+    ],
+    axes: {
+      founder: { score: 30, ...axisFromScore(30) },
+      market: { score: 50, ...axisFromScore(50), note: 'derive from deck market sizing claims' },
+      ideaVsMarket: { label: 'Unproven, needs Diligence pass', cls: 'neutral' },
+    },
+  };
+  document.getElementById('mem-count').textContent = Object.keys(store.candidates).length;
+  renderCandidates('sourcing-results', applyNewFounderFilter(Object.values(store.candidates)));
+});
+
+document.getElementById('thesis-new-only').addEventListener('change', () => {
+  const activeTab = document.querySelector('.tab.active').dataset.tab;
+  if (activeTab === 'sourcing') renderCandidates('sourcing-results', applyNewFounderFilter(Object.values(store.candidates)));
+  if (activeTab === 'screening') renderCandidates('screening-results', applyNewFounderFilter(Object.values(store.candidates)));
+  if (activeTab === 'diligence') renderCandidates('diligence-results', applyNewFounderFilter(Object.values(store.candidates)), true);
+});
+
+// ---------- RENDER CANDIDATE CARDS ----------
+function renderCandidates(containerId, list, showEvidence) {
+  const el = document.getElementById(containerId);
+  if (!list || list.length === 0) {
+    el.innerHTML = '<div class="empty">No candidates yet. Run a sourcing scan first.</div>';
+    return;
+  }
+  el.innerHTML = list.map(c => {
+    const delta = c.prevFounderScore != null ? c.founderScore - c.prevFounderScore : null;
+    const sealCls = delta > 0 ? 'up' : delta < 0 ? 'down' : '';
+    const evidenceHtml = showEvidence ? `
+      <ul class="evidence-list">
+        ${c.evidence.map(e => `<li><span class="conf ${e.conf}">${e.conf}</span><span>${e.claim}<br><span style="color:var(--ink-soft)">${e.note}</span></span></li>`).join('')}
+      </ul>` : '';
+    const rationale = c.rationale ? `<div class="rationale-box">${c.rationale}</div>` : '';
+    return `
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <p class="card-name">${c.name}</p>
+          <p class="card-meta">${c.handle} · ${c.location}</p>
+          <span class="tag ${c.live ? 'live' : 'sim'}">${c.sourceLabel}</span>
+          <span class="tag ${c.newFounder === false ? 'established' : 'new'}">${c.newFounder === false ? 'Established' : 'New founder'}</span>
+        </div>
+        <div class="seal ${sealCls}">
+          <span class="score">${c.founderScore}</span>
+          <span class="lbl">Founder Score</span>
+        </div>
+      </div>
+      <p class="card-desc">${c.headline}</p>
+      ${c.scoreBreakdown ? `<div class="card-meta" style="margin-bottom:8px;">Founder Score weighting &middot; GitHub ${c.scoreBreakdown.github} &middot; LinkedIn ${c.scoreBreakdown.linkedin} &middot; Scholarly ${c.scoreBreakdown.scholarly}</div>` : ''}
+      <div class="axes">
+        <div class="axis"><div class="axis-label">Founder</div><div class="axis-val ${c.axes.founder.cls}">${c.axes.founder.label}</div></div>
+        <div class="axis"><div class="axis-label">Market</div><div class="axis-val ${c.axes.market.cls}">${c.axes.market.label}</div></div>
+        <div class="axis"><div class="axis-label">Idea × Market</div><div class="axis-val ${c.axes.ideaVsMarket.cls}">${c.axes.ideaVsMarket.label}</div></div>
+      </div>
+      ${rationale}
+      ${evidenceHtml}
+    </div>`;
+  }).join('');
+}
+
+// ---------- MULTI-ATTRIBUTE REASONING QUERY, VIA THE BACKEND ----------
+document.getElementById('btn-query').addEventListener('click', async () => {
+  const q = document.getElementById('query-input').value.trim();
+  const status = document.getElementById('query-status');
+  const list = applyNewFounderFilter(Object.values(store.candidates));
+  if (!q) { status.textContent = 'Type a compound query first.'; return; }
+  if (list.length === 0) { status.textContent = 'Source some candidates first.'; return; }
+  status.textContent = 'Reasoning over ' + list.length + ' candidates...';
+  try {
+    const res = await fetch('/api/screening/query', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query: q, thesis: thesis(), candidates: list }),
+    });
+    const data = await res.json();
+    status.textContent = 'Ranked ' + data.ranked.length + ' candidates against: "' + q + '" (' + data.mode + ' mode' + (data.note ? ' — ' + data.note : '') + ')';
+    renderCandidates('screening-results', data.ranked);
+  } catch (err) {
+    status.textContent = 'Query resolution failed (' + err.message + '). Showing unranked list.';
+    renderCandidates('screening-results', list);
+  }
+});
+
+// ---------- DECISION / MEMO, VIA THE BACKEND ----------
+function refreshMemoSelect() {
+  const sel = document.getElementById('memo-founder-select');
+  const list = applyNewFounderFilter(Object.values(store.candidates));
+  sel.innerHTML = '<option value="">Select a founder to draft a business memo</option>' +
+    list.map(c => `<option value="${c.id}">${c.name} (${c.sourceLabel})</option>`).join('');
+}
+
+document.getElementById('btn-draft-memo').addEventListener('click', async () => {
+  const id = document.getElementById('memo-founder-select').value;
+  const status = document.getElementById('memo-status');
+  const out = document.getElementById('memo-output');
+  if (!id) { status.textContent = 'Pick a founder first.'; return; }
+  const c = store.candidates[id];
+  const t = thesis();
+  status.textContent = 'Drafting the memo...';
+  out.innerHTML = '';
+  try {
+    const res = await fetch('/api/decision/memo', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ candidate: c, thesis: t }),
+    });
+    const data = await res.json();
+    const m = data.memo;
+    status.textContent = data.mode === 'fallback' ? (data.note || 'Drafted with the deterministic fallback (no ANTHROPIC_API_KEY set).') : '';
+
+    const allocColors = ['#2F6F4E', '#B08D3E', '#4B5450', '#A6392D', '#14181C'];
+    const allocBar = (m.investment.allocation || []).map((a, i) =>
+      `<div class="alloc-seg" style="width:${a.pct}%; background:${allocColors[i % allocColors.length]};">${a.pct}%</div>`).join('');
+    const allocList = (m.investment.allocation || []).map((a, i) =>
+      `<li><span style="display:inline-block;width:9px;height:9px;background:${allocColors[i % allocColors.length]};border-radius:2px;margin-right:6px;"></span>${a.category}, ${a.pct}% of $${t.check.toLocaleString()}</li>`).join('');
+
+    out.innerHTML = `
+      <div class="memo">
+        <div class="memo-banner">
+          <div>
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; color:#9aa89f;">New founder</div>
+            <div style="font-family:'Fraunces',serif; font-size:18px;">${c.name}</div>
+          </div>
+          <div class="amt"><span class="lbl">Recommendation</span>${m.recommendation}</div>
+        </div>
+        <p style="color:var(--ink-soft); font-size:12.5px;">${m.reason}</p>
+
+        <h2>Founder profile and key facts</h2>
+        <p>${m.founderProfile.summary}</p>
+        <ul>${m.founderProfile.keyFacts.map(f => `<li>${f.startsWith('Not disclosed') ? '<span class="gap">' + f + '</span>' : f}</li>`).join('')}</ul>
+
+        <h2>Business Model Canvas</h2>
+        <div class="canvas-grid">
+          <div class="canvas-cell cc-partners"><span class="cc-label">Key Partners</span><p>${m.canvas.keyPartners}</p></div>
+          <div class="canvas-cell cc-activities"><span class="cc-label">Key Activities</span><p>${m.canvas.keyActivities}</p></div>
+          <div class="canvas-cell cc-value"><span class="cc-label">Value Propositions</span><p>${m.canvas.valuePropositions}</p></div>
+          <div class="canvas-cell cc-relationships"><span class="cc-label">Customer Relationships</span><p>${m.canvas.customerRelationships}</p></div>
+          <div class="canvas-cell cc-segments"><span class="cc-label">Customer Segments</span><p>${m.canvas.customerSegments}</p></div>
+          <div class="canvas-cell cc-resources"><span class="cc-label">Key Resources</span><p>${m.canvas.keyResources}</p></div>
+          <div class="canvas-cell cc-channels"><span class="cc-label">Channels</span><p>${m.canvas.channels}</p></div>
+          <div class="canvas-cell cc-costs"><span class="cc-label">Cost Structure</span><p>${m.canvas.costStructure}</p></div>
+          <div class="canvas-cell cc-revenue"><span class="cc-label">Revenue Streams</span><p>${m.canvas.revenueStreams}</p></div>
+        </div>
+
+        <h2>Investment amount and allocation recommendation</h2>
+        <p>$${t.check.toLocaleString()} first check${m.investment.runwayMonths ? ', structured for roughly ' + m.investment.runwayMonths + ' months of runway' : ''}.</p>
+        ${allocBar ? `<div class="alloc-bar">${allocBar}</div><ul>${allocList}</ul>` : ''}
+        <p style="color:var(--ink-soft);">${m.investment.rationale}</p>
+
+        <h2>Questions and concerns from a VC standpoint</h2>
+        ${m.vcQuestions.map((q, i) => `<div class="qbox"><span class="qn">Q${i + 1}</span>${q}</div>`).join('')}
+
+        <h2>Trust Score, evidence behind this memo</h2>
+        <ul>${(c.evidence || []).map(e => `<li><span class="conf ${e.conf}">${e.conf}</span> ${e.claim}, ${e.note}</li>`).join('')}</ul>
+      </div>`;
+  } catch (err) {
+    status.textContent = 'Memo drafting failed (' + err.message + '). Check the backend is running and try again.';
+  }
+});
+</script>
+</body>
+</html>
