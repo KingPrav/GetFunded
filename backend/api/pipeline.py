@@ -44,6 +44,26 @@ def create_company(db: Session, name: str, sector: str | None, stage: str | None
     return company
 
 
+def is_low_footprint(github_score: dict | None) -> bool:
+    """"New/undiscovered founder" for the dashboard filter — deliberately independent
+    of `cold_start` (which is about our confidence in the SCORE, not about who the
+    person is). A founder can have thin data coverage while already being GitHub-famous
+    (high followers/stars, just few components covered), or have rich data covering a
+    small, genuinely early footprint. Conflating the two caused a real bug: real
+    high-signal candidates were disappearing from the default filtered view the moment
+    scoring actually succeeded, because "confident score" was wrongly read as
+    "established founder." This checks the actual footprint-size numbers instead —
+    same thresholds as the team's original prototype heuristic.
+    """
+    if not github_score:
+        return True  # no GitHub data at all -> definitely not "established"
+    raw = github_score.get("raw_metrics", {})
+    followers = raw.get("followers", 0) or 0
+    public_repos = raw.get("public_repos", 0) or 0
+    max_stars = raw.get("max_stars", 0) or 0
+    return followers < 600 and public_repos < 50 and max_stars < 4000
+
+
 def axis_from_score(score_0_100: float) -> dict:
     if score_0_100 >= 66:
         return {"label": "Bullish", "cls": "bull"}
@@ -158,13 +178,14 @@ def build_candidate_payload(
         "sourceLabel": source_label,
         "sector": company.sector,
         "live": live,
-        "newFounder": bool(fs_result.get("cold_start")),
+        "newFounder": is_low_footprint(github_score),
         "headline": f"{company.name} — {company.snapshot or 'no description provided'}",
         "location": "See GitHub profile" if founder.github_url else "Not disclosed",
         "founderScore": founder_score,
         "scoreBreakdown": breakdown,
         "prevFounderScore": prev_founder_score,
         "evidence": evidence,
+        "coldStart": bool(fs_result.get("cold_start")),  # data-confidence flag, kept separate from newFounder
         "axes": {
             "founder": {"score": founder_axis_display, **axis_from_score(founder_axis_display),
                         "coverage_pct": fs_result.get("founder_axis_coverage_pct")},
@@ -246,6 +267,37 @@ def source_and_score_github_candidate(db: Session, repo: dict, sector_label: str
     )
 
 
+def is_low_footprint_from_signals(db: Session, founder_id: int) -> bool:
+    """Same footprint-size check as is_low_footprint(), but re-derived from stored
+    `signals` rows instead of a fresh score dict — used on the Memory-reload path
+    where we're rebuilding from the database, not from a just-computed result."""
+    profile_signal = (
+        db.query(Signal)
+        .filter_by(founder_id=founder_id, type="github_profile")
+        .order_by(Signal.ingested_at.desc())
+        .first()
+    )
+    if not profile_signal:
+        return True
+    try:
+        profile = json.loads(profile_signal.raw_content) if profile_signal.raw_content else {}
+    except (json.JSONDecodeError, TypeError):
+        profile = {}
+
+    repo_signals = db.query(Signal).filter_by(founder_id=founder_id, type="github_repo").all()
+    max_stars = 0
+    for s in repo_signals:
+        try:
+            repo = json.loads(s.raw_content) if s.raw_content else {}
+        except (json.JSONDecodeError, TypeError):
+            repo = {}
+        max_stars = max(max_stars, repo.get("stargazers_count", 0) or 0)
+
+    followers = profile.get("followers", 0) or 0
+    public_repos = profile.get("public_repos", 0) or 0
+    return followers < 600 and public_repos < 50 and max_stars < 4000
+
+
 def list_all_candidates(db: Session) -> list[dict]:
     """Rebuilds the full candidate list from the database — this is what restores
     Memory on a page reload, unlike a purely in-browser store."""
@@ -272,13 +324,14 @@ def list_all_candidates(db: Session) -> list[dict]:
             "sourceLabel": "GitHub · live" if application.source == "outbound" else "Inbound application",
             "sector": company.sector,
             "live": True,
-            "newFounder": bool(founder_score_row.cold_start),
+            "newFounder": is_low_footprint_from_signals(db, founder.id),
             "headline": f"{company.name} — {company.snapshot or 'no description provided'}",
             "location": "See GitHub profile" if founder.github_url else "Not disclosed",
             "founderScore": founder.founder_score,
             "scoreBreakdown": {"github": founder_axis_display, "linkedin": 0, "scholarly": 0},
             "prevFounderScore": None,
             "evidence": evidence,
+            "coldStart": bool(founder_score_row.cold_start),
             "axes": {
                 "founder": {"score": founder_axis_display, **axis_from_score(founder_axis_display)},
                 "market": {"score": 50, **axis_from_score(50), "note": "Market axis engine not built yet"},

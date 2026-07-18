@@ -315,11 +315,20 @@ def compute_github_score(github_data: dict, target_keywords: set[str] | None = N
         for r in repos if r.get("created_at")
     ]
     contributor_counts = [r["contributors_count"] for r in repos if r.get("contributors_count") is not None]
+    profile = github_data.get("profile", {})
     raw_metrics = {
         "total_commits_52w": total_commits,
         "best_star_velocity_per_month": round(max(star_velocities), 2) if star_velocities else 0.0,
         "avg_contributors": round(sum(contributor_counts) / len(contributor_counts), 2) if contributor_counts else None,
         "repos_considered_count": len(repos),
+        # Raw footprint-size numbers — used to decide "new/undiscovered founder" for the
+        # dashboard filter. Deliberately separate from the scoring confidence/coverage
+        # numbers above: a founder can have thin data coverage (cold_start=True for
+        # scoring purposes) while also already being GitHub-famous, or vice versa —
+        # these two concepts must not be conflated.
+        "followers": profile.get("followers", 0),
+        "public_repos": profile.get("public_repos", 0),
+        "max_stars": max((r.get("stargazers_count", 0) for r in repos), default=0),
     }
 
     return {
