@@ -224,6 +224,13 @@ def source_and_score_github_candidate(db: Session, repo: dict, sector_label: str
     )
     claim_dicts = github_claims(github_score)
 
+    # GitHub's public display name, when set, is what actually stands a chance of
+    # matching a Semantic Scholar author record — the raw username almost never will.
+    real_name = (github_score or {}).get("raw_metrics", {}).get("real_name")
+    if real_name and founder.name == username:
+        founder.name = real_name
+        db.commit()
+
     deep_tech = is_deep_tech(sector_label, repo.get("topics", []))
     scholar_score = None
     if deep_tech:

@@ -329,6 +329,10 @@ def compute_github_score(github_data: dict, target_keywords: set[str] | None = N
         "followers": profile.get("followers", 0),
         "public_repos": profile.get("public_repos", 0),
         "max_stars": max((r.get("stargazers_count", 0) for r in repos), default=0),
+        # GitHub's optional public display name, e.g. "Linus Torvalds" vs the login
+        # "torvalds". A username essentially never matches a Semantic Scholar author
+        # record, so this is what should be used for that lookup when present.
+        "real_name": profile.get("name"),
     }
 
     return {
