@@ -10,6 +10,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
 from api.decision import router as decision_router
+from api.founders import router as founders_router
 from api.screening import router as screening_router
 from api.sourcing import router as sourcing_router
 from db.database import init_db
@@ -30,6 +31,7 @@ def health():
 app.include_router(sourcing_router)
 app.include_router(screening_router)
 app.include_router(decision_router)
+app.include_router(founders_router)
 
 _frontend_dir = os.path.join(os.path.dirname(__file__), "..", "frontend")
 if os.path.isdir(_frontend_dir):
