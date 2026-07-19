@@ -14,17 +14,37 @@ scale) — no display-scale conversion needed anywhere below.
 from __future__ import annotations
 
 import json
+import os
 
 from sqlalchemy.orm import Session
 
 from db.models import Application, Claim, Company, Founder, Score, Signal
-from ingestion.claims import github_claims, scholar_claims
+from ingestion.claims import github_claims, linkedin_claims, scholar_claims
 from ingestion.github import ingest_github
-from ingestion.semanticscholar import ingest_scholar
+from ingestion.linkedin import compute_linkedin_score
+from ingestion.semanticscholar import compute_scholar_score, ingest_scholar
+from ingestion.synthetic_profiles import (
+    LINKEDIN_DEMO_SIGNAL_TYPE,
+    SCHOLAR_DEMO_SIGNAL_TYPE,
+    pick_linkedin_text,
+    pick_scholar_profile,
+)
 from scoring.axis_engine import score_axis
 from scoring.component_map import components_for_axis, vsp_code_of
 from scoring.deep_tech import is_deep_tech
 from scoring.founder_score import update_founder_score
+
+# Real Scholar matches are rare for outbound-sourced GitHub candidates (name-only
+# search, see ingestion/semanticscholar.py), and there is no real LinkedIn intake at
+# all for this sourcing path (LinkedIn is only ever founder-pasted text from an
+# intake form, which outbound-sourced candidates never filled out). Without a
+# fallback, "scholarly" and "linkedin" sit at 0 for nearly every scanned candidate —
+# not because the founder actually has no signal, but because we never had a way to
+# observe it for this source. Demo mode fills that gap with clearly-labeled synthetic
+# data so a live scan shows what a complete 3-source Founder Score looks like. Real
+# data is always preferred when it's actually found; synthetic is only a fallback.
+# Set VC_BRAIN_DEMO_MODE=0 to disable and see only real, verified signal.
+DEMO_MODE_ENABLED = os.getenv("VC_BRAIN_DEMO_MODE", "1") != "0"
 
 
 def get_or_create_founder(db: Session, github_username: str, github_html_url: str, display_name: str | None) -> Founder:
@@ -143,6 +163,21 @@ def build_evidence_list(db: Session, founder_id: int, limit: int = 6) -> list[di
                 "conf": "low",
                 "note": "self-reported, not scraped — trust-discounted in scoring",
             })
+        elif s.type == SCHOLAR_DEMO_SIGNAL_TYPE:
+            evidence.append({
+                "claim": f"[DEMO DATA] {data.get('paper_count', 0)} papers, {data.get('citation_count', 0)} citations, "
+                         f"h-index {data.get('h_index', 0)}",
+                "conf": "demo",
+                "note": "Synthetic stand-in — no real Semantic Scholar match was found for this founder, "
+                        "not real evidence.",
+            })
+        elif s.type == LINKEDIN_DEMO_SIGNAL_TYPE:
+            evidence.append({
+                "claim": "[DEMO DATA] Synthetic LinkedIn career summary",
+                "conf": "demo",
+                "note": "Synthetic stand-in — no founder-provided LinkedIn text exists for this "
+                        "outbound-sourced candidate, not real evidence.",
+            })
     return evidence
 
 
@@ -157,13 +192,14 @@ def build_candidate_payload(
     source_label: str,
     live: bool,
     prev_founder_score: float | None,
+    linkedin_score: dict | None = None,
 ) -> dict:
     founder_score = fs_result["founder_score"]
     founder_axis = fs_result["founder_axis_score"]
 
     breakdown = {
         "github": round(github_score["score"] * 10) if github_score and github_score.get("score") is not None else 0,
-        "linkedin": 0,
+        "linkedin": round(linkedin_score["score"] * 10) if linkedin_score and linkedin_score.get("score") is not None else 0,
         "scholarly": round(scholar_score["score"] * 10) if scholar_score and scholar_score.get("score") is not None else 0,
     }
 
@@ -233,20 +269,53 @@ def source_and_score_github_candidate(db: Session, repo: dict, sector_label: str
 
     deep_tech = is_deep_tech(sector_label, repo.get("topics", []))
     scholar_score = None
+    scholar_is_synthetic = False
     if deep_tech:
         scholar_score = ingest_scholar(
             db, founder.id, company.id, founder.name, target_keywords={sector_label.lower()}
         )
-        claim_dicts += scholar_claims(scholar_score)
+        if scholar_score.get("score") is None and DEMO_MODE_ENABLED:
+            # No real Semantic Scholar match — fall back to a deterministic synthetic
+            # profile rather than leaving this founder's Scholar signal at zero.
+            archetype, synth_profile = pick_scholar_profile(founder.id)
+            scholar_score = compute_scholar_score(synth_profile, target_keywords={sector_label.lower()})
+            scholar_is_synthetic = True
+            db.add(Signal(
+                founder_id=founder.id, company_id=company.id,
+                type=SCHOLAR_DEMO_SIGNAL_TYPE, source_url=None,
+                raw_content=json.dumps({**synth_profile, "_synthetic_archetype": archetype}, default=str),
+            ))
+            db.commit()
+
+        scholar_claim_dicts = scholar_claims(scholar_score)
+        if scholar_is_synthetic:
+            scholar_claim_dicts = [{**c, "text": f"[DEMO DATA] {c['text']}"} for c in scholar_claim_dicts]
+        claim_dicts += scholar_claim_dicts
+
+    # LinkedIn has no real intake path at all for outbound-sourced candidates (no
+    # founder has pasted their own text) — always synthetic when demo mode is on.
+    linkedin_score = None
+    if DEMO_MODE_ENABLED:
+        li_archetype, li_text = pick_linkedin_text(founder.id)
+        linkedin_score = compute_linkedin_score(li_text)
+        li_claim_dicts = [{**c, "text": f"[DEMO DATA] {c['text']}"} for c in linkedin_claims(li_text, linkedin_score)]
+        claim_dicts += li_claim_dicts
+        db.add(Signal(
+            founder_id=founder.id, company_id=company.id,
+            type=LINKEDIN_DEMO_SIGNAL_TYPE, source_url=None,
+            raw_content=json.dumps({"pasted_text": li_text, "_synthetic_archetype": li_archetype}),
+        ))
+        db.commit()
 
     claim_dicts = _fill_unobserved_components(claim_dicts, "Founder")
     _insert_claims(db, application.id, claim_dicts)
 
-    fs_result = update_founder_score(
-        db, founder.id,
-        reason=f"Outbound GitHub scan — topic/sector '{sector_label}'"
-               + (" + Scholar (deep-tech gate passed)" if deep_tech else ""),
-    )
+    reason_parts = [f"Outbound GitHub scan — topic/sector '{sector_label}'"]
+    if deep_tech:
+        reason_parts.append("Scholar (synthetic demo fallback)" if scholar_is_synthetic else "Scholar (real match)")
+    if DEMO_MODE_ENABLED:
+        reason_parts.append("LinkedIn (synthetic demo fallback)")
+    fs_result = update_founder_score(db, founder.id, reason=" + ".join(reason_parts))
 
     trend = "stable"
     if prev_founder_score is not None:
@@ -263,8 +332,7 @@ def source_and_score_github_candidate(db: Session, repo: dict, sector_label: str
         value=fs_result["founder_axis_score"] if fs_result["founder_axis_score"] is not None else fs_result["founder_score"],
         trend=trend,
         confidence=fs_result["founder_axis_coverage_pct"] / 100.0,
-        rationale="Component-weighted claims quality (GitHub"
-                  + (" + Scholar" if deep_tech else "")
+        rationale="Component-weighted claims quality (" + ", ".join(reason_parts[1:] or ["GitHub only"])
                   + f"), coverage {fs_result['founder_axis_coverage_pct']}% — axis_engine, validated against the team's ground-truth dataset.",
         cold_start=fs_result["cold_start"],
     ))
@@ -273,6 +341,7 @@ def source_and_score_github_candidate(db: Session, repo: dict, sector_label: str
     return build_candidate_payload(
         db, founder, company, application, fs_result, github_score, scholar_score,
         source_label="GitHub · live", live=True, prev_founder_score=prev_founder_score,
+        linkedin_score=linkedin_score,
     )
 
 
@@ -307,6 +376,45 @@ def is_low_footprint_from_signals(db: Session, founder_id: int) -> bool:
     return followers < 600 and public_repos < 50 and max_stars < 4000
 
 
+def _latest_signal(db: Session, founder_id: int, *types: str) -> Signal | None:
+    return (
+        db.query(Signal)
+        .filter(Signal.founder_id == founder_id, Signal.type.in_(types))
+        .order_by(Signal.ingested_at.desc())
+        .first()
+    )
+
+
+def _reload_scholarly_breakdown(db: Session, founder_id: int) -> int:
+    """Recomputes the 0-100 scholarly display score from whichever Scholar signal was
+    last stored (real or synthetic demo) — pure recomputation, no network calls, so
+    it's safe and cheap to do on every Memory reload."""
+    signal = _latest_signal(db, founder_id, "scholar_profile", SCHOLAR_DEMO_SIGNAL_TYPE)
+    if not signal:
+        return 0
+    try:
+        data = json.loads(signal.raw_content) if signal.raw_content else {}
+    except (json.JSONDecodeError, TypeError):
+        return 0
+    result = compute_scholar_score(data)
+    return round(result["score"] * 10) if result.get("score") is not None else 0
+
+
+def _reload_linkedin_breakdown(db: Session, founder_id: int) -> int:
+    signal = _latest_signal(db, founder_id, "linkedin_self_reported", LINKEDIN_DEMO_SIGNAL_TYPE)
+    if not signal:
+        return 0
+    try:
+        data = json.loads(signal.raw_content) if signal.raw_content else None
+    except (json.JSONDecodeError, TypeError):
+        data = None
+    # real linkedin_self_reported signals store the raw pasted text directly;
+    # synthetic ones store a dict with the text nested under "pasted_text"
+    text = data.get("pasted_text") if isinstance(data, dict) else signal.raw_content
+    result = compute_linkedin_score(text)
+    return round(result["score"] * 10) if result.get("score") is not None else 0
+
+
 def list_all_candidates(db: Session) -> list[dict]:
     """Rebuilds the full candidate list from the database — this is what restores
     Memory on a page reload, unlike a purely in-browser store."""
@@ -337,7 +445,11 @@ def list_all_candidates(db: Session) -> list[dict]:
             "headline": f"{company.name} — {company.snapshot or 'no description provided'}",
             "location": "See GitHub profile" if founder.github_url else "Not disclosed",
             "founderScore": founder.founder_score,
-            "scoreBreakdown": {"github": founder_axis_display, "linkedin": 0, "scholarly": 0},
+            "scoreBreakdown": {
+                "github": founder_axis_display,
+                "linkedin": _reload_linkedin_breakdown(db, founder.id),
+                "scholarly": _reload_scholarly_breakdown(db, founder.id),
+            },
             "prevFounderScore": None,
             "evidence": evidence,
             "coldStart": bool(founder_score_row.cold_start),
