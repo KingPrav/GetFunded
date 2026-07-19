@@ -1,0 +1,61 @@
+company_id,company_name,founder_id,sector,geo,stage,founded_at,prior_vc_backing
+C001,Kestrel Grid,F001,AI infra,London,Idea,2025-03-17,True
+C002,Arbor Compute,F002,Bio,Singapore,Seed,2024-06-10,True
+C003,Arbor Compute,F003,AI infra,London,Seed,2024-12-15,False
+C004,Arbor Health,F004,Devtools,NYC,Pre-seed,2024-07-17,False
+C005,Sift AI,F005,Fintech,Toronto,Seed,2025-09-06,False
+C006,Lumen Works,F006,Devtools,Warsaw,Idea,2025-08-21,False
+C007,Tessell Compute,F007,Climate,Toronto,Idea,2026-04-12,True
+C008,Vireo AI,F008,Fintech,Berlin,Seed,2025-01-01,False
+C009,Arbor Works,F009,Robotics,Singapore,Idea,2024-07-29,True
+C010,Arbor Grid,F010,Robotics,London,Seed,2024-11-07,False
+C011,Northwind Bio,F011,Bio,NYC,Prototype,2024-07-06,False
+C012,Fathom Systems,F012,Climate,Singapore,Idea,2025-10-14,True
+C013,Verity Bio,F013,Bio,NYC,Pre-seed,2026-03-16,False
+C014,Arbor Stack,F014,Healthtech,Singapore,Prototype,2025-07-20,False
+C015,Meridian Grid,F015,Climate,NYC,Prototype,2024-09-15,False
+C016,Meridian Stack,F016,Healthtech,Lagos,Idea,2025-12-17,False
+C017,Vireo Compute,F017,Vertical SaaS,SF,Prototype,2024-08-19,False
+C018,Quanta Systems,F018,Vertical SaaS,Berlin,Idea,2026-04-11,False
+C019,Torus Works,F019,Climate,Bangalore,Prototype,2025-10-08,False
+C020,Tessell Labs,F020,Fintech,Berlin,Prototype,2025-01-05,True
+C021,Arbor Health,F021,AI infra,Bangalore,Idea,2024-07-31,False
+C022,Vireo Stack,F022,Vertical SaaS,Berlin,Seed,2026-03-27,False
+C023,Osprey Stack,F023,Fintech,Warsaw,Prototype,2025-01-16,False
+C024,Umbra Dynamics,F024,Devtools,London,Pre-seed,2025-07-12,False
+C025,Halide Labs,F025,Healthtech,Lagos,Pre-seed,2024-07-28,False
+C026,Verity Works,F026,AI infra,London,Seed,2026-02-23,False
+C027,Osprey Dynamics,F027,Bio,Warsaw,Seed,2024-08-12,True
+C028,Basalt Stack,F028,Climate,Lagos,Idea,2024-08-10,False
+C029,Ledger AI,F029,Fintech,Berlin,Pre-seed,2024-12-16,False
+C030,Verity Labs,F030,Healthtech,London,Idea,2026-03-05,False
+C031,Sift Compute,F031,Healthtech,NYC,Idea,2025-12-27,False
+C032,Vireo Dynamics,F032,Climate,Toronto,Pre-seed,2026-01-24,True
+C033,Northwind AI,F033,Devtools,Berlin,Pre-seed,2024-08-13,False
+C034,Kestrel Systems,F034,Bio,Toronto,Seed,2026-01-18,False
+C035,Verity Bio,F035,Fintech,London,Seed,2025-03-27,False
+C036,Corvid Labs,F036,Climate,Singapore,Idea,2025-02-17,False
+C037,Torus Bio,F037,Devtools,London,Seed,2024-06-20,True
+C038,Lumen Health,F038,Fintech,Bangalore,Pre-seed,2026-05-04,False
+C039,Umbra Health,F039,Devtools,Warsaw,Prototype,2025-07-23,False
+C040,Pallas Health,F040,AI infra,London,Idea,2025-02-07,False
+C041,Corvid Compute,F041,Climate,Bangalore,Pre-seed,2024-12-13,False
+C042,Arbor Compute,F042,Climate,Warsaw,Idea,2024-08-10,True
+C043,Sift Bio,F043,Fintech,London,Seed,2025-09-08,False
+C044,Lumen Compute,F044,Fintech,Berlin,Pre-seed,2025-01-26,False
+C045,Halide Bio,F045,Bio,Berlin,Idea,2026-03-08,True
+C046,Sift Grid,F046,Robotics,Berlin,Seed,2025-10-24,False
+C047,Arbor Labs,F047,Devtools,Warsaw,Seed,2025-10-04,False
+C048,Cinder Systems,F048,Robotics,SF,Pre-seed,2024-12-12,False
+C049,Osprey Dynamics,F049,Vertical SaaS,Warsaw,Prototype,2025-09-01,False
+C050,Osprey AI,F050,AI infra,Nairobi,Idea,2025-03-27,False
+C051,Lumen Health,F051,Fintech,Nairobi,Seed,2024-10-24,False
+C052,Arbor Compute,F052,Devtools,Lagos,Prototype,2024-09-20,False
+C053,Quanta Systems,F053,AI infra,Lagos,Idea,2024-06-16,False
+C054,Arbor Works,F054,Fintech,London,Prototype,2025-08-26,False
+C055,Kestrel Systems,F055,Fintech,NYC,Seed,2026-02-06,False
+C056,Fathom Grid,F056,Climate,London,Seed,2025-11-15,True
+C057,Tessell Compute,F057,Fintech,SF,Seed,2025-12-18,False
+C058,Lumen Bio,F058,Bio,NYC,Pre-seed,2026-03-01,False
+C059,Northwind Labs,F059,Climate,Lagos,Prototype,2024-12-12,True
+C060,Sift Works,F060,Fintech,Warsaw,Prototype,2025-02-18,False

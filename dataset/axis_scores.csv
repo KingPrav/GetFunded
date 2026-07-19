@@ -1,0 +1,541 @@
+founder_id,company_id,axis,score_0_100,coverage_pct,trend,computed_at,snapshot_seq
+F001,C001,Founder,35.0,60,n/a,2026-03-20,1
+F001,C001,Founder,35.0,60,n/a,2026-05-19,2
+F001,C001,Founder,35.0,60,stable,2026-07-18,3
+F001,C001,Market & traction,38.0,60,n/a,2026-03-20,1
+F001,C001,Market & traction,38.0,60,n/a,2026-05-19,2
+F001,C001,Market & traction,34.0,100,stable,2026-07-18,3
+F001,C001,Idea-vs-market,37.0,67,n/a,2026-03-20,1
+F001,C001,Idea-vs-market,35.0,83,n/a,2026-05-19,2
+F001,C001,Idea-vs-market,35.0,83,stable,2026-07-18,3
+F002,C002,Founder,46.0,80,n/a,2026-03-20,1
+F002,C002,Founder,46.0,80,n/a,2026-05-19,2
+F002,C002,Founder,46.0,80,stable,2026-07-18,3
+F002,C002,Market & traction,24.0,20,n/a,2026-03-20,1
+F002,C002,Market & traction,27.0,40,n/a,2026-05-19,2
+F002,C002,Market & traction,26.0,60,stable,2026-07-18,3
+F002,C002,Idea-vs-market,,0,n/a,2026-03-20,1
+F002,C002,Idea-vs-market,34.0,33,n/a,2026-05-19,2
+F002,C002,Idea-vs-market,33.0,67,insufficient_history,2026-07-18,3
+F003,C003,Founder,39.0,20,n/a,2026-03-20,1
+F003,C003,Founder,67.0,60,n/a,2026-05-19,2
+F003,C003,Founder,56.0,80,improving,2026-07-18,3
+F003,C003,Market & traction,47.0,40,n/a,2026-03-20,1
+F003,C003,Market & traction,47.0,40,n/a,2026-05-19,2
+F003,C003,Market & traction,64.0,80,improving,2026-07-18,3
+F003,C003,Idea-vs-market,56.0,67,n/a,2026-03-20,1
+F003,C003,Idea-vs-market,56.0,67,n/a,2026-05-19,2
+F003,C003,Idea-vs-market,47.0,83,declining,2026-07-18,3
+F004,C004,Founder,39.0,40,n/a,2026-03-20,1
+F004,C004,Founder,39.0,40,n/a,2026-05-19,2
+F004,C004,Founder,37.0,60,stable,2026-07-18,3
+F004,C004,Market & traction,21.0,60,n/a,2026-03-20,1
+F004,C004,Market & traction,21.0,60,n/a,2026-05-19,2
+F004,C004,Market & traction,21.0,80,stable,2026-07-18,3
+F004,C004,Idea-vs-market,16.0,33,n/a,2026-03-20,1
+F004,C004,Idea-vs-market,16.0,33,n/a,2026-05-19,2
+F004,C004,Idea-vs-market,16.0,83,stable,2026-07-18,3
+F005,C005,Founder,61.0,40,n/a,2026-03-20,1
+F005,C005,Founder,51.0,60,n/a,2026-05-19,2
+F005,C005,Founder,51.0,60,declining,2026-07-18,3
+F005,C005,Market & traction,74.0,20,n/a,2026-03-20,1
+F005,C005,Market & traction,45.0,40,n/a,2026-05-19,2
+F005,C005,Market & traction,38.0,100,declining,2026-07-18,3
+F005,C005,Idea-vs-market,58.0,50,n/a,2026-03-20,1
+F005,C005,Idea-vs-market,66.0,83,n/a,2026-05-19,2
+F005,C005,Idea-vs-market,59.0,100,stable,2026-07-18,3
+F006,C006,Founder,13.0,40,n/a,2026-03-20,1
+F006,C006,Founder,13.0,40,n/a,2026-05-19,2
+F006,C006,Founder,11.0,80,stable,2026-07-18,3
+F006,C006,Market & traction,33.0,100,n/a,2026-03-20,1
+F006,C006,Market & traction,33.0,100,n/a,2026-05-19,2
+F006,C006,Market & traction,33.0,100,stable,2026-07-18,3
+F006,C006,Idea-vs-market,29.0,83,n/a,2026-03-20,1
+F006,C006,Idea-vs-market,29.0,100,n/a,2026-05-19,2
+F006,C006,Idea-vs-market,29.0,100,stable,2026-07-18,3
+F007,C007,Founder,,0,n/a,2026-03-20,1
+F007,C007,Founder,24.0,20,n/a,2026-05-19,2
+F007,C007,Founder,42.0,80,insufficient_history,2026-07-18,3
+F007,C007,Market & traction,32.0,80,n/a,2026-03-20,1
+F007,C007,Market & traction,32.0,80,n/a,2026-05-19,2
+F007,C007,Market & traction,33.0,100,stable,2026-07-18,3
+F007,C007,Idea-vs-market,45.0,67,n/a,2026-03-20,1
+F007,C007,Idea-vs-market,43.0,83,n/a,2026-05-19,2
+F007,C007,Idea-vs-market,43.0,100,stable,2026-07-18,3
+F008,C008,Founder,49.0,80,n/a,2026-03-20,1
+F008,C008,Founder,49.0,80,n/a,2026-05-19,2
+F008,C008,Founder,49.0,80,stable,2026-07-18,3
+F008,C008,Market & traction,53.0,80,n/a,2026-03-20,1
+F008,C008,Market & traction,48.0,100,n/a,2026-05-19,2
+F008,C008,Market & traction,48.0,100,declining,2026-07-18,3
+F008,C008,Idea-vs-market,46.0,50,n/a,2026-03-20,1
+F008,C008,Idea-vs-market,52.0,67,n/a,2026-05-19,2
+F008,C008,Idea-vs-market,52.0,83,improving,2026-07-18,3
+F009,C009,Founder,32.0,20,n/a,2026-03-20,1
+F009,C009,Founder,45.0,40,n/a,2026-05-19,2
+F009,C009,Founder,46.0,80,improving,2026-07-18,3
+F009,C009,Market & traction,24.0,20,n/a,2026-03-20,1
+F009,C009,Market & traction,37.0,40,n/a,2026-05-19,2
+F009,C009,Market & traction,43.0,80,improving,2026-07-18,3
+F009,C009,Idea-vs-market,48.0,100,n/a,2026-03-20,1
+F009,C009,Idea-vs-market,48.0,100,n/a,2026-05-19,2
+F009,C009,Idea-vs-market,48.0,100,stable,2026-07-18,3
+F010,C010,Founder,62.0,20,n/a,2026-03-20,1
+F010,C010,Founder,60.0,80,n/a,2026-05-19,2
+F010,C010,Founder,58.0,100,stable,2026-07-18,3
+F010,C010,Market & traction,74.0,40,n/a,2026-03-20,1
+F010,C010,Market & traction,74.0,40,n/a,2026-05-19,2
+F010,C010,Market & traction,74.0,40,stable,2026-07-18,3
+F010,C010,Idea-vs-market,55.0,100,n/a,2026-03-20,1
+F010,C010,Idea-vs-market,55.0,100,n/a,2026-05-19,2
+F010,C010,Idea-vs-market,55.0,100,stable,2026-07-18,3
+F011,C011,Founder,19.0,100,n/a,2026-03-20,1
+F011,C011,Founder,19.0,100,n/a,2026-05-19,2
+F011,C011,Founder,19.0,100,stable,2026-07-18,3
+F011,C011,Market & traction,17.0,40,n/a,2026-03-20,1
+F011,C011,Market & traction,20.0,80,n/a,2026-05-19,2
+F011,C011,Market & traction,20.0,80,stable,2026-07-18,3
+F011,C011,Idea-vs-market,24.0,67,n/a,2026-03-20,1
+F011,C011,Idea-vs-market,29.0,83,n/a,2026-05-19,2
+F011,C011,Idea-vs-market,24.0,100,stable,2026-07-18,3
+F012,C012,Founder,65.0,80,n/a,2026-03-20,1
+F012,C012,Founder,65.0,80,n/a,2026-05-19,2
+F012,C012,Founder,65.0,80,stable,2026-07-18,3
+F012,C012,Market & traction,54.0,60,n/a,2026-03-20,1
+F012,C012,Market & traction,54.0,60,n/a,2026-05-19,2
+F012,C012,Market & traction,49.0,80,declining,2026-07-18,3
+F012,C012,Idea-vs-market,76.0,67,n/a,2026-03-20,1
+F012,C012,Idea-vs-market,75.0,83,n/a,2026-05-19,2
+F012,C012,Idea-vs-market,75.0,83,stable,2026-07-18,3
+F013,C013,Founder,59.0,40,n/a,2026-03-20,1
+F013,C013,Founder,54.0,60,n/a,2026-05-19,2
+F013,C013,Founder,54.0,60,declining,2026-07-18,3
+F013,C013,Market & traction,86.0,20,n/a,2026-03-20,1
+F013,C013,Market & traction,53.0,40,n/a,2026-05-19,2
+F013,C013,Market & traction,34.0,100,declining,2026-07-18,3
+F013,C013,Idea-vs-market,48.0,83,n/a,2026-03-20,1
+F013,C013,Idea-vs-market,48.0,83,n/a,2026-05-19,2
+F013,C013,Idea-vs-market,48.0,83,stable,2026-07-18,3
+F014,C014,Founder,32.0,40,n/a,2026-03-20,1
+F014,C014,Founder,30.0,100,n/a,2026-05-19,2
+F014,C014,Founder,30.0,100,stable,2026-07-18,3
+F014,C014,Market & traction,21.0,40,n/a,2026-03-20,1
+F014,C014,Market & traction,18.0,60,n/a,2026-05-19,2
+F014,C014,Market & traction,25.0,100,stable,2026-07-18,3
+F014,C014,Idea-vs-market,27.0,33,n/a,2026-03-20,1
+F014,C014,Idea-vs-market,27.0,33,n/a,2026-05-19,2
+F014,C014,Idea-vs-market,26.0,67,stable,2026-07-18,3
+F015,C015,Founder,49.0,80,n/a,2026-03-20,1
+F015,C015,Founder,47.0,100,n/a,2026-05-19,2
+F015,C015,Founder,47.0,100,stable,2026-07-18,3
+F015,C015,Market & traction,72.0,20,n/a,2026-03-20,1
+F015,C015,Market & traction,61.0,40,n/a,2026-05-19,2
+F015,C015,Market & traction,45.0,80,declining,2026-07-18,3
+F015,C015,Idea-vs-market,56.0,67,n/a,2026-03-20,1
+F015,C015,Idea-vs-market,54.0,100,n/a,2026-05-19,2
+F015,C015,Idea-vs-market,54.0,100,stable,2026-07-18,3
+F016,C016,Founder,12.0,40,n/a,2026-03-20,1
+F016,C016,Founder,12.0,40,n/a,2026-05-19,2
+F016,C016,Founder,12.0,60,stable,2026-07-18,3
+F016,C016,Market & traction,15.0,80,n/a,2026-03-20,1
+F016,C016,Market & traction,15.0,80,n/a,2026-05-19,2
+F016,C016,Market & traction,15.0,80,stable,2026-07-18,3
+F016,C016,Idea-vs-market,16.0,33,n/a,2026-03-20,1
+F016,C016,Idea-vs-market,16.0,67,n/a,2026-05-19,2
+F016,C016,Idea-vs-market,16.0,100,stable,2026-07-18,3
+F017,C017,Founder,17.0,40,n/a,2026-03-20,1
+F017,C017,Founder,17.0,40,n/a,2026-05-19,2
+F017,C017,Founder,22.0,100,improving,2026-07-18,3
+F017,C017,Market & traction,23.0,60,n/a,2026-03-20,1
+F017,C017,Market & traction,21.0,100,n/a,2026-05-19,2
+F017,C017,Market & traction,21.0,100,stable,2026-07-18,3
+F017,C017,Idea-vs-market,23.0,67,n/a,2026-03-20,1
+F017,C017,Idea-vs-market,24.0,83,n/a,2026-05-19,2
+F017,C017,Idea-vs-market,24.0,83,stable,2026-07-18,3
+F018,C018,Founder,56.0,40,n/a,2026-03-20,1
+F018,C018,Founder,56.0,40,n/a,2026-05-19,2
+F018,C018,Founder,56.0,40,stable,2026-07-18,3
+F018,C018,Market & traction,64.0,20,n/a,2026-03-20,1
+F018,C018,Market & traction,62.0,80,n/a,2026-05-19,2
+F018,C018,Market & traction,64.0,100,stable,2026-07-18,3
+F018,C018,Idea-vs-market,62.0,67,n/a,2026-03-20,1
+F018,C018,Idea-vs-market,62.0,67,n/a,2026-05-19,2
+F018,C018,Idea-vs-market,55.0,100,declining,2026-07-18,3
+F019,C019,Founder,51.0,60,n/a,2026-03-20,1
+F019,C019,Founder,53.0,100,n/a,2026-05-19,2
+F019,C019,Founder,53.0,100,stable,2026-07-18,3
+F019,C019,Market & traction,23.0,80,n/a,2026-03-20,1
+F019,C019,Market & traction,26.0,100,n/a,2026-05-19,2
+F019,C019,Market & traction,26.0,100,stable,2026-07-18,3
+F019,C019,Idea-vs-market,30.0,67,n/a,2026-03-20,1
+F019,C019,Idea-vs-market,28.0,83,n/a,2026-05-19,2
+F019,C019,Idea-vs-market,28.0,100,stable,2026-07-18,3
+F020,C020,Founder,31.0,80,n/a,2026-03-20,1
+F020,C020,Founder,31.0,80,n/a,2026-05-19,2
+F020,C020,Founder,31.0,80,stable,2026-07-18,3
+F020,C020,Market & traction,36.0,60,n/a,2026-03-20,1
+F020,C020,Market & traction,36.0,60,n/a,2026-05-19,2
+F020,C020,Market & traction,36.0,60,stable,2026-07-18,3
+F020,C020,Idea-vs-market,25.0,67,n/a,2026-03-20,1
+F020,C020,Idea-vs-market,25.0,67,n/a,2026-05-19,2
+F020,C020,Idea-vs-market,30.0,100,improving,2026-07-18,3
+F021,C021,Founder,31.0,20,n/a,2026-03-20,1
+F021,C021,Founder,26.0,60,n/a,2026-05-19,2
+F021,C021,Founder,23.0,80,declining,2026-07-18,3
+F021,C021,Market & traction,16.0,40,n/a,2026-03-20,1
+F021,C021,Market & traction,18.0,60,n/a,2026-05-19,2
+F021,C021,Market & traction,18.0,60,stable,2026-07-18,3
+F021,C021,Idea-vs-market,32.0,67,n/a,2026-03-20,1
+F021,C021,Idea-vs-market,32.0,67,n/a,2026-05-19,2
+F021,C021,Idea-vs-market,32.0,67,stable,2026-07-18,3
+F022,C022,Founder,44.0,80,n/a,2026-03-20,1
+F022,C022,Founder,44.0,80,n/a,2026-05-19,2
+F022,C022,Founder,44.0,80,stable,2026-07-18,3
+F022,C022,Market & traction,79.0,60,n/a,2026-03-20,1
+F022,C022,Market & traction,67.0,80,n/a,2026-05-19,2
+F022,C022,Market & traction,67.0,80,declining,2026-07-18,3
+F022,C022,Idea-vs-market,62.0,83,n/a,2026-03-20,1
+F022,C022,Idea-vs-market,59.0,100,n/a,2026-05-19,2
+F022,C022,Idea-vs-market,59.0,100,stable,2026-07-18,3
+F023,C023,Founder,77.0,60,n/a,2026-03-20,1
+F023,C023,Founder,77.0,60,n/a,2026-05-19,2
+F023,C023,Founder,74.0,80,stable,2026-07-18,3
+F023,C023,Market & traction,58.0,100,n/a,2026-03-20,1
+F023,C023,Market & traction,58.0,100,n/a,2026-05-19,2
+F023,C023,Market & traction,58.0,100,stable,2026-07-18,3
+F023,C023,Idea-vs-market,42.0,33,n/a,2026-03-20,1
+F023,C023,Idea-vs-market,68.0,50,n/a,2026-05-19,2
+F023,C023,Idea-vs-market,64.0,100,improving,2026-07-18,3
+F024,C024,Founder,31.0,80,n/a,2026-03-20,1
+F024,C024,Founder,36.0,100,n/a,2026-05-19,2
+F024,C024,Founder,36.0,100,improving,2026-07-18,3
+F024,C024,Market & traction,29.0,80,n/a,2026-03-20,1
+F024,C024,Market & traction,29.0,80,n/a,2026-05-19,2
+F024,C024,Market & traction,29.0,80,stable,2026-07-18,3
+F024,C024,Idea-vs-market,58.0,33,n/a,2026-03-20,1
+F024,C024,Idea-vs-market,50.0,67,n/a,2026-05-19,2
+F024,C024,Idea-vs-market,47.0,100,declining,2026-07-18,3
+F025,C025,Founder,12.0,40,n/a,2026-03-20,1
+F025,C025,Founder,13.0,60,n/a,2026-05-19,2
+F025,C025,Founder,17.0,80,improving,2026-07-18,3
+F025,C025,Market & traction,12.0,60,n/a,2026-03-20,1
+F025,C025,Market & traction,12.0,60,n/a,2026-05-19,2
+F025,C025,Market & traction,12.0,60,stable,2026-07-18,3
+F025,C025,Idea-vs-market,30.0,17,n/a,2026-03-20,1
+F025,C025,Idea-vs-market,23.0,33,n/a,2026-05-19,2
+F025,C025,Idea-vs-market,28.0,67,stable,2026-07-18,3
+F026,C026,Founder,36.0,20,n/a,2026-03-20,1
+F026,C026,Founder,26.0,80,n/a,2026-05-19,2
+F026,C026,Founder,26.0,80,declining,2026-07-18,3
+F026,C026,Market & traction,31.0,60,n/a,2026-03-20,1
+F026,C026,Market & traction,31.0,60,n/a,2026-05-19,2
+F026,C026,Market & traction,31.0,60,stable,2026-07-18,3
+F026,C026,Idea-vs-market,47.0,50,n/a,2026-03-20,1
+F026,C026,Idea-vs-market,52.0,83,n/a,2026-05-19,2
+F026,C026,Idea-vs-market,52.0,83,improving,2026-07-18,3
+F027,C027,Founder,64.0,80,n/a,2026-03-20,1
+F027,C027,Founder,64.0,80,n/a,2026-05-19,2
+F027,C027,Founder,66.0,100,stable,2026-07-18,3
+F027,C027,Market & traction,66.0,80,n/a,2026-03-20,1
+F027,C027,Market & traction,66.0,80,n/a,2026-05-19,2
+F027,C027,Market & traction,60.0,100,declining,2026-07-18,3
+F027,C027,Idea-vs-market,59.0,33,n/a,2026-03-20,1
+F027,C027,Idea-vs-market,67.0,67,n/a,2026-05-19,2
+F027,C027,Idea-vs-market,67.0,67,improving,2026-07-18,3
+F028,C028,Founder,74.0,60,n/a,2026-03-20,1
+F028,C028,Founder,66.0,80,n/a,2026-05-19,2
+F028,C028,Founder,66.0,100,declining,2026-07-18,3
+F028,C028,Market & traction,72.0,60,n/a,2026-03-20,1
+F028,C028,Market & traction,72.0,80,n/a,2026-05-19,2
+F028,C028,Market & traction,72.0,100,stable,2026-07-18,3
+F028,C028,Idea-vs-market,40.0,50,n/a,2026-03-20,1
+F028,C028,Idea-vs-market,40.0,50,n/a,2026-05-19,2
+F028,C028,Idea-vs-market,41.0,67,stable,2026-07-18,3
+F029,C029,Founder,36.0,60,n/a,2026-03-20,1
+F029,C029,Founder,36.0,60,n/a,2026-05-19,2
+F029,C029,Founder,42.0,80,improving,2026-07-18,3
+F029,C029,Market & traction,49.0,60,n/a,2026-03-20,1
+F029,C029,Market & traction,49.0,60,n/a,2026-05-19,2
+F029,C029,Market & traction,49.0,60,stable,2026-07-18,3
+F029,C029,Idea-vs-market,45.0,67,n/a,2026-03-20,1
+F029,C029,Idea-vs-market,45.0,67,n/a,2026-05-19,2
+F029,C029,Idea-vs-market,45.0,67,stable,2026-07-18,3
+F030,C030,Founder,63.0,80,n/a,2026-03-20,1
+F030,C030,Founder,63.0,80,n/a,2026-05-19,2
+F030,C030,Founder,62.0,100,stable,2026-07-18,3
+F030,C030,Market & traction,48.0,40,n/a,2026-03-20,1
+F030,C030,Market & traction,39.0,80,n/a,2026-05-19,2
+F030,C030,Market & traction,36.0,100,declining,2026-07-18,3
+F030,C030,Idea-vs-market,63.0,83,n/a,2026-03-20,1
+F030,C030,Idea-vs-market,64.0,100,n/a,2026-05-19,2
+F030,C030,Idea-vs-market,64.0,100,stable,2026-07-18,3
+F031,C031,Founder,56.0,60,n/a,2026-03-20,1
+F031,C031,Founder,50.0,80,n/a,2026-05-19,2
+F031,C031,Founder,50.0,80,declining,2026-07-18,3
+F031,C031,Market & traction,34.0,60,n/a,2026-03-20,1
+F031,C031,Market & traction,34.0,60,n/a,2026-05-19,2
+F031,C031,Market & traction,34.0,60,stable,2026-07-18,3
+F031,C031,Idea-vs-market,45.0,100,n/a,2026-03-20,1
+F031,C031,Idea-vs-market,45.0,100,n/a,2026-05-19,2
+F031,C031,Idea-vs-market,45.0,100,stable,2026-07-18,3
+F032,C032,Founder,51.0,60,n/a,2026-03-20,1
+F032,C032,Founder,48.0,100,n/a,2026-05-19,2
+F032,C032,Founder,48.0,100,stable,2026-07-18,3
+F032,C032,Market & traction,54.0,60,n/a,2026-03-20,1
+F032,C032,Market & traction,54.0,60,n/a,2026-05-19,2
+F032,C032,Market & traction,50.0,80,stable,2026-07-18,3
+F032,C032,Idea-vs-market,16.0,17,n/a,2026-03-20,1
+F032,C032,Idea-vs-market,49.0,67,n/a,2026-05-19,2
+F032,C032,Idea-vs-market,51.0,100,improving,2026-07-18,3
+F033,C033,Founder,34.0,80,n/a,2026-03-20,1
+F033,C033,Founder,33.0,100,n/a,2026-05-19,2
+F033,C033,Founder,33.0,100,stable,2026-07-18,3
+F033,C033,Market & traction,13.0,40,n/a,2026-03-20,1
+F033,C033,Market & traction,14.0,60,n/a,2026-05-19,2
+F033,C033,Market & traction,14.0,80,stable,2026-07-18,3
+F033,C033,Idea-vs-market,29.0,67,n/a,2026-03-20,1
+F033,C033,Idea-vs-market,26.0,83,n/a,2026-05-19,2
+F033,C033,Idea-vs-market,26.0,83,stable,2026-07-18,3
+F034,C034,Founder,55.0,80,n/a,2026-03-20,1
+F034,C034,Founder,55.0,80,n/a,2026-05-19,2
+F034,C034,Founder,55.0,80,stable,2026-07-18,3
+F034,C034,Market & traction,63.0,40,n/a,2026-03-20,1
+F034,C034,Market & traction,42.0,80,n/a,2026-05-19,2
+F034,C034,Market & traction,38.0,100,declining,2026-07-18,3
+F034,C034,Idea-vs-market,54.0,67,n/a,2026-03-20,1
+F034,C034,Idea-vs-market,55.0,83,n/a,2026-05-19,2
+F034,C034,Idea-vs-market,55.0,83,stable,2026-07-18,3
+F035,C035,Founder,24.0,80,n/a,2026-03-20,1
+F035,C035,Founder,23.0,100,n/a,2026-05-19,2
+F035,C035,Founder,23.0,100,stable,2026-07-18,3
+F035,C035,Market & traction,23.0,20,n/a,2026-03-20,1
+F035,C035,Market & traction,21.0,60,n/a,2026-05-19,2
+F035,C035,Market & traction,17.0,80,declining,2026-07-18,3
+F035,C035,Idea-vs-market,31.0,67,n/a,2026-03-20,1
+F035,C035,Idea-vs-market,35.0,83,n/a,2026-05-19,2
+F035,C035,Idea-vs-market,33.0,100,stable,2026-07-18,3
+F036,C036,Founder,62.0,40,n/a,2026-03-20,1
+F036,C036,Founder,62.0,40,n/a,2026-05-19,2
+F036,C036,Founder,65.0,60,stable,2026-07-18,3
+F036,C036,Market & traction,87.0,40,n/a,2026-03-20,1
+F036,C036,Market & traction,82.0,60,n/a,2026-05-19,2
+F036,C036,Market & traction,82.0,60,declining,2026-07-18,3
+F036,C036,Idea-vs-market,46.0,50,n/a,2026-03-20,1
+F036,C036,Idea-vs-market,61.0,67,n/a,2026-05-19,2
+F036,C036,Idea-vs-market,65.0,83,improving,2026-07-18,3
+F037,C037,Founder,38.0,80,n/a,2026-03-20,1
+F037,C037,Founder,38.0,80,n/a,2026-05-19,2
+F037,C037,Founder,38.0,80,stable,2026-07-18,3
+F037,C037,Market & traction,38.0,20,n/a,2026-03-20,1
+F037,C037,Market & traction,41.0,80,n/a,2026-05-19,2
+F037,C037,Market & traction,48.0,100,improving,2026-07-18,3
+F037,C037,Idea-vs-market,39.0,17,n/a,2026-03-20,1
+F037,C037,Idea-vs-market,42.0,50,n/a,2026-05-19,2
+F037,C037,Idea-vs-market,42.0,50,stable,2026-07-18,3
+F038,C038,Founder,58.0,80,n/a,2026-03-20,1
+F038,C038,Founder,53.0,100,n/a,2026-05-19,2
+F038,C038,Founder,53.0,100,declining,2026-07-18,3
+F038,C038,Market & traction,56.0,60,n/a,2026-03-20,1
+F038,C038,Market & traction,56.0,60,n/a,2026-05-19,2
+F038,C038,Market & traction,54.0,80,stable,2026-07-18,3
+F038,C038,Idea-vs-market,28.0,83,n/a,2026-03-20,1
+F038,C038,Idea-vs-market,35.0,100,n/a,2026-05-19,2
+F038,C038,Idea-vs-market,35.0,100,improving,2026-07-18,3
+F039,C039,Founder,46.0,80,n/a,2026-03-20,1
+F039,C039,Founder,47.0,100,n/a,2026-05-19,2
+F039,C039,Founder,47.0,100,stable,2026-07-18,3
+F039,C039,Market & traction,66.0,20,n/a,2026-03-20,1
+F039,C039,Market & traction,63.0,100,n/a,2026-05-19,2
+F039,C039,Market & traction,63.0,100,stable,2026-07-18,3
+F039,C039,Idea-vs-market,29.0,67,n/a,2026-03-20,1
+F039,C039,Idea-vs-market,39.0,100,n/a,2026-05-19,2
+F039,C039,Idea-vs-market,39.0,100,improving,2026-07-18,3
+F040,C040,Founder,83.0,40,n/a,2026-03-20,1
+F040,C040,Founder,69.0,60,n/a,2026-05-19,2
+F040,C040,Founder,69.0,60,declining,2026-07-18,3
+F040,C040,Market & traction,55.0,100,n/a,2026-03-20,1
+F040,C040,Market & traction,55.0,100,n/a,2026-05-19,2
+F040,C040,Market & traction,55.0,100,stable,2026-07-18,3
+F040,C040,Idea-vs-market,45.0,67,n/a,2026-03-20,1
+F040,C040,Idea-vs-market,45.0,83,n/a,2026-05-19,2
+F040,C040,Idea-vs-market,45.0,83,stable,2026-07-18,3
+F041,C041,Founder,29.0,60,n/a,2026-03-20,1
+F041,C041,Founder,29.0,60,n/a,2026-05-19,2
+F041,C041,Founder,29.0,60,stable,2026-07-18,3
+F041,C041,Market & traction,44.0,80,n/a,2026-03-20,1
+F041,C041,Market & traction,41.0,100,n/a,2026-05-19,2
+F041,C041,Market & traction,41.0,100,stable,2026-07-18,3
+F041,C041,Idea-vs-market,34.0,67,n/a,2026-03-20,1
+F041,C041,Idea-vs-market,29.0,83,n/a,2026-05-19,2
+F041,C041,Idea-vs-market,29.0,83,declining,2026-07-18,3
+F042,C042,Founder,17.0,80,n/a,2026-03-20,1
+F042,C042,Founder,17.0,80,n/a,2026-05-19,2
+F042,C042,Founder,17.0,100,stable,2026-07-18,3
+F042,C042,Market & traction,41.0,60,n/a,2026-03-20,1
+F042,C042,Market & traction,41.0,60,n/a,2026-05-19,2
+F042,C042,Market & traction,32.0,100,declining,2026-07-18,3
+F042,C042,Idea-vs-market,15.0,50,n/a,2026-03-20,1
+F042,C042,Idea-vs-market,15.0,50,n/a,2026-05-19,2
+F042,C042,Idea-vs-market,19.0,83,stable,2026-07-18,3
+F043,C043,Founder,47.0,60,n/a,2026-03-20,1
+F043,C043,Founder,47.0,60,n/a,2026-05-19,2
+F043,C043,Founder,38.0,80,declining,2026-07-18,3
+F043,C043,Market & traction,29.0,60,n/a,2026-03-20,1
+F043,C043,Market & traction,29.0,60,n/a,2026-05-19,2
+F043,C043,Market & traction,28.0,80,stable,2026-07-18,3
+F043,C043,Idea-vs-market,41.0,67,n/a,2026-03-20,1
+F043,C043,Idea-vs-market,35.0,100,n/a,2026-05-19,2
+F043,C043,Idea-vs-market,35.0,100,declining,2026-07-18,3
+F044,C044,Founder,30.0,60,n/a,2026-03-20,1
+F044,C044,Founder,25.0,80,n/a,2026-05-19,2
+F044,C044,Founder,25.0,100,declining,2026-07-18,3
+F044,C044,Market & traction,23.0,40,n/a,2026-03-20,1
+F044,C044,Market & traction,23.0,40,n/a,2026-05-19,2
+F044,C044,Market & traction,26.0,80,stable,2026-07-18,3
+F044,C044,Idea-vs-market,26.0,100,n/a,2026-03-20,1
+F044,C044,Idea-vs-market,26.0,100,n/a,2026-05-19,2
+F044,C044,Idea-vs-market,26.0,100,stable,2026-07-18,3
+F045,C045,Founder,23.0,40,n/a,2026-03-20,1
+F045,C045,Founder,24.0,60,n/a,2026-05-19,2
+F045,C045,Founder,26.0,80,stable,2026-07-18,3
+F045,C045,Market & traction,11.0,20,n/a,2026-03-20,1
+F045,C045,Market & traction,25.0,80,n/a,2026-05-19,2
+F045,C045,Market & traction,23.0,100,improving,2026-07-18,3
+F045,C045,Idea-vs-market,29.0,67,n/a,2026-03-20,1
+F045,C045,Idea-vs-market,26.0,83,n/a,2026-05-19,2
+F045,C045,Idea-vs-market,26.0,83,stable,2026-07-18,3
+F046,C046,Founder,66.0,60,n/a,2026-03-20,1
+F046,C046,Founder,66.0,60,n/a,2026-05-19,2
+F046,C046,Founder,64.0,80,stable,2026-07-18,3
+F046,C046,Market & traction,68.0,60,n/a,2026-03-20,1
+F046,C046,Market & traction,72.0,80,n/a,2026-05-19,2
+F046,C046,Market & traction,72.0,100,stable,2026-07-18,3
+F046,C046,Idea-vs-market,56.0,67,n/a,2026-03-20,1
+F046,C046,Idea-vs-market,56.0,83,n/a,2026-05-19,2
+F046,C046,Idea-vs-market,59.0,100,stable,2026-07-18,3
+F047,C047,Founder,32.0,80,n/a,2026-03-20,1
+F047,C047,Founder,30.0,100,n/a,2026-05-19,2
+F047,C047,Founder,30.0,100,stable,2026-07-18,3
+F047,C047,Market & traction,23.0,80,n/a,2026-03-20,1
+F047,C047,Market & traction,23.0,80,n/a,2026-05-19,2
+F047,C047,Market & traction,23.0,80,stable,2026-07-18,3
+F047,C047,Idea-vs-market,36.0,50,n/a,2026-03-20,1
+F047,C047,Idea-vs-market,44.0,67,n/a,2026-05-19,2
+F047,C047,Idea-vs-market,42.0,100,improving,2026-07-18,3
+F048,C048,Founder,18.0,100,n/a,2026-03-20,1
+F048,C048,Founder,18.0,100,n/a,2026-05-19,2
+F048,C048,Founder,18.0,100,stable,2026-07-18,3
+F048,C048,Market & traction,17.0,60,n/a,2026-03-20,1
+F048,C048,Market & traction,16.0,80,n/a,2026-05-19,2
+F048,C048,Market & traction,16.0,100,stable,2026-07-18,3
+F048,C048,Idea-vs-market,35.0,33,n/a,2026-03-20,1
+F048,C048,Idea-vs-market,27.0,67,n/a,2026-05-19,2
+F048,C048,Idea-vs-market,26.0,83,declining,2026-07-18,3
+F049,C049,Founder,22.0,20,n/a,2026-03-20,1
+F049,C049,Founder,34.0,80,n/a,2026-05-19,2
+F049,C049,Founder,34.0,80,improving,2026-07-18,3
+F049,C049,Market & traction,25.0,80,n/a,2026-03-20,1
+F049,C049,Market & traction,28.0,100,n/a,2026-05-19,2
+F049,C049,Market & traction,28.0,100,stable,2026-07-18,3
+F049,C049,Idea-vs-market,16.0,33,n/a,2026-03-20,1
+F049,C049,Idea-vs-market,16.0,50,n/a,2026-05-19,2
+F049,C049,Idea-vs-market,24.0,83,improving,2026-07-18,3
+F050,C050,Founder,80.0,40,n/a,2026-03-20,1
+F050,C050,Founder,77.0,60,n/a,2026-05-19,2
+F050,C050,Founder,69.0,100,declining,2026-07-18,3
+F050,C050,Market & traction,67.0,80,n/a,2026-03-20,1
+F050,C050,Market & traction,67.0,80,n/a,2026-05-19,2
+F050,C050,Market & traction,58.0,100,declining,2026-07-18,3
+F050,C050,Idea-vs-market,88.0,33,n/a,2026-03-20,1
+F050,C050,Idea-vs-market,89.0,67,n/a,2026-05-19,2
+F050,C050,Idea-vs-market,89.0,67,stable,2026-07-18,3
+F051,C051,Founder,33.0,80,n/a,2026-03-20,1
+F051,C051,Founder,33.0,80,n/a,2026-05-19,2
+F051,C051,Founder,30.0,100,stable,2026-07-18,3
+F051,C051,Market & traction,29.0,80,n/a,2026-03-20,1
+F051,C051,Market & traction,27.0,100,n/a,2026-05-19,2
+F051,C051,Market & traction,27.0,100,stable,2026-07-18,3
+F051,C051,Idea-vs-market,24.0,83,n/a,2026-03-20,1
+F051,C051,Idea-vs-market,24.0,83,n/a,2026-05-19,2
+F051,C051,Idea-vs-market,24.0,83,stable,2026-07-18,3
+F052,C052,Founder,19.0,40,n/a,2026-03-20,1
+F052,C052,Founder,17.0,60,n/a,2026-05-19,2
+F052,C052,Founder,14.0,80,declining,2026-07-18,3
+F052,C052,Market & traction,17.0,60,n/a,2026-03-20,1
+F052,C052,Market & traction,19.0,80,n/a,2026-05-19,2
+F052,C052,Market & traction,18.0,100,stable,2026-07-18,3
+F052,C052,Idea-vs-market,23.0,17,n/a,2026-03-20,1
+F052,C052,Idea-vs-market,36.0,33,n/a,2026-05-19,2
+F052,C052,Idea-vs-market,30.0,50,improving,2026-07-18,3
+F053,C053,Founder,24.0,20,n/a,2026-03-20,1
+F053,C053,Founder,24.0,20,n/a,2026-05-19,2
+F053,C053,Founder,46.0,80,improving,2026-07-18,3
+F053,C053,Market & traction,76.0,80,n/a,2026-03-20,1
+F053,C053,Market & traction,76.0,80,n/a,2026-05-19,2
+F053,C053,Market & traction,76.0,80,stable,2026-07-18,3
+F053,C053,Idea-vs-market,70.0,67,n/a,2026-03-20,1
+F053,C053,Idea-vs-market,70.0,83,n/a,2026-05-19,2
+F053,C053,Idea-vs-market,66.0,100,stable,2026-07-18,3
+F054,C054,Founder,39.0,60,n/a,2026-03-20,1
+F054,C054,Founder,39.0,60,n/a,2026-05-19,2
+F054,C054,Founder,39.0,100,stable,2026-07-18,3
+F054,C054,Market & traction,30.0,20,n/a,2026-03-20,1
+F054,C054,Market & traction,29.0,40,n/a,2026-05-19,2
+F054,C054,Market & traction,30.0,80,stable,2026-07-18,3
+F054,C054,Idea-vs-market,32.0,83,n/a,2026-03-20,1
+F054,C054,Idea-vs-market,32.0,83,n/a,2026-05-19,2
+F054,C054,Idea-vs-market,32.0,100,stable,2026-07-18,3
+F055,C055,Founder,79.0,80,n/a,2026-03-20,1
+F055,C055,Founder,79.0,80,n/a,2026-05-19,2
+F055,C055,Founder,79.0,80,stable,2026-07-18,3
+F055,C055,Market & traction,44.0,60,n/a,2026-03-20,1
+F055,C055,Market & traction,50.0,80,n/a,2026-05-19,2
+F055,C055,Market & traction,50.0,80,improving,2026-07-18,3
+F055,C055,Idea-vs-market,61.0,50,n/a,2026-03-20,1
+F055,C055,Idea-vs-market,63.0,67,n/a,2026-05-19,2
+F055,C055,Idea-vs-market,63.0,67,stable,2026-07-18,3
+F056,C056,Founder,93.0,40,n/a,2026-03-20,1
+F056,C056,Founder,85.0,60,n/a,2026-05-19,2
+F056,C056,Founder,85.0,60,declining,2026-07-18,3
+F056,C056,Market & traction,53.0,60,n/a,2026-03-20,1
+F056,C056,Market & traction,53.0,60,n/a,2026-05-19,2
+F056,C056,Market & traction,53.0,60,stable,2026-07-18,3
+F056,C056,Idea-vs-market,40.0,33,n/a,2026-03-20,1
+F056,C056,Idea-vs-market,38.0,50,n/a,2026-05-19,2
+F056,C056,Idea-vs-market,32.0,83,declining,2026-07-18,3
+F057,C057,Founder,58.0,60,n/a,2026-03-20,1
+F057,C057,Founder,64.0,80,n/a,2026-05-19,2
+F057,C057,Founder,66.0,100,improving,2026-07-18,3
+F057,C057,Market & traction,33.0,40,n/a,2026-03-20,1
+F057,C057,Market & traction,33.0,40,n/a,2026-05-19,2
+F057,C057,Market & traction,30.0,60,stable,2026-07-18,3
+F057,C057,Idea-vs-market,34.0,50,n/a,2026-03-20,1
+F057,C057,Idea-vs-market,32.0,67,n/a,2026-05-19,2
+F057,C057,Idea-vs-market,45.0,100,improving,2026-07-18,3
+F058,C058,Founder,47.0,80,n/a,2026-03-20,1
+F058,C058,Founder,47.0,80,n/a,2026-05-19,2
+F058,C058,Founder,38.0,100,declining,2026-07-18,3
+F058,C058,Market & traction,38.0,60,n/a,2026-03-20,1
+F058,C058,Market & traction,34.0,80,n/a,2026-05-19,2
+F058,C058,Market & traction,34.0,100,stable,2026-07-18,3
+F058,C058,Idea-vs-market,43.0,67,n/a,2026-03-20,1
+F058,C058,Idea-vs-market,43.0,67,n/a,2026-05-19,2
+F058,C058,Idea-vs-market,40.0,100,stable,2026-07-18,3
+F059,C059,Founder,55.0,40,n/a,2026-03-20,1
+F059,C059,Founder,55.0,60,n/a,2026-05-19,2
+F059,C059,Founder,57.0,80,stable,2026-07-18,3
+F059,C059,Market & traction,47.0,40,n/a,2026-03-20,1
+F059,C059,Market & traction,38.0,60,n/a,2026-05-19,2
+F059,C059,Market & traction,38.0,60,declining,2026-07-18,3
+F059,C059,Idea-vs-market,48.0,67,n/a,2026-03-20,1
+F059,C059,Idea-vs-market,48.0,67,n/a,2026-05-19,2
+F059,C059,Idea-vs-market,46.0,100,stable,2026-07-18,3
+F060,C060,Founder,19.0,20,n/a,2026-03-20,1
+F060,C060,Founder,22.0,40,n/a,2026-05-19,2
+F060,C060,Founder,21.0,60,stable,2026-07-18,3
+F060,C060,Market & traction,13.0,60,n/a,2026-03-20,1
+F060,C060,Market & traction,12.0,80,n/a,2026-05-19,2
+F060,C060,Market & traction,13.0,100,stable,2026-07-18,3
+F060,C060,Idea-vs-market,30.0,67,n/a,2026-03-20,1
+F060,C060,Idea-vs-market,30.0,67,n/a,2026-05-19,2
+F060,C060,Idea-vs-market,30.0,67,stable,2026-07-18,3

@@ -1,0 +1,61 @@
+founder_id,display_name,presence_type,first_time_founder,geo,primary_sector,first_observed_at,entered_via
+F001,B. Rahimi,no_social,True,London,AI infra,2025-08-13,outbound_scan
+F002,C. Nowak,no_social,True,Singapore,Bio,2025-12-06,inbound_application
+F003,C. Tanaka,no_social,True,London,AI infra,2025-04-21,outbound_scan
+F004,L. Novak,no_social,False,NYC,Devtools,2025-12-25,inbound_application
+F005,B. Duarte,no_social,True,Toronto,Fintech,2025-12-06,outbound_scan
+F006,G. Iyer,social_present,True,Warsaw,Devtools,2025-09-03,outbound_scan
+F007,H. Rahimi,no_social,False,Toronto,Climate,2024-09-28,outbound_scan
+F008,E. Okafor,social_present,True,Berlin,Fintech,2026-01-12,outbound_scan
+F009,R. Ferreira,social_present,True,Singapore,Robotics,2025-08-01,outbound_scan
+F010,A. Adeyemi,no_social,True,London,Robotics,2025-08-21,inbound_application
+F011,C. Haddad,social_present,False,NYC,Bio,2024-11-25,outbound_scan
+F012,V. Petrov,no_social,True,Singapore,Climate,2025-02-28,outbound_scan
+F013,A. Novak,social_present,False,NYC,Bio,2024-12-05,outbound_scan
+F014,P. Choi,social_present,False,Singapore,Healthtech,2025-10-12,outbound_scan
+F015,R. Novak,social_present,True,NYC,Climate,2025-10-03,outbound_scan
+F016,V. Vargas,social_present,False,Lagos,Healthtech,2025-11-20,inbound_application
+F017,D. Vargas,no_social,False,SF,Vertical SaaS,2026-01-15,inbound_application
+F018,K. Lindqvist,no_social,True,Berlin,Vertical SaaS,2024-07-29,outbound_scan
+F019,N. Rao,social_present,True,Bangalore,Climate,2026-02-08,inbound_application
+F020,G. Tanaka,no_social,True,Berlin,Fintech,2026-02-27,inbound_application
+F021,L. Nowak,no_social,True,Bangalore,AI infra,2026-03-15,outbound_scan
+F022,H. Ferreira,social_present,True,Berlin,Vertical SaaS,2025-04-27,inbound_application
+F023,J. Duarte,social_present,False,Warsaw,Fintech,2024-11-21,inbound_application
+F024,K. Osei,social_present,True,London,Devtools,2025-02-09,inbound_application
+F025,F. Adeyemi,no_social,False,Lagos,Healthtech,2025-09-28,outbound_scan
+F026,K. Tanaka,no_social,True,London,AI infra,2025-10-22,inbound_application
+F027,J. Novak,no_social,True,Warsaw,Bio,2025-03-14,inbound_application
+F028,V. Duarte,social_present,True,Lagos,Climate,2024-08-26,inbound_application
+F029,A. Osei,social_present,False,Berlin,Fintech,2024-02-17,outbound_scan
+F030,K. Rao,social_present,False,London,Healthtech,2026-01-14,outbound_scan
+F031,C. Tanaka,social_present,True,NYC,Healthtech,2025-08-10,outbound_scan
+F032,S. Adeyemi,social_present,True,Toronto,Climate,2025-11-10,outbound_scan
+F033,B. Kowalczyk,no_social,True,Berlin,Devtools,2024-10-10,outbound_scan
+F034,G. Kowalczyk,social_present,False,Toronto,Bio,2025-03-16,outbound_scan
+F035,R. Ferreira,social_present,True,London,Fintech,2024-06-04,outbound_scan
+F036,F. Ferreira,no_social,True,Singapore,Climate,2025-09-17,outbound_scan
+F037,R. Haddad,social_present,True,London,Devtools,2025-12-10,inbound_application
+F038,D. Osei,no_social,True,Bangalore,Fintech,2024-10-28,inbound_application
+F039,P. Serrano,social_present,True,Warsaw,Devtools,2024-05-09,outbound_scan
+F040,F. Adeyemi,no_social,False,London,AI infra,2026-03-16,inbound_application
+F041,H. Mbeki,no_social,False,Bangalore,Climate,2025-08-10,inbound_application
+F042,M. Serrano,social_present,False,Warsaw,Climate,2026-03-11,outbound_scan
+F043,M. Mbeki,social_present,False,London,Fintech,2025-04-30,inbound_application
+F044,J. Duarte,social_present,True,Berlin,Fintech,2025-01-04,inbound_application
+F045,A. Novak,no_social,True,Berlin,Bio,2024-09-06,outbound_scan
+F046,G. Rao,social_present,False,Berlin,Robotics,2025-12-19,outbound_scan
+F047,R. Iyer,no_social,True,Warsaw,Devtools,2024-02-12,inbound_application
+F048,D. Tanaka,social_present,True,SF,Robotics,2024-05-26,inbound_application
+F049,K. Osei,social_present,True,Warsaw,Vertical SaaS,2024-06-25,outbound_scan
+F050,E. Iyer,social_present,False,Nairobi,AI infra,2025-05-23,outbound_scan
+F051,J. Tanaka,social_present,True,Nairobi,Fintech,2024-05-26,outbound_scan
+F052,C. Osei,no_social,True,Lagos,Devtools,2025-11-05,outbound_scan
+F053,V. Rahimi,social_present,True,Lagos,AI infra,2025-07-23,inbound_application
+F054,D. Haddad,social_present,False,London,Fintech,2024-08-20,inbound_application
+F055,C. Serrano,no_social,True,NYC,Fintech,2024-10-19,inbound_application
+F056,M. Serrano,no_social,False,London,Climate,2024-12-01,inbound_application
+F057,J. Iyer,social_present,False,SF,Fintech,2025-12-02,outbound_scan
+F058,V. Lindqvist,social_present,True,NYC,Bio,2026-01-26,outbound_scan
+F059,G. Lindqvist,no_social,True,Lagos,Climate,2025-07-26,outbound_scan
+F060,J. Rahimi,no_social,False,Warsaw,Fintech,2025-04-23,outbound_scan

@@ -1,0 +1,883 @@
+signal_id,founder_id,company_id,source_name,source_tier,observed_at,component,url,raw_excerpt
+S00001,F001,C001,Platform intake: work sample,1,2026-02-19,Team role clarity,https://example-source.invalid/f001/s00001,2 cofounders with non-overlapping functional coverage
+S00002,F001,C001,Platform intake: scenario interview,1,2025-09-23,Team communication,https://example-source.invalid/f001/s00002,"Team publishes a written weekly update, 14 consecutive weeks"
+S00003,F001,C001,Platform intake: VSP-style prompt response,1,2025-06-15,Feedback & iteration,https://example-source.invalid/f001/s00003,Shipped 4 product iterations following user testing
+S00004,F001,C001,Platform intake: work sample,1,2026-06-06,Market maps,https://example-source.invalid/f001/s00004,Names 2 direct competitors with stated differentiation
+S00005,F001,C001,University lab page,2,2025-11-09,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f001/s00005,Bottom-up SOM of $33M derived from a stated unit chain
+S00006,F001,C001,Grant award record,1,2025-07-27,Value proposition,https://example-source.invalid/f001/s00006,3 customer personas documented with motivations
+S00007,F001,C001,Platform intake: scenario interview,1,2025-07-08,Traction & KPIs,https://example-source.invalid/f001/s00007,0 design partners in signed pilot
+S00008,F001,C001,Platform intake: reference check,1,2026-07-06,Customer acquisition,https://example-source.invalid/f001/s00008,No acquisition process defined
+S00009,F001,C001,Platform intake: work sample,1,2025-07-04,USP / secret sauce,https://example-source.invalid/f001/s00009,"Patent application filed, 10 claims"
+S00010,F001,C001,Platform intake: reference check,1,2026-05-08,Competitive advantage,https://example-source.invalid/f001/s00010,Differentiation asserted but not evidenced
+S00011,F001,C001,arXiv paper,1,2025-08-14,Development roadmap,https://example-source.invalid/f001/s00011,Roadmap published with 5 dated milestones
+S00012,F001,C001,Platform intake: VSP-style prompt response,1,2025-10-17,Revenue model,https://example-source.invalid/f001/s00012,2 distinct revenue streams identified with pricing logic
+S00013,F001,C001,Company registry filing,1,2025-11-26,Mission & long-term vision,https://example-source.invalid/f001/s00013,Vision stated as market-size ambition only
+S00014,F001,C001,Platform intake: VSP-style prompt response,1,2025-08-27,Company formation & cap table,https://example-source.invalid/f001/s00014,"Entity incorporated, registry record on file"
+S00015,F001,C001,Platform intake: scenario interview,1,2026-06-11,Finances & runway,https://example-source.invalid/f001/s00015,"Monthly burn stated at $43K, unaudited"
+S00016,F002,C002,Platform intake: reference check,1,2025-08-22,Background & execution,https://example-source.invalid/f002/s00016,Led engineering for a team of 19
+S00017,F002,C002,Platform intake: reference check,1,2025-08-26,Traits,https://example-source.invalid/f002/s00017,"Reversed a stated position after customer evidence, 3 documented instances"
+S00018,F002,C002,Accelerator cohort directory,2,2026-01-16,Team communication,https://example-source.invalid/f002/s00018,No shared written record of decisions found
+S00019,F002,C002,Platform intake: reference check,1,2025-12-01,Feedback & iteration,https://example-source.invalid/f002/s00019,No evidence of iteration following feedback
+S00020,F002,C002,Patent filing,1,2026-03-23,Market maps,https://example-source.invalid/f002/s00020,Names 2 direct competitors with stated differentiation
+S00021,F002,C002,Grant award record,1,2025-08-22,Value proposition,https://example-source.invalid/f002/s00021,"Value prop stated in feature language only, no customer job named"
+S00022,F002,C002,Platform intake: reference check,1,2026-06-03,Customer acquisition,https://example-source.invalid/f002/s00022,No acquisition process defined
+S00023,F002,C002,Platform intake: work sample,1,2026-07-03,USP / secret sauce,https://example-source.invalid/f002/s00023,Proprietary dataset of 139K labeled records
+S00024,F002,C002,Platform intake: reference check,1,2026-04-29,Competitive advantage,https://example-source.invalid/f002/s00024,Switching cost identified and evidenced in 4 accounts
+S00025,F002,C002,Platform intake: work sample,1,2026-07-03,Development roadmap,https://example-source.invalid/f002/s00025,Roadmap published with 1 dated milestones
+S00026,F002,C002,Employer team page,2,2026-05-11,Revenue model,https://example-source.invalid/f002/s00026,Revenue model not articulated
+S00027,F002,C002,Platform intake: VSP-style prompt response,1,2025-06-15,IP & regulation strategy,https://example-source.invalid/f002/s00027,Regulatory pathway identified with a stated timeline
+S00028,F002,C002,Platform intake: scenario interview,1,2025-10-06,Finances & runway,https://example-source.invalid/f002/s00028,"Monthly burn stated at $53K, unaudited"
+S00029,F003,C003,Platform intake: VSP-style prompt response,1,2026-06-10,Background & execution,https://example-source.invalid/f003/s00029,6 years domain experience in AI infra
+S00030,F003,C003,Grant award record,1,2026-05-05,Traits,https://example-source.invalid/f003/s00030,Reference describes founder as specific about failure modes
+S00031,F003,C003,Platform intake: VSP-style prompt response,1,2026-04-25,Team role clarity,https://example-source.invalid/f003/s00031,Written role split covering 4 of 4 core functions
+S00032,F003,C003,Platform intake: scenario interview,1,2026-01-25,Feedback & iteration,https://example-source.invalid/f003/s00032,Roadmap changed 3 times citing named customer input
+S00033,F003,C003,Platform intake: scenario interview,1,2026-05-21,Market maps,https://example-source.invalid/f003/s00033,Maps 11 adjacent players and potential partners
+S00034,F003,C003,Platform intake: reference check,1,2025-12-22,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f003/s00034,Bottom-up SOM of $33M derived from a stated unit chain
+S00035,F003,C003,Platform intake: scenario interview,1,2025-07-30,Value proposition,https://example-source.invalid/f003/s00035,3 customer personas documented with motivations
+S00036,F003,C003,Accelerator cohort directory,2,2026-07-12,Customer acquisition,https://example-source.invalid/f003/s00036,Acquisition funnel documented across 6 stages with conversion rates
+S00037,F003,C003,arXiv paper,1,2026-05-22,USP / secret sauce,https://example-source.invalid/f003/s00037,"Wrapper over a single third-party model, no proprietary layer"
+S00038,F003,C003,Platform intake: work sample,1,2026-02-19,Competitive advantage,https://example-source.invalid/f003/s00038,Switching cost identified and evidenced in 7 accounts
+S00039,F003,C003,Platform intake: work sample,1,2025-10-27,Technical feasibility,https://example-source.invalid/f003/s00039,Benchmark published against 4 baselines
+S00040,F003,C003,Job posting authored,2,2026-02-10,Revenue model,https://example-source.invalid/f003/s00040,Pricing tested across 3 customer segments
+S00041,F003,C003,Platform intake: work sample,1,2025-12-22,Mission & long-term vision,https://example-source.invalid/f003/s00041,Vision stated as market-size ambition only
+S00042,F003,C003,Platform intake: VSP-style prompt response,1,2026-04-14,Finances & runway,https://example-source.invalid/f003/s00042,"Monthly burn stated at $46K, unaudited"
+S00043,F004,C004,Platform intake: work sample,1,2025-08-15,Background & execution,https://example-source.invalid/f004/s00043,Led engineering for a team of 12
+S00044,F004,C004,Platform intake: work sample,1,2026-06-25,Team role clarity,https://example-source.invalid/f004/s00044,"Single founder, no technical cofounder identified"
+S00045,F004,C004,Job posting authored,2,2025-09-29,Feedback & iteration,https://example-source.invalid/f004/s00045,No evidence of iteration following feedback
+S00046,F004,C004,Platform intake: reference check,1,2026-05-25,Market maps,https://example-source.invalid/f004/s00046,No named competitor set provided
+S00047,F004,C004,Job posting authored,2,2025-10-16,Value proposition,https://example-source.invalid/f004/s00047,Value prop canvas links 1 customer pains to named features
+S00048,F004,C004,Conference speaker bio,2,2026-03-19,Traction & KPIs,https://example-source.invalid/f004/s00048,8 paying customers
+S00049,F004,C004,Platform intake: scenario interview,1,2025-09-05,Customer acquisition,https://example-source.invalid/f004/s00049,CAC measured at $2745 across a real channel test
+S00050,F004,C004,Platform intake: reference check,1,2025-09-02,USP / secret sauce,https://example-source.invalid/f004/s00050,"Wrapper over a single third-party model, no proprietary layer"
+S00051,F004,C004,Platform intake: reference check,1,2025-07-20,Competitive advantage,https://example-source.invalid/f004/s00051,Win/loss reasons documented across 1 deals
+S00052,F004,C004,Platform intake: VSP-style prompt response,1,2026-07-09,Development roadmap,https://example-source.invalid/f004/s00052,Roadmap published with 0 dated milestones
+S00053,F004,C004,arXiv paper,1,2026-06-09,Revenue model,https://example-source.invalid/f004/s00053,Pricing tested across 0 customer segments
+S00054,F004,C004,Platform intake: reference check,1,2026-05-21,Mission & long-term vision,https://example-source.invalid/f004/s00054,Vision stated as market-size ambition only
+S00055,F004,C004,Platform intake: VSP-style prompt response,1,2026-01-22,IP & regulation strategy,https://example-source.invalid/f004/s00055,Regulatory pathway identified with a stated timeline
+S00056,F005,C005,Platform intake: VSP-style prompt response,1,2025-11-29,Team role clarity,https://example-source.invalid/f005/s00056,4 cofounders with non-overlapping functional coverage
+S00057,F005,C005,Platform intake: work sample,1,2026-04-21,Team communication,https://example-source.invalid/f005/s00057,No shared written record of decisions found
+S00058,F005,C005,Platform intake: reference check,1,2025-12-22,Feedback & iteration,https://example-source.invalid/f005/s00058,No evidence of iteration following feedback
+S00059,F005,C005,University lab page,2,2026-06-09,Market maps,https://example-source.invalid/f005/s00059,No named competitor set provided
+S00060,F005,C005,Employer team page,2,2026-05-07,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f005/s00060,"SOM asserted as a flat share of TAM, no derivation"
+S00061,F005,C005,Platform intake: work sample,1,2026-07-07,Value proposition,https://example-source.invalid/f005/s00061,Value prop canvas links 5 customer pains to named features
+S00062,F005,C005,Grant award record,1,2025-06-27,Traction & KPIs,https://example-source.invalid/f005/s00062,10 design partners in signed pilot
+S00063,F005,C005,Platform intake: work sample,1,2026-05-31,Customer acquisition,https://example-source.invalid/f005/s00063,No acquisition process defined
+S00064,F005,C005,Company registry filing,1,2026-05-13,USP / secret sauce,https://example-source.invalid/f005/s00064,"Patent application filed, 25 claims"
+S00065,F005,C005,Employer team page,2,2025-10-20,Competitive advantage,https://example-source.invalid/f005/s00065,Win/loss reasons documented across 8 deals
+S00066,F005,C005,Accelerator cohort directory,2,2026-06-04,Technical feasibility,https://example-source.invalid/f005/s00066,"Working prototype demonstrated, 4 core functions"
+S00067,F005,C005,Platform intake: reference check,1,2026-05-13,Development roadmap,https://example-source.invalid/f005/s00067,Roadmap published with 9 dated milestones
+S00068,F005,C005,arXiv paper,1,2025-12-31,Revenue model,https://example-source.invalid/f005/s00068,3 distinct revenue streams identified with pricing logic
+S00069,F005,C005,Platform intake: reference check,1,2026-02-06,Mission & long-term vision,https://example-source.invalid/f005/s00069,Vision articulates 4 future verticals with entry logic
+S00070,F005,C005,Platform intake: VSP-style prompt response,1,2025-07-22,Company formation & cap table,https://example-source.invalid/f005/s00070,"Entity incorporated, registry record on file"
+S00071,F006,C006,Job posting authored,2,2026-02-07,Background & execution,https://example-source.invalid/f006/s00071,Shipped 0 public projects prior to founding
+S00072,F006,C006,Patent filing,1,2026-07-01,Traits,https://example-source.invalid/f006/s00072,Documented fix shipped 85 days after critical user feedback
+S00073,F006,C006,X/Twitter,3,2026-06-07,Team communication,https://example-source.invalid/f006/s00073,"Team publishes a written weekly update, 0 consecutive weeks"
+S00074,F006,C006,Show HN,2,2025-12-08,Feedback & iteration,https://example-source.invalid/f006/s00074,Shipped 0 product iterations following user testing
+S00075,F006,C006,Product Hunt,2,2026-02-02,Market maps,https://example-source.invalid/f006/s00075,Maps 6 adjacent players and potential partners
+S00076,F006,C006,X/Twitter,3,2025-11-22,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f006/s00076,Bottom-up SOM of $21M derived from a stated unit chain
+S00077,F006,C006,Job posting authored,2,2025-09-10,Value proposition,https://example-source.invalid/f006/s00077,Value prop canvas links 0 customer pains to named features
+S00078,F006,C006,Grant award record,1,2025-06-26,Traction & KPIs,https://example-source.invalid/f006/s00078,4 design partners in signed pilot
+S00079,F006,C006,LinkedIn post,2,2025-11-16,Customer acquisition,https://example-source.invalid/f006/s00079,Acquisition funnel documented across 1 stages with conversion rates
+S00080,F006,C006,Patent filing,1,2026-04-15,USP / secret sauce,https://example-source.invalid/f006/s00080,"Patent application filed, 6 claims"
+S00081,F006,C006,arXiv paper,1,2026-03-19,Competitive advantage,https://example-source.invalid/f006/s00081,Win/loss reasons documented across 2 deals
+S00082,F006,C006,LinkedIn post,2,2025-10-28,Technical feasibility,https://example-source.invalid/f006/s00082,Core technical risk unaddressed in materials
+S00083,F006,C006,X/Twitter,3,2025-11-13,Development roadmap,https://example-source.invalid/f006/s00083,No roadmap or milestone dates provided
+S00084,F006,C006,LinkedIn post,2,2025-12-14,Revenue model,https://example-source.invalid/f006/s00084,2 distinct revenue streams identified with pricing logic
+S00085,F006,C006,Company registry filing,1,2025-11-24,Mission & long-term vision,https://example-source.invalid/f006/s00085,Mission statement names a specific beneficiary and outcome
+S00086,F006,C006,Employer team page,2,2026-02-17,IP & regulation strategy,https://example-source.invalid/f006/s00086,Regulatory pathway identified with a stated timeline
+S00087,F007,C007,Platform intake: work sample,1,2026-06-09,Background & execution,https://example-source.invalid/f007/s00087,Led engineering for a team of 15
+S00088,F007,C007,Grant award record,1,2026-03-28,Team role clarity,https://example-source.invalid/f007/s00088,"Single founder, no technical cofounder identified"
+S00089,F007,C007,Platform intake: work sample,1,2026-07-12,Team communication,https://example-source.invalid/f007/s00089,No shared written record of decisions found
+S00090,F007,C007,Platform intake: VSP-style prompt response,1,2026-06-15,Feedback & iteration,https://example-source.invalid/f007/s00090,Shipped 13 product iterations following user testing
+S00091,F007,C007,Platform intake: work sample,1,2025-12-26,Market maps,https://example-source.invalid/f007/s00091,No named competitor set provided
+S00092,F007,C007,Grant award record,1,2025-12-17,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f007/s00092,Bottom-up SOM of $27M derived from a stated unit chain
+S00093,F007,C007,University lab page,2,2025-12-13,Value proposition,https://example-source.invalid/f007/s00093,2 customer personas documented with motivations
+S00094,F007,C007,University lab page,2,2026-07-10,Traction & KPIs,https://example-source.invalid/f007/s00094,ARR of $168K
+S00095,F007,C007,Platform intake: reference check,1,2026-02-22,Customer acquisition,https://example-source.invalid/f007/s00095,CAC measured at $2229 across a real channel test
+S00096,F007,C007,Platform intake: scenario interview,1,2025-11-12,USP / secret sauce,https://example-source.invalid/f007/s00096,Proprietary dataset of 79K labeled records
+S00097,F007,C007,Platform intake: work sample,1,2025-08-24,Competitive advantage,https://example-source.invalid/f007/s00097,Differentiation asserted but not evidenced
+S00098,F007,C007,University lab page,2,2025-10-01,Technical feasibility,https://example-source.invalid/f007/s00098,Benchmark published against 5 baselines
+S00099,F007,C007,Platform intake: work sample,1,2026-06-26,Development roadmap,https://example-source.invalid/f007/s00099,Roadmap published with 5 dated milestones
+S00100,F007,C007,Accelerator cohort directory,2,2025-10-09,Revenue model,https://example-source.invalid/f007/s00100,Pricing tested across 4 customer segments
+S00101,F007,C007,Platform intake: VSP-style prompt response,1,2026-04-17,Mission & long-term vision,https://example-source.invalid/f007/s00101,Vision articulates 1 future verticals with entry logic
+S00102,F007,C007,University lab page,2,2026-01-15,Finances & runway,https://example-source.invalid/f007/s00102,Runway of 5 months at current burn
+S00103,F008,C008,University lab page,2,2026-03-18,Background & execution,https://example-source.invalid/f008/s00103,10 years domain experience in Fintech
+S00104,F008,C008,Job posting authored,2,2026-02-25,Traits,https://example-source.invalid/f008/s00104,Reference describes founder as specific about failure modes
+S00105,F008,C008,LinkedIn post,2,2025-06-19,Team role clarity,https://example-source.invalid/f008/s00105,Written role split covering 3 of 4 core functions
+S00106,F008,C008,arXiv paper,1,2025-07-30,Feedback & iteration,https://example-source.invalid/f008/s00106,No evidence of iteration following feedback
+S00107,F008,C008,Company registry filing,1,2026-01-10,Market maps,https://example-source.invalid/f008/s00107,Maps 8 adjacent players and potential partners
+S00108,F008,C008,X/Twitter,3,2026-02-16,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f008/s00108,Bottom-up SOM of $27M derived from a stated unit chain
+S00109,F008,C008,X/Twitter,3,2026-03-26,Value proposition,https://example-source.invalid/f008/s00109,"Value prop stated in feature language only, no customer job named"
+S00110,F008,C008,Product Hunt,2,2025-09-07,Traction & KPIs,https://example-source.invalid/f008/s00110,7 design partners in signed pilot
+S00111,F008,C008,Product Hunt,2,2025-12-18,Customer acquisition,https://example-source.invalid/f008/s00111,CAC measured at $596 across a real channel test
+S00112,F008,C008,GitHub,2,2026-05-10,USP / secret sauce,https://example-source.invalid/f008/s00112,"Patent application filed, 20 claims"
+S00113,F008,C008,Conference speaker bio,2,2026-03-01,Competitive advantage,https://example-source.invalid/f008/s00113,Win/loss reasons documented across 15 deals
+S00114,F008,C008,Job posting authored,2,2026-01-19,Technical feasibility,https://example-source.invalid/f008/s00114,Core technical risk unaddressed in materials
+S00115,F008,C008,GitHub,2,2026-07-17,Revenue model,https://example-source.invalid/f008/s00115,3 distinct revenue streams identified with pricing logic
+S00116,F008,C008,X/Twitter,3,2025-06-14,Mission & long-term vision,https://example-source.invalid/f008/s00116,Mission statement names a specific beneficiary and outcome
+S00117,F008,C008,University lab page,2,2025-09-09,IP & regulation strategy,https://example-source.invalid/f008/s00117,Regulatory pathway identified with a stated timeline
+S00118,F009,C009,Personal blog,2,2026-04-10,Traits,https://example-source.invalid/f009/s00118,Documented fix shipped 35 days after critical user feedback
+S00119,F009,C009,Job posting authored,2,2025-07-28,Team role clarity,https://example-source.invalid/f009/s00119,"Single founder, no technical cofounder identified"
+S00120,F009,C009,Grant award record,1,2026-07-14,Team communication,https://example-source.invalid/f009/s00120,No shared written record of decisions found
+S00121,F009,C009,arXiv paper,1,2026-06-08,Feedback & iteration,https://example-source.invalid/f009/s00121,Roadmap changed 6 times citing named customer input
+S00122,F009,C009,arXiv paper,1,2026-04-26,Market maps,https://example-source.invalid/f009/s00122,Names 5 direct competitors with stated differentiation
+S00123,F009,C009,Grant award record,1,2026-06-24,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f009/s00123,Bottom-up SOM of $38M derived from a stated unit chain
+S00124,F009,C009,Job posting authored,2,2025-08-11,Value proposition,https://example-source.invalid/f009/s00124,"Value prop stated in feature language only, no customer job named"
+S00125,F009,C009,Product Hunt,2,2026-05-21,Customer acquisition,https://example-source.invalid/f009/s00125,Acquisition funnel documented across 3 stages with conversion rates
+S00126,F009,C009,Conference speaker bio,2,2026-02-20,USP / secret sauce,https://example-source.invalid/f009/s00126,"Wrapper over a single third-party model, no proprietary layer"
+S00127,F009,C009,Personal blog,2,2026-03-08,Competitive advantage,https://example-source.invalid/f009/s00127,Switching cost identified and evidenced in 7 accounts
+S00128,F009,C009,Employer team page,2,2025-09-12,Technical feasibility,https://example-source.invalid/f009/s00128,Benchmark published against 5 baselines
+S00129,F009,C009,LinkedIn post,2,2026-01-21,Development roadmap,https://example-source.invalid/f009/s00129,6 of last quarter's milestones delivered on time
+S00130,F009,C009,arXiv paper,1,2026-02-20,Revenue model,https://example-source.invalid/f009/s00130,3 distinct revenue streams identified with pricing logic
+S00131,F009,C009,X/Twitter,3,2026-01-20,Mission & long-term vision,https://example-source.invalid/f009/s00131,Mission statement names a specific beneficiary and outcome
+S00132,F009,C009,Grant award record,1,2026-03-21,Finances & runway,https://example-source.invalid/f009/s00132,Runway of 17 months at current burn
+S00133,F010,C010,Platform intake: reference check,1,2026-04-22,Background & execution,https://example-source.invalid/f010/s00133,14 years domain experience in Robotics
+S00134,F010,C010,Job posting authored,2,2026-04-10,Traits,https://example-source.invalid/f010/s00134,"Reversed a stated position after customer evidence, 3 documented instances"
+S00135,F010,C010,Platform intake: reference check,1,2025-09-12,Team role clarity,https://example-source.invalid/f010/s00135,3 cofounders with non-overlapping functional coverage
+S00136,F010,C010,Patent filing,1,2026-04-24,Team communication,https://example-source.invalid/f010/s00136,No shared written record of decisions found
+S00137,F010,C010,Platform intake: work sample,1,2026-05-23,Feedback & iteration,https://example-source.invalid/f010/s00137,Roadmap changed 7 times citing named customer input
+S00138,F010,C010,Employer team page,2,2025-12-06,Market maps,https://example-source.invalid/f010/s00138,Names 7 direct competitors with stated differentiation
+S00139,F010,C010,Platform intake: VSP-style prompt response,1,2025-07-24,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f010/s00139,"SAM narrowed by a stated serviceable constraint, $71M"
+S00140,F010,C010,Platform intake: VSP-style prompt response,1,2025-12-08,USP / secret sauce,https://example-source.invalid/f010/s00140,Proprietary dataset of 260K labeled records
+S00141,F010,C010,Conference speaker bio,2,2025-12-13,Competitive advantage,https://example-source.invalid/f010/s00141,Switching cost identified and evidenced in 8 accounts
+S00142,F010,C010,Platform intake: reference check,1,2025-06-14,Technical feasibility,https://example-source.invalid/f010/s00142,"Working prototype demonstrated, 5 core functions"
+S00143,F010,C010,Platform intake: work sample,1,2025-10-25,Development roadmap,https://example-source.invalid/f010/s00143,Roadmap published with 9 dated milestones
+S00144,F010,C010,Platform intake: scenario interview,1,2025-08-24,Revenue model,https://example-source.invalid/f010/s00144,Revenue model not articulated
+S00145,F010,C010,Platform intake: work sample,1,2025-12-29,Mission & long-term vision,https://example-source.invalid/f010/s00145,Mission statement names a specific beneficiary and outcome
+S00146,F011,C011,Patent filing,1,2025-11-11,Background & execution,https://example-source.invalid/f011/s00146,0 years domain experience in Bio
+S00147,F011,C011,Accelerator cohort directory,2,2025-10-01,Traits,https://example-source.invalid/f011/s00147,"Reversed a stated position after customer evidence, 1 documented instances"
+S00148,F011,C011,Conference speaker bio,2,2025-09-22,Team role clarity,https://example-source.invalid/f011/s00148,Written role split covering 1 of 4 core functions
+S00149,F011,C011,GitHub,2,2026-03-20,Team communication,https://example-source.invalid/f011/s00149,Decision log maintained with 8 entries
+S00150,F011,C011,Employer team page,2,2025-10-17,Feedback & iteration,https://example-source.invalid/f011/s00150,Roadmap changed 2 times citing named customer input
+S00151,F011,C011,Grant award record,1,2026-03-30,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f011/s00151,"SAM narrowed by a stated serviceable constraint, $19M"
+S00152,F011,C011,University lab page,2,2026-05-18,Value proposition,https://example-source.invalid/f011/s00152,Value prop canvas links 0 customer pains to named features
+S00153,F011,C011,Grant award record,1,2025-11-08,Traction & KPIs,https://example-source.invalid/f011/s00153,0 paying customers
+S00154,F011,C011,GitHub,2,2026-02-03,Customer acquisition,https://example-source.invalid/f011/s00154,Acquisition funnel documented across 1 stages with conversion rates
+S00155,F011,C011,Conference speaker bio,2,2026-06-09,USP / secret sauce,https://example-source.invalid/f011/s00155,"Patent application filed, 0 claims"
+S00156,F011,C011,X/Twitter,3,2025-08-02,Competitive advantage,https://example-source.invalid/f011/s00156,Differentiation asserted but not evidenced
+S00157,F011,C011,Employer team page,2,2026-05-05,Technical feasibility,https://example-source.invalid/f011/s00157,Benchmark published against 3 baselines
+S00158,F011,C011,Patent filing,1,2025-06-14,Development roadmap,https://example-source.invalid/f011/s00158,Roadmap published with 3 dated milestones
+S00159,F011,C011,Company registry filing,1,2026-03-11,Revenue model,https://example-source.invalid/f011/s00159,Pricing tested across 0 customer segments
+S00160,F011,C011,Show HN,2,2025-10-31,Mission & long-term vision,https://example-source.invalid/f011/s00160,Vision articulates 0 future verticals with entry logic
+S00161,F011,C011,Conference speaker bio,2,2026-06-03,Finances & runway,https://example-source.invalid/f011/s00161,"Monthly burn stated at $23K, unaudited"
+S00162,F012,C012,Company registry filing,1,2025-12-09,Traits,https://example-source.invalid/f012/s00162,"Reversed a stated position after customer evidence, 4 documented instances"
+S00163,F012,C012,Platform intake: VSP-style prompt response,1,2025-09-26,Team role clarity,https://example-source.invalid/f012/s00163,4 cofounders with non-overlapping functional coverage
+S00164,F012,C012,Platform intake: work sample,1,2025-11-16,Team communication,https://example-source.invalid/f012/s00164,No shared written record of decisions found
+S00165,F012,C012,Company registry filing,1,2025-08-01,Feedback & iteration,https://example-source.invalid/f012/s00165,Shipped 13 product iterations following user testing
+S00166,F012,C012,Platform intake: scenario interview,1,2026-02-26,Market maps,https://example-source.invalid/f012/s00166,Maps 7 adjacent players and potential partners
+S00167,F012,C012,Patent filing,1,2026-02-17,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f012/s00167,"SAM narrowed by a stated serviceable constraint, $56M"
+S00168,F012,C012,Company registry filing,1,2026-06-16,Traction & KPIs,https://example-source.invalid/f012/s00168,15 paying customers
+S00169,F012,C012,Platform intake: work sample,1,2025-11-10,Customer acquisition,https://example-source.invalid/f012/s00169,No acquisition process defined
+S00170,F012,C012,Grant award record,1,2025-08-21,USP / secret sauce,https://example-source.invalid/f012/s00170,Proprietary dataset of 300K labeled records
+S00171,F012,C012,Platform intake: reference check,1,2026-02-18,Competitive advantage,https://example-source.invalid/f012/s00171,Switching cost identified and evidenced in 10 accounts
+S00172,F012,C012,Platform intake: reference check,1,2025-09-21,Development roadmap,https://example-source.invalid/f012/s00172,Roadmap published with 11 dated milestones
+S00173,F012,C012,Platform intake: VSP-style prompt response,1,2026-02-22,Revenue model,https://example-source.invalid/f012/s00173,3 distinct revenue streams identified with pricing logic
+S00174,F012,C012,Platform intake: reference check,1,2026-05-06,Mission & long-term vision,https://example-source.invalid/f012/s00174,Mission statement names a specific beneficiary and outcome
+S00175,F013,C013,LinkedIn post,2,2026-04-29,Traits,https://example-source.invalid/f013/s00175,Documented fix shipped 22 days after critical user feedback
+S00176,F013,C013,Accelerator cohort directory,2,2025-10-01,Team role clarity,https://example-source.invalid/f013/s00176,3 cofounders with non-overlapping functional coverage
+S00177,F013,C013,Patent filing,1,2025-06-20,Feedback & iteration,https://example-source.invalid/f013/s00177,Shipped 13 product iterations following user testing
+S00178,F013,C013,Company registry filing,1,2026-06-05,Market maps,https://example-source.invalid/f013/s00178,Names 2 direct competitors with stated differentiation
+S00179,F013,C013,Accelerator cohort directory,2,2026-06-15,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f013/s00179,"SOM asserted as a flat share of TAM, no derivation"
+S00180,F013,C013,Show HN,2,2026-02-04,Value proposition,https://example-source.invalid/f013/s00180,Value prop canvas links 10 customer pains to named features
+S00181,F013,C013,Accelerator cohort directory,2,2026-04-27,Traction & KPIs,https://example-source.invalid/f013/s00181,"Waitlist of {n} signups, no conversion data"
+S00182,F013,C013,University lab page,2,2026-07-03,Customer acquisition,https://example-source.invalid/f013/s00182,CAC measured at $1352 across a real channel test
+S00183,F013,C013,Conference speaker bio,2,2025-06-23,USP / secret sauce,https://example-source.invalid/f013/s00183,"Wrapper over a single third-party model, no proprietary layer"
+S00184,F013,C013,Show HN,2,2025-09-19,Competitive advantage,https://example-source.invalid/f013/s00184,Win/loss reasons documented across 18 deals
+S00185,F013,C013,Show HN,2,2025-12-30,Technical feasibility,https://example-source.invalid/f013/s00185,Benchmark published against 3 baselines
+S00186,F013,C013,Patent filing,1,2025-07-15,Development roadmap,https://example-source.invalid/f013/s00186,Roadmap published with 12 dated milestones
+S00187,F013,C013,Accelerator cohort directory,2,2026-01-07,Mission & long-term vision,https://example-source.invalid/f013/s00187,Vision stated as market-size ambition only
+S00188,F013,C013,Conference speaker bio,2,2026-06-09,Finances & runway,https://example-source.invalid/f013/s00188,Runway of 8 months at current burn
+S00189,F014,C014,Personal blog,2,2025-12-08,Background & execution,https://example-source.invalid/f014/s00189,Shipped 4 public projects prior to founding
+S00190,F014,C014,Company registry filing,1,2026-04-25,Traits,https://example-source.invalid/f014/s00190,"Reversed a stated position after customer evidence, 2 documented instances"
+S00191,F014,C014,X/Twitter,3,2025-12-03,Team role clarity,https://example-source.invalid/f014/s00191,"Single founder, no technical cofounder identified"
+S00192,F014,C014,Show HN,2,2026-04-13,Team communication,https://example-source.invalid/f014/s00192,No shared written record of decisions found
+S00193,F014,C014,GitHub,2,2026-05-08,Feedback & iteration,https://example-source.invalid/f014/s00193,No evidence of iteration following feedback
+S00194,F014,C014,Job posting authored,2,2025-09-09,Market maps,https://example-source.invalid/f014/s00194,Names 0 direct competitors with stated differentiation
+S00195,F014,C014,Conference speaker bio,2,2026-04-10,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f014/s00195,"SAM narrowed by a stated serviceable constraint, $3M"
+S00196,F014,C014,Company registry filing,1,2025-07-13,Value proposition,https://example-source.invalid/f014/s00196,"Value prop stated in feature language only, no customer job named"
+S00197,F014,C014,LinkedIn post,2,2026-07-10,Traction & KPIs,https://example-source.invalid/f014/s00197,"Waitlist of {n} signups, no conversion data"
+S00198,F014,C014,Personal blog,2,2026-06-29,Customer acquisition,https://example-source.invalid/f014/s00198,CAC measured at $1379 across a real channel test
+S00199,F014,C014,University lab page,2,2026-06-11,USP / secret sauce,https://example-source.invalid/f014/s00199,"Patent application filed, 1 claims"
+S00200,F014,C014,arXiv paper,1,2025-06-28,Competitive advantage,https://example-source.invalid/f014/s00200,Switching cost identified and evidenced in 2 accounts
+S00201,F014,C014,X/Twitter,3,2025-10-19,Development roadmap,https://example-source.invalid/f014/s00201,No roadmap or milestone dates provided
+S00202,F014,C014,GitHub,2,2026-05-26,Mission & long-term vision,https://example-source.invalid/f014/s00202,Mission statement names a specific beneficiary and outcome
+S00203,F014,C014,Accelerator cohort directory,2,2025-09-14,IP & regulation strategy,https://example-source.invalid/f014/s00203,Regulatory pathway identified with a stated timeline
+S00204,F014,C014,GitHub,2,2026-06-24,Finances & runway,https://example-source.invalid/f014/s00204,Runway of 5 months at current burn
+S00205,F015,C015,Accelerator cohort directory,2,2025-12-24,Background & execution,https://example-source.invalid/f015/s00205,10 years domain experience in Climate
+S00206,F015,C015,Job posting authored,2,2026-01-18,Traits,https://example-source.invalid/f015/s00206,Reference describes founder as specific about failure modes
+S00207,F015,C015,Company registry filing,1,2026-04-06,Team role clarity,https://example-source.invalid/f015/s00207,3 cofounders with non-overlapping functional coverage
+S00208,F015,C015,Employer team page,2,2025-11-27,Team communication,https://example-source.invalid/f015/s00208,Decision log maintained with 39 entries
+S00209,F015,C015,arXiv paper,1,2026-03-03,Feedback & iteration,https://example-source.invalid/f015/s00209,No evidence of iteration following feedback
+S00210,F015,C015,University lab page,2,2026-07-11,Market maps,https://example-source.invalid/f015/s00210,Names 5 direct competitors with stated differentiation
+S00211,F015,C015,LinkedIn post,2,2026-06-17,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f015/s00211,"SOM asserted as a flat share of TAM, no derivation"
+S00212,F015,C015,Patent filing,1,2026-05-15,Traction & KPIs,https://example-source.invalid/f015/s00212,ARR of $221K
+S00213,F015,C015,University lab page,2,2026-02-20,Customer acquisition,https://example-source.invalid/f015/s00213,CAC measured at $749 across a real channel test
+S00214,F015,C015,Job posting authored,2,2025-10-10,USP / secret sauce,https://example-source.invalid/f015/s00214,Proprietary dataset of 140K labeled records
+S00215,F015,C015,Product Hunt,2,2026-04-12,Competitive advantage,https://example-source.invalid/f015/s00215,Switching cost identified and evidenced in 6 accounts
+S00216,F015,C015,Personal blog,2,2025-10-05,Technical feasibility,https://example-source.invalid/f015/s00216,Benchmark published against 6 baselines
+S00217,F015,C015,GitHub,2,2025-10-08,Development roadmap,https://example-source.invalid/f015/s00217,Roadmap published with 12 dated milestones
+S00218,F015,C015,Company registry filing,1,2025-12-04,Revenue model,https://example-source.invalid/f015/s00218,Revenue model not articulated
+S00219,F015,C015,Grant award record,1,2026-04-29,Mission & long-term vision,https://example-source.invalid/f015/s00219,Vision stated as market-size ambition only
+S00220,F016,C016,University lab page,2,2026-02-12,Background & execution,https://example-source.invalid/f016/s00220,0 years domain experience in Healthtech
+S00221,F016,C016,Accelerator cohort directory,2,2025-09-09,Traits,https://example-source.invalid/f016/s00221,Documented fix shipped 82 days after critical user feedback
+S00222,F016,C016,X/Twitter,3,2026-06-23,Team communication,https://example-source.invalid/f016/s00222,"Team publishes a written weekly update, 0 consecutive weeks"
+S00223,F016,C016,arXiv paper,1,2025-12-06,Market maps,https://example-source.invalid/f016/s00223,No named competitor set provided
+S00224,F016,C016,arXiv paper,1,2025-08-05,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f016/s00224,"SOM asserted as a flat share of TAM, no derivation"
+S00225,F016,C016,Conference speaker bio,2,2025-10-03,Value proposition,https://example-source.invalid/f016/s00225,Value prop canvas links 0 customer pains to named features
+S00226,F016,C016,arXiv paper,1,2026-01-23,Customer acquisition,https://example-source.invalid/f016/s00226,CAC measured at $2836 across a real channel test
+S00227,F016,C016,Personal blog,2,2026-06-09,USP / secret sauce,https://example-source.invalid/f016/s00227,"Patent application filed, 0 claims"
+S00228,F016,C016,University lab page,2,2025-12-14,Competitive advantage,https://example-source.invalid/f016/s00228,Switching cost identified and evidenced in 0 accounts
+S00229,F016,C016,Company registry filing,1,2026-04-15,Technical feasibility,https://example-source.invalid/f016/s00229,"Working prototype demonstrated, 1 core functions"
+S00230,F016,C016,Conference speaker bio,2,2025-07-12,Development roadmap,https://example-source.invalid/f016/s00230,No roadmap or milestone dates provided
+S00231,F016,C016,University lab page,2,2026-07-15,Revenue model,https://example-source.invalid/f016/s00231,Revenue model not articulated
+S00232,F016,C016,X/Twitter,3,2026-04-08,Mission & long-term vision,https://example-source.invalid/f016/s00232,Vision stated as market-size ambition only
+S00233,F016,C016,arXiv paper,1,2026-04-07,IP & regulation strategy,https://example-source.invalid/f016/s00233,Regulatory pathway identified with a stated timeline
+S00234,F016,C016,GitHub,2,2025-10-23,Finances & runway,https://example-source.invalid/f016/s00234,"Monthly burn stated at $8K, unaudited"
+S00235,F017,C017,arXiv paper,1,2026-03-12,Background & execution,https://example-source.invalid/f017/s00235,Led engineering for a team of 4
+S00236,F017,C017,Accelerator cohort directory,2,2026-06-13,Traits,https://example-source.invalid/f017/s00236,"Reversed a stated position after customer evidence, 0 documented instances"
+S00237,F017,C017,Accelerator cohort directory,2,2026-07-06,Team role clarity,https://example-source.invalid/f017/s00237,Written role split covering 2 of 4 core functions
+S00238,F017,C017,Platform intake: reference check,1,2026-05-20,Team communication,https://example-source.invalid/f017/s00238,"Team publishes a written weekly update, 8 consecutive weeks"
+S00239,F017,C017,Platform intake: VSP-style prompt response,1,2026-01-19,Feedback & iteration,https://example-source.invalid/f017/s00239,Shipped 0 product iterations following user testing
+S00240,F017,C017,Platform intake: work sample,1,2026-03-16,Market maps,https://example-source.invalid/f017/s00240,Names 0 direct competitors with stated differentiation
+S00241,F017,C017,Platform intake: work sample,1,2026-04-27,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f017/s00241,"SAM narrowed by a stated serviceable constraint, $7M"
+S00242,F017,C017,Platform intake: work sample,1,2026-03-23,Value proposition,https://example-source.invalid/f017/s00242,Value prop canvas links 0 customer pains to named features
+S00243,F017,C017,Job posting authored,2,2026-03-13,Traction & KPIs,https://example-source.invalid/f017/s00243,3 design partners in signed pilot
+S00244,F017,C017,Patent filing,1,2025-10-13,Customer acquisition,https://example-source.invalid/f017/s00244,No acquisition process defined
+S00245,F017,C017,Platform intake: scenario interview,1,2025-07-27,USP / secret sauce,https://example-source.invalid/f017/s00245,Proprietary dataset of 0K labeled records
+S00246,F017,C017,Platform intake: reference check,1,2025-11-03,Competitive advantage,https://example-source.invalid/f017/s00246,Win/loss reasons documented across 5 deals
+S00247,F017,C017,Platform intake: VSP-style prompt response,1,2026-02-23,Technical feasibility,https://example-source.invalid/f017/s00247,Core technical risk unaddressed in materials
+S00248,F017,C017,Grant award record,1,2025-12-18,Revenue model,https://example-source.invalid/f017/s00248,Pricing tested across 1 customer segments
+S00249,F017,C017,Platform intake: scenario interview,1,2026-04-15,Mission & long-term vision,https://example-source.invalid/f017/s00249,Vision articulates 1 future verticals with entry logic
+S00250,F017,C017,Employer team page,2,2026-06-27,Company formation & cap table,https://example-source.invalid/f017/s00250,"Entity incorporated, registry record on file"
+S00251,F018,C018,Patent filing,1,2026-01-20,Traits,https://example-source.invalid/f018/s00251,Reference describes founder as specific about failure modes
+S00252,F018,C018,Platform intake: work sample,1,2025-12-10,Feedback & iteration,https://example-source.invalid/f018/s00252,No evidence of iteration following feedback
+S00253,F018,C018,Platform intake: reference check,1,2026-04-19,Market maps,https://example-source.invalid/f018/s00253,No named competitor set provided
+S00254,F018,C018,Platform intake: reference check,1,2026-05-08,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f018/s00254,Bottom-up SOM of $56M derived from a stated unit chain
+S00255,F018,C018,Platform intake: VSP-style prompt response,1,2026-05-10,Value proposition,https://example-source.invalid/f018/s00255,Value prop canvas links 10 customer pains to named features
+S00256,F018,C018,Platform intake: VSP-style prompt response,1,2025-06-23,Traction & KPIs,https://example-source.invalid/f018/s00256,ARR of $253K
+S00257,F018,C018,Conference speaker bio,2,2026-07-11,Customer acquisition,https://example-source.invalid/f018/s00257,CAC measured at $383 across a real channel test
+S00258,F018,C018,Conference speaker bio,2,2025-11-30,USP / secret sauce,https://example-source.invalid/f018/s00258,Proprietary dataset of 222K labeled records
+S00259,F018,C018,Platform intake: VSP-style prompt response,1,2025-06-28,Competitive advantage,https://example-source.invalid/f018/s00259,Win/loss reasons documented across 15 deals
+S00260,F018,C018,Accelerator cohort directory,2,2025-12-07,Technical feasibility,https://example-source.invalid/f018/s00260,"Working prototype demonstrated, 7 core functions"
+S00261,F018,C018,Platform intake: reference check,1,2025-08-30,Development roadmap,https://example-source.invalid/f018/s00261,No roadmap or milestone dates provided
+S00262,F018,C018,Company registry filing,1,2026-07-05,Revenue model,https://example-source.invalid/f018/s00262,Revenue model not articulated
+S00263,F018,C018,Platform intake: work sample,1,2026-05-26,Mission & long-term vision,https://example-source.invalid/f018/s00263,Vision stated as market-size ambition only
+S00264,F018,C018,Employer team page,2,2026-06-22,Finances & runway,https://example-source.invalid/f018/s00264,Runway of 24 months at current burn
+S00265,F019,C019,Conference speaker bio,2,2026-04-18,Background & execution,https://example-source.invalid/f019/s00265,Shipped 10 public projects prior to founding
+S00266,F019,C019,Conference speaker bio,2,2026-01-20,Traits,https://example-source.invalid/f019/s00266,Reference describes founder as specific about failure modes
+S00267,F019,C019,Conference speaker bio,2,2026-04-29,Team role clarity,https://example-source.invalid/f019/s00267,Written role split covering 2 of 4 core functions
+S00268,F019,C019,Grant award record,1,2025-08-05,Team communication,https://example-source.invalid/f019/s00268,"Team publishes a written weekly update, 22 consecutive weeks"
+S00269,F019,C019,Show HN,2,2026-01-23,Feedback & iteration,https://example-source.invalid/f019/s00269,Roadmap changed 1 times citing named customer input
+S00270,F019,C019,Patent filing,1,2025-07-29,Market maps,https://example-source.invalid/f019/s00270,No named competitor set provided
+S00271,F019,C019,University lab page,2,2026-03-16,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f019/s00271,"SOM asserted as a flat share of TAM, no derivation"
+S00272,F019,C019,University lab page,2,2025-06-29,Value proposition,https://example-source.invalid/f019/s00272,Value prop canvas links 5 customer pains to named features
+S00273,F019,C019,Patent filing,1,2026-03-23,Traction & KPIs,https://example-source.invalid/f019/s00273,ARR of $112K
+S00274,F019,C019,University lab page,2,2025-09-19,Customer acquisition,https://example-source.invalid/f019/s00274,No acquisition process defined
+S00275,F019,C019,Accelerator cohort directory,2,2025-11-02,USP / secret sauce,https://example-source.invalid/f019/s00275,Proprietary dataset of 123K labeled records
+S00276,F019,C019,University lab page,2,2026-05-26,Competitive advantage,https://example-source.invalid/f019/s00276,Differentiation asserted but not evidenced
+S00277,F019,C019,GitHub,2,2026-01-07,Technical feasibility,https://example-source.invalid/f019/s00277,"Working prototype demonstrated, 2 core functions"
+S00278,F019,C019,X/Twitter,3,2025-07-23,Development roadmap,https://example-source.invalid/f019/s00278,Roadmap published with 4 dated milestones
+S00279,F019,C019,arXiv paper,1,2026-04-05,Revenue model,https://example-source.invalid/f019/s00279,1 distinct revenue streams identified with pricing logic
+S00280,F019,C019,Accelerator cohort directory,2,2026-01-24,Mission & long-term vision,https://example-source.invalid/f019/s00280,Vision stated as market-size ambition only
+S00281,F020,C020,Conference speaker bio,2,2025-12-02,Background & execution,https://example-source.invalid/f020/s00281,Led engineering for a team of 14
+S00282,F020,C020,Platform intake: work sample,1,2025-09-03,Traits,https://example-source.invalid/f020/s00282,Documented fix shipped 72 days after critical user feedback
+S00283,F020,C020,Patent filing,1,2026-01-14,Team communication,https://example-source.invalid/f020/s00283,"Team publishes a written weekly update, 19 consecutive weeks"
+S00284,F020,C020,Grant award record,1,2025-07-10,Feedback & iteration,https://example-source.invalid/f020/s00284,Shipped 1 product iterations following user testing
+S00285,F020,C020,Company registry filing,1,2026-03-12,Market maps,https://example-source.invalid/f020/s00285,Maps 1 adjacent players and potential partners
+S00286,F020,C020,Platform intake: reference check,1,2026-01-16,Value proposition,https://example-source.invalid/f020/s00286,Value prop canvas links 2 customer pains to named features
+S00287,F020,C020,Patent filing,1,2026-01-13,Traction & KPIs,https://example-source.invalid/f020/s00287,21 paying customers
+S00288,F020,C020,Grant award record,1,2025-10-30,USP / secret sauce,https://example-source.invalid/f020/s00288,"Patent application filed, 0 claims"
+S00289,F020,C020,Grant award record,1,2025-08-08,Competitive advantage,https://example-source.invalid/f020/s00289,Differentiation asserted but not evidenced
+S00290,F020,C020,Platform intake: work sample,1,2026-07-14,Technical feasibility,https://example-source.invalid/f020/s00290,"Working prototype demonstrated, 4 core functions"
+S00291,F020,C020,Platform intake: work sample,1,2025-09-20,Development roadmap,https://example-source.invalid/f020/s00291,2 of last quarter's milestones delivered on time
+S00292,F020,C020,Platform intake: reference check,1,2026-06-10,Revenue model,https://example-source.invalid/f020/s00292,Revenue model not articulated
+S00293,F020,C020,Employer team page,2,2025-07-13,Mission & long-term vision,https://example-source.invalid/f020/s00293,Vision articulates 2 future verticals with entry logic
+S00294,F021,C021,Company registry filing,1,2026-06-03,Background & execution,https://example-source.invalid/f021/s00294,1 years domain experience in AI infra
+S00295,F021,C021,Grant award record,1,2025-10-02,Traits,https://example-source.invalid/f021/s00295,"Reversed a stated position after customer evidence, 1 documented instances"
+S00296,F021,C021,Platform intake: work sample,1,2026-05-05,Team communication,https://example-source.invalid/f021/s00296,"Team publishes a written weekly update, 2 consecutive weeks"
+S00297,F021,C021,Job posting authored,2,2026-04-30,Feedback & iteration,https://example-source.invalid/f021/s00297,No evidence of iteration following feedback
+S00298,F021,C021,Platform intake: VSP-style prompt response,1,2025-06-22,Market maps,https://example-source.invalid/f021/s00298,No named competitor set provided
+S00299,F021,C021,Platform intake: reference check,1,2026-05-11,Value proposition,https://example-source.invalid/f021/s00299,"Value prop stated in feature language only, no customer job named"
+S00300,F021,C021,Platform intake: scenario interview,1,2025-09-01,Customer acquisition,https://example-source.invalid/f021/s00300,Acquisition funnel documented across 0 stages with conversion rates
+S00301,F021,C021,Platform intake: reference check,1,2025-07-05,USP / secret sauce,https://example-source.invalid/f021/s00301,"Patent application filed, 11 claims"
+S00302,F021,C021,Platform intake: work sample,1,2025-12-03,Technical feasibility,https://example-source.invalid/f021/s00302,Core technical risk unaddressed in materials
+S00303,F021,C021,Patent filing,1,2025-08-14,Development roadmap,https://example-source.invalid/f021/s00303,Roadmap published with 0 dated milestones
+S00304,F021,C021,Platform intake: VSP-style prompt response,1,2026-01-06,Mission & long-term vision,https://example-source.invalid/f021/s00304,Vision articulates 2 future verticals with entry logic
+S00305,F022,C022,LinkedIn post,2,2025-06-28,Traits,https://example-source.invalid/f022/s00305,"Reversed a stated position after customer evidence, 5 documented instances"
+S00306,F022,C022,Job posting authored,2,2025-08-11,Team role clarity,https://example-source.invalid/f022/s00306,"Single founder, no technical cofounder identified"
+S00307,F022,C022,Employer team page,2,2025-08-30,Team communication,https://example-source.invalid/f022/s00307,"Team publishes a written weekly update, 40 consecutive weeks"
+S00308,F022,C022,Company registry filing,1,2025-07-25,Feedback & iteration,https://example-source.invalid/f022/s00308,No evidence of iteration following feedback
+S00309,F022,C022,GitHub,2,2025-10-21,Market maps,https://example-source.invalid/f022/s00309,Names 10 direct competitors with stated differentiation
+S00310,F022,C022,LinkedIn post,2,2025-10-19,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f022/s00310,"SAM narrowed by a stated serviceable constraint, $80M"
+S00311,F022,C022,Product Hunt,2,2025-07-08,Value proposition,https://example-source.invalid/f022/s00311,Value prop canvas links 10 customer pains to named features
+S00312,F022,C022,X/Twitter,3,2026-04-08,Traction & KPIs,https://example-source.invalid/f022/s00312,16 paying customers
+S00313,F022,C022,University lab page,2,2026-02-23,USP / secret sauce,https://example-source.invalid/f022/s00313,"Patent application filed, 19 claims"
+S00314,F022,C022,University lab page,2,2025-12-15,Competitive advantage,https://example-source.invalid/f022/s00314,Switching cost identified and evidenced in 6 accounts
+S00315,F022,C022,Product Hunt,2,2025-09-09,Technical feasibility,https://example-source.invalid/f022/s00315,"Working prototype demonstrated, 8 core functions"
+S00316,F022,C022,Accelerator cohort directory,2,2026-04-07,Development roadmap,https://example-source.invalid/f022/s00316,Roadmap published with 8 dated milestones
+S00317,F022,C022,X/Twitter,3,2025-12-22,Revenue model,https://example-source.invalid/f022/s00317,Revenue model not articulated
+S00318,F022,C022,Patent filing,1,2025-06-30,Mission & long-term vision,https://example-source.invalid/f022/s00318,Vision articulates 2 future verticals with entry logic
+S00319,F023,C023,Accelerator cohort directory,2,2026-06-25,Traits,https://example-source.invalid/f023/s00319,Reference describes founder as specific about failure modes
+S00320,F023,C023,Grant award record,1,2026-03-11,Team role clarity,https://example-source.invalid/f023/s00320,4 cofounders with non-overlapping functional coverage
+S00321,F023,C023,Show HN,2,2025-12-01,Team communication,https://example-source.invalid/f023/s00321,Decision log maintained with 50 entries
+S00322,F023,C023,Employer team page,2,2025-10-26,Feedback & iteration,https://example-source.invalid/f023/s00322,Shipped 15 product iterations following user testing
+S00323,F023,C023,Product Hunt,2,2025-09-02,Market maps,https://example-source.invalid/f023/s00323,No named competitor set provided
+S00324,F023,C023,GitHub,2,2026-02-11,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f023/s00324,"SAM narrowed by a stated serviceable constraint, $80M"
+S00325,F023,C023,Accelerator cohort directory,2,2025-12-05,Value proposition,https://example-source.invalid/f023/s00325,5 customer personas documented with motivations
+S00326,F023,C023,Employer team page,2,2026-02-19,Traction & KPIs,https://example-source.invalid/f023/s00326,"Waitlist of {n} signups, no conversion data"
+S00327,F023,C023,Show HN,2,2025-12-21,Customer acquisition,https://example-source.invalid/f023/s00327,CAC measured at $50 across a real channel test
+S00328,F023,C023,arXiv paper,1,2026-04-10,USP / secret sauce,https://example-source.invalid/f023/s00328,"Patent application filed, 25 claims"
+S00329,F023,C023,Personal blog,2,2026-06-11,Competitive advantage,https://example-source.invalid/f023/s00329,Win/loss reasons documented across 17 deals
+S00330,F023,C023,Employer team page,2,2026-07-04,Technical feasibility,https://example-source.invalid/f023/s00330,Benchmark published against 6 baselines
+S00331,F023,C023,Company registry filing,1,2025-11-17,Development roadmap,https://example-source.invalid/f023/s00331,5 of last quarter's milestones delivered on time
+S00332,F023,C023,Employer team page,2,2026-07-13,Revenue model,https://example-source.invalid/f023/s00332,Revenue model not articulated
+S00333,F023,C023,Show HN,2,2025-10-07,Mission & long-term vision,https://example-source.invalid/f023/s00333,Vision stated as market-size ambition only
+S00334,F023,C023,Accelerator cohort directory,2,2026-06-08,Company formation & cap table,https://example-source.invalid/f023/s00334,"Entity incorporated, registry record on file"
+S00335,F023,C023,arXiv paper,1,2025-11-27,IP & regulation strategy,https://example-source.invalid/f023/s00335,Regulatory pathway identified with a stated timeline
+S00336,F023,C023,Accelerator cohort directory,2,2025-09-22,Finances & runway,https://example-source.invalid/f023/s00336,Runway of 14 months at current burn
+S00337,F024,C024,Company registry filing,1,2025-10-01,Background & execution,https://example-source.invalid/f024/s00337,Shipped 4 public projects prior to founding
+S00338,F024,C024,arXiv paper,1,2025-09-08,Traits,https://example-source.invalid/f024/s00338,"Reversed a stated position after customer evidence, 2 documented instances"
+S00339,F024,C024,X/Twitter,3,2026-04-16,Team role clarity,https://example-source.invalid/f024/s00339,3 cofounders with non-overlapping functional coverage
+S00340,F024,C024,X/Twitter,3,2025-07-13,Team communication,https://example-source.invalid/f024/s00340,"Team publishes a written weekly update, 19 consecutive weeks"
+S00341,F024,C024,Conference speaker bio,2,2025-06-29,Feedback & iteration,https://example-source.invalid/f024/s00341,No evidence of iteration following feedback
+S00342,F024,C024,Product Hunt,2,2025-10-26,Market maps,https://example-source.invalid/f024/s00342,No named competitor set provided
+S00343,F024,C024,Conference speaker bio,2,2026-03-08,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f024/s00343,Bottom-up SOM of $10M derived from a stated unit chain
+S00344,F024,C024,GitHub,2,2025-12-01,Value proposition,https://example-source.invalid/f024/s00344,Value prop canvas links 5 customer pains to named features
+S00345,F024,C024,Show HN,2,2026-03-07,Traction & KPIs,https://example-source.invalid/f024/s00345,ARR of $132K
+S00346,F024,C024,Company registry filing,1,2026-04-29,USP / secret sauce,https://example-source.invalid/f024/s00346,Proprietary dataset of 102K labeled records
+S00347,F024,C024,Patent filing,1,2026-05-02,Competitive advantage,https://example-source.invalid/f024/s00347,Win/loss reasons documented across 8 deals
+S00348,F024,C024,Conference speaker bio,2,2025-10-22,Technical feasibility,https://example-source.invalid/f024/s00348,Benchmark published against 4 baselines
+S00349,F024,C024,Job posting authored,2,2026-05-31,Development roadmap,https://example-source.invalid/f024/s00349,4 of last quarter's milestones delivered on time
+S00350,F024,C024,Employer team page,2,2026-06-02,Revenue model,https://example-source.invalid/f024/s00350,Revenue model not articulated
+S00351,F024,C024,X/Twitter,3,2026-01-22,Mission & long-term vision,https://example-source.invalid/f024/s00351,Vision articulates 3 future verticals with entry logic
+S00352,F024,C024,Personal blog,2,2025-07-02,IP & regulation strategy,https://example-source.invalid/f024/s00352,Regulatory pathway identified with a stated timeline
+S00353,F024,C024,Grant award record,1,2025-10-04,Finances & runway,https://example-source.invalid/f024/s00353,Runway of 11 months at current burn
+S00354,F025,C025,Platform intake: scenario interview,1,2025-10-31,Background & execution,https://example-source.invalid/f025/s00354,Shipped 0 public projects prior to founding
+S00355,F025,C025,Platform intake: work sample,1,2026-05-30,Traits,https://example-source.invalid/f025/s00355,Documented fix shipped 57 days after critical user feedback
+S00356,F025,C025,Platform intake: work sample,1,2026-04-30,Team communication,https://example-source.invalid/f025/s00356,"Team publishes a written weekly update, 0 consecutive weeks"
+S00357,F025,C025,Platform intake: work sample,1,2026-03-20,Feedback & iteration,https://example-source.invalid/f025/s00357,Roadmap changed 0 times citing named customer input
+S00358,F025,C025,Patent filing,1,2025-09-14,Market maps,https://example-source.invalid/f025/s00358,Names 0 direct competitors with stated differentiation
+S00359,F025,C025,Grant award record,1,2025-12-19,Value proposition,https://example-source.invalid/f025/s00359,0 customer personas documented with motivations
+S00360,F025,C025,Platform intake: work sample,1,2026-01-22,Traction & KPIs,https://example-source.invalid/f025/s00360,ARR of $0K
+S00361,F025,C025,Platform intake: reference check,1,2026-06-12,USP / secret sauce,https://example-source.invalid/f025/s00361,"Patent application filed, 8 claims"
+S00362,F025,C025,Employer team page,2,2026-05-31,Competitive advantage,https://example-source.invalid/f025/s00362,Switching cost identified and evidenced in 1 accounts
+S00363,F025,C025,Accelerator cohort directory,2,2026-05-09,Technical feasibility,https://example-source.invalid/f025/s00363,Core technical risk unaddressed in materials
+S00364,F025,C025,Job posting authored,2,2026-02-14,Mission & long-term vision,https://example-source.invalid/f025/s00364,Vision stated as market-size ambition only
+S00365,F025,C025,Accelerator cohort directory,2,2025-10-03,IP & regulation strategy,https://example-source.invalid/f025/s00365,Regulatory pathway identified with a stated timeline
+S00366,F025,C025,Grant award record,1,2026-01-04,Finances & runway,https://example-source.invalid/f025/s00366,"Monthly burn stated at $14K, unaudited"
+S00367,F026,C026,arXiv paper,1,2026-05-17,Background & execution,https://example-source.invalid/f026/s00367,Led engineering for a team of 2
+S00368,F026,C026,University lab page,2,2026-03-25,Traits,https://example-source.invalid/f026/s00368,"Reversed a stated position after customer evidence, 2 documented instances"
+S00369,F026,C026,Platform intake: work sample,1,2026-04-25,Team role clarity,https://example-source.invalid/f026/s00369,"Single founder, no technical cofounder identified"
+S00370,F026,C026,Platform intake: reference check,1,2025-07-05,Team communication,https://example-source.invalid/f026/s00370,Decision log maintained with 32 entries
+S00371,F026,C026,Grant award record,1,2025-12-02,Market maps,https://example-source.invalid/f026/s00371,Maps 4 adjacent players and potential partners
+S00372,F026,C026,Platform intake: scenario interview,1,2025-08-16,Value proposition,https://example-source.invalid/f026/s00372,"Value prop stated in feature language only, no customer job named"
+S00373,F026,C026,Platform intake: VSP-style prompt response,1,2025-11-30,Traction & KPIs,https://example-source.invalid/f026/s00373,14 paying customers
+S00374,F026,C026,Platform intake: reference check,1,2026-05-05,USP / secret sauce,https://example-source.invalid/f026/s00374,Proprietary dataset of 280K labeled records
+S00375,F026,C026,Platform intake: reference check,1,2025-08-30,Competitive advantage,https://example-source.invalid/f026/s00375,Differentiation asserted but not evidenced
+S00376,F026,C026,Platform intake: scenario interview,1,2025-08-05,Technical feasibility,https://example-source.invalid/f026/s00376,Benchmark published against 3 baselines
+S00377,F026,C026,Company registry filing,1,2025-10-18,Development roadmap,https://example-source.invalid/f026/s00377,Roadmap published with 7 dated milestones
+S00378,F026,C026,Job posting authored,2,2026-04-21,Revenue model,https://example-source.invalid/f026/s00378,Pricing tested across 1 customer segments
+S00379,F026,C026,Employer team page,2,2025-11-18,Finances & runway,https://example-source.invalid/f026/s00379,"Monthly burn stated at $33K, unaudited"
+S00380,F027,C027,Platform intake: scenario interview,1,2025-06-27,Background & execution,https://example-source.invalid/f027/s00380,Led engineering for a team of 29
+S00381,F027,C027,Patent filing,1,2025-06-16,Traits,https://example-source.invalid/f027/s00381,Documented fix shipped 29 days after critical user feedback
+S00382,F027,C027,Platform intake: work sample,1,2025-10-18,Team role clarity,https://example-source.invalid/f027/s00382,Written role split covering 3 of 4 core functions
+S00383,F027,C027,Platform intake: VSP-style prompt response,1,2026-06-13,Team communication,https://example-source.invalid/f027/s00383,"Team publishes a written weekly update, 35 consecutive weeks"
+S00384,F027,C027,Conference speaker bio,2,2025-08-04,Feedback & iteration,https://example-source.invalid/f027/s00384,No evidence of iteration following feedback
+S00385,F027,C027,Platform intake: scenario interview,1,2025-07-02,Market maps,https://example-source.invalid/f027/s00385,Names 3 direct competitors with stated differentiation
+S00386,F027,C027,Employer team page,2,2025-09-07,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f027/s00386,"SAM narrowed by a stated serviceable constraint, $60M"
+S00387,F027,C027,Platform intake: scenario interview,1,2026-01-14,Value proposition,https://example-source.invalid/f027/s00387,Value prop canvas links 7 customer pains to named features
+S00388,F027,C027,Accelerator cohort directory,2,2025-08-29,Traction & KPIs,https://example-source.invalid/f027/s00388,38 paying customers
+S00389,F027,C027,Platform intake: scenario interview,1,2026-06-27,Customer acquisition,https://example-source.invalid/f027/s00389,No acquisition process defined
+S00390,F027,C027,Platform intake: work sample,1,2026-03-28,USP / secret sauce,https://example-source.invalid/f027/s00390,"Patent application filed, 25 claims"
+S00391,F027,C027,Platform intake: scenario interview,1,2025-11-01,Technical feasibility,https://example-source.invalid/f027/s00391,"Working prototype demonstrated, 6 core functions"
+S00392,F027,C027,Platform intake: VSP-style prompt response,1,2026-03-24,Development roadmap,https://example-source.invalid/f027/s00392,Roadmap published with 6 dated milestones
+S00393,F027,C027,Platform intake: VSP-style prompt response,1,2025-09-26,Mission & long-term vision,https://example-source.invalid/f027/s00393,Mission statement names a specific beneficiary and outcome
+S00394,F027,C027,Grant award record,1,2025-09-05,Company formation & cap table,https://example-source.invalid/f027/s00394,"Entity incorporated, registry record on file"
+S00395,F027,C027,Platform intake: work sample,1,2025-06-17,Finances & runway,https://example-source.invalid/f027/s00395,"Monthly burn stated at $73K, unaudited"
+S00396,F028,C028,Employer team page,2,2026-02-04,Background & execution,https://example-source.invalid/f028/s00396,14 years domain experience in Climate
+S00397,F028,C028,arXiv paper,1,2026-03-11,Traits,https://example-source.invalid/f028/s00397,Reference describes founder as specific about failure modes
+S00398,F028,C028,Grant award record,1,2026-02-25,Team role clarity,https://example-source.invalid/f028/s00398,3 cofounders with non-overlapping functional coverage
+S00399,F028,C028,Company registry filing,1,2026-04-26,Team communication,https://example-source.invalid/f028/s00399,No shared written record of decisions found
+S00400,F028,C028,Company registry filing,1,2026-07-03,Feedback & iteration,https://example-source.invalid/f028/s00400,Shipped 18 product iterations following user testing
+S00401,F028,C028,Product Hunt,2,2025-09-27,Market maps,https://example-source.invalid/f028/s00401,Names 10 direct competitors with stated differentiation
+S00402,F028,C028,Product Hunt,2,2026-07-14,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f028/s00402,"SAM narrowed by a stated serviceable constraint, $80M"
+S00403,F028,C028,arXiv paper,1,2026-05-14,Value proposition,https://example-source.invalid/f028/s00403,Value prop canvas links 7 customer pains to named features
+S00404,F028,C028,Conference speaker bio,2,2025-08-07,Traction & KPIs,https://example-source.invalid/f028/s00404,37 paying customers
+S00405,F028,C028,Patent filing,1,2025-09-14,Customer acquisition,https://example-source.invalid/f028/s00405,CAC measured at $792 across a real channel test
+S00406,F028,C028,Employer team page,2,2025-07-01,USP / secret sauce,https://example-source.invalid/f028/s00406,"Wrapper over a single third-party model, no proprietary layer"
+S00407,F028,C028,Employer team page,2,2026-07-17,Competitive advantage,https://example-source.invalid/f028/s00407,Win/loss reasons documented across 15 deals
+S00408,F028,C028,Job posting authored,2,2025-12-18,Revenue model,https://example-source.invalid/f028/s00408,4 distinct revenue streams identified with pricing logic
+S00409,F028,C028,Employer team page,2,2025-07-19,Mission & long-term vision,https://example-source.invalid/f028/s00409,Mission statement names a specific beneficiary and outcome
+S00410,F029,C029,Patent filing,1,2025-09-10,Background & execution,https://example-source.invalid/f029/s00410,Shipped 5 public projects prior to founding
+S00411,F029,C029,Employer team page,2,2025-09-14,Traits,https://example-source.invalid/f029/s00411,Documented fix shipped 41 days after critical user feedback
+S00412,F029,C029,Employer team page,2,2026-06-07,Team communication,https://example-source.invalid/f029/s00412,"Team publishes a written weekly update, 31 consecutive weeks"
+S00413,F029,C029,Accelerator cohort directory,2,2025-12-09,Feedback & iteration,https://example-source.invalid/f029/s00413,Shipped 6 product iterations following user testing
+S00414,F029,C029,X/Twitter,3,2026-02-01,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f029/s00414,"SAM narrowed by a stated serviceable constraint, $57M"
+S00415,F029,C029,Employer team page,2,2025-09-01,Traction & KPIs,https://example-source.invalid/f029/s00415,"Waitlist of {n} signups, no conversion data"
+S00416,F029,C029,X/Twitter,3,2025-12-18,Customer acquisition,https://example-source.invalid/f029/s00416,Acquisition funnel documented across 4 stages with conversion rates
+S00417,F029,C029,Product Hunt,2,2026-01-23,USP / secret sauce,https://example-source.invalid/f029/s00417,"Patent application filed, 21 claims"
+S00418,F029,C029,Company registry filing,1,2025-08-30,Competitive advantage,https://example-source.invalid/f029/s00418,Switching cost identified and evidenced in 5 accounts
+S00419,F029,C029,X/Twitter,3,2025-08-19,Development roadmap,https://example-source.invalid/f029/s00419,No roadmap or milestone dates provided
+S00420,F029,C029,LinkedIn post,2,2025-08-20,Mission & long-term vision,https://example-source.invalid/f029/s00420,Vision stated as market-size ambition only
+S00421,F029,C029,arXiv paper,1,2025-12-05,IP & regulation strategy,https://example-source.invalid/f029/s00421,Regulatory pathway identified with a stated timeline
+S00422,F030,C030,Accelerator cohort directory,2,2025-11-24,Background & execution,https://example-source.invalid/f030/s00422,14 years domain experience in Healthtech
+S00423,F030,C030,Personal blog,2,2025-08-08,Traits,https://example-source.invalid/f030/s00423,Documented fix shipped 18 days after critical user feedback
+S00424,F030,C030,GitHub,2,2025-08-14,Team role clarity,https://example-source.invalid/f030/s00424,3 cofounders with non-overlapping functional coverage
+S00425,F030,C030,X/Twitter,3,2026-01-02,Team communication,https://example-source.invalid/f030/s00425,"Team publishes a written weekly update, 11 consecutive weeks"
+S00426,F030,C030,Show HN,2,2026-07-10,Feedback & iteration,https://example-source.invalid/f030/s00426,Shipped 15 product iterations following user testing
+S00427,F030,C030,GitHub,2,2026-05-08,Market maps,https://example-source.invalid/f030/s00427,No named competitor set provided
+S00428,F030,C030,GitHub,2,2026-02-21,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f030/s00428,"SAM narrowed by a stated serviceable constraint, $38M"
+S00429,F030,C030,Job posting authored,2,2026-03-27,Value proposition,https://example-source.invalid/f030/s00429,Value prop canvas links 3 customer pains to named features
+S00430,F030,C030,Show HN,2,2026-07-14,Traction & KPIs,https://example-source.invalid/f030/s00430,"Waitlist of {n} signups, no conversion data"
+S00431,F030,C030,LinkedIn post,2,2025-11-24,Customer acquisition,https://example-source.invalid/f030/s00431,Acquisition funnel documented across 3 stages with conversion rates
+S00432,F030,C030,Job posting authored,2,2026-04-20,USP / secret sauce,https://example-source.invalid/f030/s00432,"Patent application filed, 18 claims"
+S00433,F030,C030,Product Hunt,2,2026-01-25,Competitive advantage,https://example-source.invalid/f030/s00433,Win/loss reasons documented across 13 deals
+S00434,F030,C030,arXiv paper,1,2025-09-08,Technical feasibility,https://example-source.invalid/f030/s00434,"Working prototype demonstrated, 8 core functions"
+S00435,F030,C030,GitHub,2,2025-10-29,Development roadmap,https://example-source.invalid/f030/s00435,3 of last quarter's milestones delivered on time
+S00436,F030,C030,Job posting authored,2,2025-11-24,Revenue model,https://example-source.invalid/f030/s00436,Pricing tested across 3 customer segments
+S00437,F030,C030,Product Hunt,2,2026-02-24,Mission & long-term vision,https://example-source.invalid/f030/s00437,Mission statement names a specific beneficiary and outcome
+S00438,F030,C030,Conference speaker bio,2,2025-07-03,Finances & runway,https://example-source.invalid/f030/s00438,"Monthly burn stated at $76K, unaudited"
+S00439,F031,C031,Product Hunt,2,2025-11-19,Background & execution,https://example-source.invalid/f031/s00439,Shipped 6 public projects prior to founding
+S00440,F031,C031,Company registry filing,1,2025-08-09,Traits,https://example-source.invalid/f031/s00440,"Reversed a stated position after customer evidence, 4 documented instances"
+S00441,F031,C031,GitHub,2,2025-09-09,Team role clarity,https://example-source.invalid/f031/s00441,3 cofounders with non-overlapping functional coverage
+S00442,F031,C031,Company registry filing,1,2026-05-08,Team communication,https://example-source.invalid/f031/s00442,No shared written record of decisions found
+S00443,F031,C031,Personal blog,2,2025-06-27,Market maps,https://example-source.invalid/f031/s00443,Names 7 direct competitors with stated differentiation
+S00444,F031,C031,Show HN,2,2025-09-29,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f031/s00444,"SOM asserted as a flat share of TAM, no derivation"
+S00445,F031,C031,X/Twitter,3,2025-12-06,Traction & KPIs,https://example-source.invalid/f031/s00445,24 paying customers
+S00446,F031,C031,University lab page,2,2026-01-06,USP / secret sauce,https://example-source.invalid/f031/s00446,Proprietary dataset of 227K labeled records
+S00447,F031,C031,Product Hunt,2,2025-11-04,Competitive advantage,https://example-source.invalid/f031/s00447,Switching cost identified and evidenced in 4 accounts
+S00448,F031,C031,Product Hunt,2,2025-12-06,Technical feasibility,https://example-source.invalid/f031/s00448,Core technical risk unaddressed in materials
+S00449,F031,C031,Show HN,2,2025-08-22,Development roadmap,https://example-source.invalid/f031/s00449,No roadmap or milestone dates provided
+S00450,F031,C031,Conference speaker bio,2,2025-11-18,Revenue model,https://example-source.invalid/f031/s00450,3 distinct revenue streams identified with pricing logic
+S00451,F031,C031,Conference speaker bio,2,2025-06-23,Mission & long-term vision,https://example-source.invalid/f031/s00451,Vision articulates 2 future verticals with entry logic
+S00452,F032,C032,GitHub,2,2025-12-28,Background & execution,https://example-source.invalid/f032/s00452,Led engineering for a team of 22
+S00453,F032,C032,Product Hunt,2,2025-08-27,Traits,https://example-source.invalid/f032/s00453,Reference describes founder as specific about failure modes
+S00454,F032,C032,Conference speaker bio,2,2026-03-09,Team role clarity,https://example-source.invalid/f032/s00454,Written role split covering 2 of 4 core functions
+S00455,F032,C032,X/Twitter,3,2026-04-07,Team communication,https://example-source.invalid/f032/s00455,No shared written record of decisions found
+S00456,F032,C032,Accelerator cohort directory,2,2026-04-20,Feedback & iteration,https://example-source.invalid/f032/s00456,Roadmap changed 6 times citing named customer input
+S00457,F032,C032,Job posting authored,2,2025-07-18,Market maps,https://example-source.invalid/f032/s00457,Maps 5 adjacent players and potential partners
+S00458,F032,C032,University lab page,2,2026-01-20,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f032/s00458,Bottom-up SOM of $31M derived from a stated unit chain
+S00459,F032,C032,X/Twitter,3,2026-06-05,Value proposition,https://example-source.invalid/f032/s00459,2 customer personas documented with motivations
+S00460,F032,C032,Personal blog,2,2026-01-24,Traction & KPIs,https://example-source.invalid/f032/s00460,7 design partners in signed pilot
+S00461,F032,C032,Employer team page,2,2026-04-30,USP / secret sauce,https://example-source.invalid/f032/s00461,Proprietary dataset of 212K labeled records
+S00462,F032,C032,Patent filing,1,2026-05-30,Competitive advantage,https://example-source.invalid/f032/s00462,Win/loss reasons documented across 7 deals
+S00463,F032,C032,Employer team page,2,2026-03-21,Technical feasibility,https://example-source.invalid/f032/s00463,Benchmark published against 3 baselines
+S00464,F032,C032,Product Hunt,2,2026-05-23,Development roadmap,https://example-source.invalid/f032/s00464,Roadmap published with 11 dated milestones
+S00465,F032,C032,University lab page,2,2026-01-29,Revenue model,https://example-source.invalid/f032/s00465,Revenue model not articulated
+S00466,F032,C032,Show HN,2,2026-03-31,Mission & long-term vision,https://example-source.invalid/f032/s00466,Vision stated as market-size ambition only
+S00467,F033,C033,Platform intake: scenario interview,1,2025-08-14,Background & execution,https://example-source.invalid/f033/s00467,Shipped 2 public projects prior to founding
+S00468,F033,C033,Platform intake: work sample,1,2025-11-29,Traits,https://example-source.invalid/f033/s00468,Reference describes founder as specific about failure modes
+S00469,F033,C033,Platform intake: VSP-style prompt response,1,2025-06-13,Team role clarity,https://example-source.invalid/f033/s00469,"Single founder, no technical cofounder identified"
+S00470,F033,C033,Platform intake: reference check,1,2026-05-10,Team communication,https://example-source.invalid/f033/s00470,No shared written record of decisions found
+S00471,F033,C033,Platform intake: scenario interview,1,2026-02-14,Feedback & iteration,https://example-source.invalid/f033/s00471,No evidence of iteration following feedback
+S00472,F033,C033,Platform intake: scenario interview,1,2026-07-01,Market maps,https://example-source.invalid/f033/s00472,Maps 0 adjacent players and potential partners
+S00473,F033,C033,Platform intake: VSP-style prompt response,1,2026-04-22,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f033/s00473,"SOM asserted as a flat share of TAM, no derivation"
+S00474,F033,C033,Accelerator cohort directory,2,2025-10-08,Value proposition,https://example-source.invalid/f033/s00474,Value prop canvas links 0 customer pains to named features
+S00475,F033,C033,Platform intake: VSP-style prompt response,1,2025-12-28,Customer acquisition,https://example-source.invalid/f033/s00475,Acquisition funnel documented across 0 stages with conversion rates
+S00476,F033,C033,Platform intake: reference check,1,2026-03-13,Competitive advantage,https://example-source.invalid/f033/s00476,Differentiation asserted but not evidenced
+S00477,F033,C033,Platform intake: reference check,1,2026-04-20,Technical feasibility,https://example-source.invalid/f033/s00477,Benchmark published against 0 baselines
+S00478,F033,C033,Company registry filing,1,2025-06-22,Development roadmap,https://example-source.invalid/f033/s00478,Roadmap published with 3 dated milestones
+S00479,F033,C033,Conference speaker bio,2,2026-01-11,Revenue model,https://example-source.invalid/f033/s00479,Pricing tested across 0 customer segments
+S00480,F033,C033,Platform intake: scenario interview,1,2025-08-05,Mission & long-term vision,https://example-source.invalid/f033/s00480,Mission statement names a specific beneficiary and outcome
+S00481,F033,C033,Platform intake: work sample,1,2026-02-10,IP & regulation strategy,https://example-source.invalid/f033/s00481,Regulatory pathway identified with a stated timeline
+S00482,F033,C033,Platform intake: scenario interview,1,2026-01-22,Finances & runway,https://example-source.invalid/f033/s00482,Runway of 0 months at current burn
+S00483,F034,C034,Show HN,2,2025-11-15,Background & execution,https://example-source.invalid/f034/s00483,10 years domain experience in Bio
+S00484,F034,C034,Accelerator cohort directory,2,2026-01-18,Traits,https://example-source.invalid/f034/s00484,"Reversed a stated position after customer evidence, 4 documented instances"
+S00485,F034,C034,Patent filing,1,2025-12-01,Team communication,https://example-source.invalid/f034/s00485,"Team publishes a written weekly update, 24 consecutive weeks"
+S00486,F034,C034,Conference speaker bio,2,2025-07-26,Feedback & iteration,https://example-source.invalid/f034/s00486,Roadmap changed 2 times citing named customer input
+S00487,F034,C034,Company registry filing,1,2026-07-05,Market maps,https://example-source.invalid/f034/s00487,No named competitor set provided
+S00488,F034,C034,LinkedIn post,2,2026-03-26,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f034/s00488,"SOM asserted as a flat share of TAM, no derivation"
+S00489,F034,C034,Company registry filing,1,2026-04-28,Value proposition,https://example-source.invalid/f034/s00489,"Value prop stated in feature language only, no customer job named"
+S00490,F034,C034,Personal blog,2,2025-10-27,Traction & KPIs,https://example-source.invalid/f034/s00490,6 design partners in signed pilot
+S00491,F034,C034,Company registry filing,1,2025-10-03,Customer acquisition,https://example-source.invalid/f034/s00491,Acquisition funnel documented across 4 stages with conversion rates
+S00492,F034,C034,Accelerator cohort directory,2,2025-09-29,Competitive advantage,https://example-source.invalid/f034/s00492,Win/loss reasons documented across 14 deals
+S00493,F034,C034,Accelerator cohort directory,2,2025-07-17,Technical feasibility,https://example-source.invalid/f034/s00493,Core technical risk unaddressed in materials
+S00494,F034,C034,Conference speaker bio,2,2025-12-05,Development roadmap,https://example-source.invalid/f034/s00494,Roadmap published with 8 dated milestones
+S00495,F034,C034,Company registry filing,1,2026-03-29,Revenue model,https://example-source.invalid/f034/s00495,3 distinct revenue streams identified with pricing logic
+S00496,F034,C034,Employer team page,2,2026-03-18,Mission & long-term vision,https://example-source.invalid/f034/s00496,Vision articulates 4 future verticals with entry logic
+S00497,F034,C034,Job posting authored,2,2026-04-05,Company formation & cap table,https://example-source.invalid/f034/s00497,"Entity incorporated, registry record on file"
+S00498,F035,C035,Show HN,2,2026-04-14,Background & execution,https://example-source.invalid/f035/s00498,Led engineering for a team of 3
+S00499,F035,C035,arXiv paper,1,2025-10-30,Traits,https://example-source.invalid/f035/s00499,"Reversed a stated position after customer evidence, 0 documented instances"
+S00500,F035,C035,LinkedIn post,2,2025-12-23,Team role clarity,https://example-source.invalid/f035/s00500,Written role split covering 2 of 4 core functions
+S00501,F035,C035,Accelerator cohort directory,2,2025-12-29,Team communication,https://example-source.invalid/f035/s00501,No shared written record of decisions found
+S00502,F035,C035,Patent filing,1,2026-01-17,Feedback & iteration,https://example-source.invalid/f035/s00502,No evidence of iteration following feedback
+S00503,F035,C035,Conference speaker bio,2,2026-05-04,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f035/s00503,Bottom-up SOM of $1M derived from a stated unit chain
+S00504,F035,C035,arXiv paper,1,2025-08-05,Value proposition,https://example-source.invalid/f035/s00504,"Value prop stated in feature language only, no customer job named"
+S00505,F035,C035,Conference speaker bio,2,2026-04-15,Traction & KPIs,https://example-source.invalid/f035/s00505,"Waitlist of {n} signups, no conversion data"
+S00506,F035,C035,University lab page,2,2026-07-07,Customer acquisition,https://example-source.invalid/f035/s00506,CAC measured at $3000 across a real channel test
+S00507,F035,C035,LinkedIn post,2,2026-01-28,USP / secret sauce,https://example-source.invalid/f035/s00507,"Patent application filed, 5 claims"
+S00508,F035,C035,LinkedIn post,2,2026-01-13,Competitive advantage,https://example-source.invalid/f035/s00508,Switching cost identified and evidenced in 5 accounts
+S00509,F035,C035,Show HN,2,2025-11-06,Technical feasibility,https://example-source.invalid/f035/s00509,Benchmark published against 1 baselines
+S00510,F035,C035,GitHub,2,2026-02-08,Development roadmap,https://example-source.invalid/f035/s00510,Roadmap published with 6 dated milestones
+S00511,F035,C035,Job posting authored,2,2026-05-24,Revenue model,https://example-source.invalid/f035/s00511,Revenue model not articulated
+S00512,F035,C035,Company registry filing,1,2026-04-10,Mission & long-term vision,https://example-source.invalid/f035/s00512,Mission statement names a specific beneficiary and outcome
+S00513,F035,C035,Conference speaker bio,2,2025-07-20,Company formation & cap table,https://example-source.invalid/f035/s00513,"Entity incorporated, registry record on file"
+S00514,F035,C035,GitHub,2,2026-05-15,IP & regulation strategy,https://example-source.invalid/f035/s00514,Regulatory pathway identified with a stated timeline
+S00515,F035,C035,Patent filing,1,2026-04-26,Finances & runway,https://example-source.invalid/f035/s00515,Runway of 7 months at current burn
+S00516,F036,C036,Platform intake: work sample,1,2025-11-05,Background & execution,https://example-source.invalid/f036/s00516,Shipped 15 public projects prior to founding
+S00517,F036,C036,Job posting authored,2,2026-07-15,Traits,https://example-source.invalid/f036/s00517,Reference describes founder as specific about failure modes
+S00518,F036,C036,Platform intake: work sample,1,2026-02-06,Team communication,https://example-source.invalid/f036/s00518,No shared written record of decisions found
+S00519,F036,C036,Grant award record,1,2026-04-27,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f036/s00519,"SAM narrowed by a stated serviceable constraint, $68M"
+S00520,F036,C036,Platform intake: VSP-style prompt response,1,2026-02-17,Traction & KPIs,https://example-source.invalid/f036/s00520,40 paying customers
+S00521,F036,C036,Platform intake: VSP-style prompt response,1,2026-02-26,Customer acquisition,https://example-source.invalid/f036/s00521,Acquisition funnel documented across 6 stages with conversion rates
+S00522,F036,C036,Platform intake: reference check,1,2026-05-29,USP / secret sauce,https://example-source.invalid/f036/s00522,"Patent application filed, 25 claims"
+S00523,F036,C036,Platform intake: reference check,1,2026-04-03,Competitive advantage,https://example-source.invalid/f036/s00523,Switching cost identified and evidenced in 10 accounts
+S00524,F036,C036,Platform intake: reference check,1,2025-11-26,Technical feasibility,https://example-source.invalid/f036/s00524,Core technical risk unaddressed in materials
+S00525,F036,C036,Job posting authored,2,2025-07-05,Development roadmap,https://example-source.invalid/f036/s00525,Roadmap published with 12 dated milestones
+S00526,F036,C036,Company registry filing,1,2025-12-02,Revenue model,https://example-source.invalid/f036/s00526,Revenue model not articulated
+S00527,F036,C036,University lab page,2,2025-11-03,Finances & runway,https://example-source.invalid/f036/s00527,Runway of 20 months at current burn
+S00528,F037,C037,GitHub,2,2026-01-23,Background & execution,https://example-source.invalid/f037/s00528,8 years domain experience in Devtools
+S00529,F037,C037,Show HN,2,2026-01-29,Team role clarity,https://example-source.invalid/f037/s00529,"Single founder, no technical cofounder identified"
+S00530,F037,C037,Product Hunt,2,2025-11-25,Team communication,https://example-source.invalid/f037/s00530,Decision log maintained with 14 entries
+S00531,F037,C037,Grant award record,1,2026-01-13,Feedback & iteration,https://example-source.invalid/f037/s00531,No evidence of iteration following feedback
+S00532,F037,C037,Conference speaker bio,2,2026-04-19,Market maps,https://example-source.invalid/f037/s00532,No named competitor set provided
+S00533,F037,C037,X/Twitter,3,2026-04-01,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f037/s00533,"SAM narrowed by a stated serviceable constraint, $45M"
+S00534,F037,C037,Conference speaker bio,2,2026-05-22,Value proposition,https://example-source.invalid/f037/s00534,Value prop canvas links 10 customer pains to named features
+S00535,F037,C037,LinkedIn post,2,2026-02-24,Traction & KPIs,https://example-source.invalid/f037/s00535,19 paying customers
+S00536,F037,C037,Accelerator cohort directory,2,2026-04-16,Customer acquisition,https://example-source.invalid/f037/s00536,CAC measured at $719 across a real channel test
+S00537,F037,C037,Job posting authored,2,2026-05-16,Competitive advantage,https://example-source.invalid/f037/s00537,Win/loss reasons documented across 7 deals
+S00538,F037,C037,LinkedIn post,2,2025-09-15,Development roadmap,https://example-source.invalid/f037/s00538,2 of last quarter's milestones delivered on time
+S00539,F037,C037,University lab page,2,2026-05-03,Revenue model,https://example-source.invalid/f037/s00539,Pricing tested across 4 customer segments
+S00540,F037,C037,Personal blog,2,2025-10-08,Finances & runway,https://example-source.invalid/f037/s00540,"Monthly burn stated at $31K, unaudited"
+S00541,F038,C038,arXiv paper,1,2025-06-16,Background & execution,https://example-source.invalid/f038/s00541,9 years domain experience in Fintech
+S00542,F038,C038,Platform intake: scenario interview,1,2025-11-28,Traits,https://example-source.invalid/f038/s00542,Documented fix shipped 17 days after critical user feedback
+S00543,F038,C038,Patent filing,1,2026-01-25,Team role clarity,https://example-source.invalid/f038/s00543,2 cofounders with non-overlapping functional coverage
+S00544,F038,C038,Platform intake: work sample,1,2025-07-31,Team communication,https://example-source.invalid/f038/s00544,Decision log maintained with 53 entries
+S00545,F038,C038,Employer team page,2,2026-04-24,Feedback & iteration,https://example-source.invalid/f038/s00545,No evidence of iteration following feedback
+S00546,F038,C038,arXiv paper,1,2025-10-29,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f038/s00546,Bottom-up SOM of $28M derived from a stated unit chain
+S00547,F038,C038,Platform intake: work sample,1,2025-11-20,Value proposition,https://example-source.invalid/f038/s00547,Value prop canvas links 6 customer pains to named features
+S00548,F038,C038,Platform intake: reference check,1,2025-08-13,Traction & KPIs,https://example-source.invalid/f038/s00548,7 design partners in signed pilot
+S00549,F038,C038,Platform intake: work sample,1,2026-06-04,Customer acquisition,https://example-source.invalid/f038/s00549,Acquisition funnel documented across 3 stages with conversion rates
+S00550,F038,C038,Accelerator cohort directory,2,2026-03-10,USP / secret sauce,https://example-source.invalid/f038/s00550,"Wrapper over a single third-party model, no proprietary layer"
+S00551,F038,C038,Accelerator cohort directory,2,2026-05-14,Competitive advantage,https://example-source.invalid/f038/s00551,Win/loss reasons documented across 17 deals
+S00552,F038,C038,Company registry filing,1,2025-07-16,Technical feasibility,https://example-source.invalid/f038/s00552,"Working prototype demonstrated, 3 core functions"
+S00553,F038,C038,Platform intake: reference check,1,2026-01-20,Development roadmap,https://example-source.invalid/f038/s00553,No roadmap or milestone dates provided
+S00554,F038,C038,Patent filing,1,2025-10-12,Revenue model,https://example-source.invalid/f038/s00554,Pricing tested across 2 customer segments
+S00555,F038,C038,Patent filing,1,2026-01-04,Mission & long-term vision,https://example-source.invalid/f038/s00555,Mission statement names a specific beneficiary and outcome
+S00556,F038,C038,Job posting authored,2,2026-04-08,Finances & runway,https://example-source.invalid/f038/s00556,"Monthly burn stated at $41K, unaudited"
+S00557,F039,C039,Product Hunt,2,2026-03-20,Background & execution,https://example-source.invalid/f039/s00557,Shipped 8 public projects prior to founding
+S00558,F039,C039,X/Twitter,3,2026-02-28,Traits,https://example-source.invalid/f039/s00558,Reference describes founder as specific about failure modes
+S00559,F039,C039,University lab page,2,2025-08-08,Team role clarity,https://example-source.invalid/f039/s00559,"Single founder, no technical cofounder identified"
+S00560,F039,C039,LinkedIn post,2,2025-07-14,Team communication,https://example-source.invalid/f039/s00560,Decision log maintained with 9 entries
+S00561,F039,C039,Grant award record,1,2026-05-11,Feedback & iteration,https://example-source.invalid/f039/s00561,Shipped 9 product iterations following user testing
+S00562,F039,C039,Personal blog,2,2026-04-30,Market maps,https://example-source.invalid/f039/s00562,Names 8 direct competitors with stated differentiation
+S00563,F039,C039,Accelerator cohort directory,2,2026-04-20,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f039/s00563,Bottom-up SOM of $53M derived from a stated unit chain
+S00564,F039,C039,University lab page,2,2026-05-17,Value proposition,https://example-source.invalid/f039/s00564,2 customer personas documented with motivations
+S00565,F039,C039,GitHub,2,2026-01-04,Traction & KPIs,https://example-source.invalid/f039/s00565,7 design partners in signed pilot
+S00566,F039,C039,Grant award record,1,2026-04-12,Customer acquisition,https://example-source.invalid/f039/s00566,CAC measured at $1392 across a real channel test
+S00567,F039,C039,LinkedIn post,2,2026-04-06,USP / secret sauce,https://example-source.invalid/f039/s00567,"Patent application filed, 14 claims"
+S00568,F039,C039,Employer team page,2,2025-09-26,Competitive advantage,https://example-source.invalid/f039/s00568,Differentiation asserted but not evidenced
+S00569,F039,C039,LinkedIn post,2,2025-10-29,Technical feasibility,https://example-source.invalid/f039/s00569,Core technical risk unaddressed in materials
+S00570,F039,C039,Product Hunt,2,2026-05-19,Development roadmap,https://example-source.invalid/f039/s00570,3 of last quarter's milestones delivered on time
+S00571,F039,C039,Personal blog,2,2025-09-20,Revenue model,https://example-source.invalid/f039/s00571,2 distinct revenue streams identified with pricing logic
+S00572,F039,C039,Patent filing,1,2025-11-20,Mission & long-term vision,https://example-source.invalid/f039/s00572,Vision articulates 2 future verticals with entry logic
+S00573,F040,C040,Platform intake: reference check,1,2025-09-12,Background & execution,https://example-source.invalid/f040/s00573,14 years domain experience in AI infra
+S00574,F040,C040,Platform intake: reference check,1,2026-05-08,Team communication,https://example-source.invalid/f040/s00574,No shared written record of decisions found
+S00575,F040,C040,Platform intake: work sample,1,2025-08-11,Feedback & iteration,https://example-source.invalid/f040/s00575,Roadmap changed 7 times citing named customer input
+S00576,F040,C040,Platform intake: work sample,1,2026-01-07,Market maps,https://example-source.invalid/f040/s00576,Maps 11 adjacent players and potential partners
+S00577,F040,C040,Platform intake: work sample,1,2025-10-13,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f040/s00577,"SAM narrowed by a stated serviceable constraint, $68M"
+S00578,F040,C040,Platform intake: work sample,1,2025-07-23,Value proposition,https://example-source.invalid/f040/s00578,"Value prop stated in feature language only, no customer job named"
+S00579,F040,C040,Accelerator cohort directory,2,2025-07-07,Traction & KPIs,https://example-source.invalid/f040/s00579,ARR of $377K
+S00580,F040,C040,Platform intake: work sample,1,2025-08-08,Customer acquisition,https://example-source.invalid/f040/s00580,No acquisition process defined
+S00581,F040,C040,Platform intake: scenario interview,1,2025-08-17,USP / secret sauce,https://example-source.invalid/f040/s00581,"Patent application filed, 9 claims"
+S00582,F040,C040,Platform intake: work sample,1,2026-03-03,Competitive advantage,https://example-source.invalid/f040/s00582,Differentiation asserted but not evidenced
+S00583,F040,C040,arXiv paper,1,2025-12-04,Technical feasibility,https://example-source.invalid/f040/s00583,"Working prototype demonstrated, 8 core functions"
+S00584,F040,C040,Platform intake: scenario interview,1,2026-05-11,Development roadmap,https://example-source.invalid/f040/s00584,Roadmap published with 9 dated milestones
+S00585,F040,C040,Platform intake: work sample,1,2025-07-23,Revenue model,https://example-source.invalid/f040/s00585,4 distinct revenue streams identified with pricing logic
+S00586,F040,C040,Accelerator cohort directory,2,2025-09-07,Finances & runway,https://example-source.invalid/f040/s00586,Runway of 24 months at current burn
+S00587,F041,C041,Platform intake: work sample,1,2025-11-18,Traits,https://example-source.invalid/f041/s00587,"Reversed a stated position after customer evidence, 1 documented instances"
+S00588,F041,C041,Patent filing,1,2026-03-04,Team role clarity,https://example-source.invalid/f041/s00588,"Single founder, no technical cofounder identified"
+S00589,F041,C041,Platform intake: reference check,1,2026-03-09,Team communication,https://example-source.invalid/f041/s00589,"Team publishes a written weekly update, 9 consecutive weeks"
+S00590,F041,C041,Platform intake: scenario interview,1,2025-08-04,Market maps,https://example-source.invalid/f041/s00590,Maps 9 adjacent players and potential partners
+S00591,F041,C041,Platform intake: work sample,1,2026-02-05,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f041/s00591,"SOM asserted as a flat share of TAM, no derivation"
+S00592,F041,C041,Platform intake: work sample,1,2026-04-26,Value proposition,https://example-source.invalid/f041/s00592,"Value prop stated in feature language only, no customer job named"
+S00593,F041,C041,arXiv paper,1,2025-12-02,Traction & KPIs,https://example-source.invalid/f041/s00593,36 paying customers
+S00594,F041,C041,Platform intake: work sample,1,2025-08-20,Customer acquisition,https://example-source.invalid/f041/s00594,CAC measured at $2427 across a real channel test
+S00595,F041,C041,Platform intake: reference check,1,2026-04-30,USP / secret sauce,https://example-source.invalid/f041/s00595,"Wrapper over a single third-party model, no proprietary layer"
+S00596,F041,C041,Platform intake: work sample,1,2026-03-12,Competitive advantage,https://example-source.invalid/f041/s00596,Win/loss reasons documented across 4 deals
+S00597,F041,C041,Platform intake: reference check,1,2026-03-15,Technical feasibility,https://example-source.invalid/f041/s00597,"Working prototype demonstrated, 3 core functions"
+S00598,F041,C041,Platform intake: VSP-style prompt response,1,2025-06-13,Revenue model,https://example-source.invalid/f041/s00598,Pricing tested across 3 customer segments
+S00599,F041,C041,Platform intake: work sample,1,2026-02-08,Mission & long-term vision,https://example-source.invalid/f041/s00599,Vision articulates 1 future verticals with entry logic
+S00600,F042,C042,University lab page,2,2025-09-15,Background & execution,https://example-source.invalid/f042/s00600,0 years domain experience in Climate
+S00601,F042,C042,Employer team page,2,2025-10-11,Traits,https://example-source.invalid/f042/s00601,"Reversed a stated position after customer evidence, 1 documented instances"
+S00602,F042,C042,Job posting authored,2,2026-02-14,Team role clarity,https://example-source.invalid/f042/s00602,1 cofounders with non-overlapping functional coverage
+S00603,F042,C042,Company registry filing,1,2025-08-26,Team communication,https://example-source.invalid/f042/s00603,No shared written record of decisions found
+S00604,F042,C042,Company registry filing,1,2026-05-24,Feedback & iteration,https://example-source.invalid/f042/s00604,Roadmap changed 0 times citing named customer input
+S00605,F042,C042,Grant award record,1,2026-01-05,Market maps,https://example-source.invalid/f042/s00605,No named competitor set provided
+S00606,F042,C042,Patent filing,1,2026-03-05,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f042/s00606,"SAM narrowed by a stated serviceable constraint, $51M"
+S00607,F042,C042,Show HN,2,2026-01-13,Value proposition,https://example-source.invalid/f042/s00607,"Value prop stated in feature language only, no customer job named"
+S00608,F042,C042,University lab page,2,2026-07-09,Traction & KPIs,https://example-source.invalid/f042/s00608,2 design partners in signed pilot
+S00609,F042,C042,Employer team page,2,2026-06-15,Customer acquisition,https://example-source.invalid/f042/s00609,CAC measured at $2172 across a real channel test
+S00610,F042,C042,Accelerator cohort directory,2,2026-07-08,USP / secret sauce,https://example-source.invalid/f042/s00610,"Wrapper over a single third-party model, no proprietary layer"
+S00611,F042,C042,GitHub,2,2025-11-02,Competitive advantage,https://example-source.invalid/f042/s00611,Win/loss reasons documented across 0 deals
+S00612,F042,C042,University lab page,2,2026-06-11,Technical feasibility,https://example-source.invalid/f042/s00612,Core technical risk unaddressed in materials
+S00613,F042,C042,Product Hunt,2,2026-02-07,Development roadmap,https://example-source.invalid/f042/s00613,No roadmap or milestone dates provided
+S00614,F042,C042,Company registry filing,1,2026-02-11,Mission & long-term vision,https://example-source.invalid/f042/s00614,Vision stated as market-size ambition only
+S00615,F043,C043,Conference speaker bio,2,2026-05-29,Background & execution,https://example-source.invalid/f043/s00615,Shipped 3 public projects prior to founding
+S00616,F043,C043,University lab page,2,2025-07-31,Traits,https://example-source.invalid/f043/s00616,Reference describes founder as specific about failure modes
+S00617,F043,C043,Product Hunt,2,2026-01-07,Team role clarity,https://example-source.invalid/f043/s00617,Written role split covering 2 of 4 core functions
+S00618,F043,C043,Company registry filing,1,2025-10-27,Team communication,https://example-source.invalid/f043/s00618,No shared written record of decisions found
+S00619,F043,C043,Patent filing,1,2026-06-29,Market maps,https://example-source.invalid/f043/s00619,No named competitor set provided
+S00620,F043,C043,Employer team page,2,2025-11-24,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f043/s00620,Bottom-up SOM of $34M derived from a stated unit chain
+S00621,F043,C043,Accelerator cohort directory,2,2025-10-11,Traction & KPIs,https://example-source.invalid/f043/s00621,ARR of $0K
+S00622,F043,C043,Product Hunt,2,2025-11-15,Customer acquisition,https://example-source.invalid/f043/s00622,No acquisition process defined
+S00623,F043,C043,Product Hunt,2,2026-01-30,USP / secret sauce,https://example-source.invalid/f043/s00623,"Wrapper over a single third-party model, no proprietary layer"
+S00624,F043,C043,Product Hunt,2,2026-01-04,Competitive advantage,https://example-source.invalid/f043/s00624,Switching cost identified and evidenced in 8 accounts
+S00625,F043,C043,LinkedIn post,2,2026-03-23,Technical feasibility,https://example-source.invalid/f043/s00625,"Working prototype demonstrated, 2 core functions"
+S00626,F043,C043,Company registry filing,1,2025-09-23,Development roadmap,https://example-source.invalid/f043/s00626,No roadmap or milestone dates provided
+S00627,F043,C043,Job posting authored,2,2026-05-15,Revenue model,https://example-source.invalid/f043/s00627,1 distinct revenue streams identified with pricing logic
+S00628,F043,C043,GitHub,2,2025-10-14,Mission & long-term vision,https://example-source.invalid/f043/s00628,Vision articulates 3 future verticals with entry logic
+S00629,F044,C044,X/Twitter,3,2026-04-19,Background & execution,https://example-source.invalid/f044/s00629,Shipped 2 public projects prior to founding
+S00630,F044,C044,Grant award record,1,2025-12-19,Traits,https://example-source.invalid/f044/s00630,"Reversed a stated position after customer evidence, 1 documented instances"
+S00631,F044,C044,Show HN,2,2025-08-29,Team role clarity,https://example-source.invalid/f044/s00631,1 cofounders with non-overlapping functional coverage
+S00632,F044,C044,Personal blog,2,2026-06-28,Team communication,https://example-source.invalid/f044/s00632,"Team publishes a written weekly update, 7 consecutive weeks"
+S00633,F044,C044,Accelerator cohort directory,2,2025-12-13,Feedback & iteration,https://example-source.invalid/f044/s00633,Shipped 13 product iterations following user testing
+S00634,F044,C044,Personal blog,2,2026-07-11,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f044/s00634,"SAM narrowed by a stated serviceable constraint, $27M"
+S00635,F044,C044,LinkedIn post,2,2025-11-08,Value proposition,https://example-source.invalid/f044/s00635,Value prop canvas links 0 customer pains to named features
+S00636,F044,C044,LinkedIn post,2,2025-07-08,Traction & KPIs,https://example-source.invalid/f044/s00636,10 paying customers
+S00637,F044,C044,Job posting authored,2,2026-07-16,Customer acquisition,https://example-source.invalid/f044/s00637,CAC measured at $2700 across a real channel test
+S00638,F044,C044,Employer team page,2,2025-09-12,USP / secret sauce,https://example-source.invalid/f044/s00638,"Patent application filed, 3 claims"
+S00639,F044,C044,Company registry filing,1,2025-10-01,Competitive advantage,https://example-source.invalid/f044/s00639,Differentiation asserted but not evidenced
+S00640,F044,C044,Conference speaker bio,2,2025-07-10,Technical feasibility,https://example-source.invalid/f044/s00640,Core technical risk unaddressed in materials
+S00641,F044,C044,X/Twitter,3,2025-07-22,Development roadmap,https://example-source.invalid/f044/s00641,No roadmap or milestone dates provided
+S00642,F044,C044,X/Twitter,3,2025-06-21,Revenue model,https://example-source.invalid/f044/s00642,Revenue model not articulated
+S00643,F044,C044,Product Hunt,2,2025-07-07,Mission & long-term vision,https://example-source.invalid/f044/s00643,Vision articulates 2 future verticals with entry logic
+S00644,F044,C044,LinkedIn post,2,2026-03-13,Finances & runway,https://example-source.invalid/f044/s00644,Runway of 15 months at current burn
+S00645,F045,C045,Platform intake: work sample,1,2025-11-10,Background & execution,https://example-source.invalid/f045/s00645,Led engineering for a team of 3
+S00646,F045,C045,Conference speaker bio,2,2026-05-29,Traits,https://example-source.invalid/f045/s00646,"Reversed a stated position after customer evidence, 1 documented instances"
+S00647,F045,C045,University lab page,2,2026-02-07,Team communication,https://example-source.invalid/f045/s00647,"Team publishes a written weekly update, 7 consecutive weeks"
+S00648,F045,C045,University lab page,2,2026-05-09,Feedback & iteration,https://example-source.invalid/f045/s00648,Roadmap changed 2 times citing named customer input
+S00649,F045,C045,Platform intake: scenario interview,1,2026-04-05,Market maps,https://example-source.invalid/f045/s00649,No named competitor set provided
+S00650,F045,C045,Platform intake: work sample,1,2025-12-03,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f045/s00650,"SAM narrowed by a stated serviceable constraint, $1M"
+S00651,F045,C045,Platform intake: scenario interview,1,2026-05-14,Value proposition,https://example-source.invalid/f045/s00651,Value prop canvas links 4 customer pains to named features
+S00652,F045,C045,Grant award record,1,2026-04-06,Traction & KPIs,https://example-source.invalid/f045/s00652,"Waitlist of {n} signups, no conversion data"
+S00653,F045,C045,Platform intake: VSP-style prompt response,1,2026-06-13,Customer acquisition,https://example-source.invalid/f045/s00653,CAC measured at $2624 across a real channel test
+S00654,F045,C045,Platform intake: reference check,1,2026-04-12,USP / secret sauce,https://example-source.invalid/f045/s00654,"Patent application filed, 1 claims"
+S00655,F045,C045,Platform intake: VSP-style prompt response,1,2025-12-11,Competitive advantage,https://example-source.invalid/f045/s00655,Win/loss reasons documented across 8 deals
+S00656,F045,C045,Platform intake: work sample,1,2025-10-29,Technical feasibility,https://example-source.invalid/f045/s00656,Core technical risk unaddressed in materials
+S00657,F045,C045,Patent filing,1,2025-10-05,Revenue model,https://example-source.invalid/f045/s00657,Revenue model not articulated
+S00658,F045,C045,University lab page,2,2026-02-20,Mission & long-term vision,https://example-source.invalid/f045/s00658,Vision stated as market-size ambition only
+S00659,F045,C045,Platform intake: scenario interview,1,2025-12-18,Finances & runway,https://example-source.invalid/f045/s00659,"Monthly burn stated at $7K, unaudited"
+S00660,F046,C046,Company registry filing,1,2026-02-06,Background & execution,https://example-source.invalid/f046/s00660,Led engineering for a team of 30
+S00661,F046,C046,Conference speaker bio,2,2026-06-20,Team role clarity,https://example-source.invalid/f046/s00661,4 cofounders with non-overlapping functional coverage
+S00662,F046,C046,Patent filing,1,2025-10-15,Team communication,https://example-source.invalid/f046/s00662,"Team publishes a written weekly update, 40 consecutive weeks"
+S00663,F046,C046,Product Hunt,2,2025-07-30,Feedback & iteration,https://example-source.invalid/f046/s00663,No evidence of iteration following feedback
+S00664,F046,C046,Personal blog,2,2026-06-13,Market maps,https://example-source.invalid/f046/s00664,Maps 12 adjacent players and potential partners
+S00665,F046,C046,Company registry filing,1,2025-08-31,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f046/s00665,Bottom-up SOM of $60M derived from a stated unit chain
+S00666,F046,C046,GitHub,2,2026-04-27,Value proposition,https://example-source.invalid/f046/s00666,5 customer personas documented with motivations
+S00667,F046,C046,Company registry filing,1,2025-06-22,Traction & KPIs,https://example-source.invalid/f046/s00667,ARR of $293K
+S00668,F046,C046,Product Hunt,2,2025-08-24,Customer acquisition,https://example-source.invalid/f046/s00668,No acquisition process defined
+S00669,F046,C046,X/Twitter,3,2026-07-13,USP / secret sauce,https://example-source.invalid/f046/s00669,"Patent application filed, 20 claims"
+S00670,F046,C046,Product Hunt,2,2026-02-15,Competitive advantage,https://example-source.invalid/f046/s00670,Switching cost identified and evidenced in 7 accounts
+S00671,F046,C046,Personal blog,2,2025-07-26,Technical feasibility,https://example-source.invalid/f046/s00671,Core technical risk unaddressed in materials
+S00672,F046,C046,arXiv paper,1,2025-10-11,Development roadmap,https://example-source.invalid/f046/s00672,Roadmap published with 12 dated milestones
+S00673,F046,C046,Employer team page,2,2026-04-01,Revenue model,https://example-source.invalid/f046/s00673,Pricing tested across 5 customer segments
+S00674,F046,C046,Patent filing,1,2025-06-14,Mission & long-term vision,https://example-source.invalid/f046/s00674,Vision articulates 3 future verticals with entry logic
+S00675,F046,C046,Conference speaker bio,2,2025-06-24,Company formation & cap table,https://example-source.invalid/f046/s00675,"Entity incorporated, registry record on file"
+S00676,F046,C046,X/Twitter,3,2026-05-29,Finances & runway,https://example-source.invalid/f046/s00676,Runway of 24 months at current burn
+S00677,F047,C047,Conference speaker bio,2,2026-05-08,Background & execution,https://example-source.invalid/f047/s00677,Led engineering for a team of 8
+S00678,F047,C047,Platform intake: VSP-style prompt response,1,2025-11-04,Traits,https://example-source.invalid/f047/s00678,"Reversed a stated position after customer evidence, 1 documented instances"
+S00679,F047,C047,Platform intake: reference check,1,2025-10-03,Team role clarity,https://example-source.invalid/f047/s00679,"Single founder, no technical cofounder identified"
+S00680,F047,C047,Platform intake: scenario interview,1,2026-03-19,Team communication,https://example-source.invalid/f047/s00680,No shared written record of decisions found
+S00681,F047,C047,Platform intake: VSP-style prompt response,1,2026-01-19,Feedback & iteration,https://example-source.invalid/f047/s00681,Shipped 11 product iterations following user testing
+S00682,F047,C047,Platform intake: scenario interview,1,2025-07-18,Market maps,https://example-source.invalid/f047/s00682,Maps 0 adjacent players and potential partners
+S00683,F047,C047,Platform intake: scenario interview,1,2025-10-26,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f047/s00683,"SAM narrowed by a stated serviceable constraint, $20M"
+S00684,F047,C047,Platform intake: reference check,1,2025-12-26,Value proposition,https://example-source.invalid/f047/s00684,0 customer personas documented with motivations
+S00685,F047,C047,Platform intake: VSP-style prompt response,1,2025-06-16,Customer acquisition,https://example-source.invalid/f047/s00685,Acquisition funnel documented across 2 stages with conversion rates
+S00686,F047,C047,Platform intake: reference check,1,2026-01-13,USP / secret sauce,https://example-source.invalid/f047/s00686,Proprietary dataset of 103K labeled records
+S00687,F047,C047,Platform intake: VSP-style prompt response,1,2025-11-18,Competitive advantage,https://example-source.invalid/f047/s00687,Switching cost identified and evidenced in 0 accounts
+S00688,F047,C047,Employer team page,2,2026-04-12,Technical feasibility,https://example-source.invalid/f047/s00688,"Working prototype demonstrated, 6 core functions"
+S00689,F047,C047,Platform intake: work sample,1,2026-07-09,Development roadmap,https://example-source.invalid/f047/s00689,Roadmap published with 6 dated milestones
+S00690,F047,C047,Job posting authored,2,2026-06-26,Revenue model,https://example-source.invalid/f047/s00690,1 distinct revenue streams identified with pricing logic
+S00691,F047,C047,Company registry filing,1,2025-08-26,Mission & long-term vision,https://example-source.invalid/f047/s00691,Mission statement names a specific beneficiary and outcome
+S00692,F047,C047,Platform intake: VSP-style prompt response,1,2025-12-15,Company formation & cap table,https://example-source.invalid/f047/s00692,"Entity incorporated, registry record on file"
+S00693,F048,C048,Grant award record,1,2025-07-09,Background & execution,https://example-source.invalid/f048/s00693,Led engineering for a team of 8
+S00694,F048,C048,Employer team page,2,2025-11-19,Traits,https://example-source.invalid/f048/s00694,Documented fix shipped 90 days after critical user feedback
+S00695,F048,C048,LinkedIn post,2,2025-07-12,Team role clarity,https://example-source.invalid/f048/s00695,1 cofounders with non-overlapping functional coverage
+S00696,F048,C048,arXiv paper,1,2025-10-03,Team communication,https://example-source.invalid/f048/s00696,No shared written record of decisions found
+S00697,F048,C048,X/Twitter,3,2025-11-07,Feedback & iteration,https://example-source.invalid/f048/s00697,No evidence of iteration following feedback
+S00698,F048,C048,Conference speaker bio,2,2025-12-14,Market maps,https://example-source.invalid/f048/s00698,Maps 0 adjacent players and potential partners
+S00699,F048,C048,Company registry filing,1,2026-03-06,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f048/s00699,"SOM asserted as a flat share of TAM, no derivation"
+S00700,F048,C048,Patent filing,1,2026-04-19,Value proposition,https://example-source.invalid/f048/s00700,0 customer personas documented with motivations
+S00701,F048,C048,Accelerator cohort directory,2,2026-06-21,Traction & KPIs,https://example-source.invalid/f048/s00701,ARR of $0K
+S00702,F048,C048,Conference speaker bio,2,2026-03-16,Customer acquisition,https://example-source.invalid/f048/s00702,Acquisition funnel documented across 1 stages with conversion rates
+S00703,F048,C048,Product Hunt,2,2026-04-13,USP / secret sauce,https://example-source.invalid/f048/s00703,Proprietary dataset of 0K labeled records
+S00704,F048,C048,Accelerator cohort directory,2,2025-07-21,Competitive advantage,https://example-source.invalid/f048/s00704,Differentiation asserted but not evidenced
+S00705,F048,C048,Conference speaker bio,2,2025-09-24,Development roadmap,https://example-source.invalid/f048/s00705,Roadmap published with 5 dated milestones
+S00706,F048,C048,arXiv paper,1,2026-07-13,Revenue model,https://example-source.invalid/f048/s00706,Revenue model not articulated
+S00707,F048,C048,Personal blog,2,2026-03-28,Mission & long-term vision,https://example-source.invalid/f048/s00707,Vision articulates 1 future verticals with entry logic
+S00708,F048,C048,Grant award record,1,2025-07-14,Company formation & cap table,https://example-source.invalid/f048/s00708,"Entity incorporated, registry record on file"
+S00709,F049,C049,Company registry filing,1,2026-04-29,Background & execution,https://example-source.invalid/f049/s00709,0 years domain experience in Vertical SaaS
+S00710,F049,C049,Show HN,2,2026-04-18,Traits,https://example-source.invalid/f049/s00710,Reference describes founder as specific about failure modes
+S00711,F049,C049,Accelerator cohort directory,2,2026-05-09,Team role clarity,https://example-source.invalid/f049/s00711,Written role split covering 2 of 4 core functions
+S00712,F049,C049,University lab page,2,2025-09-15,Team communication,https://example-source.invalid/f049/s00712,No shared written record of decisions found
+S00713,F049,C049,Company registry filing,1,2026-04-13,Market maps,https://example-source.invalid/f049/s00713,Maps 6 adjacent players and potential partners
+S00714,F049,C049,Personal blog,2,2025-09-14,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f049/s00714,"SOM asserted as a flat share of TAM, no derivation"
+S00715,F049,C049,Employer team page,2,2025-07-26,Value proposition,https://example-source.invalid/f049/s00715,"Value prop stated in feature language only, no customer job named"
+S00716,F049,C049,GitHub,2,2025-10-01,Traction & KPIs,https://example-source.invalid/f049/s00716,7 paying customers
+S00717,F049,C049,University lab page,2,2025-06-27,Customer acquisition,https://example-source.invalid/f049/s00717,CAC measured at $1792 across a real channel test
+S00718,F049,C049,Employer team page,2,2025-10-07,USP / secret sauce,https://example-source.invalid/f049/s00718,Proprietary dataset of 0K labeled records
+S00719,F049,C049,Conference speaker bio,2,2025-07-19,Technical feasibility,https://example-source.invalid/f049/s00719,Core technical risk unaddressed in materials
+S00720,F049,C049,Employer team page,2,2026-06-25,Development roadmap,https://example-source.invalid/f049/s00720,Roadmap published with 5 dated milestones
+S00721,F049,C049,Conference speaker bio,2,2026-04-24,Revenue model,https://example-source.invalid/f049/s00721,Pricing tested across 0 customer segments
+S00722,F049,C049,arXiv paper,1,2026-05-22,Mission & long-term vision,https://example-source.invalid/f049/s00722,Mission statement names a specific beneficiary and outcome
+S00723,F050,C050,Accelerator cohort directory,2,2025-06-30,Background & execution,https://example-source.invalid/f050/s00723,13 years domain experience in AI infra
+S00724,F050,C050,arXiv paper,1,2026-05-18,Traits,https://example-source.invalid/f050/s00724,Reference describes founder as specific about failure modes
+S00725,F050,C050,LinkedIn post,2,2026-05-27,Team role clarity,https://example-source.invalid/f050/s00725,Written role split covering 3 of 4 core functions
+S00726,F050,C050,Personal blog,2,2026-06-19,Team communication,https://example-source.invalid/f050/s00726,Decision log maintained with 45 entries
+S00727,F050,C050,Accelerator cohort directory,2,2025-11-26,Feedback & iteration,https://example-source.invalid/f050/s00727,Roadmap changed 6 times citing named customer input
+S00728,F050,C050,University lab page,2,2026-05-27,Market maps,https://example-source.invalid/f050/s00728,No named competitor set provided
+S00729,F050,C050,Accelerator cohort directory,2,2026-01-16,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f050/s00729,"SAM narrowed by a stated serviceable constraint, $71M"
+S00730,F050,C050,Show HN,2,2025-08-30,Value proposition,https://example-source.invalid/f050/s00730,Value prop canvas links 10 customer pains to named features
+S00731,F050,C050,University lab page,2,2025-10-14,Traction & KPIs,https://example-source.invalid/f050/s00731,5 design partners in signed pilot
+S00732,F050,C050,Conference speaker bio,2,2025-12-03,Customer acquisition,https://example-source.invalid/f050/s00732,Acquisition funnel documented across 5 stages with conversion rates
+S00733,F050,C050,Grant award record,1,2026-03-18,Competitive advantage,https://example-source.invalid/f050/s00733,Win/loss reasons documented across 17 deals
+S00734,F050,C050,Job posting authored,2,2025-06-24,Technical feasibility,https://example-source.invalid/f050/s00734,"Working prototype demonstrated, 8 core functions"
+S00735,F050,C050,Accelerator cohort directory,2,2026-03-21,Development roadmap,https://example-source.invalid/f050/s00735,Roadmap published with 12 dated milestones
+S00736,F050,C050,Patent filing,1,2026-05-12,Mission & long-term vision,https://example-source.invalid/f050/s00736,Vision articulates 4 future verticals with entry logic
+S00737,F050,C050,GitHub,2,2026-07-13,Finances & runway,https://example-source.invalid/f050/s00737,"Monthly burn stated at $45K, unaudited"
+S00738,F051,C051,Show HN,2,2026-06-19,Background & execution,https://example-source.invalid/f051/s00738,Shipped 3 public projects prior to founding
+S00739,F051,C051,arXiv paper,1,2025-07-10,Traits,https://example-source.invalid/f051/s00739,"Reversed a stated position after customer evidence, 3 documented instances"
+S00740,F051,C051,Show HN,2,2025-12-24,Team role clarity,https://example-source.invalid/f051/s00740,1 cofounders with non-overlapping functional coverage
+S00741,F051,C051,Accelerator cohort directory,2,2025-10-31,Team communication,https://example-source.invalid/f051/s00741,No shared written record of decisions found
+S00742,F051,C051,Show HN,2,2026-01-09,Feedback & iteration,https://example-source.invalid/f051/s00742,Shipped 7 product iterations following user testing
+S00743,F051,C051,Personal blog,2,2026-01-20,Market maps,https://example-source.invalid/f051/s00743,No named competitor set provided
+S00744,F051,C051,X/Twitter,3,2025-09-19,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f051/s00744,"SAM narrowed by a stated serviceable constraint, $19M"
+S00745,F051,C051,Personal blog,2,2026-03-27,Value proposition,https://example-source.invalid/f051/s00745,"Value prop stated in feature language only, no customer job named"
+S00746,F051,C051,University lab page,2,2026-03-07,Traction & KPIs,https://example-source.invalid/f051/s00746,"Waitlist of {n} signups, no conversion data"
+S00747,F051,C051,Show HN,2,2025-07-26,Customer acquisition,https://example-source.invalid/f051/s00747,No acquisition process defined
+S00748,F051,C051,Company registry filing,1,2025-09-26,USP / secret sauce,https://example-source.invalid/f051/s00748,"Wrapper over a single third-party model, no proprietary layer"
+S00749,F051,C051,Show HN,2,2026-03-09,Competitive advantage,https://example-source.invalid/f051/s00749,Win/loss reasons documented across 10 deals
+S00750,F051,C051,University lab page,2,2025-08-17,Technical feasibility,https://example-source.invalid/f051/s00750,Core technical risk unaddressed in materials
+S00751,F051,C051,Show HN,2,2026-01-20,Development roadmap,https://example-source.invalid/f051/s00751,No roadmap or milestone dates provided
+S00752,F051,C051,GitHub,2,2025-07-16,Mission & long-term vision,https://example-source.invalid/f051/s00752,Vision articulates 1 future verticals with entry logic
+S00753,F051,C051,Accelerator cohort directory,2,2026-04-07,Finances & runway,https://example-source.invalid/f051/s00753,"Monthly burn stated at $30K, unaudited"
+S00754,F052,C052,Platform intake: work sample,1,2026-05-23,Background & execution,https://example-source.invalid/f052/s00754,0 years domain experience in Devtools
+S00755,F052,C052,Accelerator cohort directory,2,2026-04-25,Traits,https://example-source.invalid/f052/s00755,"Reversed a stated position after customer evidence, 0 documented instances"
+S00756,F052,C052,Platform intake: scenario interview,1,2025-11-28,Team role clarity,https://example-source.invalid/f052/s00756,1 cofounders with non-overlapping functional coverage
+S00757,F052,C052,Platform intake: VSP-style prompt response,1,2025-11-18,Feedback & iteration,https://example-source.invalid/f052/s00757,No evidence of iteration following feedback
+S00758,F052,C052,Accelerator cohort directory,2,2026-02-20,Market maps,https://example-source.invalid/f052/s00758,Names 0 direct competitors with stated differentiation
+S00759,F052,C052,Platform intake: VSP-style prompt response,1,2025-11-02,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f052/s00759,"SAM narrowed by a stated serviceable constraint, $1M"
+S00760,F052,C052,Platform intake: scenario interview,1,2026-06-11,Value proposition,https://example-source.invalid/f052/s00760,0 customer personas documented with motivations
+S00761,F052,C052,Platform intake: scenario interview,1,2025-12-23,Traction & KPIs,https://example-source.invalid/f052/s00761,"Waitlist of {n} signups, no conversion data"
+S00762,F052,C052,Platform intake: work sample,1,2026-04-05,Customer acquisition,https://example-source.invalid/f052/s00762,No acquisition process defined
+S00763,F052,C052,arXiv paper,1,2025-10-13,USP / secret sauce,https://example-source.invalid/f052/s00763,"Wrapper over a single third-party model, no proprietary layer"
+S00764,F052,C052,Platform intake: scenario interview,1,2026-07-05,Development roadmap,https://example-source.invalid/f052/s00764,Roadmap published with 0 dated milestones
+S00765,F052,C052,Platform intake: VSP-style prompt response,1,2026-05-06,Mission & long-term vision,https://example-source.invalid/f052/s00765,Mission statement names a specific beneficiary and outcome
+S00766,F053,C053,Company registry filing,1,2026-06-17,Background & execution,https://example-source.invalid/f053/s00766,9 years domain experience in AI infra
+S00767,F053,C053,Show HN,2,2025-10-24,Team role clarity,https://example-source.invalid/f053/s00767,"Single founder, no technical cofounder identified"
+S00768,F053,C053,Show HN,2,2026-06-26,Team communication,https://example-source.invalid/f053/s00768,Decision log maintained with 45 entries
+S00769,F053,C053,Company registry filing,1,2026-06-08,Feedback & iteration,https://example-source.invalid/f053/s00769,No evidence of iteration following feedback
+S00770,F053,C053,Accelerator cohort directory,2,2025-07-15,Market maps,https://example-source.invalid/f053/s00770,Names 4 direct competitors with stated differentiation
+S00771,F053,C053,arXiv paper,1,2025-10-01,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f053/s00771,"SAM narrowed by a stated serviceable constraint, $80M"
+S00772,F053,C053,Conference speaker bio,2,2025-11-25,Value proposition,https://example-source.invalid/f053/s00772,5 customer personas documented with motivations
+S00773,F053,C053,Show HN,2,2025-09-25,Customer acquisition,https://example-source.invalid/f053/s00773,CAC measured at $50 across a real channel test
+S00774,F053,C053,Grant award record,1,2026-05-14,USP / secret sauce,https://example-source.invalid/f053/s00774,Proprietary dataset of 255K labeled records
+S00775,F053,C053,Accelerator cohort directory,2,2026-07-07,Competitive advantage,https://example-source.invalid/f053/s00775,Win/loss reasons documented across 12 deals
+S00776,F053,C053,Accelerator cohort directory,2,2026-03-06,Technical feasibility,https://example-source.invalid/f053/s00776,Benchmark published against 6 baselines
+S00777,F053,C053,Personal blog,2,2026-02-02,Development roadmap,https://example-source.invalid/f053/s00777,4 of last quarter's milestones delivered on time
+S00778,F053,C053,LinkedIn post,2,2025-11-18,Revenue model,https://example-source.invalid/f053/s00778,Pricing tested across 4 customer segments
+S00779,F053,C053,University lab page,2,2025-11-27,Mission & long-term vision,https://example-source.invalid/f053/s00779,Mission statement names a specific beneficiary and outcome
+S00780,F054,C054,Conference speaker bio,2,2025-08-13,Background & execution,https://example-source.invalid/f054/s00780,Shipped 3 public projects prior to founding
+S00781,F054,C054,Company registry filing,1,2026-06-08,Traits,https://example-source.invalid/f054/s00781,Documented fix shipped 38 days after critical user feedback
+S00782,F054,C054,Job posting authored,2,2025-10-19,Team role clarity,https://example-source.invalid/f054/s00782,3 cofounders with non-overlapping functional coverage
+S00783,F054,C054,Employer team page,2,2026-06-06,Team communication,https://example-source.invalid/f054/s00783,No shared written record of decisions found
+S00784,F054,C054,Personal blog,2,2025-07-09,Feedback & iteration,https://example-source.invalid/f054/s00784,Roadmap changed 3 times citing named customer input
+S00785,F054,C054,Conference speaker bio,2,2026-06-25,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f054/s00785,Bottom-up SOM of $29M derived from a stated unit chain
+S00786,F054,C054,Patent filing,1,2026-03-21,Value proposition,https://example-source.invalid/f054/s00786,1 customer personas documented with motivations
+S00787,F054,C054,Company registry filing,1,2025-07-21,Traction & KPIs,https://example-source.invalid/f054/s00787,"Waitlist of {n} signups, no conversion data"
+S00788,F054,C054,Grant award record,1,2026-06-25,Customer acquisition,https://example-source.invalid/f054/s00788,CAC measured at $2945 across a real channel test
+S00789,F054,C054,LinkedIn post,2,2025-11-09,USP / secret sauce,https://example-source.invalid/f054/s00789,Proprietary dataset of 78K labeled records
+S00790,F054,C054,Patent filing,1,2025-11-03,Competitive advantage,https://example-source.invalid/f054/s00790,Switching cost identified and evidenced in 4 accounts
+S00791,F054,C054,Personal blog,2,2026-02-23,Technical feasibility,https://example-source.invalid/f054/s00791,"Working prototype demonstrated, 4 core functions"
+S00792,F054,C054,arXiv paper,1,2026-07-15,Development roadmap,https://example-source.invalid/f054/s00792,2 of last quarter's milestones delivered on time
+S00793,F054,C054,Patent filing,1,2025-09-21,Revenue model,https://example-source.invalid/f054/s00793,Pricing tested across 0 customer segments
+S00794,F054,C054,Personal blog,2,2025-07-29,Mission & long-term vision,https://example-source.invalid/f054/s00794,Mission statement names a specific beneficiary and outcome
+S00795,F054,C054,Patent filing,1,2026-02-22,Finances & runway,https://example-source.invalid/f054/s00795,"Monthly burn stated at $66K, unaudited"
+S00796,F055,C055,Platform intake: work sample,1,2025-07-25,Background & execution,https://example-source.invalid/f055/s00796,Shipped 13 public projects prior to founding
+S00797,F055,C055,Platform intake: work sample,1,2025-10-30,Traits,https://example-source.invalid/f055/s00797,Documented fix shipped 7 days after critical user feedback
+S00798,F055,C055,Platform intake: work sample,1,2025-08-22,Team communication,https://example-source.invalid/f055/s00798,"Team publishes a written weekly update, 36 consecutive weeks"
+S00799,F055,C055,Job posting authored,2,2026-01-22,Feedback & iteration,https://example-source.invalid/f055/s00799,Shipped 20 product iterations following user testing
+S00800,F055,C055,Platform intake: reference check,1,2025-06-13,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f055/s00800,"SOM asserted as a flat share of TAM, no derivation"
+S00801,F055,C055,Platform intake: VSP-style prompt response,1,2026-04-23,Value proposition,https://example-source.invalid/f055/s00801,Value prop canvas links 10 customer pains to named features
+S00802,F055,C055,Platform intake: scenario interview,1,2025-06-17,Traction & KPIs,https://example-source.invalid/f055/s00802,ARR of $271K
+S00803,F055,C055,Platform intake: work sample,1,2025-07-03,Customer acquisition,https://example-source.invalid/f055/s00803,Acquisition funnel documented across 6 stages with conversion rates
+S00804,F055,C055,Platform intake: scenario interview,1,2025-07-16,USP / secret sauce,https://example-source.invalid/f055/s00804,"Patent application filed, 25 claims"
+S00805,F055,C055,Platform intake: VSP-style prompt response,1,2026-01-31,Competitive advantage,https://example-source.invalid/f055/s00805,Differentiation asserted but not evidenced
+S00806,F055,C055,Platform intake: work sample,1,2026-03-05,Technical feasibility,https://example-source.invalid/f055/s00806,"Working prototype demonstrated, 6 core functions"
+S00807,F055,C055,Platform intake: VSP-style prompt response,1,2026-05-18,Revenue model,https://example-source.invalid/f055/s00807,Pricing tested across 5 customer segments
+S00808,F055,C055,Patent filing,1,2026-04-19,Company formation & cap table,https://example-source.invalid/f055/s00808,"Entity incorporated, registry record on file"
+S00809,F055,C055,Platform intake: scenario interview,1,2026-04-16,IP & regulation strategy,https://example-source.invalid/f055/s00809,Regulatory pathway identified with a stated timeline
+S00810,F055,C055,Platform intake: work sample,1,2025-08-17,Finances & runway,https://example-source.invalid/f055/s00810,Runway of 18 months at current burn
+S00811,F056,C056,Platform intake: scenario interview,1,2025-10-18,Traits,https://example-source.invalid/f056/s00811,"Reversed a stated position after customer evidence, 5 documented instances"
+S00812,F056,C056,Platform intake: reference check,1,2025-08-04,Team role clarity,https://example-source.invalid/f056/s00812,4 cofounders with non-overlapping functional coverage
+S00813,F056,C056,Platform intake: reference check,1,2026-04-26,Feedback & iteration,https://example-source.invalid/f056/s00813,Roadmap changed 6 times citing named customer input
+S00814,F056,C056,Platform intake: reference check,1,2025-08-24,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f056/s00814,"SOM asserted as a flat share of TAM, no derivation"
+S00815,F056,C056,Platform intake: scenario interview,1,2025-11-22,Traction & KPIs,https://example-source.invalid/f056/s00815,10 design partners in signed pilot
+S00816,F056,C056,Platform intake: VSP-style prompt response,1,2026-01-15,Customer acquisition,https://example-source.invalid/f056/s00816,Acquisition funnel documented across 5 stages with conversion rates
+S00817,F056,C056,Platform intake: scenario interview,1,2025-08-17,USP / secret sauce,https://example-source.invalid/f056/s00817,"Patent application filed, 22 claims"
+S00818,F056,C056,Platform intake: work sample,1,2026-06-25,Competitive advantage,https://example-source.invalid/f056/s00818,Differentiation asserted but not evidenced
+S00819,F056,C056,Platform intake: scenario interview,1,2026-03-02,Technical feasibility,https://example-source.invalid/f056/s00819,Core technical risk unaddressed in materials
+S00820,F056,C056,Grant award record,1,2026-07-14,Development roadmap,https://example-source.invalid/f056/s00820,No roadmap or milestone dates provided
+S00821,F056,C056,Platform intake: reference check,1,2026-04-15,Revenue model,https://example-source.invalid/f056/s00821,Revenue model not articulated
+S00822,F056,C056,Patent filing,1,2026-06-09,Company formation & cap table,https://example-source.invalid/f056/s00822,"Entity incorporated, registry record on file"
+S00823,F056,C056,Grant award record,1,2025-07-22,IP & regulation strategy,https://example-source.invalid/f056/s00823,Regulatory pathway identified with a stated timeline
+S00824,F056,C056,arXiv paper,1,2025-11-24,Finances & runway,https://example-source.invalid/f056/s00824,"Monthly burn stated at $57K, unaudited"
+S00825,F057,C057,Patent filing,1,2025-11-07,Background & execution,https://example-source.invalid/f057/s00825,Led engineering for a team of 30
+S00826,F057,C057,University lab page,2,2026-06-11,Traits,https://example-source.invalid/f057/s00826,"Reversed a stated position after customer evidence, 4 documented instances"
+S00827,F057,C057,Conference speaker bio,2,2026-04-27,Team role clarity,https://example-source.invalid/f057/s00827,4 cofounders with non-overlapping functional coverage
+S00828,F057,C057,Accelerator cohort directory,2,2025-06-25,Team communication,https://example-source.invalid/f057/s00828,No shared written record of decisions found
+S00829,F057,C057,arXiv paper,1,2025-07-31,Feedback & iteration,https://example-source.invalid/f057/s00829,Roadmap changed 5 times citing named customer input
+S00830,F057,C057,X/Twitter,3,2026-01-15,Market maps,https://example-source.invalid/f057/s00830,Names 8 direct competitors with stated differentiation
+S00831,F057,C057,Employer team page,2,2025-08-08,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f057/s00831,"SOM asserted as a flat share of TAM, no derivation"
+S00832,F057,C057,Product Hunt,2,2026-05-25,Customer acquisition,https://example-source.invalid/f057/s00832,No acquisition process defined
+S00833,F057,C057,Show HN,2,2026-06-21,USP / secret sauce,https://example-source.invalid/f057/s00833,"Patent application filed, 25 claims"
+S00834,F057,C057,Conference speaker bio,2,2026-03-30,Competitive advantage,https://example-source.invalid/f057/s00834,Differentiation asserted but not evidenced
+S00835,F057,C057,Job posting authored,2,2025-10-11,Technical feasibility,https://example-source.invalid/f057/s00835,Benchmark published against 5 baselines
+S00836,F057,C057,Conference speaker bio,2,2025-09-23,Development roadmap,https://example-source.invalid/f057/s00836,No roadmap or milestone dates provided
+S00837,F057,C057,Patent filing,1,2026-07-10,Revenue model,https://example-source.invalid/f057/s00837,Revenue model not articulated
+S00838,F057,C057,Grant award record,1,2025-10-25,Mission & long-term vision,https://example-source.invalid/f057/s00838,Vision stated as market-size ambition only
+S00839,F058,C058,Company registry filing,1,2026-06-25,Background & execution,https://example-source.invalid/f058/s00839,Led engineering for a team of 4
+S00840,F058,C058,X/Twitter,3,2025-08-19,Traits,https://example-source.invalid/f058/s00840,Reference describes founder as specific about failure modes
+S00841,F058,C058,Company registry filing,1,2025-07-18,Team role clarity,https://example-source.invalid/f058/s00841,Written role split covering 2 of 4 core functions
+S00842,F058,C058,GitHub,2,2025-06-13,Team communication,https://example-source.invalid/f058/s00842,"Team publishes a written weekly update, 25 consecutive weeks"
+S00843,F058,C058,Accelerator cohort directory,2,2026-01-12,Feedback & iteration,https://example-source.invalid/f058/s00843,No evidence of iteration following feedback
+S00844,F058,C058,University lab page,2,2026-05-17,Market maps,https://example-source.invalid/f058/s00844,No named competitor set provided
+S00845,F058,C058,Product Hunt,2,2025-11-26,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f058/s00845,"SOM asserted as a flat share of TAM, no derivation"
+S00846,F058,C058,Company registry filing,1,2026-06-04,Value proposition,https://example-source.invalid/f058/s00846,2 customer personas documented with motivations
+S00847,F058,C058,Product Hunt,2,2026-03-20,Traction & KPIs,https://example-source.invalid/f058/s00847,ARR of $304K
+S00848,F058,C058,Grant award record,1,2025-09-24,Customer acquisition,https://example-source.invalid/f058/s00848,No acquisition process defined
+S00849,F058,C058,Accelerator cohort directory,2,2025-09-09,USP / secret sauce,https://example-source.invalid/f058/s00849,"Patent application filed, 6 claims"
+S00850,F058,C058,Conference speaker bio,2,2026-06-10,Competitive advantage,https://example-source.invalid/f058/s00850,Switching cost identified and evidenced in 7 accounts
+S00851,F058,C058,Show HN,2,2026-07-07,Technical feasibility,https://example-source.invalid/f058/s00851,Core technical risk unaddressed in materials
+S00852,F058,C058,Personal blog,2,2025-11-26,Development roadmap,https://example-source.invalid/f058/s00852,Roadmap published with 5 dated milestones
+S00853,F058,C058,arXiv paper,1,2026-03-02,Revenue model,https://example-source.invalid/f058/s00853,4 distinct revenue streams identified with pricing logic
+S00854,F058,C058,University lab page,2,2025-11-07,Mission & long-term vision,https://example-source.invalid/f058/s00854,Vision stated as market-size ambition only
+S00855,F059,C059,Platform intake: scenario interview,1,2026-01-01,Background & execution,https://example-source.invalid/f059/s00855,Led engineering for a team of 14
+S00856,F059,C059,Platform intake: VSP-style prompt response,1,2025-09-12,Traits,https://example-source.invalid/f059/s00856,Reference describes founder as specific about failure modes
+S00857,F059,C059,Platform intake: VSP-style prompt response,1,2026-07-06,Team role clarity,https://example-source.invalid/f059/s00857,3 cofounders with non-overlapping functional coverage
+S00858,F059,C059,Platform intake: scenario interview,1,2026-03-30,Feedback & iteration,https://example-source.invalid/f059/s00858,Roadmap changed 4 times citing named customer input
+S00859,F059,C059,Platform intake: VSP-style prompt response,1,2026-03-27,Market maps,https://example-source.invalid/f059/s00859,No named competitor set provided
+S00860,F059,C059,Platform intake: reference check,1,2025-11-03,Traction & KPIs,https://example-source.invalid/f059/s00860,"Waitlist of {n} signups, no conversion data"
+S00861,F059,C059,Platform intake: scenario interview,1,2025-08-04,Customer acquisition,https://example-source.invalid/f059/s00861,Acquisition funnel documented across 4 stages with conversion rates
+S00862,F059,C059,Platform intake: work sample,1,2026-07-01,USP / secret sauce,https://example-source.invalid/f059/s00862,"Patent application filed, 11 claims"
+S00863,F059,C059,Platform intake: work sample,1,2026-01-07,Competitive advantage,https://example-source.invalid/f059/s00863,Win/loss reasons documented across 13 deals
+S00864,F059,C059,Job posting authored,2,2026-05-22,Technical feasibility,https://example-source.invalid/f059/s00864,Benchmark published against 2 baselines
+S00865,F059,C059,Platform intake: VSP-style prompt response,1,2025-08-30,Development roadmap,https://example-source.invalid/f059/s00865,No roadmap or milestone dates provided
+S00866,F059,C059,Platform intake: work sample,1,2026-01-13,Revenue model,https://example-source.invalid/f059/s00866,Revenue model not articulated
+S00867,F059,C059,Platform intake: reference check,1,2025-09-08,Mission & long-term vision,https://example-source.invalid/f059/s00867,Mission statement names a specific beneficiary and outcome
+S00868,F059,C059,arXiv paper,1,2026-01-20,Finances & runway,https://example-source.invalid/f059/s00868,"Monthly burn stated at $41K, unaudited"
+S00869,F060,C060,Platform intake: work sample,1,2026-06-15,Team role clarity,https://example-source.invalid/f060/s00869,"Single founder, no technical cofounder identified"
+S00870,F060,C060,Company registry filing,1,2025-06-21,Team communication,https://example-source.invalid/f060/s00870,No shared written record of decisions found
+S00871,F060,C060,Platform intake: work sample,1,2026-04-22,Feedback & iteration,https://example-source.invalid/f060/s00871,No evidence of iteration following feedback
+S00872,F060,C060,Platform intake: reference check,1,2025-10-04,Market maps,https://example-source.invalid/f060/s00872,No named competitor set provided
+S00873,F060,C060,Platform intake: reference check,1,2026-07-14,Market sizing (TAM/SAM/SOM),https://example-source.invalid/f060/s00873,Bottom-up SOM of $1M derived from a stated unit chain
+S00874,F060,C060,Platform intake: scenario interview,1,2026-04-21,Value proposition,https://example-source.invalid/f060/s00874,0 customer personas documented with motivations
+S00875,F060,C060,arXiv paper,1,2026-02-03,Traction & KPIs,https://example-source.invalid/f060/s00875,ARR of $32K
+S00876,F060,C060,Patent filing,1,2026-01-14,Customer acquisition,https://example-source.invalid/f060/s00876,CAC measured at $3000 across a real channel test
+S00877,F060,C060,Platform intake: reference check,1,2025-07-17,Technical feasibility,https://example-source.invalid/f060/s00877,"Working prototype demonstrated, 3 core functions"
+S00878,F060,C060,Platform intake: work sample,1,2026-03-07,Development roadmap,https://example-source.invalid/f060/s00878,Roadmap published with 4 dated milestones
+S00879,F060,C060,Platform intake: reference check,1,2025-06-30,Revenue model,https://example-source.invalid/f060/s00879,Revenue model not articulated
+S00880,F060,C060,Platform intake: scenario interview,1,2025-07-22,Mission & long-term vision,https://example-source.invalid/f060/s00880,Vision stated as market-size ambition only
+S00881,F060,C060,Platform intake: reference check,1,2026-03-04,IP & regulation strategy,https://example-source.invalid/f060/s00881,Regulatory pathway identified with a stated timeline
+S00882,F060,C060,Platform intake: work sample,1,2025-11-21,Finances & runway,https://example-source.invalid/f060/s00882,Runway of 7 months at current burn

@@ -1,0 +1,259 @@
+company_id,founder_id,component,vsp_code,gap_type,memo_line
+C001,F001,Background & execution,-,no_observation,Background & execution: no evidence located at time of drafting
+C001,F001,Traits,-,no_observation,Traits: no evidence located at time of drafting
+C001,F001,Technical feasibility,P-2,no_observation,Technical feasibility: no evidence located at time of drafting
+C001,F001,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C002,F002,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C002,F002,Market sizing (TAM/SAM/SOM),M-2,no_observation,Market sizing (TAM/SAM/SOM): no evidence located at time of drafting
+C002,F002,Traction & KPIs,P-1,no_observation,Traction & KPIs: no evidence located at time of drafting
+C002,F002,Technical feasibility,P-2,no_observation,Technical feasibility: no evidence located at time of drafting
+C002,F002,Mission & long-term vision,V-1/V-2,no_observation,Mission & long-term vision: no evidence located at time of drafting
+C002,F002,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C003,F003,Team communication,T-1,no_observation,Team communication: no evidence located at time of drafting
+C003,F003,Traction & KPIs,P-1,no_observation,Traction & KPIs: no evidence located at time of drafting
+C003,F003,Development roadmap,P-3,no_observation,Development roadmap: no evidence located at time of drafting
+C003,F003,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C003,F003,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C004,F004,Traits,-,no_observation,Traits: no evidence located at time of drafting
+C004,F004,Team communication,T-1,no_observation,Team communication: no evidence located at time of drafting
+C004,F004,Market sizing (TAM/SAM/SOM),M-2,no_observation,Market sizing (TAM/SAM/SOM): no evidence located at time of drafting
+C004,F004,Technical feasibility,P-2,no_observation,Technical feasibility: no evidence located at time of drafting
+C004,F004,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C004,F004,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C005,F005,Background & execution,-,no_observation,Background & execution: no evidence located at time of drafting
+C005,F005,Traits,-,no_observation,Traits: no evidence located at time of drafting
+C005,F005,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C005,F005,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C006,F006,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C006,F006,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C006,F006,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C007,F007,Traits,-,no_observation,Traits: no evidence located at time of drafting
+C007,F007,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C007,F007,IP & regulation strategy,O-2,no_observation,IP & regulation strategy: no evidence located at time of drafting
+C008,F008,Team communication,T-1,no_observation,Team communication: no evidence located at time of drafting
+C008,F008,Development roadmap,P-3,no_observation,Development roadmap: no evidence located at time of drafting
+C008,F008,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C008,F008,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C009,F009,Background & execution,-,no_observation,Background & execution: no evidence located at time of drafting
+C009,F009,Traction & KPIs,P-1,no_observation,Traction & KPIs: no evidence located at time of drafting
+C009,F009,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C009,F009,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C010,F010,Value proposition,M-3,no_observation,Value proposition: no evidence located at time of drafting
+C010,F010,Traction & KPIs,P-1,no_observation,Traction & KPIs: no evidence located at time of drafting
+C010,F010,Customer acquisition,B-2,no_observation,Customer acquisition: no evidence located at time of drafting
+C010,F010,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C010,F010,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C010,F010,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C011,F011,Market maps,M-1,no_observation,Market maps: no evidence located at time of drafting
+C011,F011,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C011,F011,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C012,F012,Background & execution,-,no_observation,Background & execution: no evidence located at time of drafting
+C012,F012,Value proposition,M-3,no_observation,Value proposition: no evidence located at time of drafting
+C012,F012,Technical feasibility,P-2,no_observation,Technical feasibility: no evidence located at time of drafting
+C012,F012,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C012,F012,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C012,F012,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C013,F013,Background & execution,-,no_observation,Background & execution: no evidence located at time of drafting
+C013,F013,Team communication,T-1,no_observation,Team communication: no evidence located at time of drafting
+C013,F013,Revenue model,B-1,no_observation,Revenue model: no evidence located at time of drafting
+C013,F013,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C013,F013,IP & regulation strategy,O-2,no_observation,IP & regulation strategy: no evidence located at time of drafting
+C014,F014,Technical feasibility,P-2,no_observation,Technical feasibility: no evidence located at time of drafting
+C014,F014,Revenue model,B-1,no_observation,Revenue model: no evidence located at time of drafting
+C014,F014,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C015,F015,Value proposition,M-3,no_observation,Value proposition: no evidence located at time of drafting
+C015,F015,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C015,F015,IP & regulation strategy,O-2,no_observation,IP & regulation strategy: no evidence located at time of drafting
+C015,F015,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C016,F016,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C016,F016,Feedback & iteration,T-3,no_observation,Feedback & iteration: no evidence located at time of drafting
+C016,F016,Traction & KPIs,P-1,no_observation,Traction & KPIs: no evidence located at time of drafting
+C016,F016,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C017,F017,Development roadmap,P-3,no_observation,Development roadmap: no evidence located at time of drafting
+C017,F017,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C017,F017,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C018,F018,Background & execution,-,no_observation,Background & execution: no evidence located at time of drafting
+C018,F018,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C018,F018,Team communication,T-1,no_observation,Team communication: no evidence located at time of drafting
+C018,F018,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C018,F018,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C019,F019,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C019,F019,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C019,F019,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C020,F020,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C020,F020,Market sizing (TAM/SAM/SOM),M-2,no_observation,Market sizing (TAM/SAM/SOM): no evidence located at time of drafting
+C020,F020,Customer acquisition,B-2,no_observation,Customer acquisition: no evidence located at time of drafting
+C020,F020,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C020,F020,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C020,F020,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C021,F021,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C021,F021,Market sizing (TAM/SAM/SOM),M-2,no_observation,Market sizing (TAM/SAM/SOM): no evidence located at time of drafting
+C021,F021,Traction & KPIs,P-1,no_observation,Traction & KPIs: no evidence located at time of drafting
+C021,F021,Competitive advantage,B-3,no_observation,Competitive advantage: no evidence located at time of drafting
+C021,F021,Revenue model,B-1,no_observation,Revenue model: no evidence located at time of drafting
+C021,F021,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C021,F021,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C021,F021,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C022,F022,Background & execution,-,no_observation,Background & execution: no evidence located at time of drafting
+C022,F022,Customer acquisition,B-2,no_observation,Customer acquisition: no evidence located at time of drafting
+C022,F022,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C022,F022,IP & regulation strategy,O-2,no_observation,IP & regulation strategy: no evidence located at time of drafting
+C022,F022,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C023,F023,Background & execution,-,no_observation,Background & execution: no evidence located at time of drafting
+C024,F024,Customer acquisition,B-2,no_observation,Customer acquisition: no evidence located at time of drafting
+C024,F024,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C025,F025,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C025,F025,Market sizing (TAM/SAM/SOM),M-2,no_observation,Market sizing (TAM/SAM/SOM): no evidence located at time of drafting
+C025,F025,Customer acquisition,B-2,no_observation,Customer acquisition: no evidence located at time of drafting
+C025,F025,Development roadmap,P-3,no_observation,Development roadmap: no evidence located at time of drafting
+C025,F025,Revenue model,B-1,no_observation,Revenue model: no evidence located at time of drafting
+C025,F025,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C026,F026,Feedback & iteration,T-3,no_observation,Feedback & iteration: no evidence located at time of drafting
+C026,F026,Market sizing (TAM/SAM/SOM),M-2,no_observation,Market sizing (TAM/SAM/SOM): no evidence located at time of drafting
+C026,F026,Customer acquisition,B-2,no_observation,Customer acquisition: no evidence located at time of drafting
+C026,F026,Mission & long-term vision,V-1/V-2,no_observation,Mission & long-term vision: no evidence located at time of drafting
+C026,F026,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C026,F026,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C027,F027,Competitive advantage,B-3,no_observation,Competitive advantage: no evidence located at time of drafting
+C027,F027,Revenue model,B-1,no_observation,Revenue model: no evidence located at time of drafting
+C027,F027,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C028,F028,Technical feasibility,P-2,no_observation,Technical feasibility: no evidence located at time of drafting
+C028,F028,Development roadmap,P-3,no_observation,Development roadmap: no evidence located at time of drafting
+C028,F028,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C028,F028,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C028,F028,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C029,F029,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C029,F029,Market maps,M-1,no_observation,Market maps: no evidence located at time of drafting
+C029,F029,Value proposition,M-3,no_observation,Value proposition: no evidence located at time of drafting
+C029,F029,Technical feasibility,P-2,no_observation,Technical feasibility: no evidence located at time of drafting
+C029,F029,Revenue model,B-1,no_observation,Revenue model: no evidence located at time of drafting
+C029,F029,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C029,F029,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C030,F030,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C030,F030,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C031,F031,Feedback & iteration,T-3,no_observation,Feedback & iteration: no evidence located at time of drafting
+C031,F031,Value proposition,M-3,no_observation,Value proposition: no evidence located at time of drafting
+C031,F031,Customer acquisition,B-2,no_observation,Customer acquisition: no evidence located at time of drafting
+C031,F031,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C031,F031,IP & regulation strategy,O-2,no_observation,IP & regulation strategy: no evidence located at time of drafting
+C031,F031,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C032,F032,Customer acquisition,B-2,no_observation,Customer acquisition: no evidence located at time of drafting
+C032,F032,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C032,F032,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C032,F032,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C033,F033,Traction & KPIs,P-1,no_observation,Traction & KPIs: no evidence located at time of drafting
+C033,F033,USP / secret sauce,V-3,no_observation,USP / secret sauce: no evidence located at time of drafting
+C033,F033,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C034,F034,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C034,F034,USP / secret sauce,V-3,no_observation,USP / secret sauce: no evidence located at time of drafting
+C034,F034,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C034,F034,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C035,F035,Market maps,M-1,no_observation,Market maps: no evidence located at time of drafting
+C036,F036,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C036,F036,Feedback & iteration,T-3,no_observation,Feedback & iteration: no evidence located at time of drafting
+C036,F036,Market maps,M-1,no_observation,Market maps: no evidence located at time of drafting
+C036,F036,Value proposition,M-3,no_observation,Value proposition: no evidence located at time of drafting
+C036,F036,Mission & long-term vision,V-1/V-2,no_observation,Mission & long-term vision: no evidence located at time of drafting
+C036,F036,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C036,F036,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C037,F037,Traits,-,no_observation,Traits: no evidence located at time of drafting
+C037,F037,USP / secret sauce,V-3,no_observation,USP / secret sauce: no evidence located at time of drafting
+C037,F037,Technical feasibility,P-2,no_observation,Technical feasibility: no evidence located at time of drafting
+C037,F037,Mission & long-term vision,V-1/V-2,no_observation,Mission & long-term vision: no evidence located at time of drafting
+C037,F037,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C037,F037,IP & regulation strategy,O-2,no_observation,IP & regulation strategy: no evidence located at time of drafting
+C038,F038,Market maps,M-1,no_observation,Market maps: no evidence located at time of drafting
+C038,F038,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C038,F038,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C039,F039,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C039,F039,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C039,F039,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C040,F040,Traits,-,no_observation,Traits: no evidence located at time of drafting
+C040,F040,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C040,F040,Mission & long-term vision,V-1/V-2,no_observation,Mission & long-term vision: no evidence located at time of drafting
+C040,F040,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C040,F040,IP & regulation strategy,O-2,no_observation,IP & regulation strategy: no evidence located at time of drafting
+C041,F041,Background & execution,-,no_observation,Background & execution: no evidence located at time of drafting
+C041,F041,Feedback & iteration,T-3,no_observation,Feedback & iteration: no evidence located at time of drafting
+C041,F041,Development roadmap,P-3,no_observation,Development roadmap: no evidence located at time of drafting
+C041,F041,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C041,F041,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C041,F041,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C042,F042,Revenue model,B-1,no_observation,Revenue model: no evidence located at time of drafting
+C042,F042,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C042,F042,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C042,F042,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C043,F043,Feedback & iteration,T-3,no_observation,Feedback & iteration: no evidence located at time of drafting
+C043,F043,Value proposition,M-3,no_observation,Value proposition: no evidence located at time of drafting
+C043,F043,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C043,F043,IP & regulation strategy,O-2,no_observation,IP & regulation strategy: no evidence located at time of drafting
+C043,F043,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C044,F044,Market maps,M-1,no_observation,Market maps: no evidence located at time of drafting
+C044,F044,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C044,F044,IP & regulation strategy,O-2,no_observation,IP & regulation strategy: no evidence located at time of drafting
+C045,F045,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C045,F045,Development roadmap,P-3,no_observation,Development roadmap: no evidence located at time of drafting
+C045,F045,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C045,F045,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C046,F046,Traits,-,no_observation,Traits: no evidence located at time of drafting
+C046,F046,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C047,F047,Traction & KPIs,P-1,no_observation,Traction & KPIs: no evidence located at time of drafting
+C047,F047,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C047,F047,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C048,F048,Technical feasibility,P-2,no_observation,Technical feasibility: no evidence located at time of drafting
+C048,F048,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C048,F048,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C049,F049,Feedback & iteration,T-3,no_observation,Feedback & iteration: no evidence located at time of drafting
+C049,F049,Competitive advantage,B-3,no_observation,Competitive advantage: no evidence located at time of drafting
+C049,F049,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C049,F049,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C049,F049,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C050,F050,USP / secret sauce,V-3,no_observation,USP / secret sauce: no evidence located at time of drafting
+C050,F050,Revenue model,B-1,no_observation,Revenue model: no evidence located at time of drafting
+C050,F050,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C050,F050,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C051,F051,Revenue model,B-1,no_observation,Revenue model: no evidence located at time of drafting
+C051,F051,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C051,F051,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C052,F052,Team communication,T-1,no_observation,Team communication: no evidence located at time of drafting
+C052,F052,Competitive advantage,B-3,no_observation,Competitive advantage: no evidence located at time of drafting
+C052,F052,Technical feasibility,P-2,no_observation,Technical feasibility: no evidence located at time of drafting
+C052,F052,Revenue model,B-1,no_observation,Revenue model: no evidence located at time of drafting
+C052,F052,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C052,F052,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C052,F052,Finances & runway,O-3,not_disclosed,Financials: not disclosed
+C053,F053,Traits,-,no_observation,Traits: no evidence located at time of drafting
+C053,F053,Traction & KPIs,P-1,no_observation,Traction & KPIs: no evidence located at time of drafting
+C053,F053,Company formation & cap table,O-1,not_disclosed,Entity not yet formed
+C053,F053,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C053,F053,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C054,F054,Market maps,M-1,no_observation,Market maps: no evidence located at time of drafting
+C054,F054,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C054,F054,IP & regulation strategy,O-2,not_disclosed,Operates in a regulated category with no stated pathway
+C055,F055,Team role clarity,T-2,no_observation,Team role clarity: no evidence located at time of drafting
+C055,F055,Market maps,M-1,no_observation,Market maps: no evidence located at time of drafting
+C055,F055,Development roadmap,P-3,no_observation,Development roadmap: no evidence located at time of drafting
+C055,F055,Mission & long-term vision,V-1/V-2,no_observation,Mission & long-term vision: no evidence located at time of drafting
+C056,F056,Background & execution,-,no_observation,Background & execution: no evidence located at time of drafting
+C056,F056,Team communication,T-1,no_observation,Team communication: no evidence located at time of drafting
+C056,F056,Market maps,M-1,no_observation,Market maps: no evidence located at time of drafting
+C056,F056,Value proposition,M-3,no_observation,Value proposition: no evidence located at time of drafting
+C056,F056,Mission & long-term vision,V-1/V-2,no_observation,Mission & long-term vision: no evidence located at time of drafting
+C057,F057,Value proposition,M-3,no_observation,Value proposition: no evidence located at time of drafting
+C057,F057,Traction & KPIs,P-1,no_observation,Traction & KPIs: no evidence located at time of drafting
+C057,F057,Company formation & cap table,O-1,no_observation,Company formation & cap table: no evidence located at time of drafting
+C057,F057,IP & regulation strategy,O-2,no_observation,IP & regulation strategy: no evidence located at time of drafting
+C057,F057,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C058,F058,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C058,F058,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C058,F058,Finances & runway,O-3,no_observation,Finances & runway: no evidence located at time of drafting
+C059,F059,Team communication,T-1,no_observation,Team communication: no evidence located at time of drafting
+C059,F059,Market sizing (TAM/SAM/SOM),M-2,no_observation,Market sizing (TAM/SAM/SOM): no evidence located at time of drafting
+C059,F059,Value proposition,M-3,no_observation,Value proposition: no evidence located at time of drafting
+C059,F059,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed
+C059,F059,IP & regulation strategy,O-2,not_disclosed,IP strategy: not disclosed
+C060,F060,Background & execution,-,no_observation,Background & execution: no evidence located at time of drafting
+C060,F060,Traits,-,no_observation,Traits: no evidence located at time of drafting
+C060,F060,USP / secret sauce,V-3,no_observation,USP / secret sauce: no evidence located at time of drafting
+C060,F060,Competitive advantage,B-3,no_observation,Competitive advantage: no evidence located at time of drafting
+C060,F060,Company formation & cap table,O-1,not_disclosed,Cap table: not disclosed

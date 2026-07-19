@@ -1,0 +1,16 @@
+theme,keywords,use_case,sentiment_bucket
+founder_identity,"founder name, startup name, cofounder, CEO, CTO, founder linkedin, founder profile",Discovery,Neutral
+execution,"launched, shipped, released, built, prototype, demo, product update, milestone",Execution evidence,Positive/Neutral
+credibility,"speaking, podcast, interview, quote, featured, panel, conference, guest post",External validation,Neutral/Positive
+technical_depth,"github, repo, commit, architecture, API, open source, patent, benchmark",Technical capability,Positive/Neutral
+market_signal,"customer, pilot, deployment, contract, waitlist, partnership, case study",Demand evidence,Positive/Neutral
+growth_signal,"ARR, MRR, revenue, users, DAU, MAU, retention, churn, expansion",Traction,Positive/Negative
+team_signal,"hiring, joined, founding engineer, advisor, team, org, culture",Team build quality,Positive/Negative
+risk_signal,"lawsuit, complaint, fraud, controversy, churn, layoff, shutdown, missed target",Risk detection,Negative
+trait_signal,"resilient, coachable, transparent, honest, adaptive, thoughtful, decisive",Founder traits,Positive
+negative_trait_signal,"arrogant, evasive, defensive, misleading, toxic, combative, blame",Behavioral red flags,Negative
+market_fit,"pricing, buyer, procurement, compliance, workflow, adoption barrier, onboarding",Idea-market fit,Neutral/Positive/Negative
+defensibility,"moat, proprietary, network effects, data moat, distribution moat, workflow lock-in",USP/defensibility,Positive/Neutral
+disclosure_gap,"not disclosed, unavailable, confidential, undisclosed, estimate only",Trust gap detection,Neutral/Negative
+contradiction,"claimed, versus, inconsistent, mismatch, outdated, contradiction, correction",Trust scoring,Negative
+no_social_alt,"portfolio, alumni, registry, filing, patent, website bio, speaker bio, publications",No-social sourcing,Neutral

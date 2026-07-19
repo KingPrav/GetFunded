@@ -1,0 +1,207 @@
+link_id,founder_id,platform,source_tier,match_method,match_confidence
+L0001,F001,Job posting authored,2,self_declared,0.58
+L0002,F002,arXiv paper,1,name+geo+sector,0.61
+L0003,F003,Job posting authored,2,name+geo+sector,0.96
+L0004,F003,arXiv paper,1,name+employer,0.92
+L0005,F004,Company registry filing,1,exact_email,0.61
+L0006,F004,Patent filing,1,exact_email,0.72
+L0007,F004,University lab page,2,name+geo+sector,0.68
+L0008,F005,Job posting authored,2,name+employer,0.89
+L0009,F005,Grant award record,1,self_declared,0.94
+L0010,F006,LinkedIn post,2,name+employer,0.76
+L0011,F006,arXiv paper,1,exact_email,0.97
+L0012,F006,Patent filing,1,name+employer,0.96
+L0013,F006,Accelerator cohort directory,2,exact_email,0.64
+L0014,F006,GitHub,2,name+employer,0.73
+L0015,F007,arXiv paper,1,name+geo+sector,0.57
+L0016,F007,Accelerator cohort directory,2,name+geo+sector,0.65
+L0017,F008,Conference speaker bio,2,exact_email,0.92
+L0018,F008,Employer team page,2,name+geo+sector,0.62
+L0019,F008,Grant award record,1,name+geo+sector,0.95
+L0020,F008,Product Hunt,2,self_declared,0.61
+L0021,F009,Job posting authored,2,name+geo+sector,0.83
+L0022,F009,Grant award record,1,self_declared,0.85
+L0023,F009,Accelerator cohort directory,2,name+geo+sector,0.68
+L0024,F009,Show HN,2,name+employer,0.59
+L0025,F009,X/Twitter,3,exact_email,0.62
+L0026,F010,arXiv paper,1,name+employer,0.78
+L0027,F010,Accelerator cohort directory,2,exact_email,0.7
+L0028,F011,Patent filing,1,self_declared,0.71
+L0029,F011,Show HN,2,name+employer,0.67
+L0030,F011,Employer team page,2,self_declared,0.85
+L0031,F011,University lab page,2,self_declared,0.85
+L0032,F011,Conference speaker bio,2,self_declared,0.55
+L0033,F011,GitHub,2,name+geo+sector,0.71
+L0034,F012,Accelerator cohort directory,2,name+employer,0.93
+L0035,F012,University lab page,2,self_declared,0.89
+L0036,F012,Company registry filing,1,exact_email,0.71
+L0037,F013,Job posting authored,2,name+employer,0.63
+L0038,F013,Accelerator cohort directory,2,name+employer,0.59
+L0039,F013,University lab page,2,name+geo+sector,0.71
+L0040,F013,Personal blog,2,name+geo+sector,0.73
+L0041,F013,Patent filing,1,name+employer,0.66
+L0042,F014,Show HN,2,self_declared,0.95
+L0043,F014,Patent filing,1,exact_email,0.62
+L0044,F014,LinkedIn post,2,exact_email,0.83
+L0045,F014,Personal blog,2,name+employer,0.8
+L0046,F015,Company registry filing,1,name+geo+sector,0.7
+L0047,F015,X/Twitter,3,name+employer,0.92
+L0048,F015,Employer team page,2,self_declared,0.92
+L0049,F016,Accelerator cohort directory,2,self_declared,0.85
+L0050,F016,arXiv paper,1,name+geo+sector,0.87
+L0051,F016,Job posting authored,2,name+geo+sector,0.71
+L0052,F016,LinkedIn post,2,self_declared,0.84
+L0053,F016,Company registry filing,1,exact_email,0.9
+L0054,F017,arXiv paper,1,self_declared,0.81
+L0055,F018,Grant award record,1,exact_email,0.73
+L0056,F019,X/Twitter,3,self_declared,0.61
+L0057,F019,Accelerator cohort directory,2,exact_email,0.84
+L0058,F019,arXiv paper,1,self_declared,0.94
+L0059,F020,University lab page,2,name+geo+sector,0.93
+L0060,F020,Job posting authored,2,self_declared,0.92
+L0061,F021,Grant award record,1,name+geo+sector,0.69
+L0062,F021,Company registry filing,1,exact_email,0.84
+L0063,F021,Patent filing,1,self_declared,0.82
+L0064,F022,Accelerator cohort directory,2,self_declared,0.63
+L0065,F022,Grant award record,1,name+employer,0.99
+L0066,F022,Personal blog,2,name+geo+sector,0.85
+L0067,F022,X/Twitter,3,exact_email,0.62
+L0068,F023,LinkedIn post,2,name+employer,0.78
+L0069,F023,Employer team page,2,name+geo+sector,0.66
+L0070,F023,University lab page,2,name+employer,0.62
+L0071,F023,Personal blog,2,self_declared,0.63
+L0072,F024,Employer team page,2,name+employer,0.57
+L0073,F024,Company registry filing,1,name+geo+sector,0.96
+L0074,F024,University lab page,2,self_declared,0.86
+L0075,F024,Show HN,2,name+employer,0.71
+L0076,F024,Grant award record,1,name+geo+sector,0.64
+L0077,F024,Product Hunt,2,exact_email,0.87
+L0078,F025,Conference speaker bio,2,name+geo+sector,0.59
+L0079,F025,University lab page,2,name+employer,0.6
+L0080,F026,Company registry filing,1,name+geo+sector,0.59
+L0081,F026,Conference speaker bio,2,name+geo+sector,0.63
+L0082,F027,Company registry filing,1,name+geo+sector,0.71
+L0083,F027,Job posting authored,2,name+geo+sector,0.67
+L0084,F028,Show HN,2,name+geo+sector,0.74
+L0085,F028,LinkedIn post,2,exact_email,0.9
+L0086,F028,X/Twitter,3,self_declared,0.89
+L0087,F028,Grant award record,1,name+geo+sector,0.6
+L0088,F028,GitHub,2,name+employer,0.71
+L0089,F029,Product Hunt,2,exact_email,0.82
+L0090,F029,LinkedIn post,2,exact_email,0.79
+L0091,F029,Grant award record,1,name+geo+sector,0.85
+L0092,F029,Conference speaker bio,2,exact_email,0.87
+L0093,F029,Job posting authored,2,exact_email,0.59
+L0094,F029,Company registry filing,1,name+geo+sector,0.68
+L0095,F030,University lab page,2,name+geo+sector,0.96
+L0096,F030,LinkedIn post,2,self_declared,0.63
+L0097,F030,Grant award record,1,exact_email,0.66
+L0098,F030,Patent filing,1,self_declared,0.73
+L0099,F031,Grant award record,1,self_declared,0.56
+L0100,F031,Personal blog,2,name+employer,0.56
+L0101,F031,arXiv paper,1,self_declared,0.65
+L0102,F031,Product Hunt,2,self_declared,0.71
+L0103,F031,LinkedIn post,2,self_declared,0.85
+L0104,F032,Job posting authored,2,exact_email,0.76
+L0105,F032,Company registry filing,1,self_declared,0.96
+L0106,F032,arXiv paper,1,name+geo+sector,0.7
+L0107,F032,Accelerator cohort directory,2,self_declared,0.69
+L0108,F033,Company registry filing,1,name+geo+sector,0.6
+L0109,F033,arXiv paper,1,name+geo+sector,0.85
+L0110,F034,Job posting authored,2,name+employer,0.71
+L0111,F034,Employer team page,2,exact_email,0.77
+L0112,F034,X/Twitter,3,exact_email,0.64
+L0113,F035,Product Hunt,2,name+geo+sector,0.82
+L0114,F035,Job posting authored,2,name+geo+sector,0.69
+L0115,F035,GitHub,2,name+employer,0.75
+L0116,F035,Company registry filing,1,name+employer,0.63
+L0117,F036,Company registry filing,1,exact_email,0.75
+L0118,F036,Accelerator cohort directory,2,exact_email,0.81
+L0119,F036,Conference speaker bio,2,name+geo+sector,0.84
+L0120,F037,Product Hunt,2,name+geo+sector,0.62
+L0121,F037,Conference speaker bio,2,exact_email,0.79
+L0122,F037,Patent filing,1,self_declared,0.94
+L0123,F037,Employer team page,2,name+employer,0.95
+L0124,F037,University lab page,2,self_declared,0.77
+L0125,F037,Job posting authored,2,name+geo+sector,0.8
+L0126,F038,Employer team page,2,name+employer,0.65
+L0127,F039,Employer team page,2,self_declared,0.79
+L0128,F039,Personal blog,2,name+geo+sector,0.73
+L0129,F039,University lab page,2,exact_email,0.91
+L0130,F039,Patent filing,1,self_declared,0.69
+L0131,F039,Product Hunt,2,name+employer,0.87
+L0132,F039,Job posting authored,2,name+geo+sector,0.86
+L0133,F040,Grant award record,1,name+employer,0.59
+L0134,F040,Job posting authored,2,self_declared,0.6
+L0135,F040,Accelerator cohort directory,2,name+geo+sector,0.93
+L0136,F041,Company registry filing,1,self_declared,0.64
+L0137,F041,Grant award record,1,name+geo+sector,0.77
+L0138,F042,Patent filing,1,self_declared,0.86
+L0139,F042,Accelerator cohort directory,2,name+employer,0.61
+L0140,F042,GitHub,2,self_declared,0.84
+L0141,F042,Show HN,2,name+geo+sector,0.56
+L0142,F043,arXiv paper,1,name+geo+sector,0.97
+L0143,F043,Job posting authored,2,name+employer,0.61
+L0144,F043,Product Hunt,2,name+employer,0.91
+L0145,F043,Company registry filing,1,exact_email,0.58
+L0146,F043,Patent filing,1,name+employer,0.71
+L0147,F044,Job posting authored,2,exact_email,0.66
+L0148,F044,LinkedIn post,2,name+employer,0.64
+L0149,F044,Grant award record,1,name+employer,0.77
+L0150,F044,arXiv paper,1,name+geo+sector,0.63
+L0151,F044,GitHub,2,name+geo+sector,0.99
+L0152,F045,Conference speaker bio,2,exact_email,0.81
+L0153,F046,Conference speaker bio,2,exact_email,0.69
+L0154,F046,Company registry filing,1,exact_email,0.81
+L0155,F046,Personal blog,2,self_declared,0.88
+L0156,F046,Accelerator cohort directory,2,self_declared,0.84
+L0157,F046,LinkedIn post,2,self_declared,0.83
+L0158,F046,Product Hunt,2,name+employer,0.96
+L0159,F047,arXiv paper,1,name+geo+sector,0.95
+L0160,F047,Employer team page,2,exact_email,0.87
+L0161,F048,University lab page,2,exact_email,0.69
+L0162,F048,Product Hunt,2,name+geo+sector,0.65
+L0163,F048,GitHub,2,exact_email,0.73
+L0164,F048,X/Twitter,3,exact_email,0.59
+L0165,F049,Patent filing,1,name+geo+sector,0.86
+L0166,F049,Employer team page,2,name+employer,0.95
+L0167,F049,Grant award record,1,name+employer,0.81
+L0168,F049,GitHub,2,self_declared,0.61
+L0169,F049,Show HN,2,name+employer,0.87
+L0170,F050,Personal blog,2,self_declared,0.73
+L0171,F050,GitHub,2,name+employer,0.68
+L0172,F050,Accelerator cohort directory,2,name+employer,0.79
+L0173,F050,Patent filing,1,name+employer,0.73
+L0174,F050,Employer team page,2,exact_email,0.78
+L0175,F051,University lab page,2,name+employer,0.91
+L0176,F051,arXiv paper,1,exact_email,0.73
+L0177,F051,Job posting authored,2,name+geo+sector,0.86
+L0178,F051,Personal blog,2,self_declared,0.95
+L0179,F051,Patent filing,1,name+employer,0.97
+L0180,F052,University lab page,2,exact_email,0.81
+L0181,F052,Company registry filing,1,name+geo+sector,0.69
+L0182,F052,Employer team page,2,exact_email,0.74
+L0183,F053,Grant award record,1,name+employer,0.98
+L0184,F053,University lab page,2,exact_email,0.59
+L0185,F053,Company registry filing,1,name+employer,0.65
+L0186,F054,Conference speaker bio,2,name+geo+sector,0.72
+L0187,F054,Company registry filing,1,exact_email,0.74
+L0188,F054,Product Hunt,2,name+employer,0.62
+L0189,F055,Accelerator cohort directory,2,exact_email,0.94
+L0190,F056,Accelerator cohort directory,2,name+employer,0.56
+L0191,F056,Company registry filing,1,name+geo+sector,0.69
+L0192,F057,X/Twitter,3,name+employer,0.78
+L0193,F057,Grant award record,1,name+employer,0.58
+L0194,F057,arXiv paper,1,self_declared,0.61
+L0195,F057,Company registry filing,1,name+geo+sector,0.68
+L0196,F057,Patent filing,1,exact_email,0.8
+L0197,F058,Personal blog,2,name+employer,0.83
+L0198,F058,Company registry filing,1,self_declared,0.79
+L0199,F058,Job posting authored,2,name+geo+sector,0.84
+L0200,F058,LinkedIn post,2,self_declared,0.99
+L0201,F059,Job posting authored,2,exact_email,0.78
+L0202,F059,Accelerator cohort directory,2,name+geo+sector,0.96
+L0203,F059,University lab page,2,self_declared,0.86
+L0204,F060,Patent filing,1,exact_email,0.84
+L0205,F060,Job posting authored,2,exact_email,0.9
+L0206,F060,Grant award record,1,self_declared,0.69

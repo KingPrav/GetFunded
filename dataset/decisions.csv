@@ -1,0 +1,61 @@
+company_id,founder_id,recommendation,founder_axis,founder_axis_trend,market_axis,market_axis_trend,idea_axis,idea_axis_trend,min_coverage_pct,open_contradictions,market_sizing_method,instrument,check_size_usd,valuation_cap_usd_m,implied_ownership_pct,flagged_gap_count,decided_at
+C001,F001,Pass,35,stable,34,stable,35,stable,60,0,bottom_up_derived,Post-money SAFE,100000,6,1.67,4,2026-06-29
+C002,F002,Pass,46,stable,26,stable,33,insufficient_history,60,1,unobserved,Post-money SAFE,100000,4,2.5,6,2026-07-01
+C003,F003,Track,56,improving,64,improving,47,declining,80,0,bottom_up_derived,Post-money SAFE,100000,10,1.0,5,2026-07-08
+C004,F004,Pass,37,stable,21,stable,16,stable,60,2,unobserved,Post-money SAFE,100000,6,1.67,6,2026-07-10
+C005,F005,Pass,51,declining,38,declining,59,stable,60,2,asserted_pct_of_tam,Post-money SAFE,100000,8,1.25,4,2026-07-07
+C006,F006,Pass,11,stable,33,stable,29,stable,80,0,bottom_up_derived,Post-money SAFE,100000,5,2.0,3,2026-07-11
+C007,F007,Pass,42,insufficient_history,33,stable,43,stable,80,2,bottom_up_derived,Post-money SAFE,100000,5,2.0,3,2026-07-16
+C008,F008,Pass,49,stable,48,declining,52,improving,80,3,bottom_up_derived,Post-money SAFE,100000,4,2.5,4,2026-07-03
+C009,F009,Hold - resolve contradictions,46,improving,43,improving,48,stable,80,4,bottom_up_derived,Post-money SAFE,100000,4,2.5,4,2026-06-28
+C010,F010,Track,58,stable,74,stable,55,stable,40,3,bottom_up_derived,Post-money SAFE,100000,10,1.0,6,2026-07-11
+C011,F011,Pass,19,stable,20,stable,24,stable,80,2,bottom_up_derived,Post-money SAFE,100000,4,2.5,3,2026-07-06
+C012,F012,Invest $100K (conditional),65,stable,49,declining,75,stable,80,0,bottom_up_derived,Post-money SAFE,100000,5,2.0,6,2026-07-09
+C013,F013,Hold - resolve contradictions,54,declining,34,declining,48,stable,60,4,asserted_pct_of_tam,Post-money SAFE,100000,4,2.5,5,2026-07-13
+C014,F014,Pass,30,stable,25,stable,26,stable,67,1,bottom_up_derived,Post-money SAFE,100000,4,2.5,3,2026-07-15
+C015,F015,Pass,47,stable,45,declining,54,stable,80,2,asserted_pct_of_tam,Post-money SAFE,100000,8,1.25,4,2026-07-10
+C016,F016,Pass,12,stable,15,stable,16,stable,60,0,asserted_pct_of_tam,Post-money SAFE,100000,4,2.5,4,2026-06-30
+C017,F017,Pass,22,improving,21,stable,24,stable,83,1,bottom_up_derived,Post-money SAFE,100000,8,1.25,3,2026-07-02
+C018,F018,Track,56,stable,64,stable,55,declining,40,0,bottom_up_derived,Post-money SAFE,100000,10,1.0,5,2026-06-30
+C019,F019,Pass,53,stable,26,stable,28,stable,100,1,asserted_pct_of_tam,Post-money SAFE,100000,6,1.67,3,2026-07-15
+C020,F020,Pass,31,stable,36,stable,30,improving,60,1,unobserved,Post-money SAFE,100000,10,1.0,6,2026-06-28
+C021,F021,Pass,23,declining,18,stable,32,stable,60,2,unobserved,Post-money SAFE,100000,6,1.67,8,2026-07-14
+C022,F022,Track,44,stable,67,declining,59,stable,80,3,bottom_up_derived,Post-money SAFE,100000,6,1.67,5,2026-06-29
+C023,F023,Invest $100K (conditional),74,stable,58,stable,64,improving,80,2,bottom_up_derived,Post-money SAFE,100000,4,2.5,1,2026-07-13
+C024,F024,Pass,36,improving,29,stable,47,declining,80,3,bottom_up_derived,Post-money SAFE,100000,10,1.0,2,2026-06-30
+C025,F025,Pass,17,improving,12,stable,28,stable,60,3,unobserved,Post-money SAFE,100000,8,1.25,6,2026-07-09
+C026,F026,Pass,26,declining,31,stable,52,improving,60,2,unobserved,Post-money SAFE,100000,5,2.0,6,2026-07-08
+C027,F027,Invest $100K,66,stable,60,declining,67,improving,67,0,bottom_up_derived,Post-money SAFE,100000,4,2.5,3,2026-06-29
+C028,F028,Invest $100K (conditional),66,declining,72,stable,41,stable,67,2,bottom_up_derived,Post-money SAFE,100000,4,2.5,5,2026-07-02
+C029,F029,Pass,42,improving,49,stable,45,stable,60,2,bottom_up_derived,Post-money SAFE,100000,4,2.5,7,2026-07-12
+C030,F030,Invest $100K (conditional),62,stable,36,declining,64,stable,100,2,bottom_up_derived,Post-money SAFE,100000,6,1.67,2,2026-07-17
+C031,F031,Pass,50,declining,34,stable,45,stable,60,1,asserted_pct_of_tam,Post-money SAFE,100000,10,1.0,6,2026-07-05
+C032,F032,Pass,48,stable,50,stable,51,improving,80,2,bottom_up_derived,Post-money SAFE,100000,6,1.67,4,2026-07-09
+C033,F033,Pass,33,stable,14,stable,26,stable,80,1,asserted_pct_of_tam,Post-money SAFE,100000,10,1.0,3,2026-06-28
+C034,F034,Pass,55,stable,38,declining,55,stable,80,1,asserted_pct_of_tam,Post-money SAFE,100000,4,2.5,4,2026-07-03
+C035,F035,Pass,23,stable,17,declining,33,stable,80,1,bottom_up_derived,Post-money SAFE,100000,8,1.25,1,2026-07-08
+C036,F036,Invest $100K,65,stable,82,declining,65,improving,60,1,bottom_up_derived,Post-money SAFE,100000,6,1.67,7,2026-07-10
+C037,F037,Pass,38,stable,48,improving,42,stable,50,0,bottom_up_derived,Post-money SAFE,100000,5,2.0,6,2026-07-13
+C038,F038,Pass,53,declining,54,stable,35,improving,80,1,bottom_up_derived,Post-money SAFE,100000,10,1.0,3,2026-07-01
+C039,F039,Track,47,stable,63,stable,39,improving,100,1,bottom_up_derived,Post-money SAFE,100000,8,1.25,3,2026-07-16
+C040,F040,Hold - resolve contradictions,69,declining,55,stable,45,stable,60,4,bottom_up_derived,Post-money SAFE,100000,5,2.0,5,2026-07-11
+C041,F041,Pass,29,stable,41,stable,29,declining,60,1,asserted_pct_of_tam,Post-money SAFE,100000,10,1.0,6,2026-07-12
+C042,F042,Hold - resolve contradictions,17,stable,32,declining,19,stable,83,4,bottom_up_derived,Post-money SAFE,100000,6,1.67,4,2026-07-09
+C043,F043,Pass,38,declining,28,stable,35,declining,80,2,bottom_up_derived,Post-money SAFE,100000,6,1.67,5,2026-07-17
+C044,F044,Pass,25,declining,26,stable,26,stable,80,3,bottom_up_derived,Post-money SAFE,100000,6,1.67,3,2026-07-07
+C045,F045,Pass,26,stable,23,improving,26,stable,80,0,bottom_up_derived,Post-money SAFE,100000,8,1.25,4,2026-07-07
+C046,F046,Invest $100K (conditional),64,stable,72,stable,59,stable,80,3,bottom_up_derived,Post-money SAFE,100000,6,1.67,2,2026-06-30
+C047,F047,Pass,30,stable,23,stable,42,improving,80,1,bottom_up_derived,Post-money SAFE,100000,10,1.0,3,2026-07-06
+C048,F048,Pass,18,stable,16,stable,26,declining,83,0,asserted_pct_of_tam,Post-money SAFE,100000,10,1.0,3,2026-07-08
+C049,F049,Pass,34,improving,28,stable,24,improving,80,2,asserted_pct_of_tam,Post-money SAFE,100000,4,2.5,5,2026-07-18
+C050,F050,Invest $100K (conditional),69,declining,58,declining,89,stable,67,0,bottom_up_derived,Post-money SAFE,100000,8,1.25,4,2026-07-17
+C051,F051,Pass,30,stable,27,stable,24,stable,83,2,bottom_up_derived,Post-money SAFE,100000,8,1.25,3,2026-07-08
+C052,F052,Pass,14,declining,18,stable,30,improving,50,2,bottom_up_derived,Post-money SAFE,100000,8,1.25,7,2026-07-16
+C053,F053,Invest $100K (conditional),46,improving,76,stable,66,stable,80,1,bottom_up_derived,Post-money SAFE,100000,5,2.0,5,2026-06-30
+C054,F054,Pass,39,stable,30,stable,32,stable,80,1,bottom_up_derived,Post-money SAFE,100000,5,2.0,3,2026-07-03
+C055,F055,Invest $100K (conditional),79,stable,50,improving,63,stable,67,1,asserted_pct_of_tam,Post-money SAFE,100000,10,1.0,4,2026-07-06
+C056,F056,Track,85,declining,53,stable,32,declining,60,1,asserted_pct_of_tam,Post-money SAFE,100000,5,2.0,5,2026-07-09
+C057,F057,Track,66,improving,30,stable,45,improving,60,3,asserted_pct_of_tam,Post-money SAFE,100000,10,1.0,5,2026-07-13
+C058,F058,Pass,38,declining,34,stable,40,stable,100,1,asserted_pct_of_tam,Post-money SAFE,100000,10,1.0,3,2026-07-08
+C059,F059,Pass,57,stable,38,declining,46,stable,60,0,unobserved,Post-money SAFE,100000,4,2.5,5,2026-07-12
+C060,F060,Hold - resolve contradictions,21,stable,13,stable,30,stable,60,4,bottom_up_derived,Post-money SAFE,100000,10,1.0,5,2026-07-03

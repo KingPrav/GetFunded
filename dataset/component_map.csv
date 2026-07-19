@@ -1,0 +1,20 @@
+component,axis,vsp_code,weight_within_axis
+Background & execution,Founder,-,0.3
+Traits,Founder,-,0.2
+Team role clarity,Founder,T-2,0.2
+Team communication,Founder,T-1,0.15
+Feedback & iteration,Founder,T-3,0.15
+Market maps,Market & traction,M-1,0.2
+Market sizing (TAM/SAM/SOM),Market & traction,M-2,0.25
+Value proposition,Market & traction,M-3,0.15
+Traction & KPIs,Market & traction,P-1,0.25
+Customer acquisition,Market & traction,B-2,0.15
+USP / secret sauce,Idea-vs-market,V-3,0.25
+Competitive advantage,Idea-vs-market,B-3,0.2
+Technical feasibility,Idea-vs-market,P-2,0.2
+Development roadmap,Idea-vs-market,P-3,0.15
+Revenue model,Idea-vs-market,B-1,0.1
+Mission & long-term vision,Idea-vs-market,V-1/V-2,0.1
+Company formation & cap table,Diligence,O-1,0.0
+IP & regulation strategy,Diligence,O-2,0.0
+Finances & runway,Diligence,O-3,0.0

@@ -1,0 +1,1141 @@
+claim_id,founder_id,company_id,axis,component,vsp_code,claim_text,value_numeric,unit,strength_0_100,sizing_method,implied_share_pct,signal_id,source_name,source_tier,observed_at,evidence_state,verification_count,contradicts_claim_id,trust_score
+CL00001,F001,C001,Founder,Background & execution,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00002,F001,C001,Founder,Traits,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00003,F001,C001,Founder,Team role clarity,T-2,2 cofounders with non-overlapping functional coverage,2.0,count,42.0,,,S00001,Platform intake: work sample,1.0,2026-02-19,verified,1,,88.0
+CL00004,F001,C001,Founder,Team communication,T-1,"Team publishes a written weekly update, 14 consecutive weeks",14.0,count,43.0,,,S00002,Platform intake: scenario interview,1.0,2025-09-23,verified,1,,73.0
+CL00005,F001,C001,Founder,Feedback & iteration,T-3,Shipped 4 product iterations following user testing,4.0,count,31.0,,,S00003,Platform intake: VSP-style prompt response,1.0,2025-06-15,self_asserted,0,,67.0
+CL00006,F001,C001,Market & traction,Market maps,M-1,Names 2 direct competitors with stated differentiation,2.0,count,31.0,,,S00004,Platform intake: work sample,1.0,2026-06-06,verified,1,,80.0
+CL00007,F001,C001,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $33M derived from a stated unit chain,33.0,usd_m_bu,58.0,bottom_up_derived,0.0608,S00005,University lab page,2.0,2025-11-09,verified,1,,64.0
+CL00008,F001,C001,Market & traction,Value proposition,M-3,3 customer personas documented with motivations,3.0,count,63.0,,,S00006,Grant award record,1.0,2025-07-27,verified,1,,84.0
+CL00009,F001,C001,Market & traction,Traction & KPIs,P-1,0 design partners in signed pilot,0.0,count,15.0,,,S00007,Platform intake: scenario interview,1.0,2025-07-08,verified,2,,99.0
+CL00010,F001,C001,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00008,Platform intake: reference check,1.0,2026-07-06,verified,3,,91.0
+CL00011,F001,C001,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 10 claims",10.0,count,47.0,,,S00009,Platform intake: work sample,1.0,2025-07-04,self_asserted,0,,68.0
+CL00012,F001,C001,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00010,Platform intake: reference check,1.0,2026-05-08,verified,2,,96.0
+CL00013,F001,C001,Idea-vs-market,Technical feasibility,P-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00014,F001,C001,Idea-vs-market,Development roadmap,P-3,Roadmap published with 5 dated milestones,5.0,count,48.0,,,S00011,arXiv paper,1.0,2025-08-14,self_asserted,0,,71.0
+CL00015,F001,C001,Idea-vs-market,Revenue model,B-1,2 distinct revenue streams identified with pricing logic,2.0,count,42.0,,,S00012,Platform intake: VSP-style prompt response,1.0,2025-10-17,verified,1,,74.0
+CL00016,F001,C001,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00013,Company registry filing,1.0,2025-11-26,verified,3,,99.0
+CL00017,F001,C001,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00014,Platform intake: VSP-style prompt response,1.0,2025-08-27,verified,1,,76.0
+CL00018,F001,C001,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-07-14,gap_flagged,0,,
+CL00019,F001,C001,Diligence,Finances & runway,O-3,"Monthly burn stated at $43K, unaudited",43.0,usd_k,58.0,,,S00015,Platform intake: scenario interview,1.0,2026-06-11,verified,2,,92.0
+CL00020,F002,C002,Founder,Background & execution,-,Led engineering for a team of 19,19.0,count,65.0,,,S00016,Platform intake: reference check,1.0,2025-08-22,verified,2,,96.0
+CL00021,F002,C002,Founder,Traits,-,"Reversed a stated position after customer evidence, 3 documented instances",3.0,count,63.0,,,S00017,Platform intake: reference check,1.0,2025-08-26,self_asserted,0,,59.0
+CL00022,F002,C002,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00023,F002,C002,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00018,Accelerator cohort directory,2.0,2026-01-16,verified,2,,88.0
+CL00024,F002,C002,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00019,Platform intake: reference check,1.0,2025-12-01,verified,2,,99.0
+CL00025,F002,C002,Market & traction,Market maps,M-1,Names 2 direct competitors with stated differentiation,2.0,count,31.0,,,S00020,Patent filing,1.0,2026-03-23,verified,1,,85.0
+CL00026,F002,C002,Market & traction,Market sizing (TAM/SAM/SOM),M-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00027,F002,C002,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00021,Grant award record,1.0,2025-08-22,self_asserted,0,,65.0
+CL00028,F002,C002,Market & traction,Traction & KPIs,P-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00029,F002,C002,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00022,Platform intake: reference check,1.0,2026-06-03,verified,2,,99.0
+CL00030,F002,C002,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 139K labeled records,139.0,count_k,52.0,,,S00023,Platform intake: work sample,1.0,2026-07-03,self_asserted,0,,73.0
+CL00031,F002,C002,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 4 accounts,4.0,count,47.0,,,S00024,Platform intake: reference check,1.0,2026-04-29,verified,1,,70.0
+CL00032,F002,C002,Idea-vs-market,Technical feasibility,P-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00033,F002,C002,Idea-vs-market,Development roadmap,P-3,Roadmap published with 1 dated milestones,1.0,count,22.0,,,S00025,Platform intake: work sample,1.0,2026-07-03,self_asserted,0,,60.0
+CL00034,F002,C002,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00026,Employer team page,2.0,2026-05-11,self_asserted,0,,59.0
+CL00035,F002,C002,Idea-vs-market,Mission & long-term vision,V-1/V-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00036,F002,C002,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-07-09,gap_flagged,0,,
+CL00037,F002,C002,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00027,Platform intake: VSP-style prompt response,1.0,2025-06-15,contradicted,0,CL00031,58.0
+CL00038,F002,C002,Diligence,Finances & runway,O-3,"Monthly burn stated at $53K, unaudited",53.0,usd_k,68.0,,,S00028,Platform intake: scenario interview,1.0,2025-10-06,self_asserted,0,,69.0
+CL00039,F003,C003,Founder,Background & execution,-,6 years domain experience in AI infra,6.0,years,49.0,,,S00029,Platform intake: VSP-style prompt response,1.0,2026-06-10,self_asserted,0,,56.0
+CL00040,F003,C003,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00030,Grant award record,1.0,2026-05-05,self_asserted,0,,67.0
+CL00041,F003,C003,Founder,Team role clarity,T-2,Written role split covering 4 of 4 core functions,4.0,count,95.0,,,S00031,Platform intake: VSP-style prompt response,1.0,2026-04-25,verified,3,,93.0
+CL00042,F003,C003,Founder,Team communication,T-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00043,F003,C003,Founder,Feedback & iteration,T-3,Roadmap changed 3 times citing named customer input,3.0,count,45.0,,,S00032,Platform intake: scenario interview,1.0,2026-01-25,verified,1,,70.0
+CL00044,F003,C003,Market & traction,Market maps,M-1,Maps 11 adjacent players and potential partners,11.0,count,88.0,,,S00033,Platform intake: scenario interview,1.0,2026-05-21,verified,3,,91.0
+CL00045,F003,C003,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $33M derived from a stated unit chain,33.0,usd_m_bu,58.0,bottom_up_derived,0.0344,S00034,Platform intake: reference check,1.0,2025-12-22,self_asserted,0,,71.0
+CL00046,F003,C003,Market & traction,Value proposition,M-3,3 customer personas documented with motivations,3.0,count,63.0,,,S00035,Platform intake: scenario interview,1.0,2025-07-30,self_asserted,0,,61.0
+CL00047,F003,C003,Market & traction,Traction & KPIs,P-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00048,F003,C003,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 6 stages with conversion rates,6.0,count,95.0,,,S00036,Accelerator cohort directory,2.0,2026-07-12,verified,1,,70.0
+CL00049,F003,C003,Idea-vs-market,USP / secret sauce,V-3,"Wrapper over a single third-party model, no proprietary layer",,qualitative,24.0,,,S00037,arXiv paper,1.0,2026-05-22,verified,3,,93.0
+CL00050,F003,C003,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 7 accounts,7.0,count,71.0,,,S00038,Platform intake: work sample,1.0,2026-02-19,verified,1,,78.0
+CL00051,F003,C003,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 4 baselines,4.0,count,68.0,,,S00039,Platform intake: work sample,1.0,2025-10-27,verified,1,,73.0
+CL00052,F003,C003,Idea-vs-market,Development roadmap,P-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00053,F003,C003,Idea-vs-market,Revenue model,B-1,Pricing tested across 3 customer segments,3.0,count,63.0,,,S00040,Job posting authored,2.0,2026-02-10,verified,2,,90.0
+CL00054,F003,C003,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00041,Platform intake: work sample,1.0,2025-12-22,verified,3,,92.0
+CL00055,F003,C003,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-20,gap_flagged,0,,
+CL00056,F003,C003,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-23,gap_flagged,0,,
+CL00057,F003,C003,Diligence,Finances & runway,O-3,"Monthly burn stated at $46K, unaudited",46.0,usd_k,61.0,,,S00042,Platform intake: VSP-style prompt response,1.0,2026-04-14,self_asserted,0,,61.0
+CL00058,F004,C004,Founder,Background & execution,-,Led engineering for a team of 12,12.0,count,45.0,,,S00043,Platform intake: work sample,1.0,2025-08-15,verified,3,,99.0
+CL00059,F004,C004,Founder,Traits,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00060,F004,C004,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00044,Platform intake: work sample,1.0,2026-06-25,verified,2,,99.0
+CL00061,F004,C004,Founder,Team communication,T-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00062,F004,C004,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00045,Job posting authored,2.0,2025-09-29,verified,2,,87.0
+CL00063,F004,C004,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00046,Platform intake: reference check,1.0,2026-05-25,verified,1,,71.0
+CL00064,F004,C004,Market & traction,Market sizing (TAM/SAM/SOM),M-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00065,F004,C004,Market & traction,Value proposition,M-3,Value prop canvas links 1 customer pains to named features,1.0,count,23.0,,,S00047,Job posting authored,2.0,2025-10-16,self_asserted,0,,68.0
+CL00066,F004,C004,Market & traction,Traction & KPIs,P-1,8 paying customers,8.0,count,31.0,,,S00048,Conference speaker bio,2.0,2026-03-19,verified,2,,94.0
+CL00067,F004,C004,Market & traction,Customer acquisition,B-2,CAC measured at $2745 across a real channel test,2745.0,usd_inv,9.0,,,S00049,Platform intake: scenario interview,1.0,2025-09-05,verified,2,,92.0
+CL00068,F004,C004,Idea-vs-market,USP / secret sauce,V-3,"Wrapper over a single third-party model, no proprietary layer",,qualitative,24.0,,,S00050,Platform intake: reference check,1.0,2025-09-02,contradicted,1,CL00063,34.0
+CL00069,F004,C004,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 1 deals,1.0,count,19.0,,,S00051,Platform intake: reference check,1.0,2025-07-20,verified,1,,84.0
+CL00070,F004,C004,Idea-vs-market,Technical feasibility,P-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00071,F004,C004,Idea-vs-market,Development roadmap,P-3,Roadmap published with 0 dated milestones,0.0,count,15.0,,,S00052,Platform intake: VSP-style prompt response,1.0,2026-07-09,contradicted,0,CL00075,49.0
+CL00072,F004,C004,Idea-vs-market,Revenue model,B-1,Pricing tested across 0 customer segments,0.0,count,15.0,,,S00053,arXiv paper,1.0,2026-06-09,verified,1,,86.0
+CL00073,F004,C004,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00054,Platform intake: reference check,1.0,2026-05-21,verified,2,,99.0
+CL00074,F004,C004,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-04,gap_flagged,0,,
+CL00075,F004,C004,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00055,Platform intake: VSP-style prompt response,1.0,2026-01-22,verified,1,,80.0
+CL00076,F004,C004,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-10,gap_flagged,0,,
+CL00077,F005,C005,Founder,Background & execution,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00078,F005,C005,Founder,Traits,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00079,F005,C005,Founder,Team role clarity,T-2,4 cofounders with non-overlapping functional coverage,4.0,count,95.0,,,S00056,Platform intake: VSP-style prompt response,1.0,2025-11-29,verified,1,,79.0
+CL00080,F005,C005,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00057,Platform intake: work sample,1.0,2026-04-21,verified,1,,79.0
+CL00081,F005,C005,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00058,Platform intake: reference check,1.0,2025-12-22,verified,2,,99.0
+CL00082,F005,C005,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00059,University lab page,2.0,2026-06-09,self_asserted,0,,60.0
+CL00083,F005,C005,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,2.0,S00060,Employer team page,2.0,2026-05-07,self_asserted,1,,45.0
+CL00084,F005,C005,Market & traction,Value proposition,M-3,Value prop canvas links 5 customer pains to named features,5.0,count,55.0,,,S00061,Platform intake: work sample,1.0,2026-07-07,verified,2,,99.0
+CL00085,F005,C005,Market & traction,Traction & KPIs,P-1,10 design partners in signed pilot,10.0,count,95.0,,,S00062,Grant award record,1.0,2025-06-27,self_asserted,0,,64.0
+CL00086,F005,C005,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00063,Platform intake: work sample,1.0,2026-05-31,self_asserted,0,,65.0
+CL00087,F005,C005,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 25 claims",25.0,count,95.0,,,S00064,Company registry filing,1.0,2026-05-13,self_asserted,0,,68.0
+CL00088,F005,C005,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 8 deals,8.0,count,47.0,,,S00065,Employer team page,2.0,2025-10-20,verified,2,,87.0
+CL00089,F005,C005,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 4 core functions",4.0,count,49.0,,,S00066,Accelerator cohort directory,2.0,2026-06-04,contradicted,1,CL00086,50.0
+CL00090,F005,C005,Idea-vs-market,Development roadmap,P-3,Roadmap published with 9 dated milestones,9.0,count,75.0,,,S00067,Platform intake: reference check,1.0,2026-05-13,verified,1,,83.0
+CL00091,F005,C005,Idea-vs-market,Revenue model,B-1,3 distinct revenue streams identified with pricing logic,3.0,count,68.0,,,S00068,arXiv paper,1.0,2025-12-31,self_asserted,0,,53.0
+CL00092,F005,C005,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 4 future verticals with entry logic,4.0,count,95.0,,,S00069,Platform intake: reference check,1.0,2026-02-06,verified,2,,99.0
+CL00093,F005,C005,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00070,Platform intake: VSP-style prompt response,1.0,2025-07-22,contradicted,2,CL00079,39.0
+CL00094,F005,C005,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-12,gap_flagged,0,,
+CL00095,F005,C005,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-03,gap_flagged,0,,
+CL00096,F006,C006,Founder,Background & execution,-,Shipped 0 public projects prior to founding,0.0,count,15.0,,,S00071,Job posting authored,2.0,2026-02-07,verified,2,,85.0
+CL00097,F006,C006,Founder,Traits,-,Documented fix shipped 85 days after critical user feedback,85.0,days_inv,6.0,,,S00072,Patent filing,1.0,2026-07-01,self_asserted,0,,64.0
+CL00098,F006,C006,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00099,F006,C006,Founder,Team communication,T-1,"Team publishes a written weekly update, 0 consecutive weeks",0.0,count,15.0,,,S00073,X/Twitter,3.0,2026-06-07,self_asserted,0,,48.0
+CL00100,F006,C006,Founder,Feedback & iteration,T-3,Shipped 0 product iterations following user testing,0.0,count,15.0,,,S00074,Show HN,2.0,2025-12-08,self_asserted,0,,51.0
+CL00101,F006,C006,Market & traction,Market maps,M-1,Maps 6 adjacent players and potential partners,6.0,count,55.0,,,S00075,Product Hunt,2.0,2026-02-02,verified,1,,62.0
+CL00102,F006,C006,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $21M derived from a stated unit chain,21.0,usd_m_bu,42.0,bottom_up_derived,0.0042,S00076,X/Twitter,3.0,2025-11-22,self_asserted,0,,53.0
+CL00103,F006,C006,Market & traction,Value proposition,M-3,Value prop canvas links 0 customer pains to named features,0.0,count,15.0,,,S00077,Job posting authored,2.0,2025-09-10,verified,1,,81.0
+CL00104,F006,C006,Market & traction,Traction & KPIs,P-1,4 design partners in signed pilot,4.0,count,47.0,,,S00078,Grant award record,1.0,2025-06-26,verified,1,,72.0
+CL00105,F006,C006,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 1 stages with conversion rates,1.0,count,28.0,,,S00079,LinkedIn post,2.0,2025-11-16,verified,2,,92.0
+CL00106,F006,C006,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 6 claims",6.0,count,34.0,,,S00080,Patent filing,1.0,2026-04-15,self_asserted,0,,62.0
+CL00107,F006,C006,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 2 deals,2.0,count,23.0,,,S00081,arXiv paper,1.0,2026-03-19,verified,1,,81.0
+CL00108,F006,C006,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00082,LinkedIn post,2.0,2025-10-28,self_asserted,0,,52.0
+CL00109,F006,C006,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00083,X/Twitter,3.0,2025-11-13,self_asserted,1,,75.0
+CL00110,F006,C006,Idea-vs-market,Revenue model,B-1,2 distinct revenue streams identified with pricing logic,2.0,count,42.0,,,S00084,LinkedIn post,2.0,2025-12-14,verified,1,,76.0
+CL00111,F006,C006,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00085,Company registry filing,1.0,2025-11-24,verified,1,,87.0
+CL00112,F006,C006,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00113,F006,C006,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00086,Employer team page,2.0,2026-02-17,self_asserted,0,,56.0
+CL00114,F006,C006,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-05,gap_flagged,0,,
+CL00115,F007,C007,Founder,Background & execution,-,Led engineering for a team of 15,15.0,count,54.0,,,S00087,Platform intake: work sample,1.0,2026-06-09,verified,1,,84.0
+CL00116,F007,C007,Founder,Traits,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00117,F007,C007,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00088,Grant award record,1.0,2026-03-28,self_asserted,0,,54.0
+CL00118,F007,C007,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00089,Platform intake: work sample,1.0,2026-07-12,verified,2,,99.0
+CL00119,F007,C007,Founder,Feedback & iteration,T-3,Shipped 13 product iterations following user testing,13.0,count,67.0,,,S00090,Platform intake: VSP-style prompt response,1.0,2026-06-15,verified,1,,87.0
+CL00120,F007,C007,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00091,Platform intake: work sample,1.0,2025-12-26,verified,2,,97.0
+CL00121,F007,C007,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $27M derived from a stated unit chain,27.0,usd_m_bu,50.0,bottom_up_derived,0.0257,S00092,Grant award record,1.0,2025-12-17,verified,1,,81.0
+CL00122,F007,C007,Market & traction,Value proposition,M-3,2 customer personas documented with motivations,2.0,count,47.0,,,S00093,University lab page,2.0,2025-12-13,contradicted,0,CL00125,43.0
+CL00123,F007,C007,Market & traction,Traction & KPIs,P-1,ARR of $168K,168.0,usd_k,49.0,,,S00094,University lab page,2.0,2026-07-10,self_asserted,0,,57.0
+CL00124,F007,C007,Market & traction,Customer acquisition,B-2,CAC measured at $2229 across a real channel test,2229.0,usd_inv,26.0,,,S00095,Platform intake: reference check,1.0,2026-02-22,self_asserted,0,,55.0
+CL00125,F007,C007,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 79K labeled records,79.0,count_k,36.0,,,S00096,Platform intake: scenario interview,1.0,2025-11-12,self_asserted,0,,73.0
+CL00126,F007,C007,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00097,Platform intake: work sample,1.0,2025-08-24,verified,2,,99.0
+CL00127,F007,C007,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 5 baselines,5.0,count,82.0,,,S00098,University lab page,2.0,2025-10-01,self_asserted,0,,61.0
+CL00128,F007,C007,Idea-vs-market,Development roadmap,P-3,Roadmap published with 5 dated milestones,5.0,count,48.0,,,S00099,Platform intake: work sample,1.0,2026-06-26,verified,2,,89.0
+CL00129,F007,C007,Idea-vs-market,Revenue model,B-1,Pricing tested across 4 customer segments,4.0,count,79.0,,,S00100,Accelerator cohort directory,2.0,2025-10-09,verified,2,,93.0
+CL00130,F007,C007,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 1 future verticals with entry logic,1.0,count,35.0,,,S00101,Platform intake: VSP-style prompt response,1.0,2026-04-17,self_asserted,0,,68.0
+CL00131,F007,C007,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-05-29,gap_flagged,0,,
+CL00132,F007,C007,Diligence,IP & regulation strategy,O-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00133,F007,C007,Diligence,Finances & runway,O-3,Runway of 5 months at current burn,5.0,count,32.0,,,S00102,University lab page,2.0,2026-01-15,contradicted,1,CL00124,39.0
+CL00134,F008,C008,Founder,Background & execution,-,10 years domain experience in Fintech,10.0,years,72.0,,,S00103,University lab page,2.0,2026-03-18,contradicted,0,CL00138,30.0
+CL00135,F008,C008,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00104,Job posting authored,2.0,2026-02-25,verified,2,,85.0
+CL00136,F008,C008,Founder,Team role clarity,T-2,Written role split covering 3 of 4 core functions,3.0,count,68.0,,,S00105,LinkedIn post,2.0,2025-06-19,verified,1,,73.0
+CL00137,F008,C008,Founder,Team communication,T-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00138,F008,C008,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00106,arXiv paper,1.0,2025-07-30,contradicted,2,CL00144,50.0
+CL00139,F008,C008,Market & traction,Market maps,M-1,Maps 8 adjacent players and potential partners,8.0,count,68.0,,,S00107,Company registry filing,1.0,2026-01-10,verified,1,,72.0
+CL00140,F008,C008,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $27M derived from a stated unit chain,27.0,usd_m_bu,50.0,bottom_up_derived,0.0496,S00108,X/Twitter,3.0,2026-02-16,verified,2,,90.0
+CL00141,F008,C008,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00109,X/Twitter,3.0,2026-03-26,self_asserted,0,,58.0
+CL00142,F008,C008,Market & traction,Traction & KPIs,P-1,7 design partners in signed pilot,7.0,count,71.0,,,S00110,Product Hunt,2.0,2025-09-07,contradicted,2,CL00139,25.0
+CL00143,F008,C008,Market & traction,Customer acquisition,B-2,CAC measured at $596 across a real channel test,596.0,usd_inv,81.0,,,S00111,Product Hunt,2.0,2025-12-18,verified,1,,68.0
+CL00144,F008,C008,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 20 claims",20.0,count,79.0,,,S00112,GitHub,2.0,2026-05-10,self_asserted,0,,67.0
+CL00145,F008,C008,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 15 deals,15.0,count,75.0,,,S00113,Conference speaker bio,2.0,2026-03-01,verified,1,,62.0
+CL00146,F008,C008,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00114,Job posting authored,2.0,2026-01-19,verified,1,,81.0
+CL00147,F008,C008,Idea-vs-market,Development roadmap,P-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00148,F008,C008,Idea-vs-market,Revenue model,B-1,3 distinct revenue streams identified with pricing logic,3.0,count,68.0,,,S00115,GitHub,2.0,2026-07-17,self_asserted,0,,57.0
+CL00149,F008,C008,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00116,X/Twitter,3.0,2025-06-14,self_asserted,0,,66.0
+CL00150,F008,C008,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00151,F008,C008,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00117,University lab page,2.0,2025-09-09,verified,2,,93.0
+CL00152,F008,C008,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00153,F009,C009,Founder,Background & execution,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00154,F009,C009,Founder,Traits,-,Documented fix shipped 35 days after critical user feedback,35.0,days_inv,62.0,,,S00118,Personal blog,2.0,2026-04-10,verified,2,,87.0
+CL00155,F009,C009,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00119,Job posting authored,2.0,2025-07-28,verified,3,,97.0
+CL00156,F009,C009,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00120,Grant award record,1.0,2026-07-14,verified,2,,95.0
+CL00157,F009,C009,Founder,Feedback & iteration,T-3,Roadmap changed 6 times citing named customer input,6.0,count,75.0,,,S00121,arXiv paper,1.0,2026-06-08,verified,1,,71.0
+CL00158,F009,C009,Market & traction,Market maps,M-1,Names 5 direct competitors with stated differentiation,5.0,count,55.0,,,S00122,arXiv paper,1.0,2026-04-26,verified,1,,70.0
+CL00159,F009,C009,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $38M derived from a stated unit chain,38.0,usd_m_bu,65.0,bottom_up_derived,0.0561,S00123,Grant award record,1.0,2026-06-24,self_asserted,0,,64.0
+CL00160,F009,C009,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00124,Job posting authored,2.0,2025-08-11,self_asserted,0,,67.0
+CL00161,F009,C009,Market & traction,Traction & KPIs,P-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00162,F009,C009,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 3 stages with conversion rates,3.0,count,55.0,,,S00125,Product Hunt,2.0,2026-05-21,self_asserted,0,,65.0
+CL00163,F009,C009,Idea-vs-market,USP / secret sauce,V-3,"Wrapper over a single third-party model, no proprietary layer",,qualitative,24.0,,,S00126,Conference speaker bio,2.0,2026-02-20,verified,1,,82.0
+CL00164,F009,C009,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 7 accounts,7.0,count,71.0,,,S00127,Personal blog,2.0,2026-03-08,contradicted,3,CL00168,49.0
+CL00165,F009,C009,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 5 baselines,5.0,count,82.0,,,S00128,Employer team page,2.0,2025-09-12,verified,1,,81.0
+CL00166,F009,C009,Idea-vs-market,Development roadmap,P-3,6 of last quarter's milestones delivered on time,6.0,count,95.0,,,S00129,LinkedIn post,2.0,2026-01-21,contradicted,1,CL00155,43.0
+CL00167,F009,C009,Idea-vs-market,Revenue model,B-1,3 distinct revenue streams identified with pricing logic,3.0,count,68.0,,,S00130,arXiv paper,1.0,2026-02-20,contradicted,0,CL00162,39.0
+CL00168,F009,C009,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00131,X/Twitter,3.0,2026-01-20,self_asserted,1,,67.0
+CL00169,F009,C009,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00170,F009,C009,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-07-01,gap_flagged,0,,
+CL00171,F009,C009,Diligence,Finances & runway,O-3,Runway of 17 months at current burn,17.0,count,72.0,,,S00132,Grant award record,1.0,2026-03-21,contradicted,1,CL00167,53.0
+CL00172,F010,C010,Founder,Background & execution,-,14 years domain experience in Robotics,14.0,years,95.0,,,S00133,Platform intake: reference check,1.0,2026-04-22,verified,1,,78.0
+CL00173,F010,C010,Founder,Traits,-,"Reversed a stated position after customer evidence, 3 documented instances",3.0,count,63.0,,,S00134,Job posting authored,2.0,2026-04-10,self_asserted,0,,64.0
+CL00174,F010,C010,Founder,Team role clarity,T-2,3 cofounders with non-overlapping functional coverage,3.0,count,68.0,,,S00135,Platform intake: reference check,1.0,2025-09-12,verified,1,,80.0
+CL00175,F010,C010,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00136,Patent filing,1.0,2026-04-24,contradicted,3,CL00177,45.0
+CL00176,F010,C010,Founder,Feedback & iteration,T-3,Roadmap changed 7 times citing named customer input,7.0,count,85.0,,,S00137,Platform intake: work sample,1.0,2026-05-23,contradicted,2,CL00173,39.0
+CL00177,F010,C010,Market & traction,Market maps,M-1,Names 7 direct competitors with stated differentiation,7.0,count,71.0,,,S00138,Employer team page,2.0,2025-12-06,verified,2,,89.0
+CL00178,F010,C010,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $71M",71.0,usd_m_bu,86.0,bottom_up_derived,0.0201,S00139,Platform intake: VSP-style prompt response,1.0,2025-07-24,verified,1,,83.0
+CL00179,F010,C010,Market & traction,Value proposition,M-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00180,F010,C010,Market & traction,Traction & KPIs,P-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00181,F010,C010,Market & traction,Customer acquisition,B-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00182,F010,C010,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 260K labeled records,260.0,count_k,84.0,,,S00140,Platform intake: VSP-style prompt response,1.0,2025-12-08,self_asserted,0,,56.0
+CL00183,F010,C010,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 8 accounts,8.0,count,79.0,,,S00141,Conference speaker bio,2.0,2025-12-13,contradicted,1,CL00175,52.0
+CL00184,F010,C010,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 5 core functions",5.0,count,61.0,,,S00142,Platform intake: reference check,1.0,2025-06-14,self_asserted,0,,56.0
+CL00185,F010,C010,Idea-vs-market,Development roadmap,P-3,Roadmap published with 9 dated milestones,9.0,count,75.0,,,S00143,Platform intake: work sample,1.0,2025-10-25,verified,1,,84.0
+CL00186,F010,C010,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00144,Platform intake: scenario interview,1.0,2025-08-24,verified,2,,98.0
+CL00187,F010,C010,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00145,Platform intake: work sample,1.0,2025-12-29,verified,1,,89.0
+CL00188,F010,C010,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-23,gap_flagged,0,,
+CL00189,F010,C010,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-20,gap_flagged,0,,
+CL00190,F010,C010,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-10,gap_flagged,0,,
+CL00191,F011,C011,Founder,Background & execution,-,0 years domain experience in Bio,0.0,years,15.0,,,S00146,Patent filing,1.0,2025-11-11,verified,1,,81.0
+CL00192,F011,C011,Founder,Traits,-,"Reversed a stated position after customer evidence, 1 documented instances",1.0,count,31.0,,,S00147,Accelerator cohort directory,2.0,2025-10-01,verified,3,,84.0
+CL00193,F011,C011,Founder,Team role clarity,T-2,Written role split covering 1 of 4 core functions,1.0,count,15.0,,,S00148,Conference speaker bio,2.0,2025-09-22,contradicted,0,CL00201,55.0
+CL00194,F011,C011,Founder,Team communication,T-1,Decision log maintained with 8 entries,8.0,count,26.0,,,S00149,GitHub,2.0,2026-03-20,self_asserted,0,,49.0
+CL00195,F011,C011,Founder,Feedback & iteration,T-3,Roadmap changed 2 times citing named customer input,2.0,count,35.0,,,S00150,Employer team page,2.0,2025-10-17,self_asserted,0,,64.0
+CL00196,F011,C011,Market & traction,Market maps,M-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00197,F011,C011,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $19M",19.0,usd_m_bu,33.0,bottom_up_derived,0.0166,S00151,Grant award record,1.0,2026-03-30,verified,1,,84.0
+CL00198,F011,C011,Market & traction,Value proposition,M-3,Value prop canvas links 0 customer pains to named features,0.0,count,15.0,,,S00152,University lab page,2.0,2026-05-18,self_asserted,0,,49.0
+CL00199,F011,C011,Market & traction,Traction & KPIs,P-1,0 paying customers,0.0,count,15.0,,,S00153,Grant award record,1.0,2025-11-08,self_asserted,0,,72.0
+CL00200,F011,C011,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 1 stages with conversion rates,1.0,count,28.0,,,S00154,GitHub,2.0,2026-02-03,verified,1,,71.0
+CL00201,F011,C011,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 0 claims",0.0,count,15.0,,,S00155,Conference speaker bio,2.0,2026-06-09,self_asserted,0,,65.0
+CL00202,F011,C011,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00156,X/Twitter,3.0,2025-08-02,verified,2,,83.0
+CL00203,F011,C011,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 3 baselines,3.0,count,55.0,,,S00157,Employer team page,2.0,2026-05-05,self_asserted,0,,65.0
+CL00204,F011,C011,Idea-vs-market,Development roadmap,P-3,Roadmap published with 3 dated milestones,3.0,count,35.0,,,S00158,Patent filing,1.0,2025-06-14,verified,1,,76.0
+CL00205,F011,C011,Idea-vs-market,Revenue model,B-1,Pricing tested across 0 customer segments,0.0,count,15.0,,,S00159,Company registry filing,1.0,2026-03-11,verified,1,,79.0
+CL00206,F011,C011,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 0 future verticals with entry logic,0.0,count,15.0,,,S00160,Show HN,2.0,2025-10-31,verified,1,,77.0
+CL00207,F011,C011,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00208,F011,C011,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-02,gap_flagged,0,,
+CL00209,F011,C011,Diligence,Finances & runway,O-3,"Monthly burn stated at $23K, unaudited",23.0,usd_k,37.0,,,S00161,Conference speaker bio,2.0,2026-06-03,contradicted,2,CL00206,48.0
+CL00210,F012,C012,Founder,Background & execution,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00211,F012,C012,Founder,Traits,-,"Reversed a stated position after customer evidence, 4 documented instances",4.0,count,79.0,,,S00162,Company registry filing,1.0,2025-12-09,verified,1,,71.0
+CL00212,F012,C012,Founder,Team role clarity,T-2,4 cofounders with non-overlapping functional coverage,4.0,count,95.0,,,S00163,Platform intake: VSP-style prompt response,1.0,2025-09-26,verified,2,,90.0
+CL00213,F012,C012,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00164,Platform intake: work sample,1.0,2025-11-16,verified,2,,90.0
+CL00214,F012,C012,Founder,Feedback & iteration,T-3,Shipped 13 product iterations following user testing,13.0,count,67.0,,,S00165,Company registry filing,1.0,2025-08-01,verified,2,,90.0
+CL00215,F012,C012,Market & traction,Market maps,M-1,Maps 7 adjacent players and potential partners,7.0,count,62.0,,,S00166,Platform intake: scenario interview,1.0,2026-02-26,verified,2,,93.0
+CL00216,F012,C012,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $56M",56.0,usd_m_bu,71.0,bottom_up_derived,0.0586,S00167,Patent filing,1.0,2026-02-17,verified,1,,84.0
+CL00217,F012,C012,Market & traction,Value proposition,M-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00218,F012,C012,Market & traction,Traction & KPIs,P-1,15 paying customers,15.0,count,45.0,,,S00168,Company registry filing,1.0,2026-06-16,self_asserted,0,,72.0
+CL00219,F012,C012,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00169,Platform intake: work sample,1.0,2025-11-10,verified,1,,88.0
+CL00220,F012,C012,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 300K labeled records,300.0,count_k,95.0,,,S00170,Grant award record,1.0,2025-08-21,self_asserted,0,,68.0
+CL00221,F012,C012,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 10 accounts,10.0,count,95.0,,,S00171,Platform intake: reference check,1.0,2026-02-18,self_asserted,0,,73.0
+CL00222,F012,C012,Idea-vs-market,Technical feasibility,P-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00223,F012,C012,Idea-vs-market,Development roadmap,P-3,Roadmap published with 11 dated milestones,11.0,count,88.0,,,S00172,Platform intake: reference check,1.0,2025-09-21,verified,1,,82.0
+CL00224,F012,C012,Idea-vs-market,Revenue model,B-1,3 distinct revenue streams identified with pricing logic,3.0,count,68.0,,,S00173,Platform intake: VSP-style prompt response,1.0,2026-02-22,verified,2,,96.0
+CL00225,F012,C012,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00174,Platform intake: reference check,1.0,2026-05-06,verified,2,,92.0
+CL00226,F012,C012,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-06-04,gap_flagged,0,,
+CL00227,F012,C012,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-07-12,gap_flagged,0,,
+CL00228,F012,C012,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-05,gap_flagged,0,,
+CL00229,F013,C013,Founder,Background & execution,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00230,F013,C013,Founder,Traits,-,Documented fix shipped 22 days after critical user feedback,22.0,days_inv,76.0,,,S00175,LinkedIn post,2.0,2026-04-29,contradicted,0,CL00239,33.0
+CL00231,F013,C013,Founder,Team role clarity,T-2,3 cofounders with non-overlapping functional coverage,3.0,count,68.0,,,S00176,Accelerator cohort directory,2.0,2025-10-01,verified,1,,70.0
+CL00232,F013,C013,Founder,Team communication,T-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00233,F013,C013,Founder,Feedback & iteration,T-3,Shipped 13 product iterations following user testing,13.0,count,67.0,,,S00177,Patent filing,1.0,2025-06-20,verified,1,,74.0
+CL00234,F013,C013,Market & traction,Market maps,M-1,Names 2 direct competitors with stated differentiation,2.0,count,31.0,,,S00178,Company registry filing,1.0,2026-06-05,contradicted,0,CL00231,44.0
+CL00235,F013,C013,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,2.0,S00179,Accelerator cohort directory,2.0,2026-06-15,self_asserted,2,,45.0
+CL00236,F013,C013,Market & traction,Value proposition,M-3,Value prop canvas links 10 customer pains to named features,10.0,count,95.0,,,S00180,Show HN,2.0,2026-02-04,verified,1,,78.0
+CL00237,F013,C013,Market & traction,Traction & KPIs,P-1,"Waitlist of {n} signups, no conversion data",,qualitative,38.0,,,S00181,Accelerator cohort directory,2.0,2026-04-27,verified,1,,69.0
+CL00238,F013,C013,Market & traction,Customer acquisition,B-2,CAC measured at $1352 across a real channel test,1352.0,usd_inv,56.0,,,S00182,University lab page,2.0,2026-07-03,contradicted,2,CL00242,50.0
+CL00239,F013,C013,Idea-vs-market,USP / secret sauce,V-3,"Wrapper over a single third-party model, no proprietary layer",,qualitative,24.0,,,S00183,Conference speaker bio,2.0,2025-06-23,contradicted,3,CL00236,29.0
+CL00240,F013,C013,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 18 deals,18.0,count,87.0,,,S00184,Show HN,2.0,2025-09-19,verified,1,,65.0
+CL00241,F013,C013,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 3 baselines,3.0,count,55.0,,,S00185,Show HN,2.0,2025-12-30,self_asserted,0,,50.0
+CL00242,F013,C013,Idea-vs-market,Development roadmap,P-3,Roadmap published with 12 dated milestones,12.0,count,95.0,,,S00186,Patent filing,1.0,2025-07-15,verified,3,,93.0
+CL00243,F013,C013,Idea-vs-market,Revenue model,B-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00244,F013,C013,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00187,Accelerator cohort directory,2.0,2026-01-07,verified,2,,94.0
+CL00245,F013,C013,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00246,F013,C013,Diligence,IP & regulation strategy,O-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00247,F013,C013,Diligence,Finances & runway,O-3,Runway of 8 months at current burn,8.0,count,42.0,,,S00188,Conference speaker bio,2.0,2026-06-09,verified,1,,69.0
+CL00248,F014,C014,Founder,Background & execution,-,Shipped 4 public projects prior to founding,4.0,count,36.0,,,S00189,Personal blog,2.0,2025-12-08,verified,3,,87.0
+CL00249,F014,C014,Founder,Traits,-,"Reversed a stated position after customer evidence, 2 documented instances",2.0,count,47.0,,,S00190,Company registry filing,1.0,2026-04-25,self_asserted,0,,62.0
+CL00250,F014,C014,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00191,X/Twitter,3.0,2025-12-03,verified,2,,84.0
+CL00251,F014,C014,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00192,Show HN,2.0,2026-04-13,contradicted,1,CL00257,38.0
+CL00252,F014,C014,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00193,GitHub,2.0,2026-05-08,verified,2,,87.0
+CL00253,F014,C014,Market & traction,Market maps,M-1,Names 0 direct competitors with stated differentiation,0.0,count,15.0,,,S00194,Job posting authored,2.0,2025-09-09,verified,2,,85.0
+CL00254,F014,C014,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $3M",3.0,usd_m_bu,17.0,bottom_up_derived,0.0539,S00195,Conference speaker bio,2.0,2026-04-10,verified,1,,64.0
+CL00255,F014,C014,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00196,Company registry filing,1.0,2025-07-13,verified,3,,99.0
+CL00256,F014,C014,Market & traction,Traction & KPIs,P-1,"Waitlist of {n} signups, no conversion data",,qualitative,38.0,,,S00197,LinkedIn post,2.0,2026-07-10,verified,1,,66.0
+CL00257,F014,C014,Market & traction,Customer acquisition,B-2,CAC measured at $1379 across a real channel test,1379.0,usd_inv,55.0,,,S00198,Personal blog,2.0,2026-06-29,self_asserted,0,,64.0
+CL00258,F014,C014,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 1 claims",1.0,count,18.0,,,S00199,University lab page,2.0,2026-06-11,self_asserted,0,,55.0
+CL00259,F014,C014,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 2 accounts,2.0,count,31.0,,,S00200,arXiv paper,1.0,2025-06-28,verified,3,,91.0
+CL00260,F014,C014,Idea-vs-market,Technical feasibility,P-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00261,F014,C014,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00201,X/Twitter,3.0,2025-10-19,verified,2,,87.0
+CL00262,F014,C014,Idea-vs-market,Revenue model,B-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00263,F014,C014,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00202,GitHub,2.0,2026-05-26,self_asserted,0,,45.0
+CL00264,F014,C014,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-05-31,gap_flagged,0,,
+CL00265,F014,C014,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00203,Accelerator cohort directory,2.0,2025-09-14,verified,2,,87.0
+CL00266,F014,C014,Diligence,Finances & runway,O-3,Runway of 5 months at current burn,5.0,count,32.0,,,S00204,GitHub,2.0,2026-06-24,self_asserted,0,,63.0
+CL00267,F015,C015,Founder,Background & execution,-,10 years domain experience in Climate,10.0,years,72.0,,,S00205,Accelerator cohort directory,2.0,2025-12-24,contradicted,2,CL00277,41.0
+CL00268,F015,C015,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00206,Job posting authored,2.0,2026-01-18,self_asserted,0,,65.0
+CL00269,F015,C015,Founder,Team role clarity,T-2,3 cofounders with non-overlapping functional coverage,3.0,count,68.0,,,S00207,Company registry filing,1.0,2026-04-06,contradicted,1,CL00268,37.0
+CL00270,F015,C015,Founder,Team communication,T-1,Decision log maintained with 39 entries,39.0,count,67.0,,,S00208,Employer team page,2.0,2025-11-27,verified,2,,81.0
+CL00271,F015,C015,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00209,arXiv paper,1.0,2026-03-03,verified,3,,99.0
+CL00272,F015,C015,Market & traction,Market maps,M-1,Names 5 direct competitors with stated differentiation,5.0,count,55.0,,,S00210,University lab page,2.0,2026-07-11,verified,1,,71.0
+CL00273,F015,C015,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,1.0,S00211,LinkedIn post,2.0,2026-06-17,self_asserted,1,,45.0
+CL00274,F015,C015,Market & traction,Value proposition,M-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00275,F015,C015,Market & traction,Traction & KPIs,P-1,ARR of $221K,221.0,usd_k,59.0,,,S00212,Patent filing,1.0,2026-05-15,verified,1,,83.0
+CL00276,F015,C015,Market & traction,Customer acquisition,B-2,CAC measured at $749 across a real channel test,749.0,usd_inv,76.0,,,S00213,University lab page,2.0,2026-02-20,verified,2,,87.0
+CL00277,F015,C015,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 140K labeled records,140.0,count_k,52.0,,,S00214,Job posting authored,2.0,2025-10-10,self_asserted,0,,54.0
+CL00278,F015,C015,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 6 accounts,6.0,count,63.0,,,S00215,Product Hunt,2.0,2026-04-12,verified,1,,80.0
+CL00279,F015,C015,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 6 baselines,6.0,count,95.0,,,S00216,Personal blog,2.0,2025-10-05,verified,1,,68.0
+CL00280,F015,C015,Idea-vs-market,Development roadmap,P-3,Roadmap published with 12 dated milestones,12.0,count,95.0,,,S00217,GitHub,2.0,2025-10-08,self_asserted,0,,59.0
+CL00281,F015,C015,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00218,Company registry filing,1.0,2025-12-04,verified,1,,86.0
+CL00282,F015,C015,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00219,Grant award record,1.0,2026-04-29,verified,1,,74.0
+CL00283,F015,C015,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-06-08,gap_flagged,0,,
+CL00284,F015,C015,Diligence,IP & regulation strategy,O-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00285,F015,C015,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00286,F016,C016,Founder,Background & execution,-,0 years domain experience in Healthtech,0.0,years,15.0,,,S00220,University lab page,2.0,2026-02-12,verified,2,,92.0
+CL00287,F016,C016,Founder,Traits,-,Documented fix shipped 82 days after critical user feedback,82.0,days_inv,9.0,,,S00221,Accelerator cohort directory,2.0,2025-09-09,verified,2,,86.0
+CL00288,F016,C016,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00289,F016,C016,Founder,Team communication,T-1,"Team publishes a written weekly update, 0 consecutive weeks",0.0,count,15.0,,,S00222,X/Twitter,3.0,2026-06-23,self_asserted,0,,54.0
+CL00290,F016,C016,Founder,Feedback & iteration,T-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00291,F016,C016,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00223,arXiv paper,1.0,2025-12-06,verified,1,,83.0
+CL00292,F016,C016,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,1.0,S00224,arXiv paper,1.0,2025-08-05,self_asserted,1,,45.0
+CL00293,F016,C016,Market & traction,Value proposition,M-3,Value prop canvas links 0 customer pains to named features,0.0,count,15.0,,,S00225,Conference speaker bio,2.0,2025-10-03,verified,3,,86.0
+CL00294,F016,C016,Market & traction,Traction & KPIs,P-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00295,F016,C016,Market & traction,Customer acquisition,B-2,CAC measured at $2836 across a real channel test,2836.0,usd_inv,6.0,,,S00226,arXiv paper,1.0,2026-01-23,verified,2,,90.0
+CL00296,F016,C016,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 0 claims",0.0,count,15.0,,,S00227,Personal blog,2.0,2026-06-09,verified,2,,83.0
+CL00297,F016,C016,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 0 accounts,0.0,count,15.0,,,S00228,University lab page,2.0,2025-12-14,verified,2,,96.0
+CL00298,F016,C016,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 1 core functions",1.0,count,15.0,,,S00229,Company registry filing,1.0,2026-04-15,self_asserted,0,,56.0
+CL00299,F016,C016,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00230,Conference speaker bio,2.0,2025-07-12,self_asserted,0,,45.0
+CL00300,F016,C016,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00231,University lab page,2.0,2026-07-15,verified,3,,83.0
+CL00301,F016,C016,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00232,X/Twitter,3.0,2026-04-08,self_asserted,0,,63.0
+CL00302,F016,C016,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-05-21,gap_flagged,0,,
+CL00303,F016,C016,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00233,arXiv paper,1.0,2026-04-07,verified,1,,75.0
+CL00304,F016,C016,Diligence,Finances & runway,O-3,"Monthly burn stated at $8K, unaudited",8.0,usd_k,22.0,,,S00234,GitHub,2.0,2025-10-23,verified,1,,75.0
+CL00305,F017,C017,Founder,Background & execution,-,Led engineering for a team of 4,4.0,count,23.0,,,S00235,arXiv paper,1.0,2026-03-12,self_asserted,0,,71.0
+CL00306,F017,C017,Founder,Traits,-,"Reversed a stated position after customer evidence, 0 documented instances",0.0,count,15.0,,,S00236,Accelerator cohort directory,2.0,2026-06-13,self_asserted,0,,67.0
+CL00307,F017,C017,Founder,Team role clarity,T-2,Written role split covering 2 of 4 core functions,2.0,count,42.0,,,S00237,Accelerator cohort directory,2.0,2026-07-06,verified,2,,85.0
+CL00308,F017,C017,Founder,Team communication,T-1,"Team publishes a written weekly update, 8 consecutive weeks",8.0,count,31.0,,,S00238,Platform intake: reference check,1.0,2026-05-20,verified,1,,80.0
+CL00309,F017,C017,Founder,Feedback & iteration,T-3,Shipped 0 product iterations following user testing,0.0,count,15.0,,,S00239,Platform intake: VSP-style prompt response,1.0,2026-01-19,verified,1,,84.0
+CL00310,F017,C017,Market & traction,Market maps,M-1,Names 0 direct competitors with stated differentiation,0.0,count,15.0,,,S00240,Platform intake: work sample,1.0,2026-03-16,contradicted,2,CL00315,41.0
+CL00311,F017,C017,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $7M",7.0,usd_m_bu,21.0,bottom_up_derived,0.036,S00241,Platform intake: work sample,1.0,2026-04-27,verified,1,,82.0
+CL00312,F017,C017,Market & traction,Value proposition,M-3,Value prop canvas links 0 customer pains to named features,0.0,count,15.0,,,S00242,Platform intake: work sample,1.0,2026-03-23,verified,2,,96.0
+CL00313,F017,C017,Market & traction,Traction & KPIs,P-1,3 design partners in signed pilot,3.0,count,39.0,,,S00243,Job posting authored,2.0,2026-03-13,verified,1,,66.0
+CL00314,F017,C017,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00244,Patent filing,1.0,2025-10-13,verified,2,,99.0
+CL00315,F017,C017,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 0K labeled records,0.0,count_k,15.0,,,S00245,Platform intake: scenario interview,1.0,2025-07-27,self_asserted,0,,63.0
+CL00316,F017,C017,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 5 deals,5.0,count,35.0,,,S00246,Platform intake: reference check,1.0,2025-11-03,verified,2,,97.0
+CL00317,F017,C017,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00247,Platform intake: VSP-style prompt response,1.0,2026-02-23,verified,1,,84.0
+CL00318,F017,C017,Idea-vs-market,Development roadmap,P-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00319,F017,C017,Idea-vs-market,Revenue model,B-1,Pricing tested across 1 customer segments,1.0,count,31.0,,,S00248,Grant award record,1.0,2025-12-18,self_asserted,0,,67.0
+CL00320,F017,C017,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 1 future verticals with entry logic,1.0,count,35.0,,,S00249,Platform intake: scenario interview,1.0,2026-04-15,self_asserted,0,,72.0
+CL00321,F017,C017,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00250,Employer team page,2.0,2026-06-27,verified,1,,71.0
+CL00322,F017,C017,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-06-28,gap_flagged,0,,
+CL00323,F017,C017,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00324,F018,C018,Founder,Background & execution,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00325,F018,C018,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00251,Patent filing,1.0,2026-01-20,verified,3,,98.0
+CL00326,F018,C018,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00327,F018,C018,Founder,Team communication,T-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00328,F018,C018,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00252,Platform intake: work sample,1.0,2025-12-10,verified,2,,92.0
+CL00329,F018,C018,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00253,Platform intake: reference check,1.0,2026-04-19,verified,1,,90.0
+CL00330,F018,C018,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $56M derived from a stated unit chain,56.0,usd_m_bu,90.0,bottom_up_derived,0.0083,S00254,Platform intake: reference check,1.0,2026-05-08,self_asserted,0,,74.0
+CL00331,F018,C018,Market & traction,Value proposition,M-3,Value prop canvas links 10 customer pains to named features,10.0,count,95.0,,,S00255,Platform intake: VSP-style prompt response,1.0,2026-05-10,verified,3,,97.0
+CL00332,F018,C018,Market & traction,Traction & KPIs,P-1,ARR of $253K,253.0,usd_k,66.0,,,S00256,Platform intake: VSP-style prompt response,1.0,2025-06-23,verified,3,,92.0
+CL00333,F018,C018,Market & traction,Customer acquisition,B-2,CAC measured at $383 across a real channel test,383.0,usd_inv,89.0,,,S00257,Conference speaker bio,2.0,2026-07-11,verified,1,,63.0
+CL00334,F018,C018,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 222K labeled records,222.0,count_k,74.0,,,S00258,Conference speaker bio,2.0,2025-11-30,verified,3,,94.0
+CL00335,F018,C018,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 15 deals,15.0,count,75.0,,,S00259,Platform intake: VSP-style prompt response,1.0,2025-06-28,verified,1,,80.0
+CL00336,F018,C018,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 7 core functions",7.0,count,84.0,,,S00260,Accelerator cohort directory,2.0,2025-12-07,verified,1,,72.0
+CL00337,F018,C018,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00261,Platform intake: reference check,1.0,2025-08-30,verified,1,,78.0
+CL00338,F018,C018,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00262,Company registry filing,1.0,2026-07-05,verified,2,,97.0
+CL00339,F018,C018,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00263,Platform intake: work sample,1.0,2026-05-26,verified,2,,98.0
+CL00340,F018,C018,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-27,gap_flagged,0,,
+CL00341,F018,C018,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-25,gap_flagged,0,,
+CL00342,F018,C018,Diligence,Finances & runway,O-3,Runway of 24 months at current burn,24.0,count,95.0,,,S00264,Employer team page,2.0,2026-06-22,verified,3,,95.0
+CL00343,F019,C019,Founder,Background & execution,-,Shipped 10 public projects prior to founding,10.0,count,68.0,,,S00265,Conference speaker bio,2.0,2026-04-18,verified,3,,89.0
+CL00344,F019,C019,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00266,Conference speaker bio,2.0,2026-01-20,verified,1,,79.0
+CL00345,F019,C019,Founder,Team role clarity,T-2,Written role split covering 2 of 4 core functions,2.0,count,42.0,,,S00267,Conference speaker bio,2.0,2026-04-29,verified,3,,82.0
+CL00346,F019,C019,Founder,Team communication,T-1,"Team publishes a written weekly update, 22 consecutive weeks",22.0,count,59.0,,,S00268,Grant award record,1.0,2025-08-05,verified,1,,88.0
+CL00347,F019,C019,Founder,Feedback & iteration,T-3,Roadmap changed 1 times citing named customer input,1.0,count,25.0,,,S00269,Show HN,2.0,2026-01-23,verified,1,,68.0
+CL00348,F019,C019,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00270,Patent filing,1.0,2025-07-29,self_asserted,0,,64.0
+CL00349,F019,C019,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,0.5,S00271,University lab page,2.0,2026-03-16,self_asserted,1,,45.0
+CL00350,F019,C019,Market & traction,Value proposition,M-3,Value prop canvas links 5 customer pains to named features,5.0,count,55.0,,,S00272,University lab page,2.0,2025-06-29,self_asserted,0,,53.0
+CL00351,F019,C019,Market & traction,Traction & KPIs,P-1,ARR of $112K,112.0,usd_k,37.0,,,S00273,Patent filing,1.0,2026-03-23,verified,1,,88.0
+CL00352,F019,C019,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00274,University lab page,2.0,2025-09-19,verified,1,,64.0
+CL00353,F019,C019,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 123K labeled records,123.0,count_k,48.0,,,S00275,Accelerator cohort directory,2.0,2025-11-02,verified,1,,65.0
+CL00354,F019,C019,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00276,University lab page,2.0,2026-05-26,verified,1,,79.0
+CL00355,F019,C019,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 2 core functions",2.0,count,26.0,,,S00277,GitHub,2.0,2026-01-07,contradicted,2,CL00350,32.0
+CL00356,F019,C019,Idea-vs-market,Development roadmap,P-3,Roadmap published with 4 dated milestones,4.0,count,42.0,,,S00278,X/Twitter,3.0,2025-07-23,self_asserted,1,,71.0
+CL00357,F019,C019,Idea-vs-market,Revenue model,B-1,1 distinct revenue streams identified with pricing logic,1.0,count,15.0,,,S00279,arXiv paper,1.0,2026-04-05,verified,1,,81.0
+CL00358,F019,C019,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00280,Accelerator cohort directory,2.0,2026-01-24,verified,2,,80.0
+CL00359,F019,C019,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00360,F019,C019,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-15,gap_flagged,0,,
+CL00361,F019,C019,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-01,gap_flagged,0,,
+CL00362,F020,C020,Founder,Background & execution,-,Led engineering for a team of 14,14.0,count,51.0,,,S00281,Conference speaker bio,2.0,2025-12-02,self_asserted,0,,49.0
+CL00363,F020,C020,Founder,Traits,-,Documented fix shipped 72 days after critical user feedback,72.0,days_inv,20.0,,,S00282,Platform intake: work sample,1.0,2025-09-03,verified,2,,99.0
+CL00364,F020,C020,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00365,F020,C020,Founder,Team communication,T-1,"Team publishes a written weekly update, 19 consecutive weeks",19.0,count,53.0,,,S00283,Patent filing,1.0,2026-01-14,verified,1,,74.0
+CL00366,F020,C020,Founder,Feedback & iteration,T-3,Shipped 1 product iterations following user testing,1.0,count,19.0,,,S00284,Grant award record,1.0,2025-07-10,verified,1,,82.0
+CL00367,F020,C020,Market & traction,Market maps,M-1,Maps 1 adjacent players and potential partners,1.0,count,22.0,,,S00285,Company registry filing,1.0,2026-03-12,verified,1,,71.0
+CL00368,F020,C020,Market & traction,Market sizing (TAM/SAM/SOM),M-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00369,F020,C020,Market & traction,Value proposition,M-3,Value prop canvas links 2 customer pains to named features,2.0,count,31.0,,,S00286,Platform intake: reference check,1.0,2026-01-16,verified,1,,74.0
+CL00370,F020,C020,Market & traction,Traction & KPIs,P-1,21 paying customers,21.0,count,57.0,,,S00287,Patent filing,1.0,2026-01-13,verified,2,,95.0
+CL00371,F020,C020,Market & traction,Customer acquisition,B-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00372,F020,C020,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 0 claims",0.0,count,15.0,,,S00288,Grant award record,1.0,2025-10-30,verified,2,,99.0
+CL00373,F020,C020,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00289,Grant award record,1.0,2025-08-08,verified,1,,85.0
+CL00374,F020,C020,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 4 core functions",4.0,count,49.0,,,S00290,Platform intake: work sample,1.0,2026-07-14,verified,2,,99.0
+CL00375,F020,C020,Idea-vs-market,Development roadmap,P-3,2 of last quarter's milestones delivered on time,2.0,count,42.0,,,S00291,Platform intake: work sample,1.0,2025-09-20,self_asserted,0,,62.0
+CL00376,F020,C020,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00292,Platform intake: reference check,1.0,2026-06-10,verified,3,,90.0
+CL00377,F020,C020,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 2 future verticals with entry logic,2.0,count,55.0,,,S00293,Employer team page,2.0,2025-07-13,contradicted,2,CL00366,40.0
+CL00378,F020,C020,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-13,gap_flagged,0,,
+CL00379,F020,C020,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-02,gap_flagged,0,,
+CL00380,F020,C020,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-19,gap_flagged,0,,
+CL00381,F021,C021,Founder,Background & execution,-,1 years domain experience in AI infra,1.0,years,21.0,,,S00294,Company registry filing,1.0,2026-06-03,verified,1,,85.0
+CL00382,F021,C021,Founder,Traits,-,"Reversed a stated position after customer evidence, 1 documented instances",1.0,count,31.0,,,S00295,Grant award record,1.0,2025-10-02,verified,2,,99.0
+CL00383,F021,C021,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00384,F021,C021,Founder,Team communication,T-1,"Team publishes a written weekly update, 2 consecutive weeks",2.0,count,19.0,,,S00296,Platform intake: work sample,1.0,2026-05-05,verified,1,,81.0
+CL00385,F021,C021,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00297,Job posting authored,2.0,2026-04-30,verified,2,,90.0
+CL00386,F021,C021,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00298,Platform intake: VSP-style prompt response,1.0,2025-06-22,self_asserted,0,,73.0
+CL00387,F021,C021,Market & traction,Market sizing (TAM/SAM/SOM),M-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00388,F021,C021,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00299,Platform intake: reference check,1.0,2026-05-11,self_asserted,0,,56.0
+CL00389,F021,C021,Market & traction,Traction & KPIs,P-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00390,F021,C021,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 0 stages with conversion rates,0.0,count,15.0,,,S00300,Platform intake: scenario interview,1.0,2025-09-01,contradicted,0,CL00396,49.0
+CL00391,F021,C021,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 11 claims",11.0,count,50.0,,,S00301,Platform intake: reference check,1.0,2025-07-05,self_asserted,0,,76.0
+CL00392,F021,C021,Idea-vs-market,Competitive advantage,B-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00393,F021,C021,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00302,Platform intake: work sample,1.0,2025-12-03,verified,3,,99.0
+CL00394,F021,C021,Idea-vs-market,Development roadmap,P-3,Roadmap published with 0 dated milestones,0.0,count,15.0,,,S00303,Patent filing,1.0,2025-08-14,contradicted,2,CL00384,53.0
+CL00395,F021,C021,Idea-vs-market,Revenue model,B-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00396,F021,C021,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 2 future verticals with entry logic,2.0,count,55.0,,,S00304,Platform intake: VSP-style prompt response,1.0,2026-01-06,verified,3,,95.0
+CL00397,F021,C021,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-06-20,gap_flagged,0,,
+CL00398,F021,C021,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-30,gap_flagged,0,,
+CL00399,F021,C021,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-04,gap_flagged,0,,
+CL00400,F022,C022,Founder,Background & execution,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00401,F022,C022,Founder,Traits,-,"Reversed a stated position after customer evidence, 5 documented instances",5.0,count,95.0,,,S00305,LinkedIn post,2.0,2025-06-28,self_asserted,0,,47.0
+CL00402,F022,C022,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00306,Job posting authored,2.0,2025-08-11,verified,2,,81.0
+CL00403,F022,C022,Founder,Team communication,T-1,"Team publishes a written weekly update, 40 consecutive weeks",40.0,count,95.0,,,S00307,Employer team page,2.0,2025-08-30,contradicted,2,CL00408,41.0
+CL00404,F022,C022,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00308,Company registry filing,1.0,2025-07-25,contradicted,0,CL00407,61.0
+CL00405,F022,C022,Market & traction,Market maps,M-1,Names 10 direct competitors with stated differentiation,10.0,count,95.0,,,S00309,GitHub,2.0,2025-10-21,verified,1,,79.0
+CL00406,F022,C022,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $80M",80.0,usd_m_bu,95.0,bottom_up_derived,0.0441,S00310,LinkedIn post,2.0,2025-10-19,verified,1,,64.0
+CL00407,F022,C022,Market & traction,Value proposition,M-3,Value prop canvas links 10 customer pains to named features,10.0,count,95.0,,,S00311,Product Hunt,2.0,2025-07-08,self_asserted,0,,45.0
+CL00408,F022,C022,Market & traction,Traction & KPIs,P-1,16 paying customers,16.0,count,47.0,,,S00312,X/Twitter,3.0,2026-04-08,self_asserted,1,,79.0
+CL00409,F022,C022,Market & traction,Customer acquisition,B-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00410,F022,C022,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 19 claims",19.0,count,76.0,,,S00313,University lab page,2.0,2026-02-23,verified,1,,70.0
+CL00411,F022,C022,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 6 accounts,6.0,count,63.0,,,S00314,University lab page,2.0,2025-12-15,verified,1,,74.0
+CL00412,F022,C022,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 8 core functions",8.0,count,95.0,,,S00315,Product Hunt,2.0,2025-09-09,verified,1,,81.0
+CL00413,F022,C022,Idea-vs-market,Development roadmap,P-3,Roadmap published with 8 dated milestones,8.0,count,68.0,,,S00316,Accelerator cohort directory,2.0,2026-04-07,contradicted,2,CL00414,44.0
+CL00414,F022,C022,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00317,X/Twitter,3.0,2025-12-22,verified,2,,94.0
+CL00415,F022,C022,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 2 future verticals with entry logic,2.0,count,55.0,,,S00318,Patent filing,1.0,2025-06-30,verified,2,,98.0
+CL00416,F022,C022,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-02,gap_flagged,0,,
+CL00417,F022,C022,Diligence,IP & regulation strategy,O-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00418,F022,C022,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00419,F023,C023,Founder,Background & execution,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00420,F023,C023,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00319,Accelerator cohort directory,2.0,2026-06-25,verified,1,,75.0
+CL00421,F023,C023,Founder,Team role clarity,T-2,4 cofounders with non-overlapping functional coverage,4.0,count,95.0,,,S00320,Grant award record,1.0,2026-03-11,verified,1,,86.0
+CL00422,F023,C023,Founder,Team communication,T-1,Decision log maintained with 50 entries,50.0,count,82.0,,,S00321,Show HN,2.0,2025-12-01,verified,2,,95.0
+CL00423,F023,C023,Founder,Feedback & iteration,T-3,Shipped 15 product iterations following user testing,15.0,count,75.0,,,S00322,Employer team page,2.0,2025-10-26,self_asserted,0,,56.0
+CL00424,F023,C023,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00323,Product Hunt,2.0,2025-09-02,verified,1,,74.0
+CL00425,F023,C023,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $80M",80.0,usd_m_bu,95.0,bottom_up_derived,0.0056,S00324,GitHub,2.0,2026-02-11,verified,2,,90.0
+CL00426,F023,C023,Market & traction,Value proposition,M-3,5 customer personas documented with motivations,5.0,count,95.0,,,S00325,Accelerator cohort directory,2.0,2025-12-05,self_asserted,0,,47.0
+CL00427,F023,C023,Market & traction,Traction & KPIs,P-1,"Waitlist of {n} signups, no conversion data",,qualitative,38.0,,,S00326,Employer team page,2.0,2026-02-19,verified,1,,63.0
+CL00428,F023,C023,Market & traction,Customer acquisition,B-2,CAC measured at $50 across a real channel test,50.0,usd_inv,100.0,,,S00327,Show HN,2.0,2025-12-21,verified,1,,70.0
+CL00429,F023,C023,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 25 claims",25.0,count,95.0,,,S00328,arXiv paper,1.0,2026-04-10,verified,3,,99.0
+CL00430,F023,C023,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 17 deals,17.0,count,83.0,,,S00329,Personal blog,2.0,2026-06-11,self_asserted,0,,57.0
+CL00431,F023,C023,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 6 baselines,6.0,count,95.0,,,S00330,Employer team page,2.0,2026-07-04,self_asserted,0,,59.0
+CL00432,F023,C023,Idea-vs-market,Development roadmap,P-3,5 of last quarter's milestones delivered on time,5.0,count,82.0,,,S00331,Company registry filing,1.0,2025-11-17,contradicted,0,CL00424,45.0
+CL00433,F023,C023,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00332,Employer team page,2.0,2026-07-13,verified,2,,92.0
+CL00434,F023,C023,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00333,Show HN,2.0,2025-10-07,verified,1,,76.0
+CL00435,F023,C023,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00334,Accelerator cohort directory,2.0,2026-06-08,contradicted,1,CL00430,40.0
+CL00436,F023,C023,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00335,arXiv paper,1.0,2025-11-27,self_asserted,0,,75.0
+CL00437,F023,C023,Diligence,Finances & runway,O-3,Runway of 14 months at current burn,14.0,count,62.0,,,S00336,Accelerator cohort directory,2.0,2025-09-22,self_asserted,0,,46.0
+CL00438,F024,C024,Founder,Background & execution,-,Shipped 4 public projects prior to founding,4.0,count,36.0,,,S00337,Company registry filing,1.0,2025-10-01,contradicted,2,CL00444,40.0
+CL00439,F024,C024,Founder,Traits,-,"Reversed a stated position after customer evidence, 2 documented instances",2.0,count,47.0,,,S00338,arXiv paper,1.0,2025-09-08,verified,1,,84.0
+CL00440,F024,C024,Founder,Team role clarity,T-2,3 cofounders with non-overlapping functional coverage,3.0,count,68.0,,,S00339,X/Twitter,3.0,2026-04-16,self_asserted,1,,63.0
+CL00441,F024,C024,Founder,Team communication,T-1,"Team publishes a written weekly update, 19 consecutive weeks",19.0,count,53.0,,,S00340,X/Twitter,3.0,2025-07-13,self_asserted,1,,77.0
+CL00442,F024,C024,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00341,Conference speaker bio,2.0,2025-06-29,self_asserted,0,,50.0
+CL00443,F024,C024,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00342,Product Hunt,2.0,2025-10-26,contradicted,0,CL00452,50.0
+CL00444,F024,C024,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $10M derived from a stated unit chain,10.0,usd_m_bu,27.0,bottom_up_derived,0.0338,S00343,Conference speaker bio,2.0,2026-03-08,verified,2,,93.0
+CL00445,F024,C024,Market & traction,Value proposition,M-3,Value prop canvas links 5 customer pains to named features,5.0,count,55.0,,,S00344,GitHub,2.0,2025-12-01,self_asserted,0,,63.0
+CL00446,F024,C024,Market & traction,Traction & KPIs,P-1,ARR of $132K,132.0,usd_k,41.0,,,S00345,Show HN,2.0,2026-03-07,verified,1,,66.0
+CL00447,F024,C024,Market & traction,Customer acquisition,B-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00448,F024,C024,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 102K labeled records,102.0,count_k,42.0,,,S00346,Company registry filing,1.0,2026-04-29,verified,2,,99.0
+CL00449,F024,C024,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 8 deals,8.0,count,47.0,,,S00347,Patent filing,1.0,2026-05-02,verified,2,,99.0
+CL00450,F024,C024,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 4 baselines,4.0,count,68.0,,,S00348,Conference speaker bio,2.0,2025-10-22,verified,1,,73.0
+CL00451,F024,C024,Idea-vs-market,Development roadmap,P-3,4 of last quarter's milestones delivered on time,4.0,count,68.0,,,S00349,Job posting authored,2.0,2026-05-31,self_asserted,0,,54.0
+CL00452,F024,C024,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00350,Employer team page,2.0,2026-06-02,self_asserted,0,,52.0
+CL00453,F024,C024,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 3 future verticals with entry logic,3.0,count,75.0,,,S00351,X/Twitter,3.0,2026-01-22,self_asserted,0,,54.0
+CL00454,F024,C024,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-25,gap_flagged,0,,
+CL00455,F024,C024,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00352,Personal blog,2.0,2025-07-02,contradicted,1,CL00453,51.0
+CL00456,F024,C024,Diligence,Finances & runway,O-3,Runway of 11 months at current burn,11.0,count,52.0,,,S00353,Grant award record,1.0,2025-10-04,verified,1,,73.0
+CL00457,F025,C025,Founder,Background & execution,-,Shipped 0 public projects prior to founding,0.0,count,15.0,,,S00354,Platform intake: scenario interview,1.0,2025-10-31,self_asserted,0,,62.0
+CL00458,F025,C025,Founder,Traits,-,Documented fix shipped 57 days after critical user feedback,57.0,days_inv,37.0,,,S00355,Platform intake: work sample,1.0,2026-05-30,self_asserted,0,,68.0
+CL00459,F025,C025,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00460,F025,C025,Founder,Team communication,T-1,"Team publishes a written weekly update, 0 consecutive weeks",0.0,count,15.0,,,S00356,Platform intake: work sample,1.0,2026-04-30,verified,2,,99.0
+CL00461,F025,C025,Founder,Feedback & iteration,T-3,Roadmap changed 0 times citing named customer input,0.0,count,15.0,,,S00357,Platform intake: work sample,1.0,2026-03-20,self_asserted,0,,69.0
+CL00462,F025,C025,Market & traction,Market maps,M-1,Names 0 direct competitors with stated differentiation,0.0,count,15.0,,,S00358,Patent filing,1.0,2025-09-14,contradicted,1,CL00474,39.0
+CL00463,F025,C025,Market & traction,Market sizing (TAM/SAM/SOM),M-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00464,F025,C025,Market & traction,Value proposition,M-3,0 customer personas documented with motivations,0.0,count,15.0,,,S00359,Grant award record,1.0,2025-12-19,contradicted,2,CL00465,58.0
+CL00465,F025,C025,Market & traction,Traction & KPIs,P-1,ARR of $0K,0.0,usd_k,15.0,,,S00360,Platform intake: work sample,1.0,2026-01-22,verified,2,,95.0
+CL00466,F025,C025,Market & traction,Customer acquisition,B-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00467,F025,C025,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 8 claims",8.0,count,41.0,,,S00361,Platform intake: reference check,1.0,2026-06-12,verified,2,,94.0
+CL00468,F025,C025,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 1 accounts,1.0,count,23.0,,,S00362,Employer team page,2.0,2026-05-31,verified,2,,85.0
+CL00469,F025,C025,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00363,Accelerator cohort directory,2.0,2026-05-09,self_asserted,0,,54.0
+CL00470,F025,C025,Idea-vs-market,Development roadmap,P-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00471,F025,C025,Idea-vs-market,Revenue model,B-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00472,F025,C025,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00364,Job posting authored,2.0,2026-02-14,verified,2,,83.0
+CL00473,F025,C025,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-30,gap_flagged,0,,
+CL00474,F025,C025,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00365,Accelerator cohort directory,2.0,2025-10-03,self_asserted,0,,66.0
+CL00475,F025,C025,Diligence,Finances & runway,O-3,"Monthly burn stated at $14K, unaudited",14.0,usd_k,28.0,,,S00366,Grant award record,1.0,2026-01-04,contradicted,1,CL00472,53.0
+CL00476,F026,C026,Founder,Background & execution,-,Led engineering for a team of 2,2.0,count,18.0,,,S00367,arXiv paper,1.0,2026-05-17,self_asserted,0,,65.0
+CL00477,F026,C026,Founder,Traits,-,"Reversed a stated position after customer evidence, 2 documented instances",2.0,count,47.0,,,S00368,University lab page,2.0,2026-03-25,verified,1,,74.0
+CL00478,F026,C026,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00369,Platform intake: work sample,1.0,2026-04-25,contradicted,1,CL00487,60.0
+CL00479,F026,C026,Founder,Team communication,T-1,Decision log maintained with 32 entries,32.0,count,58.0,,,S00370,Platform intake: reference check,1.0,2025-07-05,contradicted,1,CL00488,50.0
+CL00480,F026,C026,Founder,Feedback & iteration,T-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00481,F026,C026,Market & traction,Market maps,M-1,Maps 4 adjacent players and potential partners,4.0,count,42.0,,,S00371,Grant award record,1.0,2025-12-02,self_asserted,0,,62.0
+CL00482,F026,C026,Market & traction,Market sizing (TAM/SAM/SOM),M-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00483,F026,C026,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00372,Platform intake: scenario interview,1.0,2025-08-16,verified,1,,70.0
+CL00484,F026,C026,Market & traction,Traction & KPIs,P-1,14 paying customers,14.0,count,43.0,,,S00373,Platform intake: VSP-style prompt response,1.0,2025-11-30,self_asserted,0,,57.0
+CL00485,F026,C026,Market & traction,Customer acquisition,B-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00486,F026,C026,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 280K labeled records,280.0,count_k,90.0,,,S00374,Platform intake: reference check,1.0,2026-05-05,self_asserted,0,,69.0
+CL00487,F026,C026,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00375,Platform intake: reference check,1.0,2025-08-30,verified,2,,99.0
+CL00488,F026,C026,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 3 baselines,3.0,count,55.0,,,S00376,Platform intake: scenario interview,1.0,2025-08-05,verified,2,,99.0
+CL00489,F026,C026,Idea-vs-market,Development roadmap,P-3,Roadmap published with 7 dated milestones,7.0,count,62.0,,,S00377,Company registry filing,1.0,2025-10-18,verified,1,,86.0
+CL00490,F026,C026,Idea-vs-market,Revenue model,B-1,Pricing tested across 1 customer segments,1.0,count,31.0,,,S00378,Job posting authored,2.0,2026-04-21,verified,2,,89.0
+CL00491,F026,C026,Idea-vs-market,Mission & long-term vision,V-1/V-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00492,F026,C026,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-28,gap_flagged,0,,
+CL00493,F026,C026,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-06-27,gap_flagged,0,,
+CL00494,F026,C026,Diligence,Finances & runway,O-3,"Monthly burn stated at $33K, unaudited",33.0,usd_k,47.0,,,S00379,Employer team page,2.0,2025-11-18,self_asserted,0,,64.0
+CL00495,F027,C027,Founder,Background & execution,-,Led engineering for a team of 29,29.0,count,92.0,,,S00380,Platform intake: scenario interview,1.0,2025-06-27,verified,1,,73.0
+CL00496,F027,C027,Founder,Traits,-,Documented fix shipped 29 days after critical user feedback,29.0,days_inv,69.0,,,S00381,Patent filing,1.0,2025-06-16,verified,1,,80.0
+CL00497,F027,C027,Founder,Team role clarity,T-2,Written role split covering 3 of 4 core functions,3.0,count,68.0,,,S00382,Platform intake: work sample,1.0,2025-10-18,verified,2,,97.0
+CL00498,F027,C027,Founder,Team communication,T-1,"Team publishes a written weekly update, 35 consecutive weeks",35.0,count,85.0,,,S00383,Platform intake: VSP-style prompt response,1.0,2026-06-13,verified,1,,77.0
+CL00499,F027,C027,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00384,Conference speaker bio,2.0,2025-08-04,verified,2,,84.0
+CL00500,F027,C027,Market & traction,Market maps,M-1,Names 3 direct competitors with stated differentiation,3.0,count,39.0,,,S00385,Platform intake: scenario interview,1.0,2025-07-02,verified,3,,99.0
+CL00501,F027,C027,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $60M",60.0,usd_m_bu,75.0,bottom_up_derived,0.0702,S00386,Employer team page,2.0,2025-09-07,verified,3,,96.0
+CL00502,F027,C027,Market & traction,Value proposition,M-3,Value prop canvas links 7 customer pains to named features,7.0,count,71.0,,,S00387,Platform intake: scenario interview,1.0,2026-01-14,self_asserted,0,,56.0
+CL00503,F027,C027,Market & traction,Traction & KPIs,P-1,38 paying customers,38.0,count,91.0,,,S00388,Accelerator cohort directory,2.0,2025-08-29,verified,2,,96.0
+CL00504,F027,C027,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00389,Platform intake: scenario interview,1.0,2026-06-27,verified,1,,85.0
+CL00505,F027,C027,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 25 claims",25.0,count,95.0,,,S00390,Platform intake: work sample,1.0,2026-03-28,verified,1,,79.0
+CL00506,F027,C027,Idea-vs-market,Competitive advantage,B-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00507,F027,C027,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 6 core functions",6.0,count,72.0,,,S00391,Platform intake: scenario interview,1.0,2025-11-01,self_asserted,0,,73.0
+CL00508,F027,C027,Idea-vs-market,Development roadmap,P-3,Roadmap published with 6 dated milestones,6.0,count,55.0,,,S00392,Platform intake: VSP-style prompt response,1.0,2026-03-24,verified,2,,89.0
+CL00509,F027,C027,Idea-vs-market,Revenue model,B-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00510,F027,C027,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00393,Platform intake: VSP-style prompt response,1.0,2025-09-26,self_asserted,0,,74.0
+CL00511,F027,C027,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00394,Grant award record,1.0,2025-09-05,self_asserted,0,,62.0
+CL00512,F027,C027,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-07-16,gap_flagged,0,,
+CL00513,F027,C027,Diligence,Finances & runway,O-3,"Monthly burn stated at $73K, unaudited",73.0,usd_k,88.0,,,S00395,Platform intake: work sample,1.0,2025-06-17,self_asserted,0,,75.0
+CL00514,F028,C028,Founder,Background & execution,-,14 years domain experience in Climate,14.0,years,95.0,,,S00396,Employer team page,2.0,2026-02-04,verified,1,,66.0
+CL00515,F028,C028,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00397,arXiv paper,1.0,2026-03-11,verified,1,,78.0
+CL00516,F028,C028,Founder,Team role clarity,T-2,3 cofounders with non-overlapping functional coverage,3.0,count,68.0,,,S00398,Grant award record,1.0,2026-02-25,verified,3,,99.0
+CL00517,F028,C028,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00399,Company registry filing,1.0,2026-04-26,verified,2,,92.0
+CL00518,F028,C028,Founder,Feedback & iteration,T-3,Shipped 18 product iterations following user testing,18.0,count,87.0,,,S00400,Company registry filing,1.0,2026-07-03,self_asserted,0,,55.0
+CL00519,F028,C028,Market & traction,Market maps,M-1,Names 10 direct competitors with stated differentiation,10.0,count,95.0,,,S00401,Product Hunt,2.0,2025-09-27,contradicted,1,CL00515,35.0
+CL00520,F028,C028,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $80M",80.0,usd_m_bu,95.0,bottom_up_derived,0.0515,S00402,Product Hunt,2.0,2026-07-14,self_asserted,0,,57.0
+CL00521,F028,C028,Market & traction,Value proposition,M-3,Value prop canvas links 7 customer pains to named features,7.0,count,71.0,,,S00403,arXiv paper,1.0,2026-05-14,verified,3,,99.0
+CL00522,F028,C028,Market & traction,Traction & KPIs,P-1,37 paying customers,37.0,count,89.0,,,S00404,Conference speaker bio,2.0,2025-08-07,verified,2,,95.0
+CL00523,F028,C028,Market & traction,Customer acquisition,B-2,CAC measured at $792 across a real channel test,792.0,usd_inv,75.0,,,S00405,Patent filing,1.0,2025-09-14,verified,1,,77.0
+CL00524,F028,C028,Idea-vs-market,USP / secret sauce,V-3,"Wrapper over a single third-party model, no proprietary layer",,qualitative,24.0,,,S00406,Employer team page,2.0,2025-07-01,verified,2,,81.0
+CL00525,F028,C028,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 15 deals,15.0,count,75.0,,,S00407,Employer team page,2.0,2026-07-17,contradicted,0,CL00514,32.0
+CL00526,F028,C028,Idea-vs-market,Technical feasibility,P-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00527,F028,C028,Idea-vs-market,Development roadmap,P-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00528,F028,C028,Idea-vs-market,Revenue model,B-1,4 distinct revenue streams identified with pricing logic,4.0,count,95.0,,,S00408,Job posting authored,2.0,2025-12-18,self_asserted,0,,45.0
+CL00529,F028,C028,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00409,Employer team page,2.0,2025-07-19,self_asserted,0,,61.0
+CL00530,F028,C028,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-06-27,gap_flagged,0,,
+CL00531,F028,C028,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-20,gap_flagged,0,,
+CL00532,F028,C028,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00533,F029,C029,Founder,Background & execution,-,Shipped 5 public projects prior to founding,5.0,count,42.0,,,S00410,Patent filing,1.0,2025-09-10,verified,1,,76.0
+CL00534,F029,C029,Founder,Traits,-,Documented fix shipped 41 days after critical user feedback,41.0,days_inv,55.0,,,S00411,Employer team page,2.0,2025-09-14,self_asserted,0,,58.0
+CL00535,F029,C029,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00536,F029,C029,Founder,Team communication,T-1,"Team publishes a written weekly update, 31 consecutive weeks",31.0,count,77.0,,,S00412,Employer team page,2.0,2026-06-07,verified,3,,80.0
+CL00537,F029,C029,Founder,Feedback & iteration,T-3,Shipped 6 product iterations following user testing,6.0,count,39.0,,,S00413,Accelerator cohort directory,2.0,2025-12-09,contradicted,2,CL00539,44.0
+CL00538,F029,C029,Market & traction,Market maps,M-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00539,F029,C029,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $57M",57.0,usd_m_bu,72.0,bottom_up_derived,0.0679,S00414,X/Twitter,3.0,2026-02-01,self_asserted,1,,67.0
+CL00540,F029,C029,Market & traction,Value proposition,M-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00541,F029,C029,Market & traction,Traction & KPIs,P-1,"Waitlist of {n} signups, no conversion data",,qualitative,38.0,,,S00415,Employer team page,2.0,2025-09-01,verified,2,,90.0
+CL00542,F029,C029,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 4 stages with conversion rates,4.0,count,68.0,,,S00416,X/Twitter,3.0,2025-12-18,self_asserted,1,,79.0
+CL00543,F029,C029,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 21 claims",21.0,count,82.0,,,S00417,Product Hunt,2.0,2026-01-23,verified,2,,83.0
+CL00544,F029,C029,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 5 accounts,5.0,count,55.0,,,S00418,Company registry filing,1.0,2025-08-30,contradicted,1,CL00541,36.0
+CL00545,F029,C029,Idea-vs-market,Technical feasibility,P-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00546,F029,C029,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00419,X/Twitter,3.0,2025-08-19,verified,2,,93.0
+CL00547,F029,C029,Idea-vs-market,Revenue model,B-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00548,F029,C029,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00420,LinkedIn post,2.0,2025-08-20,self_asserted,0,,45.0
+CL00549,F029,C029,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-02,gap_flagged,0,,
+CL00550,F029,C029,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00421,arXiv paper,1.0,2025-12-05,verified,1,,79.0
+CL00551,F029,C029,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00552,F030,C030,Founder,Background & execution,-,14 years domain experience in Healthtech,14.0,years,95.0,,,S00422,Accelerator cohort directory,2.0,2025-11-24,verified,1,,62.0
+CL00553,F030,C030,Founder,Traits,-,Documented fix shipped 18 days after critical user feedback,18.0,days_inv,81.0,,,S00423,Personal blog,2.0,2025-08-08,verified,1,,68.0
+CL00554,F030,C030,Founder,Team role clarity,T-2,3 cofounders with non-overlapping functional coverage,3.0,count,68.0,,,S00424,GitHub,2.0,2025-08-14,verified,2,,88.0
+CL00555,F030,C030,Founder,Team communication,T-1,"Team publishes a written weekly update, 11 consecutive weeks",11.0,count,37.0,,,S00425,X/Twitter,3.0,2026-01-02,contradicted,0,CL00557,43.0
+CL00556,F030,C030,Founder,Feedback & iteration,T-3,Shipped 15 product iterations following user testing,15.0,count,75.0,,,S00426,Show HN,2.0,2026-07-10,self_asserted,0,,56.0
+CL00557,F030,C030,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00427,GitHub,2.0,2026-05-08,verified,1,,73.0
+CL00558,F030,C030,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $38M",38.0,usd_m_bu,52.0,bottom_up_derived,0.0728,S00428,GitHub,2.0,2026-02-21,verified,2,,80.0
+CL00559,F030,C030,Market & traction,Value proposition,M-3,Value prop canvas links 3 customer pains to named features,3.0,count,39.0,,,S00429,Job posting authored,2.0,2026-03-27,verified,2,,87.0
+CL00560,F030,C030,Market & traction,Traction & KPIs,P-1,"Waitlist of {n} signups, no conversion data",,qualitative,38.0,,,S00430,Show HN,2.0,2026-07-14,self_asserted,0,,56.0
+CL00561,F030,C030,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 3 stages with conversion rates,3.0,count,55.0,,,S00431,LinkedIn post,2.0,2025-11-24,verified,1,,74.0
+CL00562,F030,C030,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 18 claims",18.0,count,73.0,,,S00432,Job posting authored,2.0,2026-04-20,verified,3,,81.0
+CL00563,F030,C030,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 13 deals,13.0,count,67.0,,,S00433,Product Hunt,2.0,2026-01-25,contradicted,1,CL00564,32.0
+CL00564,F030,C030,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 8 core functions",8.0,count,95.0,,,S00434,arXiv paper,1.0,2025-09-08,verified,2,,99.0
+CL00565,F030,C030,Idea-vs-market,Development roadmap,P-3,3 of last quarter's milestones delivered on time,3.0,count,55.0,,,S00435,GitHub,2.0,2025-10-29,verified,2,,82.0
+CL00566,F030,C030,Idea-vs-market,Revenue model,B-1,Pricing tested across 3 customer segments,3.0,count,63.0,,,S00436,Job posting authored,2.0,2025-11-24,verified,2,,94.0
+CL00567,F030,C030,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00437,Product Hunt,2.0,2026-02-24,verified,2,,83.0
+CL00568,F030,C030,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-17,gap_flagged,0,,
+CL00569,F030,C030,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-07-17,gap_flagged,0,,
+CL00570,F030,C030,Diligence,Finances & runway,O-3,"Monthly burn stated at $76K, unaudited",76.0,usd_k,91.0,,,S00438,Conference speaker bio,2.0,2025-07-03,self_asserted,0,,60.0
+CL00571,F031,C031,Founder,Background & execution,-,Shipped 6 public projects prior to founding,6.0,count,47.0,,,S00439,Product Hunt,2.0,2025-11-19,self_asserted,0,,59.0
+CL00572,F031,C031,Founder,Traits,-,"Reversed a stated position after customer evidence, 4 documented instances",4.0,count,79.0,,,S00440,Company registry filing,1.0,2025-08-09,verified,2,,93.0
+CL00573,F031,C031,Founder,Team role clarity,T-2,3 cofounders with non-overlapping functional coverage,3.0,count,68.0,,,S00441,GitHub,2.0,2025-09-09,verified,2,,95.0
+CL00574,F031,C031,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00442,Company registry filing,1.0,2026-05-08,self_asserted,0,,61.0
+CL00575,F031,C031,Founder,Feedback & iteration,T-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00576,F031,C031,Market & traction,Market maps,M-1,Names 7 direct competitors with stated differentiation,7.0,count,71.0,,,S00443,Personal blog,2.0,2025-06-27,self_asserted,0,,50.0
+CL00577,F031,C031,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,2.0,S00444,Show HN,2.0,2025-09-29,self_asserted,2,,45.0
+CL00578,F031,C031,Market & traction,Value proposition,M-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00579,F031,C031,Market & traction,Traction & KPIs,P-1,24 paying customers,24.0,count,63.0,,,S00445,X/Twitter,3.0,2025-12-06,contradicted,3,CL00572,25.0
+CL00580,F031,C031,Market & traction,Customer acquisition,B-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00581,F031,C031,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 227K labeled records,227.0,count_k,76.0,,,S00446,University lab page,2.0,2026-01-06,verified,2,,96.0
+CL00582,F031,C031,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 4 accounts,4.0,count,47.0,,,S00447,Product Hunt,2.0,2025-11-04,verified,2,,91.0
+CL00583,F031,C031,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00448,Product Hunt,2.0,2025-12-06,self_asserted,0,,63.0
+CL00584,F031,C031,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00449,Show HN,2.0,2025-08-22,self_asserted,0,,61.0
+CL00585,F031,C031,Idea-vs-market,Revenue model,B-1,3 distinct revenue streams identified with pricing logic,3.0,count,68.0,,,S00450,Conference speaker bio,2.0,2025-11-18,self_asserted,0,,45.0
+CL00586,F031,C031,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 2 future verticals with entry logic,2.0,count,55.0,,,S00451,Conference speaker bio,2.0,2025-06-23,verified,2,,85.0
+CL00587,F031,C031,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-28,gap_flagged,0,,
+CL00588,F031,C031,Diligence,IP & regulation strategy,O-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00589,F031,C031,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00590,F032,C032,Founder,Background & execution,-,Led engineering for a team of 22,22.0,count,73.0,,,S00452,GitHub,2.0,2025-12-28,verified,1,,71.0
+CL00591,F032,C032,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00453,Product Hunt,2.0,2025-08-27,self_asserted,0,,51.0
+CL00592,F032,C032,Founder,Team role clarity,T-2,Written role split covering 2 of 4 core functions,2.0,count,42.0,,,S00454,Conference speaker bio,2.0,2026-03-09,contradicted,0,CL00593,39.0
+CL00593,F032,C032,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00455,X/Twitter,3.0,2026-04-07,verified,3,,93.0
+CL00594,F032,C032,Founder,Feedback & iteration,T-3,Roadmap changed 6 times citing named customer input,6.0,count,75.0,,,S00456,Accelerator cohort directory,2.0,2026-04-20,self_asserted,0,,50.0
+CL00595,F032,C032,Market & traction,Market maps,M-1,Maps 5 adjacent players and potential partners,5.0,count,48.0,,,S00457,Job posting authored,2.0,2025-07-18,verified,2,,80.0
+CL00596,F032,C032,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $31M derived from a stated unit chain,31.0,usd_m_bu,56.0,bottom_up_derived,0.0275,S00458,University lab page,2.0,2026-01-20,verified,1,,77.0
+CL00597,F032,C032,Market & traction,Value proposition,M-3,2 customer personas documented with motivations,2.0,count,47.0,,,S00459,X/Twitter,3.0,2026-06-05,self_asserted,0,,47.0
+CL00598,F032,C032,Market & traction,Traction & KPIs,P-1,7 design partners in signed pilot,7.0,count,71.0,,,S00460,Personal blog,2.0,2026-01-24,verified,1,,81.0
+CL00599,F032,C032,Market & traction,Customer acquisition,B-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00600,F032,C032,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 212K labeled records,212.0,count_k,72.0,,,S00461,Employer team page,2.0,2026-04-30,verified,2,,89.0
+CL00601,F032,C032,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 7 deals,7.0,count,43.0,,,S00462,Patent filing,1.0,2026-05-30,self_asserted,0,,75.0
+CL00602,F032,C032,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 3 baselines,3.0,count,55.0,,,S00463,Employer team page,2.0,2026-03-21,verified,1,,77.0
+CL00603,F032,C032,Idea-vs-market,Development roadmap,P-3,Roadmap published with 11 dated milestones,11.0,count,88.0,,,S00464,Product Hunt,2.0,2026-05-23,verified,2,,88.0
+CL00604,F032,C032,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00465,University lab page,2.0,2026-01-29,contradicted,2,CL00592,48.0
+CL00605,F032,C032,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00466,Show HN,2.0,2026-03-31,verified,2,,86.0
+CL00606,F032,C032,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00607,F032,C032,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-05,gap_flagged,0,,
+CL00608,F032,C032,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00609,F033,C033,Founder,Background & execution,-,Shipped 2 public projects prior to founding,2.0,count,26.0,,,S00467,Platform intake: scenario interview,1.0,2025-08-14,self_asserted,0,,68.0
+CL00610,F033,C033,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00468,Platform intake: work sample,1.0,2025-11-29,self_asserted,0,,75.0
+CL00611,F033,C033,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00469,Platform intake: VSP-style prompt response,1.0,2025-06-13,verified,3,,89.0
+CL00612,F033,C033,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00470,Platform intake: reference check,1.0,2026-05-10,self_asserted,0,,70.0
+CL00613,F033,C033,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00471,Platform intake: scenario interview,1.0,2026-02-14,verified,2,,98.0
+CL00614,F033,C033,Market & traction,Market maps,M-1,Maps 0 adjacent players and potential partners,0.0,count,15.0,,,S00472,Platform intake: scenario interview,1.0,2026-07-01,self_asserted,0,,57.0
+CL00615,F033,C033,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,1.0,S00473,Platform intake: VSP-style prompt response,1.0,2026-04-22,self_asserted,0,,45.0
+CL00616,F033,C033,Market & traction,Value proposition,M-3,Value prop canvas links 0 customer pains to named features,0.0,count,15.0,,,S00474,Accelerator cohort directory,2.0,2025-10-08,self_asserted,0,,68.0
+CL00617,F033,C033,Market & traction,Traction & KPIs,P-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00618,F033,C033,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 0 stages with conversion rates,0.0,count,15.0,,,S00475,Platform intake: VSP-style prompt response,1.0,2025-12-28,verified,2,,92.0
+CL00619,F033,C033,Idea-vs-market,USP / secret sauce,V-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00620,F033,C033,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00476,Platform intake: reference check,1.0,2026-03-13,self_asserted,0,,75.0
+CL00621,F033,C033,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 0 baselines,0.0,count,15.0,,,S00477,Platform intake: reference check,1.0,2026-04-20,verified,2,,94.0
+CL00622,F033,C033,Idea-vs-market,Development roadmap,P-3,Roadmap published with 3 dated milestones,3.0,count,35.0,,,S00478,Company registry filing,1.0,2025-06-22,contradicted,0,CL00627,34.0
+CL00623,F033,C033,Idea-vs-market,Revenue model,B-1,Pricing tested across 0 customer segments,0.0,count,15.0,,,S00479,Conference speaker bio,2.0,2026-01-11,self_asserted,0,,57.0
+CL00624,F033,C033,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00480,Platform intake: scenario interview,1.0,2025-08-05,verified,1,,88.0
+CL00625,F033,C033,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-05-27,gap_flagged,0,,
+CL00626,F033,C033,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00481,Platform intake: work sample,1.0,2026-02-10,self_asserted,0,,65.0
+CL00627,F033,C033,Diligence,Finances & runway,O-3,Runway of 0 months at current burn,0.0,count,15.0,,,S00482,Platform intake: scenario interview,1.0,2026-01-22,verified,3,,98.0
+CL00628,F034,C034,Founder,Background & execution,-,10 years domain experience in Bio,10.0,years,72.0,,,S00483,Show HN,2.0,2025-11-15,verified,3,,95.0
+CL00629,F034,C034,Founder,Traits,-,"Reversed a stated position after customer evidence, 4 documented instances",4.0,count,79.0,,,S00484,Accelerator cohort directory,2.0,2026-01-18,contradicted,1,CL00644,43.0
+CL00630,F034,C034,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00631,F034,C034,Founder,Team communication,T-1,"Team publishes a written weekly update, 24 consecutive weeks",24.0,count,63.0,,,S00485,Patent filing,1.0,2025-12-01,verified,1,,77.0
+CL00632,F034,C034,Founder,Feedback & iteration,T-3,Roadmap changed 2 times citing named customer input,2.0,count,35.0,,,S00486,Conference speaker bio,2.0,2025-07-26,verified,2,,81.0
+CL00633,F034,C034,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00487,Company registry filing,1.0,2026-07-05,verified,2,,90.0
+CL00634,F034,C034,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,0.5,S00488,LinkedIn post,2.0,2026-03-26,self_asserted,2,,45.0
+CL00635,F034,C034,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00489,Company registry filing,1.0,2026-04-28,verified,1,,83.0
+CL00636,F034,C034,Market & traction,Traction & KPIs,P-1,6 design partners in signed pilot,6.0,count,63.0,,,S00490,Personal blog,2.0,2025-10-27,verified,2,,97.0
+CL00637,F034,C034,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 4 stages with conversion rates,4.0,count,68.0,,,S00491,Company registry filing,1.0,2025-10-03,verified,3,,88.0
+CL00638,F034,C034,Idea-vs-market,USP / secret sauce,V-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00639,F034,C034,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 14 deals,14.0,count,71.0,,,S00492,Accelerator cohort directory,2.0,2025-09-29,verified,1,,68.0
+CL00640,F034,C034,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00493,Accelerator cohort directory,2.0,2025-07-17,verified,3,,96.0
+CL00641,F034,C034,Idea-vs-market,Development roadmap,P-3,Roadmap published with 8 dated milestones,8.0,count,68.0,,,S00494,Conference speaker bio,2.0,2025-12-05,verified,2,,88.0
+CL00642,F034,C034,Idea-vs-market,Revenue model,B-1,3 distinct revenue streams identified with pricing logic,3.0,count,68.0,,,S00495,Company registry filing,1.0,2026-03-29,verified,1,,72.0
+CL00643,F034,C034,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 4 future verticals with entry logic,4.0,count,95.0,,,S00496,Employer team page,2.0,2026-03-18,verified,1,,67.0
+CL00644,F034,C034,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00497,Job posting authored,2.0,2026-04-05,verified,3,,83.0
+CL00645,F034,C034,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-06-09,gap_flagged,0,,
+CL00646,F034,C034,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-25,gap_flagged,0,,
+CL00647,F035,C035,Founder,Background & execution,-,Led engineering for a team of 3,3.0,count,21.0,,,S00498,Show HN,2.0,2026-04-14,verified,1,,80.0
+CL00648,F035,C035,Founder,Traits,-,"Reversed a stated position after customer evidence, 0 documented instances",0.0,count,15.0,,,S00499,arXiv paper,1.0,2025-10-30,self_asserted,0,,55.0
+CL00649,F035,C035,Founder,Team role clarity,T-2,Written role split covering 2 of 4 core functions,2.0,count,42.0,,,S00500,LinkedIn post,2.0,2025-12-23,self_asserted,0,,55.0
+CL00650,F035,C035,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00501,Accelerator cohort directory,2.0,2025-12-29,verified,2,,97.0
+CL00651,F035,C035,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00502,Patent filing,1.0,2026-01-17,verified,1,,82.0
+CL00652,F035,C035,Market & traction,Market maps,M-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00653,F035,C035,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $1M derived from a stated unit chain,1.0,usd_m_bu,15.0,bottom_up_derived,0.0591,S00503,Conference speaker bio,2.0,2026-05-04,verified,1,,74.0
+CL00654,F035,C035,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00504,arXiv paper,1.0,2025-08-05,self_asserted,0,,58.0
+CL00655,F035,C035,Market & traction,Traction & KPIs,P-1,"Waitlist of {n} signups, no conversion data",,qualitative,38.0,,,S00505,Conference speaker bio,2.0,2026-04-15,self_asserted,0,,45.0
+CL00656,F035,C035,Market & traction,Customer acquisition,B-2,CAC measured at $3000 across a real channel test,3000.0,usd_inv,0.0,,,S00506,University lab page,2.0,2026-07-07,verified,1,,72.0
+CL00657,F035,C035,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 5 claims",5.0,count,31.0,,,S00507,LinkedIn post,2.0,2026-01-28,self_asserted,0,,63.0
+CL00658,F035,C035,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 5 accounts,5.0,count,55.0,,,S00508,LinkedIn post,2.0,2026-01-13,verified,2,,80.0
+CL00659,F035,C035,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 1 baselines,1.0,count,28.0,,,S00509,Show HN,2.0,2025-11-06,self_asserted,0,,45.0
+CL00660,F035,C035,Idea-vs-market,Development roadmap,P-3,Roadmap published with 6 dated milestones,6.0,count,55.0,,,S00510,GitHub,2.0,2026-02-08,contradicted,0,CL00654,33.0
+CL00661,F035,C035,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00511,Job posting authored,2.0,2026-05-24,verified,3,,82.0
+CL00662,F035,C035,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00512,Company registry filing,1.0,2026-04-10,self_asserted,0,,76.0
+CL00663,F035,C035,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00513,Conference speaker bio,2.0,2025-07-20,verified,2,,89.0
+CL00664,F035,C035,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00514,GitHub,2.0,2026-05-15,self_asserted,0,,67.0
+CL00665,F035,C035,Diligence,Finances & runway,O-3,Runway of 7 months at current burn,7.0,count,38.0,,,S00515,Patent filing,1.0,2026-04-26,self_asserted,0,,64.0
+CL00666,F036,C036,Founder,Background & execution,-,Shipped 15 public projects prior to founding,15.0,count,95.0,,,S00516,Platform intake: work sample,1.0,2025-11-05,self_asserted,0,,75.0
+CL00667,F036,C036,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00517,Job posting authored,2.0,2026-07-15,verified,2,,86.0
+CL00668,F036,C036,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00669,F036,C036,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00518,Platform intake: work sample,1.0,2026-02-06,verified,3,,94.0
+CL00670,F036,C036,Founder,Feedback & iteration,T-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00671,F036,C036,Market & traction,Market maps,M-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00672,F036,C036,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $68M",68.0,usd_m_bu,83.0,bottom_up_derived,0.0217,S00519,Grant award record,1.0,2026-04-27,verified,1,,78.0
+CL00673,F036,C036,Market & traction,Value proposition,M-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00674,F036,C036,Market & traction,Traction & KPIs,P-1,40 paying customers,40.0,count,95.0,,,S00520,Platform intake: VSP-style prompt response,1.0,2026-02-17,verified,1,,70.0
+CL00675,F036,C036,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 6 stages with conversion rates,6.0,count,95.0,,,S00521,Platform intake: VSP-style prompt response,1.0,2026-02-26,verified,2,,99.0
+CL00676,F036,C036,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 25 claims",25.0,count,95.0,,,S00522,Platform intake: reference check,1.0,2026-05-29,self_asserted,0,,62.0
+CL00677,F036,C036,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 10 accounts,10.0,count,95.0,,,S00523,Platform intake: reference check,1.0,2026-04-03,verified,3,,99.0
+CL00678,F036,C036,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00524,Platform intake: reference check,1.0,2025-11-26,verified,2,,99.0
+CL00679,F036,C036,Idea-vs-market,Development roadmap,P-3,Roadmap published with 12 dated milestones,12.0,count,95.0,,,S00525,Job posting authored,2.0,2025-07-05,verified,2,,92.0
+CL00680,F036,C036,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00526,Company registry filing,1.0,2025-12-02,contradicted,1,CL00677,60.0
+CL00681,F036,C036,Idea-vs-market,Mission & long-term vision,V-1/V-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00682,F036,C036,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-07-12,gap_flagged,0,,
+CL00683,F036,C036,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-07-06,gap_flagged,0,,
+CL00684,F036,C036,Diligence,Finances & runway,O-3,Runway of 20 months at current burn,20.0,count,82.0,,,S00527,University lab page,2.0,2025-11-03,self_asserted,0,,52.0
+CL00685,F037,C037,Founder,Background & execution,-,8 years domain experience in Devtools,8.0,years,61.0,,,S00528,GitHub,2.0,2026-01-23,verified,2,,83.0
+CL00686,F037,C037,Founder,Traits,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00687,F037,C037,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00529,Show HN,2.0,2026-01-29,verified,1,,72.0
+CL00688,F037,C037,Founder,Team communication,T-1,Decision log maintained with 14 entries,14.0,count,34.0,,,S00530,Product Hunt,2.0,2025-11-25,self_asserted,0,,65.0
+CL00689,F037,C037,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00531,Grant award record,1.0,2026-01-13,verified,1,,76.0
+CL00690,F037,C037,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00532,Conference speaker bio,2.0,2026-04-19,verified,1,,71.0
+CL00691,F037,C037,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $45M",45.0,usd_m_bu,60.0,bottom_up_derived,0.0061,S00533,X/Twitter,3.0,2026-04-01,self_asserted,1,,78.0
+CL00692,F037,C037,Market & traction,Value proposition,M-3,Value prop canvas links 10 customer pains to named features,10.0,count,95.0,,,S00534,Conference speaker bio,2.0,2026-05-22,verified,2,,86.0
+CL00693,F037,C037,Market & traction,Traction & KPIs,P-1,19 paying customers,19.0,count,53.0,,,S00535,LinkedIn post,2.0,2026-02-24,self_asserted,0,,45.0
+CL00694,F037,C037,Market & traction,Customer acquisition,B-2,CAC measured at $719 across a real channel test,719.0,usd_inv,77.0,,,S00536,Accelerator cohort directory,2.0,2026-04-16,self_asserted,0,,50.0
+CL00695,F037,C037,Idea-vs-market,USP / secret sauce,V-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00696,F037,C037,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 7 deals,7.0,count,43.0,,,S00537,Job posting authored,2.0,2026-05-16,self_asserted,0,,61.0
+CL00697,F037,C037,Idea-vs-market,Technical feasibility,P-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00698,F037,C037,Idea-vs-market,Development roadmap,P-3,2 of last quarter's milestones delivered on time,2.0,count,42.0,,,S00538,LinkedIn post,2.0,2025-09-15,verified,2,,83.0
+CL00699,F037,C037,Idea-vs-market,Revenue model,B-1,Pricing tested across 4 customer segments,4.0,count,79.0,,,S00539,University lab page,2.0,2026-05-03,verified,1,,62.0
+CL00700,F037,C037,Idea-vs-market,Mission & long-term vision,V-1/V-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00701,F037,C037,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00702,F037,C037,Diligence,IP & regulation strategy,O-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00703,F037,C037,Diligence,Finances & runway,O-3,"Monthly burn stated at $31K, unaudited",31.0,usd_k,45.0,,,S00540,Personal blog,2.0,2025-10-08,self_asserted,0,,56.0
+CL00704,F038,C038,Founder,Background & execution,-,9 years domain experience in Fintech,9.0,years,66.0,,,S00541,arXiv paper,1.0,2025-06-16,self_asserted,0,,65.0
+CL00705,F038,C038,Founder,Traits,-,Documented fix shipped 17 days after critical user feedback,17.0,days_inv,82.0,,,S00542,Platform intake: scenario interview,1.0,2025-11-28,verified,3,,89.0
+CL00706,F038,C038,Founder,Team role clarity,T-2,2 cofounders with non-overlapping functional coverage,2.0,count,42.0,,,S00543,Patent filing,1.0,2026-01-25,verified,2,,97.0
+CL00707,F038,C038,Founder,Team communication,T-1,Decision log maintained with 53 entries,53.0,count,86.0,,,S00544,Platform intake: work sample,1.0,2025-07-31,self_asserted,0,,63.0
+CL00708,F038,C038,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00545,Employer team page,2.0,2026-04-24,verified,1,,82.0
+CL00709,F038,C038,Market & traction,Market maps,M-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00710,F038,C038,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $28M derived from a stated unit chain,28.0,usd_m_bu,52.0,bottom_up_derived,0.0597,S00546,arXiv paper,1.0,2025-10-29,verified,1,,76.0
+CL00711,F038,C038,Market & traction,Value proposition,M-3,Value prop canvas links 6 customer pains to named features,6.0,count,63.0,,,S00547,Platform intake: work sample,1.0,2025-11-20,self_asserted,0,,65.0
+CL00712,F038,C038,Market & traction,Traction & KPIs,P-1,7 design partners in signed pilot,7.0,count,71.0,,,S00548,Platform intake: reference check,1.0,2025-08-13,verified,2,,99.0
+CL00713,F038,C038,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 3 stages with conversion rates,3.0,count,55.0,,,S00549,Platform intake: work sample,1.0,2026-06-04,self_asserted,0,,61.0
+CL00714,F038,C038,Idea-vs-market,USP / secret sauce,V-3,"Wrapper over a single third-party model, no proprietary layer",,qualitative,24.0,,,S00550,Accelerator cohort directory,2.0,2026-03-10,self_asserted,0,,60.0
+CL00715,F038,C038,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 17 deals,17.0,count,83.0,,,S00551,Accelerator cohort directory,2.0,2026-05-14,self_asserted,0,,49.0
+CL00716,F038,C038,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 3 core functions",3.0,count,38.0,,,S00552,Company registry filing,1.0,2025-07-16,contradicted,2,CL00710,58.0
+CL00717,F038,C038,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00553,Platform intake: reference check,1.0,2026-01-20,self_asserted,0,,66.0
+CL00718,F038,C038,Idea-vs-market,Revenue model,B-1,Pricing tested across 2 customer segments,2.0,count,47.0,,,S00554,Patent filing,1.0,2025-10-12,verified,2,,92.0
+CL00719,F038,C038,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00555,Patent filing,1.0,2026-01-04,self_asserted,0,,57.0
+CL00720,F038,C038,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-10,gap_flagged,0,,
+CL00721,F038,C038,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-05-23,gap_flagged,0,,
+CL00722,F038,C038,Diligence,Finances & runway,O-3,"Monthly burn stated at $41K, unaudited",41.0,usd_k,56.0,,,S00556,Job posting authored,2.0,2026-04-08,self_asserted,0,,68.0
+CL00723,F039,C039,Founder,Background & execution,-,Shipped 8 public projects prior to founding,8.0,count,58.0,,,S00557,Product Hunt,2.0,2026-03-20,verified,3,,88.0
+CL00724,F039,C039,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00558,X/Twitter,3.0,2026-02-28,self_asserted,1,,75.0
+CL00725,F039,C039,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00559,University lab page,2.0,2025-08-08,verified,2,,87.0
+CL00726,F039,C039,Founder,Team communication,T-1,Decision log maintained with 9 entries,9.0,count,27.0,,,S00560,LinkedIn post,2.0,2025-07-14,verified,2,,95.0
+CL00727,F039,C039,Founder,Feedback & iteration,T-3,Shipped 9 product iterations following user testing,9.0,count,51.0,,,S00561,Grant award record,1.0,2026-05-11,verified,3,,99.0
+CL00728,F039,C039,Market & traction,Market maps,M-1,Names 8 direct competitors with stated differentiation,8.0,count,79.0,,,S00562,Personal blog,2.0,2026-04-30,verified,3,,85.0
+CL00729,F039,C039,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $53M derived from a stated unit chain,53.0,usd_m_bu,86.0,bottom_up_derived,0.0272,S00563,Accelerator cohort directory,2.0,2026-04-20,verified,3,,86.0
+CL00730,F039,C039,Market & traction,Value proposition,M-3,2 customer personas documented with motivations,2.0,count,47.0,,,S00564,University lab page,2.0,2026-05-17,self_asserted,0,,61.0
+CL00731,F039,C039,Market & traction,Traction & KPIs,P-1,7 design partners in signed pilot,7.0,count,71.0,,,S00565,GitHub,2.0,2026-01-04,verified,2,,83.0
+CL00732,F039,C039,Market & traction,Customer acquisition,B-2,CAC measured at $1392 across a real channel test,1392.0,usd_inv,55.0,,,S00566,Grant award record,1.0,2026-04-12,self_asserted,0,,71.0
+CL00733,F039,C039,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 14 claims",14.0,count,60.0,,,S00567,LinkedIn post,2.0,2026-04-06,verified,2,,87.0
+CL00734,F039,C039,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00568,Employer team page,2.0,2025-09-26,verified,2,,90.0
+CL00735,F039,C039,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00569,LinkedIn post,2.0,2025-10-29,verified,1,,76.0
+CL00736,F039,C039,Idea-vs-market,Development roadmap,P-3,3 of last quarter's milestones delivered on time,3.0,count,55.0,,,S00570,Product Hunt,2.0,2026-05-19,verified,1,,82.0
+CL00737,F039,C039,Idea-vs-market,Revenue model,B-1,2 distinct revenue streams identified with pricing logic,2.0,count,42.0,,,S00571,Personal blog,2.0,2025-09-20,self_asserted,0,,61.0
+CL00738,F039,C039,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 2 future verticals with entry logic,2.0,count,55.0,,,S00572,Patent filing,1.0,2025-11-20,contradicted,3,CL00735,45.0
+CL00739,F039,C039,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-06-08,gap_flagged,0,,
+CL00740,F039,C039,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-05-25,gap_flagged,0,,
+CL00741,F039,C039,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-07,gap_flagged,0,,
+CL00742,F040,C040,Founder,Background & execution,-,14 years domain experience in AI infra,14.0,years,95.0,,,S00573,Platform intake: reference check,1.0,2025-09-12,verified,1,,79.0
+CL00743,F040,C040,Founder,Traits,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00744,F040,C040,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00745,F040,C040,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00574,Platform intake: reference check,1.0,2026-05-08,verified,1,,80.0
+CL00746,F040,C040,Founder,Feedback & iteration,T-3,Roadmap changed 7 times citing named customer input,7.0,count,85.0,,,S00575,Platform intake: work sample,1.0,2025-08-11,verified,1,,78.0
+CL00747,F040,C040,Market & traction,Market maps,M-1,Maps 11 adjacent players and potential partners,11.0,count,88.0,,,S00576,Platform intake: work sample,1.0,2026-01-07,contradicted,2,CL00756,45.0
+CL00748,F040,C040,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $68M",68.0,usd_m_bu,83.0,bottom_up_derived,0.0441,S00577,Platform intake: work sample,1.0,2025-10-13,self_asserted,0,,75.0
+CL00749,F040,C040,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00578,Platform intake: work sample,1.0,2025-07-23,verified,1,,86.0
+CL00750,F040,C040,Market & traction,Traction & KPIs,P-1,ARR of $377K,377.0,usd_k,90.0,,,S00579,Accelerator cohort directory,2.0,2025-07-07,verified,1,,71.0
+CL00751,F040,C040,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00580,Platform intake: work sample,1.0,2025-08-08,verified,1,,88.0
+CL00752,F040,C040,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 9 claims",9.0,count,44.0,,,S00581,Platform intake: scenario interview,1.0,2025-08-17,contradicted,3,CL00753,52.0
+CL00753,F040,C040,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00582,Platform intake: work sample,1.0,2026-03-03,contradicted,2,CL00751,61.0
+CL00754,F040,C040,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 8 core functions",8.0,count,95.0,,,S00583,arXiv paper,1.0,2025-12-04,self_asserted,0,,67.0
+CL00755,F040,C040,Idea-vs-market,Development roadmap,P-3,Roadmap published with 9 dated milestones,9.0,count,75.0,,,S00584,Platform intake: scenario interview,1.0,2026-05-11,contradicted,1,CL00750,35.0
+CL00756,F040,C040,Idea-vs-market,Revenue model,B-1,4 distinct revenue streams identified with pricing logic,4.0,count,95.0,,,S00585,Platform intake: work sample,1.0,2025-07-23,self_asserted,0,,76.0
+CL00757,F040,C040,Idea-vs-market,Mission & long-term vision,V-1/V-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00758,F040,C040,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-12,gap_flagged,0,,
+CL00759,F040,C040,Diligence,IP & regulation strategy,O-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00760,F040,C040,Diligence,Finances & runway,O-3,Runway of 24 months at current burn,24.0,count,95.0,,,S00586,Accelerator cohort directory,2.0,2025-09-07,verified,1,,74.0
+CL00761,F041,C041,Founder,Background & execution,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00762,F041,C041,Founder,Traits,-,"Reversed a stated position after customer evidence, 1 documented instances",1.0,count,31.0,,,S00587,Platform intake: work sample,1.0,2025-11-18,verified,3,,94.0
+CL00763,F041,C041,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00588,Patent filing,1.0,2026-03-04,self_asserted,0,,68.0
+CL00764,F041,C041,Founder,Team communication,T-1,"Team publishes a written weekly update, 9 consecutive weeks",9.0,count,33.0,,,S00589,Platform intake: reference check,1.0,2026-03-09,verified,2,,99.0
+CL00765,F041,C041,Founder,Feedback & iteration,T-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00766,F041,C041,Market & traction,Market maps,M-1,Maps 9 adjacent players and potential partners,9.0,count,75.0,,,S00590,Platform intake: scenario interview,1.0,2025-08-04,verified,1,,83.0
+CL00767,F041,C041,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,1.0,S00591,Platform intake: work sample,1.0,2026-02-05,self_asserted,0,,45.0
+CL00768,F041,C041,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00592,Platform intake: work sample,1.0,2026-04-26,verified,1,,84.0
+CL00769,F041,C041,Market & traction,Traction & KPIs,P-1,36 paying customers,36.0,count,87.0,,,S00593,arXiv paper,1.0,2025-12-02,self_asserted,0,,71.0
+CL00770,F041,C041,Market & traction,Customer acquisition,B-2,CAC measured at $2427 across a real channel test,2427.0,usd_inv,19.0,,,S00594,Platform intake: work sample,1.0,2025-08-20,contradicted,1,CL00769,58.0
+CL00771,F041,C041,Idea-vs-market,USP / secret sauce,V-3,"Wrapper over a single third-party model, no proprietary layer",,qualitative,24.0,,,S00595,Platform intake: reference check,1.0,2026-04-30,self_asserted,0,,56.0
+CL00772,F041,C041,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 4 deals,4.0,count,31.0,,,S00596,Platform intake: work sample,1.0,2026-03-12,self_asserted,0,,55.0
+CL00773,F041,C041,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 3 core functions",3.0,count,38.0,,,S00597,Platform intake: reference check,1.0,2026-03-15,verified,2,,91.0
+CL00774,F041,C041,Idea-vs-market,Development roadmap,P-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00775,F041,C041,Idea-vs-market,Revenue model,B-1,Pricing tested across 3 customer segments,3.0,count,63.0,,,S00598,Platform intake: VSP-style prompt response,1.0,2025-06-13,self_asserted,0,,64.0
+CL00776,F041,C041,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 1 future verticals with entry logic,1.0,count,35.0,,,S00599,Platform intake: work sample,1.0,2026-02-08,verified,1,,86.0
+CL00777,F041,C041,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-05-29,gap_flagged,0,,
+CL00778,F041,C041,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-06,gap_flagged,0,,
+CL00779,F041,C041,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00780,F042,C042,Founder,Background & execution,-,0 years domain experience in Climate,0.0,years,15.0,,,S00600,University lab page,2.0,2025-09-15,contradicted,0,CL00783,26.0
+CL00781,F042,C042,Founder,Traits,-,"Reversed a stated position after customer evidence, 1 documented instances",1.0,count,31.0,,,S00601,Employer team page,2.0,2025-10-11,verified,2,,82.0
+CL00782,F042,C042,Founder,Team role clarity,T-2,1 cofounders with non-overlapping functional coverage,1.0,count,15.0,,,S00602,Job posting authored,2.0,2026-02-14,self_asserted,0,,56.0
+CL00783,F042,C042,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00603,Company registry filing,1.0,2025-08-26,verified,1,,73.0
+CL00784,F042,C042,Founder,Feedback & iteration,T-3,Roadmap changed 0 times citing named customer input,0.0,count,15.0,,,S00604,Company registry filing,1.0,2026-05-24,verified,1,,76.0
+CL00785,F042,C042,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00605,Grant award record,1.0,2026-01-05,verified,1,,78.0
+CL00786,F042,C042,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $51M",51.0,usd_m_bu,66.0,bottom_up_derived,0.0043,S00606,Patent filing,1.0,2026-03-05,verified,2,,99.0
+CL00787,F042,C042,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00607,Show HN,2.0,2026-01-13,self_asserted,0,,58.0
+CL00788,F042,C042,Market & traction,Traction & KPIs,P-1,2 design partners in signed pilot,2.0,count,31.0,,,S00608,University lab page,2.0,2026-07-09,contradicted,1,CL00790,39.0
+CL00789,F042,C042,Market & traction,Customer acquisition,B-2,CAC measured at $2172 across a real channel test,2172.0,usd_inv,28.0,,,S00609,Employer team page,2.0,2026-06-15,self_asserted,0,,57.0
+CL00790,F042,C042,Idea-vs-market,USP / secret sauce,V-3,"Wrapper over a single third-party model, no proprietary layer",,qualitative,24.0,,,S00610,Accelerator cohort directory,2.0,2026-07-08,verified,2,,95.0
+CL00791,F042,C042,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 0 deals,0.0,count,15.0,,,S00611,GitHub,2.0,2025-11-02,contradicted,0,CL00786,27.0
+CL00792,F042,C042,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00612,University lab page,2.0,2026-06-11,self_asserted,0,,58.0
+CL00793,F042,C042,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00613,Product Hunt,2.0,2026-02-07,contradicted,2,CL00780,48.0
+CL00794,F042,C042,Idea-vs-market,Revenue model,B-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00795,F042,C042,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00614,Company registry filing,1.0,2026-02-11,verified,1,,73.0
+CL00796,F042,C042,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-06-03,gap_flagged,0,,
+CL00797,F042,C042,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-05-23,gap_flagged,0,,
+CL00798,F042,C042,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-29,gap_flagged,0,,
+CL00799,F043,C043,Founder,Background & execution,-,Shipped 3 public projects prior to founding,3.0,count,31.0,,,S00615,Conference speaker bio,2.0,2026-05-29,self_asserted,0,,50.0
+CL00800,F043,C043,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00616,University lab page,2.0,2025-07-31,verified,1,,74.0
+CL00801,F043,C043,Founder,Team role clarity,T-2,Written role split covering 2 of 4 core functions,2.0,count,42.0,,,S00617,Product Hunt,2.0,2026-01-07,verified,2,,89.0
+CL00802,F043,C043,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00618,Company registry filing,1.0,2025-10-27,verified,1,,74.0
+CL00803,F043,C043,Founder,Feedback & iteration,T-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00804,F043,C043,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00619,Patent filing,1.0,2026-06-29,verified,2,,90.0
+CL00805,F043,C043,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $34M derived from a stated unit chain,34.0,usd_m_bu,60.0,bottom_up_derived,0.0221,S00620,Employer team page,2.0,2025-11-24,verified,1,,73.0
+CL00806,F043,C043,Market & traction,Value proposition,M-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00807,F043,C043,Market & traction,Traction & KPIs,P-1,ARR of $0K,0.0,usd_k,15.0,,,S00621,Accelerator cohort directory,2.0,2025-10-11,verified,2,,84.0
+CL00808,F043,C043,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00622,Product Hunt,2.0,2025-11-15,contradicted,1,CL00807,29.0
+CL00809,F043,C043,Idea-vs-market,USP / secret sauce,V-3,"Wrapper over a single third-party model, no proprietary layer",,qualitative,24.0,,,S00623,Product Hunt,2.0,2026-01-30,verified,3,,82.0
+CL00810,F043,C043,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 8 accounts,8.0,count,79.0,,,S00624,Product Hunt,2.0,2026-01-04,verified,1,,82.0
+CL00811,F043,C043,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 2 core functions",2.0,count,26.0,,,S00625,LinkedIn post,2.0,2026-03-23,verified,1,,80.0
+CL00812,F043,C043,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00626,Company registry filing,1.0,2025-09-23,contradicted,2,CL00802,47.0
+CL00813,F043,C043,Idea-vs-market,Revenue model,B-1,1 distinct revenue streams identified with pricing logic,1.0,count,15.0,,,S00627,Job posting authored,2.0,2026-05-15,verified,2,,95.0
+CL00814,F043,C043,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 3 future verticals with entry logic,3.0,count,75.0,,,S00628,GitHub,2.0,2025-10-14,verified,1,,67.0
+CL00815,F043,C043,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-06-11,gap_flagged,0,,
+CL00816,F043,C043,Diligence,IP & regulation strategy,O-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00817,F043,C043,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-09,gap_flagged,0,,
+CL00818,F044,C044,Founder,Background & execution,-,Shipped 2 public projects prior to founding,2.0,count,26.0,,,S00629,X/Twitter,3.0,2026-04-19,contradicted,1,CL00821,25.0
+CL00819,F044,C044,Founder,Traits,-,"Reversed a stated position after customer evidence, 1 documented instances",1.0,count,31.0,,,S00630,Grant award record,1.0,2025-12-19,contradicted,1,CL00832,40.0
+CL00820,F044,C044,Founder,Team role clarity,T-2,1 cofounders with non-overlapping functional coverage,1.0,count,15.0,,,S00631,Show HN,2.0,2025-08-29,verified,1,,82.0
+CL00821,F044,C044,Founder,Team communication,T-1,"Team publishes a written weekly update, 7 consecutive weeks",7.0,count,29.0,,,S00632,Personal blog,2.0,2026-06-28,verified,1,,68.0
+CL00822,F044,C044,Founder,Feedback & iteration,T-3,Shipped 13 product iterations following user testing,13.0,count,67.0,,,S00633,Accelerator cohort directory,2.0,2025-12-13,verified,2,,95.0
+CL00823,F044,C044,Market & traction,Market maps,M-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00824,F044,C044,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $27M",27.0,usd_m_bu,41.0,bottom_up_derived,0.0309,S00634,Personal blog,2.0,2026-07-11,verified,3,,93.0
+CL00825,F044,C044,Market & traction,Value proposition,M-3,Value prop canvas links 0 customer pains to named features,0.0,count,15.0,,,S00635,LinkedIn post,2.0,2025-11-08,self_asserted,0,,60.0
+CL00826,F044,C044,Market & traction,Traction & KPIs,P-1,10 paying customers,10.0,count,35.0,,,S00636,LinkedIn post,2.0,2025-07-08,verified,1,,71.0
+CL00827,F044,C044,Market & traction,Customer acquisition,B-2,CAC measured at $2700 across a real channel test,2700.0,usd_inv,10.0,,,S00637,Job posting authored,2.0,2026-07-16,verified,2,,87.0
+CL00828,F044,C044,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 3 claims",3.0,count,25.0,,,S00638,Employer team page,2.0,2025-09-12,verified,1,,79.0
+CL00829,F044,C044,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00639,Company registry filing,1.0,2025-10-01,verified,2,,99.0
+CL00830,F044,C044,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00640,Conference speaker bio,2.0,2025-07-10,verified,1,,77.0
+CL00831,F044,C044,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00641,X/Twitter,3.0,2025-07-22,self_asserted,0,,49.0
+CL00832,F044,C044,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00642,X/Twitter,3.0,2025-06-21,contradicted,2,CL00826,45.0
+CL00833,F044,C044,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 2 future verticals with entry logic,2.0,count,55.0,,,S00643,Product Hunt,2.0,2025-07-07,verified,1,,78.0
+CL00834,F044,C044,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00835,F044,C044,Diligence,IP & regulation strategy,O-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00836,F044,C044,Diligence,Finances & runway,O-3,Runway of 15 months at current burn,15.0,count,65.0,,,S00644,LinkedIn post,2.0,2026-03-13,verified,1,,73.0
+CL00837,F045,C045,Founder,Background & execution,-,Led engineering for a team of 3,3.0,count,21.0,,,S00645,Platform intake: work sample,1.0,2025-11-10,verified,2,,94.0
+CL00838,F045,C045,Founder,Traits,-,"Reversed a stated position after customer evidence, 1 documented instances",1.0,count,31.0,,,S00646,Conference speaker bio,2.0,2026-05-29,verified,3,,94.0
+CL00839,F045,C045,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00840,F045,C045,Founder,Team communication,T-1,"Team publishes a written weekly update, 7 consecutive weeks",7.0,count,29.0,,,S00647,University lab page,2.0,2026-02-07,verified,2,,84.0
+CL00841,F045,C045,Founder,Feedback & iteration,T-3,Roadmap changed 2 times citing named customer input,2.0,count,35.0,,,S00648,University lab page,2.0,2026-05-09,verified,1,,66.0
+CL00842,F045,C045,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00649,Platform intake: scenario interview,1.0,2026-04-05,verified,2,,97.0
+CL00843,F045,C045,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $1M",1.0,usd_m_bu,15.0,bottom_up_derived,0.0379,S00650,Platform intake: work sample,1.0,2025-12-03,self_asserted,0,,58.0
+CL00844,F045,C045,Market & traction,Value proposition,M-3,Value prop canvas links 4 customer pains to named features,4.0,count,47.0,,,S00651,Platform intake: scenario interview,1.0,2026-05-14,self_asserted,0,,66.0
+CL00845,F045,C045,Market & traction,Traction & KPIs,P-1,"Waitlist of {n} signups, no conversion data",,qualitative,38.0,,,S00652,Grant award record,1.0,2026-04-06,self_asserted,0,,75.0
+CL00846,F045,C045,Market & traction,Customer acquisition,B-2,CAC measured at $2624 across a real channel test,2624.0,usd_inv,13.0,,,S00653,Platform intake: VSP-style prompt response,1.0,2026-06-13,self_asserted,0,,76.0
+CL00847,F045,C045,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 1 claims",1.0,count,18.0,,,S00654,Platform intake: reference check,1.0,2026-04-12,verified,2,,99.0
+CL00848,F045,C045,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 8 deals,8.0,count,47.0,,,S00655,Platform intake: VSP-style prompt response,1.0,2025-12-11,self_asserted,0,,56.0
+CL00849,F045,C045,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00656,Platform intake: work sample,1.0,2025-10-29,verified,1,,85.0
+CL00850,F045,C045,Idea-vs-market,Development roadmap,P-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00851,F045,C045,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00657,Patent filing,1.0,2025-10-05,verified,2,,99.0
+CL00852,F045,C045,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00658,University lab page,2.0,2026-02-20,verified,1,,71.0
+CL00853,F045,C045,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00854,F045,C045,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-07-09,gap_flagged,0,,
+CL00855,F045,C045,Diligence,Finances & runway,O-3,"Monthly burn stated at $7K, unaudited",7.0,usd_k,21.0,,,S00659,Platform intake: scenario interview,1.0,2025-12-18,verified,2,,96.0
+CL00856,F046,C046,Founder,Background & execution,-,Led engineering for a team of 30,30.0,count,95.0,,,S00660,Company registry filing,1.0,2026-02-06,verified,3,,89.0
+CL00857,F046,C046,Founder,Traits,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00858,F046,C046,Founder,Team role clarity,T-2,4 cofounders with non-overlapping functional coverage,4.0,count,95.0,,,S00661,Conference speaker bio,2.0,2026-06-20,contradicted,2,CL00862,34.0
+CL00859,F046,C046,Founder,Team communication,T-1,"Team publishes a written weekly update, 40 consecutive weeks",40.0,count,95.0,,,S00662,Patent filing,1.0,2025-10-15,contradicted,1,CL00863,56.0
+CL00860,F046,C046,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00663,Product Hunt,2.0,2025-07-30,self_asserted,0,,61.0
+CL00861,F046,C046,Market & traction,Market maps,M-1,Maps 12 adjacent players and potential partners,12.0,count,95.0,,,S00664,Personal blog,2.0,2026-06-13,self_asserted,0,,58.0
+CL00862,F046,C046,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $60M derived from a stated unit chain,60.0,usd_m_bu,95.0,bottom_up_derived,0.069,S00665,Company registry filing,1.0,2025-08-31,verified,2,,95.0
+CL00863,F046,C046,Market & traction,Value proposition,M-3,5 customer personas documented with motivations,5.0,count,95.0,,,S00666,GitHub,2.0,2026-04-27,verified,2,,91.0
+CL00864,F046,C046,Market & traction,Traction & KPIs,P-1,ARR of $293K,293.0,usd_k,74.0,,,S00667,Company registry filing,1.0,2025-06-22,verified,1,,81.0
+CL00865,F046,C046,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00668,Product Hunt,2.0,2025-08-24,verified,2,,92.0
+CL00866,F046,C046,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 20 claims",20.0,count,79.0,,,S00669,X/Twitter,3.0,2026-07-13,self_asserted,1,,82.0
+CL00867,F046,C046,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 7 accounts,7.0,count,71.0,,,S00670,Product Hunt,2.0,2026-02-15,self_asserted,0,,62.0
+CL00868,F046,C046,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00671,Personal blog,2.0,2025-07-26,verified,3,,80.0
+CL00869,F046,C046,Idea-vs-market,Development roadmap,P-3,Roadmap published with 12 dated milestones,12.0,count,95.0,,,S00672,arXiv paper,1.0,2025-10-11,verified,2,,98.0
+CL00870,F046,C046,Idea-vs-market,Revenue model,B-1,Pricing tested across 5 customer segments,5.0,count,95.0,,,S00673,Employer team page,2.0,2026-04-01,contradicted,1,CL00871,49.0
+CL00871,F046,C046,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 3 future verticals with entry logic,3.0,count,75.0,,,S00674,Patent filing,1.0,2025-06-14,self_asserted,0,,74.0
+CL00872,F046,C046,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00675,Conference speaker bio,2.0,2025-06-24,verified,1,,68.0
+CL00873,F046,C046,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-09,gap_flagged,0,,
+CL00874,F046,C046,Diligence,Finances & runway,O-3,Runway of 24 months at current burn,24.0,count,95.0,,,S00676,X/Twitter,3.0,2026-05-29,self_asserted,0,,51.0
+CL00875,F047,C047,Founder,Background & execution,-,Led engineering for a team of 8,8.0,count,34.0,,,S00677,Conference speaker bio,2.0,2026-05-08,self_asserted,0,,56.0
+CL00876,F047,C047,Founder,Traits,-,"Reversed a stated position after customer evidence, 1 documented instances",1.0,count,31.0,,,S00678,Platform intake: VSP-style prompt response,1.0,2025-11-04,self_asserted,0,,76.0
+CL00877,F047,C047,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00679,Platform intake: reference check,1.0,2025-10-03,self_asserted,0,,57.0
+CL00878,F047,C047,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00680,Platform intake: scenario interview,1.0,2026-03-19,verified,3,,89.0
+CL00879,F047,C047,Founder,Feedback & iteration,T-3,Shipped 11 product iterations following user testing,11.0,count,59.0,,,S00681,Platform intake: VSP-style prompt response,1.0,2026-01-19,verified,2,,89.0
+CL00880,F047,C047,Market & traction,Market maps,M-1,Maps 0 adjacent players and potential partners,0.0,count,15.0,,,S00682,Platform intake: scenario interview,1.0,2025-07-18,contradicted,1,CL00884,44.0
+CL00881,F047,C047,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $20M",20.0,usd_m_bu,34.0,bottom_up_derived,0.0711,S00683,Platform intake: scenario interview,1.0,2025-10-26,verified,1,,74.0
+CL00882,F047,C047,Market & traction,Value proposition,M-3,0 customer personas documented with motivations,0.0,count,15.0,,,S00684,Platform intake: reference check,1.0,2025-12-26,self_asserted,0,,53.0
+CL00883,F047,C047,Market & traction,Traction & KPIs,P-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00884,F047,C047,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 2 stages with conversion rates,2.0,count,42.0,,,S00685,Platform intake: VSP-style prompt response,1.0,2025-06-16,verified,3,,91.0
+CL00885,F047,C047,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 103K labeled records,103.0,count_k,42.0,,,S00686,Platform intake: reference check,1.0,2026-01-13,verified,2,,99.0
+CL00886,F047,C047,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 0 accounts,0.0,count,15.0,,,S00687,Platform intake: VSP-style prompt response,1.0,2025-11-18,self_asserted,0,,70.0
+CL00887,F047,C047,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 6 core functions",6.0,count,72.0,,,S00688,Employer team page,2.0,2026-04-12,verified,3,,82.0
+CL00888,F047,C047,Idea-vs-market,Development roadmap,P-3,Roadmap published with 6 dated milestones,6.0,count,55.0,,,S00689,Platform intake: work sample,1.0,2026-07-09,verified,1,,89.0
+CL00889,F047,C047,Idea-vs-market,Revenue model,B-1,1 distinct revenue streams identified with pricing logic,1.0,count,15.0,,,S00690,Job posting authored,2.0,2026-06-26,self_asserted,0,,51.0
+CL00890,F047,C047,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00691,Company registry filing,1.0,2025-08-26,verified,2,,92.0
+CL00891,F047,C047,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00692,Platform intake: VSP-style prompt response,1.0,2025-12-15,verified,2,,91.0
+CL00892,F047,C047,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-05-23,gap_flagged,0,,
+CL00893,F047,C047,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-29,gap_flagged,0,,
+CL00894,F048,C048,Founder,Background & execution,-,Led engineering for a team of 8,8.0,count,34.0,,,S00693,Grant award record,1.0,2025-07-09,self_asserted,0,,76.0
+CL00895,F048,C048,Founder,Traits,-,Documented fix shipped 90 days after critical user feedback,90.0,days_inv,0.0,,,S00694,Employer team page,2.0,2025-11-19,self_asserted,0,,51.0
+CL00896,F048,C048,Founder,Team role clarity,T-2,1 cofounders with non-overlapping functional coverage,1.0,count,15.0,,,S00695,LinkedIn post,2.0,2025-07-12,verified,2,,96.0
+CL00897,F048,C048,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00696,arXiv paper,1.0,2025-10-03,self_asserted,0,,54.0
+CL00898,F048,C048,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00697,X/Twitter,3.0,2025-11-07,self_asserted,1,,63.0
+CL00899,F048,C048,Market & traction,Market maps,M-1,Maps 0 adjacent players and potential partners,0.0,count,15.0,,,S00698,Conference speaker bio,2.0,2025-12-14,self_asserted,0,,61.0
+CL00900,F048,C048,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,1.0,S00699,Company registry filing,1.0,2026-03-06,self_asserted,1,,45.0
+CL00901,F048,C048,Market & traction,Value proposition,M-3,0 customer personas documented with motivations,0.0,count,15.0,,,S00700,Patent filing,1.0,2026-04-19,verified,1,,77.0
+CL00902,F048,C048,Market & traction,Traction & KPIs,P-1,ARR of $0K,0.0,usd_k,15.0,,,S00701,Accelerator cohort directory,2.0,2026-06-21,verified,3,,94.0
+CL00903,F048,C048,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 1 stages with conversion rates,1.0,count,28.0,,,S00702,Conference speaker bio,2.0,2026-03-16,verified,1,,77.0
+CL00904,F048,C048,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 0K labeled records,0.0,count_k,15.0,,,S00703,Product Hunt,2.0,2026-04-13,verified,2,,91.0
+CL00905,F048,C048,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00704,Accelerator cohort directory,2.0,2025-07-21,verified,2,,84.0
+CL00906,F048,C048,Idea-vs-market,Technical feasibility,P-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00907,F048,C048,Idea-vs-market,Development roadmap,P-3,Roadmap published with 5 dated milestones,5.0,count,48.0,,,S00705,Conference speaker bio,2.0,2025-09-24,verified,1,,81.0
+CL00908,F048,C048,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00706,arXiv paper,1.0,2026-07-13,verified,1,,73.0
+CL00909,F048,C048,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 1 future verticals with entry logic,1.0,count,35.0,,,S00707,Personal blog,2.0,2026-03-28,verified,1,,76.0
+CL00910,F048,C048,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00708,Grant award record,1.0,2025-07-14,verified,1,,72.0
+CL00911,F048,C048,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-07-16,gap_flagged,0,,
+CL00912,F048,C048,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-19,gap_flagged,0,,
+CL00913,F049,C049,Founder,Background & execution,-,0 years domain experience in Vertical SaaS,0.0,years,15.0,,,S00709,Company registry filing,1.0,2026-04-29,verified,2,,99.0
+CL00914,F049,C049,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00710,Show HN,2.0,2026-04-18,verified,3,,86.0
+CL00915,F049,C049,Founder,Team role clarity,T-2,Written role split covering 2 of 4 core functions,2.0,count,42.0,,,S00711,Accelerator cohort directory,2.0,2026-05-09,self_asserted,0,,67.0
+CL00916,F049,C049,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00712,University lab page,2.0,2025-09-15,self_asserted,0,,55.0
+CL00917,F049,C049,Founder,Feedback & iteration,T-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00918,F049,C049,Market & traction,Market maps,M-1,Maps 6 adjacent players and potential partners,6.0,count,55.0,,,S00713,Company registry filing,1.0,2026-04-13,self_asserted,0,,59.0
+CL00919,F049,C049,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,2.0,S00714,Personal blog,2.0,2025-09-14,self_asserted,0,,45.0
+CL00920,F049,C049,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00715,Employer team page,2.0,2025-07-26,verified,2,,83.0
+CL00921,F049,C049,Market & traction,Traction & KPIs,P-1,7 paying customers,7.0,count,29.0,,,S00716,GitHub,2.0,2025-10-01,self_asserted,0,,65.0
+CL00922,F049,C049,Market & traction,Customer acquisition,B-2,CAC measured at $1792 across a real channel test,1792.0,usd_inv,41.0,,,S00717,University lab page,2.0,2025-06-27,verified,2,,89.0
+CL00923,F049,C049,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 0K labeled records,0.0,count_k,15.0,,,S00718,Employer team page,2.0,2025-10-07,contradicted,0,CL00921,31.0
+CL00924,F049,C049,Idea-vs-market,Competitive advantage,B-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00925,F049,C049,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00719,Conference speaker bio,2.0,2025-07-19,verified,2,,88.0
+CL00926,F049,C049,Idea-vs-market,Development roadmap,P-3,Roadmap published with 5 dated milestones,5.0,count,48.0,,,S00720,Employer team page,2.0,2026-06-25,self_asserted,0,,63.0
+CL00927,F049,C049,Idea-vs-market,Revenue model,B-1,Pricing tested across 0 customer segments,0.0,count,15.0,,,S00721,Conference speaker bio,2.0,2026-04-24,verified,2,,96.0
+CL00928,F049,C049,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00722,arXiv paper,1.0,2026-05-22,contradicted,1,CL00915,44.0
+CL00929,F049,C049,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-09,gap_flagged,0,,
+CL00930,F049,C049,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-06-21,gap_flagged,0,,
+CL00931,F049,C049,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00932,F050,C050,Founder,Background & execution,-,13 years domain experience in AI infra,13.0,years,89.0,,,S00723,Accelerator cohort directory,2.0,2025-06-30,verified,3,,97.0
+CL00933,F050,C050,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00724,arXiv paper,1.0,2026-05-18,verified,1,,74.0
+CL00934,F050,C050,Founder,Team role clarity,T-2,Written role split covering 3 of 4 core functions,3.0,count,68.0,,,S00725,LinkedIn post,2.0,2026-05-27,self_asserted,0,,58.0
+CL00935,F050,C050,Founder,Team communication,T-1,Decision log maintained with 45 entries,45.0,count,75.0,,,S00726,Personal blog,2.0,2026-06-19,self_asserted,0,,67.0
+CL00936,F050,C050,Founder,Feedback & iteration,T-3,Roadmap changed 6 times citing named customer input,6.0,count,75.0,,,S00727,Accelerator cohort directory,2.0,2025-11-26,verified,1,,72.0
+CL00937,F050,C050,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00728,University lab page,2.0,2026-05-27,verified,2,,91.0
+CL00938,F050,C050,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $71M",71.0,usd_m_bu,86.0,bottom_up_derived,0.0329,S00729,Accelerator cohort directory,2.0,2026-01-16,verified,2,,91.0
+CL00939,F050,C050,Market & traction,Value proposition,M-3,Value prop canvas links 10 customer pains to named features,10.0,count,95.0,,,S00730,Show HN,2.0,2025-08-30,self_asserted,0,,58.0
+CL00940,F050,C050,Market & traction,Traction & KPIs,P-1,5 design partners in signed pilot,5.0,count,55.0,,,S00731,University lab page,2.0,2025-10-14,self_asserted,0,,62.0
+CL00941,F050,C050,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 5 stages with conversion rates,5.0,count,82.0,,,S00732,Conference speaker bio,2.0,2025-12-03,verified,2,,80.0
+CL00942,F050,C050,Idea-vs-market,USP / secret sauce,V-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00943,F050,C050,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 17 deals,17.0,count,83.0,,,S00733,Grant award record,1.0,2026-03-18,verified,2,,99.0
+CL00944,F050,C050,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 8 core functions",8.0,count,95.0,,,S00734,Job posting authored,2.0,2025-06-24,verified,2,,95.0
+CL00945,F050,C050,Idea-vs-market,Development roadmap,P-3,Roadmap published with 12 dated milestones,12.0,count,95.0,,,S00735,Accelerator cohort directory,2.0,2026-03-21,verified,2,,95.0
+CL00946,F050,C050,Idea-vs-market,Revenue model,B-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00947,F050,C050,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 4 future verticals with entry logic,4.0,count,95.0,,,S00736,Patent filing,1.0,2026-05-12,verified,1,,86.0
+CL00948,F050,C050,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-07-17,gap_flagged,0,,
+CL00949,F050,C050,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-06-02,gap_flagged,0,,
+CL00950,F050,C050,Diligence,Finances & runway,O-3,"Monthly burn stated at $45K, unaudited",45.0,usd_k,60.0,,,S00737,GitHub,2.0,2026-07-13,verified,1,,74.0
+CL00951,F051,C051,Founder,Background & execution,-,Shipped 3 public projects prior to founding,3.0,count,31.0,,,S00738,Show HN,2.0,2026-06-19,self_asserted,0,,66.0
+CL00952,F051,C051,Founder,Traits,-,"Reversed a stated position after customer evidence, 3 documented instances",3.0,count,63.0,,,S00739,arXiv paper,1.0,2025-07-10,self_asserted,0,,75.0
+CL00953,F051,C051,Founder,Team role clarity,T-2,1 cofounders with non-overlapping functional coverage,1.0,count,15.0,,,S00740,Show HN,2.0,2025-12-24,self_asserted,0,,64.0
+CL00954,F051,C051,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00741,Accelerator cohort directory,2.0,2025-10-31,verified,2,,95.0
+CL00955,F051,C051,Founder,Feedback & iteration,T-3,Shipped 7 product iterations following user testing,7.0,count,43.0,,,S00742,Show HN,2.0,2026-01-09,verified,2,,83.0
+CL00956,F051,C051,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00743,Personal blog,2.0,2026-01-20,verified,1,,72.0
+CL00957,F051,C051,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $19M",19.0,usd_m_bu,33.0,bottom_up_derived,0.0149,S00744,X/Twitter,3.0,2025-09-19,verified,2,,94.0
+CL00958,F051,C051,Market & traction,Value proposition,M-3,"Value prop stated in feature language only, no customer job named",,qualitative,30.0,,,S00745,Personal blog,2.0,2026-03-27,contradicted,3,CL00960,36.0
+CL00959,F051,C051,Market & traction,Traction & KPIs,P-1,"Waitlist of {n} signups, no conversion data",,qualitative,38.0,,,S00746,University lab page,2.0,2026-03-07,verified,3,,80.0
+CL00960,F051,C051,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00747,Show HN,2.0,2025-07-26,verified,1,,80.0
+CL00961,F051,C051,Idea-vs-market,USP / secret sauce,V-3,"Wrapper over a single third-party model, no proprietary layer",,qualitative,24.0,,,S00748,Company registry filing,1.0,2025-09-26,self_asserted,0,,53.0
+CL00962,F051,C051,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 10 deals,10.0,count,55.0,,,S00749,Show HN,2.0,2026-03-09,contradicted,0,CL00966,26.0
+CL00963,F051,C051,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00750,University lab page,2.0,2025-08-17,verified,1,,72.0
+CL00964,F051,C051,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00751,Show HN,2.0,2026-01-20,self_asserted,0,,68.0
+CL00965,F051,C051,Idea-vs-market,Revenue model,B-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00966,F051,C051,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision articulates 1 future verticals with entry logic,1.0,count,35.0,,,S00752,GitHub,2.0,2025-07-16,verified,1,,78.0
+CL00967,F051,C051,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-06-17,gap_flagged,0,,
+CL00968,F051,C051,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-21,gap_flagged,0,,
+CL00969,F051,C051,Diligence,Finances & runway,O-3,"Monthly burn stated at $30K, unaudited",30.0,usd_k,44.0,,,S00753,Accelerator cohort directory,2.0,2026-04-07,self_asserted,0,,62.0
+CL00970,F052,C052,Founder,Background & execution,-,0 years domain experience in Devtools,0.0,years,15.0,,,S00754,Platform intake: work sample,1.0,2026-05-23,contradicted,0,CL00971,51.0
+CL00971,F052,C052,Founder,Traits,-,"Reversed a stated position after customer evidence, 0 documented instances",0.0,count,15.0,,,S00755,Accelerator cohort directory,2.0,2026-04-25,verified,2,,85.0
+CL00972,F052,C052,Founder,Team role clarity,T-2,1 cofounders with non-overlapping functional coverage,1.0,count,15.0,,,S00756,Platform intake: scenario interview,1.0,2025-11-28,verified,1,,72.0
+CL00973,F052,C052,Founder,Team communication,T-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00974,F052,C052,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00757,Platform intake: VSP-style prompt response,1.0,2025-11-18,verified,3,,92.0
+CL00975,F052,C052,Market & traction,Market maps,M-1,Names 0 direct competitors with stated differentiation,0.0,count,15.0,,,S00758,Accelerator cohort directory,2.0,2026-02-20,verified,1,,79.0
+CL00976,F052,C052,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $1M",1.0,usd_m_bu,15.0,bottom_up_derived,0.0206,S00759,Platform intake: VSP-style prompt response,1.0,2025-11-02,verified,3,,92.0
+CL00977,F052,C052,Market & traction,Value proposition,M-3,0 customer personas documented with motivations,0.0,count,15.0,,,S00760,Platform intake: scenario interview,1.0,2026-06-11,self_asserted,0,,76.0
+CL00978,F052,C052,Market & traction,Traction & KPIs,P-1,"Waitlist of {n} signups, no conversion data",,qualitative,38.0,,,S00761,Platform intake: scenario interview,1.0,2025-12-23,contradicted,0,CL00980,46.0
+CL00979,F052,C052,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00762,Platform intake: work sample,1.0,2026-04-05,verified,2,,98.0
+CL00980,F052,C052,Idea-vs-market,USP / secret sauce,V-3,"Wrapper over a single third-party model, no proprietary layer",,qualitative,24.0,,,S00763,arXiv paper,1.0,2025-10-13,verified,3,,88.0
+CL00981,F052,C052,Idea-vs-market,Competitive advantage,B-3,No observation available,,,,,,,,,,unobserved,0,,
+CL00982,F052,C052,Idea-vs-market,Technical feasibility,P-2,No observation available,,,,,,,,,,unobserved,0,,
+CL00983,F052,C052,Idea-vs-market,Development roadmap,P-3,Roadmap published with 0 dated milestones,0.0,count,15.0,,,S00764,Platform intake: scenario interview,1.0,2026-07-05,verified,2,,99.0
+CL00984,F052,C052,Idea-vs-market,Revenue model,B-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00985,F052,C052,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00765,Platform intake: VSP-style prompt response,1.0,2026-05-06,verified,1,,90.0
+CL00986,F052,C052,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-06-18,gap_flagged,0,,
+CL00987,F052,C052,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-16,gap_flagged,0,,
+CL00988,F052,C052,Diligence,Finances & runway,O-3,Financials: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-26,gap_flagged,0,,
+CL00989,F053,C053,Founder,Background & execution,-,9 years domain experience in AI infra,9.0,years,66.0,,,S00766,Company registry filing,1.0,2026-06-17,verified,1,,86.0
+CL00990,F053,C053,Founder,Traits,-,No observation available,,,,,,,,,,unobserved,0,,
+CL00991,F053,C053,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00767,Show HN,2.0,2025-10-24,self_asserted,0,,58.0
+CL00992,F053,C053,Founder,Team communication,T-1,Decision log maintained with 45 entries,45.0,count,75.0,,,S00768,Show HN,2.0,2026-06-26,verified,2,,87.0
+CL00993,F053,C053,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00769,Company registry filing,1.0,2026-06-08,contradicted,0,CL01000,50.0
+CL00994,F053,C053,Market & traction,Market maps,M-1,Names 4 direct competitors with stated differentiation,4.0,count,47.0,,,S00770,Accelerator cohort directory,2.0,2025-07-15,self_asserted,0,,46.0
+CL00995,F053,C053,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SAM narrowed by a stated serviceable constraint, $80M",80.0,usd_m_bu,95.0,bottom_up_derived,0.0428,S00771,arXiv paper,1.0,2025-10-01,verified,1,,81.0
+CL00996,F053,C053,Market & traction,Value proposition,M-3,5 customer personas documented with motivations,5.0,count,95.0,,,S00772,Conference speaker bio,2.0,2025-11-25,verified,3,,88.0
+CL00997,F053,C053,Market & traction,Traction & KPIs,P-1,No observation available,,,,,,,,,,unobserved,0,,
+CL00998,F053,C053,Market & traction,Customer acquisition,B-2,CAC measured at $50 across a real channel test,50.0,usd_inv,100.0,,,S00773,Show HN,2.0,2025-09-25,verified,2,,97.0
+CL00999,F053,C053,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 255K labeled records,255.0,count_k,83.0,,,S00774,Grant award record,1.0,2026-05-14,self_asserted,0,,76.0
+CL01000,F053,C053,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 12 deals,12.0,count,63.0,,,S00775,Accelerator cohort directory,2.0,2026-07-07,self_asserted,0,,62.0
+CL01001,F053,C053,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 6 baselines,6.0,count,95.0,,,S00776,Accelerator cohort directory,2.0,2026-03-06,verified,2,,84.0
+CL01002,F053,C053,Idea-vs-market,Development roadmap,P-3,4 of last quarter's milestones delivered on time,4.0,count,68.0,,,S00777,Personal blog,2.0,2026-02-02,self_asserted,0,,54.0
+CL01003,F053,C053,Idea-vs-market,Revenue model,B-1,Pricing tested across 4 customer segments,4.0,count,79.0,,,S00778,LinkedIn post,2.0,2025-11-18,verified,1,,77.0
+CL01004,F053,C053,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00779,University lab page,2.0,2025-11-27,verified,1,,72.0
+CL01005,F053,C053,Diligence,Company formation & cap table,O-1,Entity not yet formed,,qualitative,,,,,Founder disclosure,1.0,2026-06-04,gap_flagged,0,,
+CL01006,F053,C053,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-06-08,gap_flagged,0,,
+CL01007,F053,C053,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL01008,F054,C054,Founder,Background & execution,-,Shipped 3 public projects prior to founding,3.0,count,31.0,,,S00780,Conference speaker bio,2.0,2025-08-13,verified,2,,86.0
+CL01009,F054,C054,Founder,Traits,-,Documented fix shipped 38 days after critical user feedback,38.0,days_inv,58.0,,,S00781,Company registry filing,1.0,2026-06-08,verified,1,,80.0
+CL01010,F054,C054,Founder,Team role clarity,T-2,3 cofounders with non-overlapping functional coverage,3.0,count,68.0,,,S00782,Job posting authored,2.0,2025-10-19,self_asserted,0,,63.0
+CL01011,F054,C054,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00783,Employer team page,2.0,2026-06-06,self_asserted,0,,63.0
+CL01012,F054,C054,Founder,Feedback & iteration,T-3,Roadmap changed 3 times citing named customer input,3.0,count,45.0,,,S00784,Personal blog,2.0,2025-07-09,verified,1,,79.0
+CL01013,F054,C054,Market & traction,Market maps,M-1,No observation available,,,,,,,,,,unobserved,0,,
+CL01014,F054,C054,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $29M derived from a stated unit chain,29.0,usd_m_bu,53.0,bottom_up_derived,0.0576,S00785,Conference speaker bio,2.0,2026-06-25,verified,3,,86.0
+CL01015,F054,C054,Market & traction,Value proposition,M-3,1 customer personas documented with motivations,1.0,count,31.0,,,S00786,Patent filing,1.0,2026-03-21,verified,1,,72.0
+CL01016,F054,C054,Market & traction,Traction & KPIs,P-1,"Waitlist of {n} signups, no conversion data",,qualitative,38.0,,,S00787,Company registry filing,1.0,2025-07-21,self_asserted,0,,66.0
+CL01017,F054,C054,Market & traction,Customer acquisition,B-2,CAC measured at $2945 across a real channel test,2945.0,usd_inv,2.0,,,S00788,Grant award record,1.0,2026-06-25,verified,1,,70.0
+CL01018,F054,C054,Idea-vs-market,USP / secret sauce,V-3,Proprietary dataset of 78K labeled records,78.0,count_k,36.0,,,S00789,LinkedIn post,2.0,2025-11-09,contradicted,1,CL01012,30.0
+CL01019,F054,C054,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 4 accounts,4.0,count,47.0,,,S00790,Patent filing,1.0,2025-11-03,self_asserted,0,,72.0
+CL01020,F054,C054,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 4 core functions",4.0,count,49.0,,,S00791,Personal blog,2.0,2026-02-23,self_asserted,0,,55.0
+CL01021,F054,C054,Idea-vs-market,Development roadmap,P-3,2 of last quarter's milestones delivered on time,2.0,count,42.0,,,S00792,arXiv paper,1.0,2026-07-15,self_asserted,0,,64.0
+CL01022,F054,C054,Idea-vs-market,Revenue model,B-1,Pricing tested across 0 customer segments,0.0,count,15.0,,,S00793,Patent filing,1.0,2025-09-21,verified,1,,90.0
+CL01023,F054,C054,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00794,Personal blog,2.0,2025-07-29,self_asserted,0,,62.0
+CL01024,F054,C054,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL01025,F054,C054,Diligence,IP & regulation strategy,O-2,Operates in a regulated category with no stated pathway,,qualitative,,,,,Founder disclosure,1.0,2026-06-28,gap_flagged,0,,
+CL01026,F054,C054,Diligence,Finances & runway,O-3,"Monthly burn stated at $66K, unaudited",66.0,usd_k,81.0,,,S00795,Patent filing,1.0,2026-02-22,verified,1,,76.0
+CL01027,F055,C055,Founder,Background & execution,-,Shipped 13 public projects prior to founding,13.0,count,84.0,,,S00796,Platform intake: work sample,1.0,2025-07-25,verified,2,,92.0
+CL01028,F055,C055,Founder,Traits,-,Documented fix shipped 7 days after critical user feedback,7.0,days_inv,93.0,,,S00797,Platform intake: work sample,1.0,2025-10-30,verified,2,,91.0
+CL01029,F055,C055,Founder,Team role clarity,T-2,No observation available,,,,,,,,,,unobserved,0,,
+CL01030,F055,C055,Founder,Team communication,T-1,"Team publishes a written weekly update, 36 consecutive weeks",36.0,count,87.0,,,S00798,Platform intake: work sample,1.0,2025-08-22,self_asserted,0,,71.0
+CL01031,F055,C055,Founder,Feedback & iteration,T-3,Shipped 20 product iterations following user testing,20.0,count,95.0,,,S00799,Job posting authored,2.0,2026-01-22,self_asserted,0,,46.0
+CL01032,F055,C055,Market & traction,Market maps,M-1,No observation available,,,,,,,,,,unobserved,0,,
+CL01033,F055,C055,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,1.0,S00800,Platform intake: reference check,1.0,2025-06-13,self_asserted,2,,45.0
+CL01034,F055,C055,Market & traction,Value proposition,M-3,Value prop canvas links 10 customer pains to named features,10.0,count,95.0,,,S00801,Platform intake: VSP-style prompt response,1.0,2026-04-23,self_asserted,0,,69.0
+CL01035,F055,C055,Market & traction,Traction & KPIs,P-1,ARR of $271K,271.0,usd_k,69.0,,,S00802,Platform intake: scenario interview,1.0,2025-06-17,contradicted,1,CL01033,57.0
+CL01036,F055,C055,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 6 stages with conversion rates,6.0,count,95.0,,,S00803,Platform intake: work sample,1.0,2025-07-03,verified,2,,89.0
+CL01037,F055,C055,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 25 claims",25.0,count,95.0,,,S00804,Platform intake: scenario interview,1.0,2025-07-16,verified,2,,92.0
+CL01038,F055,C055,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00805,Platform intake: VSP-style prompt response,1.0,2026-01-31,self_asserted,0,,55.0
+CL01039,F055,C055,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 6 core functions",6.0,count,72.0,,,S00806,Platform intake: work sample,1.0,2026-03-05,verified,1,,71.0
+CL01040,F055,C055,Idea-vs-market,Development roadmap,P-3,No observation available,,,,,,,,,,unobserved,0,,
+CL01041,F055,C055,Idea-vs-market,Revenue model,B-1,Pricing tested across 5 customer segments,5.0,count,95.0,,,S00807,Platform intake: VSP-style prompt response,1.0,2026-05-18,self_asserted,0,,53.0
+CL01042,F055,C055,Idea-vs-market,Mission & long-term vision,V-1/V-2,No observation available,,,,,,,,,,unobserved,0,,
+CL01043,F055,C055,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00808,Patent filing,1.0,2026-04-19,self_asserted,0,,56.0
+CL01044,F055,C055,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00809,Platform intake: scenario interview,1.0,2026-04-16,verified,1,,86.0
+CL01045,F055,C055,Diligence,Finances & runway,O-3,Runway of 18 months at current burn,18.0,count,75.0,,,S00810,Platform intake: work sample,1.0,2025-08-17,self_asserted,0,,62.0
+CL01046,F056,C056,Founder,Background & execution,-,No observation available,,,,,,,,,,unobserved,0,,
+CL01047,F056,C056,Founder,Traits,-,"Reversed a stated position after customer evidence, 5 documented instances",5.0,count,95.0,,,S00811,Platform intake: scenario interview,1.0,2025-10-18,verified,2,,99.0
+CL01048,F056,C056,Founder,Team role clarity,T-2,4 cofounders with non-overlapping functional coverage,4.0,count,95.0,,,S00812,Platform intake: reference check,1.0,2025-08-04,verified,3,,90.0
+CL01049,F056,C056,Founder,Team communication,T-1,No observation available,,,,,,,,,,unobserved,0,,
+CL01050,F056,C056,Founder,Feedback & iteration,T-3,Roadmap changed 6 times citing named customer input,6.0,count,75.0,,,S00813,Platform intake: reference check,1.0,2026-04-26,verified,1,,72.0
+CL01051,F056,C056,Market & traction,Market maps,M-1,No observation available,,,,,,,,,,unobserved,0,,
+CL01052,F056,C056,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,1.0,S00814,Platform intake: reference check,1.0,2025-08-24,self_asserted,2,,45.0
+CL01053,F056,C056,Market & traction,Value proposition,M-3,No observation available,,,,,,,,,,unobserved,0,,
+CL01054,F056,C056,Market & traction,Traction & KPIs,P-1,10 design partners in signed pilot,10.0,count,95.0,,,S00815,Platform intake: scenario interview,1.0,2025-11-22,self_asserted,0,,65.0
+CL01055,F056,C056,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 5 stages with conversion rates,5.0,count,82.0,,,S00816,Platform intake: VSP-style prompt response,1.0,2026-01-15,verified,3,,90.0
+CL01056,F056,C056,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 22 claims",22.0,count,85.0,,,S00817,Platform intake: scenario interview,1.0,2025-08-17,contradicted,1,CL01063,45.0
+CL01057,F056,C056,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00818,Platform intake: work sample,1.0,2026-06-25,verified,1,,72.0
+CL01058,F056,C056,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00819,Platform intake: scenario interview,1.0,2026-03-02,verified,1,,80.0
+CL01059,F056,C056,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00820,Grant award record,1.0,2026-07-14,self_asserted,0,,72.0
+CL01060,F056,C056,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00821,Platform intake: reference check,1.0,2026-04-15,verified,2,,99.0
+CL01061,F056,C056,Idea-vs-market,Mission & long-term vision,V-1/V-2,No observation available,,,,,,,,,,unobserved,0,,
+CL01062,F056,C056,Diligence,Company formation & cap table,O-1,"Entity incorporated, registry record on file",,qualitative,80.0,,,S00822,Patent filing,1.0,2026-06-09,verified,2,,99.0
+CL01063,F056,C056,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00823,Grant award record,1.0,2025-07-22,verified,3,,99.0
+CL01064,F056,C056,Diligence,Finances & runway,O-3,"Monthly burn stated at $57K, unaudited",57.0,usd_k,72.0,,,S00824,arXiv paper,1.0,2025-11-24,verified,1,,79.0
+CL01065,F057,C057,Founder,Background & execution,-,Led engineering for a team of 30,30.0,count,95.0,,,S00825,Patent filing,1.0,2025-11-07,self_asserted,0,,73.0
+CL01066,F057,C057,Founder,Traits,-,"Reversed a stated position after customer evidence, 4 documented instances",4.0,count,79.0,,,S00826,University lab page,2.0,2026-06-11,verified,2,,87.0
+CL01067,F057,C057,Founder,Team role clarity,T-2,4 cofounders with non-overlapping functional coverage,4.0,count,95.0,,,S00827,Conference speaker bio,2.0,2026-04-27,verified,1,,70.0
+CL01068,F057,C057,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00828,Accelerator cohort directory,2.0,2025-06-25,verified,2,,80.0
+CL01069,F057,C057,Founder,Feedback & iteration,T-3,Roadmap changed 5 times citing named customer input,5.0,count,65.0,,,S00829,arXiv paper,1.0,2025-07-31,self_asserted,0,,69.0
+CL01070,F057,C057,Market & traction,Market maps,M-1,Names 8 direct competitors with stated differentiation,8.0,count,79.0,,,S00830,X/Twitter,3.0,2026-01-15,self_asserted,0,,46.0
+CL01071,F057,C057,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,1.0,S00831,Employer team page,2.0,2025-08-08,contradicted,0,CL01079,44.0
+CL01072,F057,C057,Market & traction,Value proposition,M-3,No observation available,,,,,,,,,,unobserved,0,,
+CL01073,F057,C057,Market & traction,Traction & KPIs,P-1,No observation available,,,,,,,,,,unobserved,0,,
+CL01074,F057,C057,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00832,Product Hunt,2.0,2026-05-25,self_asserted,0,,62.0
+CL01075,F057,C057,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 25 claims",25.0,count,95.0,,,S00833,Show HN,2.0,2026-06-21,verified,2,,87.0
+CL01076,F057,C057,Idea-vs-market,Competitive advantage,B-3,Differentiation asserted but not evidenced,,qualitative,30.0,,,S00834,Conference speaker bio,2.0,2026-03-30,verified,1,,81.0
+CL01077,F057,C057,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 5 baselines,5.0,count,82.0,,,S00835,Job posting authored,2.0,2025-10-11,contradicted,1,CL01068,49.0
+CL01078,F057,C057,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00836,Conference speaker bio,2.0,2025-09-23,contradicted,0,CL01075,53.0
+CL01079,F057,C057,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00837,Patent filing,1.0,2026-07-10,self_asserted,0,,54.0
+CL01080,F057,C057,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00838,Grant award record,1.0,2025-10-25,self_asserted,0,,64.0
+CL01081,F057,C057,Diligence,Company formation & cap table,O-1,No observation available,,,,,,,,,,unobserved,0,,
+CL01082,F057,C057,Diligence,IP & regulation strategy,O-2,No observation available,,,,,,,,,,unobserved,0,,
+CL01083,F057,C057,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL01084,F058,C058,Founder,Background & execution,-,Led engineering for a team of 4,4.0,count,23.0,,,S00839,Company registry filing,1.0,2026-06-25,self_asserted,0,,57.0
+CL01085,F058,C058,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00840,X/Twitter,3.0,2025-08-19,self_asserted,1,,78.0
+CL01086,F058,C058,Founder,Team role clarity,T-2,Written role split covering 2 of 4 core functions,2.0,count,42.0,,,S00841,Company registry filing,1.0,2025-07-18,verified,1,,86.0
+CL01087,F058,C058,Founder,Team communication,T-1,"Team publishes a written weekly update, 25 consecutive weeks",25.0,count,65.0,,,S00842,GitHub,2.0,2025-06-13,verified,1,,73.0
+CL01088,F058,C058,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00843,Accelerator cohort directory,2.0,2026-01-12,self_asserted,0,,58.0
+CL01089,F058,C058,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00844,University lab page,2.0,2026-05-17,self_asserted,0,,58.0
+CL01090,F058,C058,Market & traction,Market sizing (TAM/SAM/SOM),M-2,"SOM asserted as a flat share of TAM, no derivation",,qualitative,22.0,asserted_pct_of_tam,0.5,S00845,Product Hunt,2.0,2025-11-26,self_asserted,1,,45.0
+CL01091,F058,C058,Market & traction,Value proposition,M-3,2 customer personas documented with motivations,2.0,count,47.0,,,S00846,Company registry filing,1.0,2026-06-04,self_asserted,0,,64.0
+CL01092,F058,C058,Market & traction,Traction & KPIs,P-1,ARR of $304K,304.0,usd_k,76.0,,,S00847,Product Hunt,2.0,2026-03-20,verified,2,,94.0
+CL01093,F058,C058,Market & traction,Customer acquisition,B-2,No acquisition process defined,,qualitative,26.0,,,S00848,Grant award record,1.0,2025-09-24,contradicted,2,CL01087,35.0
+CL01094,F058,C058,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 6 claims",6.0,count,34.0,,,S00849,Accelerator cohort directory,2.0,2025-09-09,verified,2,,82.0
+CL01095,F058,C058,Idea-vs-market,Competitive advantage,B-3,Switching cost identified and evidenced in 7 accounts,7.0,count,71.0,,,S00850,Conference speaker bio,2.0,2026-06-10,self_asserted,0,,56.0
+CL01096,F058,C058,Idea-vs-market,Technical feasibility,P-2,Core technical risk unaddressed in materials,,qualitative,27.0,,,S00851,Show HN,2.0,2026-07-07,self_asserted,0,,66.0
+CL01097,F058,C058,Idea-vs-market,Development roadmap,P-3,Roadmap published with 5 dated milestones,5.0,count,48.0,,,S00852,Personal blog,2.0,2025-11-26,verified,3,,80.0
+CL01098,F058,C058,Idea-vs-market,Revenue model,B-1,4 distinct revenue streams identified with pricing logic,4.0,count,95.0,,,S00853,arXiv paper,1.0,2026-03-02,verified,1,,83.0
+CL01099,F058,C058,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00854,University lab page,2.0,2025-11-07,self_asserted,0,,58.0
+CL01100,F058,C058,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-05-26,gap_flagged,0,,
+CL01101,F058,C058,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-15,gap_flagged,0,,
+CL01102,F058,C058,Diligence,Finances & runway,O-3,No observation available,,,,,,,,,,unobserved,0,,
+CL01103,F059,C059,Founder,Background & execution,-,Led engineering for a team of 14,14.0,count,51.0,,,S00855,Platform intake: scenario interview,1.0,2026-01-01,verified,2,,99.0
+CL01104,F059,C059,Founder,Traits,-,Reference describes founder as specific about failure modes,,qualitative,78.0,,,S00856,Platform intake: VSP-style prompt response,1.0,2025-09-12,self_asserted,0,,70.0
+CL01105,F059,C059,Founder,Team role clarity,T-2,3 cofounders with non-overlapping functional coverage,3.0,count,68.0,,,S00857,Platform intake: VSP-style prompt response,1.0,2026-07-06,verified,2,,91.0
+CL01106,F059,C059,Founder,Team communication,T-1,No observation available,,,,,,,,,,unobserved,0,,
+CL01107,F059,C059,Founder,Feedback & iteration,T-3,Roadmap changed 4 times citing named customer input,4.0,count,55.0,,,S00858,Platform intake: scenario interview,1.0,2026-03-30,verified,2,,94.0
+CL01108,F059,C059,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00859,Platform intake: VSP-style prompt response,1.0,2026-03-27,self_asserted,0,,65.0
+CL01109,F059,C059,Market & traction,Market sizing (TAM/SAM/SOM),M-2,No observation available,,,,,,,,,,unobserved,0,,
+CL01110,F059,C059,Market & traction,Value proposition,M-3,No observation available,,,,,,,,,,unobserved,0,,
+CL01111,F059,C059,Market & traction,Traction & KPIs,P-1,"Waitlist of {n} signups, no conversion data",,qualitative,38.0,,,S00860,Platform intake: reference check,1.0,2025-11-03,verified,2,,95.0
+CL01112,F059,C059,Market & traction,Customer acquisition,B-2,Acquisition funnel documented across 4 stages with conversion rates,4.0,count,68.0,,,S00861,Platform intake: scenario interview,1.0,2025-08-04,verified,1,,88.0
+CL01113,F059,C059,Idea-vs-market,USP / secret sauce,V-3,"Patent application filed, 11 claims",11.0,count,50.0,,,S00862,Platform intake: work sample,1.0,2026-07-01,verified,3,,91.0
+CL01114,F059,C059,Idea-vs-market,Competitive advantage,B-3,Win/loss reasons documented across 13 deals,13.0,count,67.0,,,S00863,Platform intake: work sample,1.0,2026-01-07,verified,2,,99.0
+CL01115,F059,C059,Idea-vs-market,Technical feasibility,P-2,Benchmark published against 2 baselines,2.0,count,42.0,,,S00864,Job posting authored,2.0,2026-05-22,verified,1,,75.0
+CL01116,F059,C059,Idea-vs-market,Development roadmap,P-3,No roadmap or milestone dates provided,,qualitative,25.0,,,S00865,Platform intake: VSP-style prompt response,1.0,2025-08-30,verified,2,,99.0
+CL01117,F059,C059,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00866,Platform intake: work sample,1.0,2026-01-13,verified,2,,99.0
+CL01118,F059,C059,Idea-vs-market,Mission & long-term vision,V-1/V-2,Mission statement names a specific beneficiary and outcome,,qualitative,74.0,,,S00867,Platform intake: reference check,1.0,2025-09-08,verified,1,,84.0
+CL01119,F059,C059,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-22,gap_flagged,0,,
+CL01120,F059,C059,Diligence,IP & regulation strategy,O-2,IP strategy: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-06-20,gap_flagged,0,,
+CL01121,F059,C059,Diligence,Finances & runway,O-3,"Monthly burn stated at $41K, unaudited",41.0,usd_k,56.0,,,S00868,arXiv paper,1.0,2026-01-20,self_asserted,0,,58.0
+CL01122,F060,C060,Founder,Background & execution,-,No observation available,,,,,,,,,,unobserved,0,,
+CL01123,F060,C060,Founder,Traits,-,No observation available,,,,,,,,,,unobserved,0,,
+CL01124,F060,C060,Founder,Team role clarity,T-2,"Single founder, no technical cofounder identified",,qualitative,32.0,,,S00869,Platform intake: work sample,1.0,2026-06-15,contradicted,1,CL01136,47.0
+CL01125,F060,C060,Founder,Team communication,T-1,No shared written record of decisions found,,qualitative,30.0,,,S00870,Company registry filing,1.0,2025-06-21,contradicted,1,CL01127,58.0
+CL01126,F060,C060,Founder,Feedback & iteration,T-3,No evidence of iteration following feedback,,qualitative,28.0,,,S00871,Platform intake: work sample,1.0,2026-04-22,verified,1,,70.0
+CL01127,F060,C060,Market & traction,Market maps,M-1,No named competitor set provided,,qualitative,25.0,,,S00872,Platform intake: reference check,1.0,2025-10-04,self_asserted,0,,59.0
+CL01128,F060,C060,Market & traction,Market sizing (TAM/SAM/SOM),M-2,Bottom-up SOM of $1M derived from a stated unit chain,1.0,usd_m_bu,15.0,bottom_up_derived,0.0138,S00873,Platform intake: reference check,1.0,2026-07-14,verified,2,,98.0
+CL01129,F060,C060,Market & traction,Value proposition,M-3,0 customer personas documented with motivations,0.0,count,15.0,,,S00874,Platform intake: scenario interview,1.0,2026-04-21,contradicted,1,CL01139,40.0
+CL01130,F060,C060,Market & traction,Traction & KPIs,P-1,ARR of $32K,32.0,usd_k,21.0,,,S00875,arXiv paper,1.0,2026-02-03,self_asserted,0,,63.0
+CL01131,F060,C060,Market & traction,Customer acquisition,B-2,CAC measured at $3000 across a real channel test,3000.0,usd_inv,0.0,,,S00876,Patent filing,1.0,2026-01-14,verified,2,,95.0
+CL01132,F060,C060,Idea-vs-market,USP / secret sauce,V-3,No observation available,,,,,,,,,,unobserved,0,,
+CL01133,F060,C060,Idea-vs-market,Competitive advantage,B-3,No observation available,,,,,,,,,,unobserved,0,,
+CL01134,F060,C060,Idea-vs-market,Technical feasibility,P-2,"Working prototype demonstrated, 3 core functions",3.0,count,38.0,,,S00877,Platform intake: reference check,1.0,2025-07-17,contradicted,0,CL01135,49.0
+CL01135,F060,C060,Idea-vs-market,Development roadmap,P-3,Roadmap published with 4 dated milestones,4.0,count,42.0,,,S00878,Platform intake: work sample,1.0,2026-03-07,verified,3,,99.0
+CL01136,F060,C060,Idea-vs-market,Revenue model,B-1,Revenue model not articulated,,qualitative,26.0,,,S00879,Platform intake: reference check,1.0,2025-06-30,verified,2,,96.0
+CL01137,F060,C060,Idea-vs-market,Mission & long-term vision,V-1/V-2,Vision stated as market-size ambition only,,qualitative,32.0,,,S00880,Platform intake: scenario interview,1.0,2025-07-22,verified,1,,79.0
+CL01138,F060,C060,Diligence,Company formation & cap table,O-1,Cap table: not disclosed,,qualitative,,,,,Founder disclosure,1.0,2026-07-13,gap_flagged,0,,
+CL01139,F060,C060,Diligence,IP & regulation strategy,O-2,Regulatory pathway identified with a stated timeline,,qualitative,78.0,,,S00881,Platform intake: reference check,1.0,2026-03-04,verified,2,,88.0
+CL01140,F060,C060,Diligence,Finances & runway,O-3,Runway of 7 months at current burn,7.0,count,38.0,,,S00882,Platform intake: work sample,1.0,2025-11-21,verified,1,,80.0
