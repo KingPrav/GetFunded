@@ -1,1 +1,0 @@
-Wire dashboard to a real FastAPI backend: outbound GitHub scan-to-score pipeline, Memory-restoring candidates endpoint, screening query + memo drafting (Claude when ANTHROPIC_API_KEY set, deterministic fallback otherwise). Single process serves both API and frontend.
