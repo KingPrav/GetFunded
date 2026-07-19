@@ -1,0 +1,126 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* VC Brain — professional light theme (Navy Trust) */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Brand palette — Navy Trust (deep navy + crisp white) */
+  --background: #e8edf3;
+  --surface: #d8e0ea;
+  --foreground: #0f1b3d;
+
+  --card: #e1e8ef;
+  --card-foreground: #0f1b3d;
+
+  --popover: #e1e8ef;
+  --popover-foreground: #0f1b3d;
+
+  --primary: #1e3a5f;
+  --primary-foreground: #e8edf3;
+
+  --secondary: #d8e0ea;
+  --secondary-foreground: #0f1b3d;
+
+  --muted: #d8e0ea;
+  --muted-foreground: #3b6fa0;
+
+  --accent: #3b6fa0;
+  --accent-foreground: #e8edf3;
+
+  --destructive: #9b2c2c;
+  --destructive-foreground: #ffffff;
+
+  --success: #1e3a5f;
+  --warning: #3b6fa0;
+  --danger: #9b2c2c;
+
+  --border: #b8c4d4;
+  --input: #b8c4d4;
+  --ring: #3b6fa0;
+
+  --chart-1: #1e3a5f;
+  --chart-2: #3b6fa0;
+  --chart-3: #5a8fc0;
+  --chart-4: #9b2c2c;
+  --chart-5: #4a5a6a;
+
+  --sidebar: #e1e8ef;
+  --sidebar-foreground: #0f1b3d;
+  --sidebar-primary: #1e3a5f;
+  --sidebar-primary-foreground: #e8edf3;
+  --sidebar-accent: #d8e0ea;
+  --sidebar-accent-foreground: #0f1b3d;
+  --sidebar-border: #b8c4d4;
+  --sidebar-ring: #3b6fa0;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html,
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    letter-spacing: -0.02em;
+  }
+}

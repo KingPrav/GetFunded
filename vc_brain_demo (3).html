@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The VC Brain — Founder Dossier</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --paper: #EEF1EE;
+  --paper-raised: #F8FAF8;
+  --ink: #14181C;
+  --ink-soft: #4B5450;
+  --line: #C7CEC9;
+  --signal: #2F6F4E;
+  --signal-soft: #DCEBE2;
+  --alert: #A6392D;
+  --alert-soft: #F3DEDB;
+  --gold: #B08D3E;
+  --gold-soft: #F1E7CE;
+  --radius: 3px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.app { display: grid; grid-template-columns: 300px 1fr; min-height: 100vh; }
+
+.rail {
+  background: var(--paper-raised);
+  border-right: 1px solid var(--line);
+  padding: 28px 22px;
+}
+
+.brand {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  margin: 0 0 2px 0;
+}
+.brand .num { color: var(--signal); font-variant-numeric: tabular-nums; }
+.brand-sub {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin-bottom: 26px;
+}
+
+.rail h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin: 22px 0 10px 0;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.rail h3:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+
+label {
+  display: block;
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+select, input[type=text], input[type=number] {
+  width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  padding: 7px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+input[type=range] { width: 100%; margin-bottom: 4px; }
+.range-val { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--signal); text-align: right; margin-top: -8px; margin-bottom: 12px;}
+
+.main { padding: 28px 36px; max-width: 1100px; }
+
+.tabs { display: flex; gap: 2px; margin-bottom: 24px; border-bottom: 1px solid var(--line); }
+.tab {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 10px 16px;
+  cursor: pointer;
+  color: var(--ink-soft);
+  border-bottom: 2px solid transparent;
+  user-select: none;
+}
+.tab.active { color: var(--ink); border-bottom-color: var(--signal); }
+.tab .n { color: var(--gold); margin-right: 6px; }
+
+.panel { display: none; }
+.panel.active { display: block; }
+
+h1.page-title {
+  font-family: 'Fraunces', serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+.page-sub { color: var(--ink-soft); margin-bottom: 20px; font-size: 13px; }
+
+button.primary {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--ink);
+  color: var(--paper-raised);
+  border: none;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+button.primary:hover { background: var(--signal); }
+button.primary:disabled { background: var(--line); color: var(--ink-soft); cursor: wait; }
+
+button.ghost {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 7px 12px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+button.ghost:hover { border-color: var(--ink); }
+
+.query-row { display: flex; gap: 8px; margin-bottom: 18px; }
+.query-row input { flex: 1; }
+
+.source-row { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+
+.candidates { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  position: relative;
+}
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.card-name { font-family: 'Fraunces', serif; font-weight: 600; font-size: 16px; margin: 0; }
+.card-meta { font-size: 11.5px; color: var(--ink-soft); margin-top: 2px; }
+.tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 6px;
+  border-radius: 2px;
+  display: inline-block;
+}
+.tag.live { background: var(--signal-soft); color: var(--signal); }
+.tag.sim { background: var(--gold-soft); color: var(--gold); }
+.tag.new { background: var(--signal-soft); color: var(--signal); margin-left: 4px; }
+.tag.established { background: var(--alert-soft); color: var(--alert); margin-left: 4px; }
+
+.filter-row { display: flex; align-items: center; gap: 8px; margin: 4px 0 16px 0; }
+.filter-row input[type=checkbox] { width: auto; margin: 0; }
+.filter-row label { margin: 0; font-size: 12px; color: var(--ink); cursor: pointer; }
+
+.canvas-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 10px 0 4px 0;
+}
+.canvas-cell { background: var(--paper-raised); padding: 12px; min-height: 90px; }
+.canvas-cell .cc-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gold);
+  margin-bottom: 6px;
+  display: block;
+}
+.canvas-cell p { margin: 0; font-size: 12px; }
+.cc-partners, .cc-activities, .cc-resources { grid-row: span 1; }
+.cc-value { grid-row: 1 / 3; }
+.cc-relationships, .cc-channels, .cc-segments { grid-row: span 1; }
+.cc-costs, .cc-revenue { grid-column: span 2; }
+
+.qbox { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 14px; margin: 6px 0; }
+.qbox .qn { font-family: 'IBM Plex Mono', monospace; color: var(--gold); margin-right: 6px; }
+
+.alloc-bar { display: flex; height: 22px; border-radius: 2px; overflow: hidden; margin: 10px 0; border: 1px solid var(--line); }
+.alloc-seg { display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; color: #fff; }
+
+.signal-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px; }
+.chip { font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; padding: 2px 7px; border-radius: 10px; }
+.chip.pos { background: var(--signal-soft); color: var(--signal); }
+.chip.neg { background: var(--alert-soft); color: var(--alert); }
+
+/* the seal — signature element: an assay stamp carrying the Founder Score */
+.seal {
+  width: 54px; height: 54px; border-radius: 50%;
+  border: 2px solid var(--ink);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  position: relative;
+}
+.seal::before {
+  content: '';
+  position: absolute; inset: 4px;
+  border: 1px dashed var(--line);
+  border-radius: 50%;
+}
+.seal .score { font-size: 16px; font-weight: 600; line-height: 1; }
+.seal .lbl { font-size: 6.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.seal.up { border-color: var(--signal); }
+.seal.down { border-color: var(--alert); }
+
+.axes { display: flex; gap: 6px; margin: 12px 0; }
+.axis {
+  flex: 1;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 6px 8px;
+  background: #fff;
+}
+.axis .axis-label { font-family: 'IBM Plex Mono', monospace; font-size: 9px; text-transform: uppercase; color: var(--ink-soft); letter-spacing: 0.04em;}
+.axis .axis-val { font-weight: 600; font-size: 13px; margin-top: 2px; }
+.axis .axis-val.bull { color: var(--signal); }
+.axis .axis-val.bear { color: var(--alert); }
+.axis .axis-val.neutral { color: var(--gold); }
+.trend { font-size: 10px; margin-left: 4px; }
+
+.card-desc { font-size: 12.5px; color: var(--ink-soft); margin: 8px 0 12px 0; }
+
+.evidence-list { list-style: none; padding: 0; margin: 0 0 12px 0; font-size: 11.5px; }
+.evidence-list li { display: flex; gap: 6px; padding: 4px 0; border-top: 1px solid var(--line); }
+.evidence-list li:first-child { border-top: none; }
+.conf { font-family: 'IBM Plex Mono', monospace; font-size: 9px; text-transform: uppercase; padding: 1px 5px; border-radius: 2px; flex-shrink: 0; height: fit-content; }
+.conf.high { background: var(--signal-soft); color: var(--signal); }
+.conf.medium { background: var(--gold-soft); color: var(--gold); }
+.conf.low { background: var(--alert-soft); color: var(--alert); }
+
+.card-actions { display: flex; gap: 8px; }
+
+.rationale-box {
+  background: var(--gold-soft);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  font-size: 11.5px;
+  color: #6b551f;
+  margin-bottom: 10px;
+}
+
+.empty {
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+.memo-select { margin-bottom: 18px; }
+
+.memo {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+}
+.memo-banner {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--ink); color: var(--paper-raised);
+  padding: 14px 18px; border-radius: var(--radius); margin-bottom: 20px;
+}
+.memo-banner .amt { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 700; }
+.memo-banner .amt .lbl { font-family: 'IBM Plex Mono', monospace; font-size: 10px; text-transform: uppercase; display: block; color: #9aa89f; letter-spacing: 0.05em; }
+.memo h2 { font-family: 'Fraunces', serif; font-size: 15px; font-weight: 600; border-top: 1px solid var(--line); padding-top: 14px; margin: 20px 0 8px 0; }
+.memo h2:first-of-type { border-top: none; padding-top: 0; }
+.memo p, .memo li { font-size: 13px; color: var(--ink); }
+.memo .gap { color: var(--alert); font-style: italic; }
+.memo ul { margin: 4px 0; padding-left: 18px; }
+
+.loading-line { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-soft); }
+.footnote { font-size: 11px; color: var(--ink-soft); margin-top: 24px; border-top: 1px solid var(--line); padding-top: 12px; }
+</style>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- THESIS ENGINE RAIL -->
+  <div class="rail">
+    <p class="brand"><span class="num">02</span> The VC Brain</p>
+    <p class="brand-sub">New founders · $100K checks</p>
+
+    <h3>Thesis Engine</h3>
+    <div class="filter-row">
+      <input type="checkbox" id="thesis-new-only" checked>
+      <label for="thesis-new-only">New founders only</label>
+    </div>
+    <label>Sectors</label>
+    <select id="thesis-sector">
+      <option>All sectors</option>
+      <option>AI infrastructure</option>
+      <option>Developer tools</option>
+      <option>Vertical AI agents</option>
+      <option>Robotics</option>
+      <option>Biotech</option>
+      <option>Climate</option>
+      <option>Fintech</option>
+    </select>
+
+    <label>Stage</label>
+    <select id="thesis-stage">
+      <option>Pre-seed</option>
+      <option>Seed</option>
+      <option>Series A</option>
+    </select>
+
+    <label>Geography</label>
+    <select id="thesis-geo">
+      <option>Global</option>
+      <option>US only</option>
+      <option>Europe</option>
+      <option>Berlin / DACH</option>
+    </select>
+
+    <label>Check size (USD)</label>
+    <input type="number" id="thesis-check" value="100000">
+
+    <label>Target ownership (%)</label>
+    <input type="range" id="thesis-ownership" min="1" max="20" value="7">
+    <div class="range-val" id="thesis-ownership-val">7%</div>
+
+    <label>Risk appetite</label>
+    <input type="range" id="thesis-risk" min="1" max="5" value="3">
+    <div class="range-val" id="thesis-risk-val">Balanced</div>
+
+    <h3>Memory</h3>
+    <p style="font-size:11.5px; color:var(--ink-soft); margin:0;">
+      <span id="mem-count">0</span> founders tracked this session.
+      Founder Scores persist and update on re-scan, they never reset.
+    </p>
+
+    <h3>Status</h3>
+    <p style="font-size:11px; color:var(--ink-soft); line-height:1.6; margin:0 0 8px 0;">
+      GitHub sourcing is live, across all sectors.<br>
+      Semantic Scholar is queried live for publication and citation signal.<br>
+      LinkedIn profile and engagement data is simulated, a licensed provider such as Proxycurl
+      is needed for production, direct scraping of LinkedIn violates its Terms of Service.<br>
+      A 15-theme keyword sentiment lexicon now scans all available text, driving the Market
+      and Idea-vs-Market axes directly and sharpening the Founder Score, green chips are
+      positive signal, red chips are risk or red-flag signal.
+    </p>
+    <button class="ghost" id="btn-test-connection" style="width:100%;">Test live connection</button>
+    <p id="connection-status" style="font-size:11px; color:var(--ink-soft); margin:6px 0 0 0;"></p>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="tabs">
+      <div class="tab active" data-tab="sourcing"><span class="n">01</span>Sourcing</div>
+      <div class="tab" data-tab="screening"><span class="n">02</span>Screening</div>
+      <div class="tab" data-tab="diligence"><span class="n">03</span>Diligence</div>
+      <div class="tab" data-tab="decision"><span class="n">04</span>Decision</div>
+    </div>
+
+    <!-- SOURCING -->
+    <div class="panel active" id="panel-sourcing">
+      <h1 class="page-title">Sourcing</h1>
+      <p class="page-sub">Surface first-time, pre-seed founders before they start fundraising, sized for a $100K first check. Outbound scans below, or log an inbound application.</p>
+
+      <div class="source-row">
+        <button class="primary" id="btn-scan-github">Scan GitHub across all sectors</button>
+        <button class="ghost" id="btn-scan-outbound">Pull simulated cross-sector signals</button>
+        <button class="ghost" id="btn-add-inbound">Log an inbound application</button>
+      </div>
+
+      <div id="sourcing-status" class="loading-line"></div>
+      <div class="candidates" id="sourcing-results"></div>
+    </div>
+
+    <!-- SCREENING -->
+    <div class="panel" id="panel-screening">
+      <h1 class="page-title">Screening</h1>
+      <p class="page-sub">Three axes, scored independently, never averaged. Ask a compound question to re-rank.</p>
+
+      <div class="query-row">
+        <input type="text" id="query-input" placeholder="e.g. technical founder, Berlin, AI infra, enterprise traction, no prior VC backing, top-tier accelerator">
+        <button class="primary" id="btn-query">Ask the Brain</button>
+      </div>
+      <div id="query-status" class="loading-line"></div>
+
+      <div class="candidates" id="screening-results"></div>
+    </div>
+
+    <!-- DILIGENCE -->
+    <div class="panel" id="panel-diligence">
+      <h1 class="page-title">Diligence</h1>
+      <p class="page-sub">Every claim traces to evidence with a confidence level. Nothing is asserted without a source.</p>
+      <div class="candidates" id="diligence-results"></div>
+    </div>
+
+    <!-- DECISION -->
+    <div class="panel" id="panel-decision">
+      <h1 class="page-title">Decision</h1>
+      <p class="page-sub">Pick a founder and draft the business memo for a $100K first check. Missing data is flagged, never invented.</p>
+
+      <div class="memo-select">
+        <select id="memo-founder-select"><option value="">Select a founder to draft a business memo</option></select>
+        <button class="primary" id="btn-draft-memo" style="margin-left:8px;">Draft business memo</button>
+      </div>
+      <div id="memo-status" class="loading-line"></div>
+      <div id="memo-output"></div>
+    </div>
+
+    <div class="footnote">
+      Data Architecture is weighted 30% of this challenge, Intelligence 25%, Utility 30%, UX 15%.
+      Build the sourcing and Founder Score depth first, the reasoning layer second, polish last.
+    </div>
+  </div>
+</div>
+
+<script>
+// ---------- STATE ----------
+// candidates keyed by a stable id, this is the "Memory" layer for the demo.
+// Founder Score lives here and updates rather than resets on re-scan.
+const store = { candidates: {} };
+
+function thesis() {
+  return {
+    sector: document.getElementById('thesis-sector').value,
+    stage: document.getElementById('thesis-stage').value,
+    geo: document.getElementById('thesis-geo').value,
+    check: Number(document.getElementById('thesis-check').value),
+    ownership: Number(document.getElementById('thesis-ownership').value),
+    risk: Number(document.getElementById('thesis-risk').value),
+    newFoundersOnly: document.getElementById('thesis-new-only').checked,
+  };
+}
+
+// A "new founder" is someone without an established public footprint yet,
+// this is the cold-start population the $100K check is actually meant for.
+function isNewFounder(raw) {
+  const followers = raw.followers || 0;
+  const repos = raw.publicRepos || 0;
+  const stars = raw.stars || 0;
+  return followers < 600 && repos < 50 && stars < 4000;
+}
+
+function applyNewFounderFilter(list) {
+  const t = thesis();
+  if (!t.newFoundersOnly) return list;
+  return list.filter(c => c.newFounder !== false);
+}
+
+const riskLabels = {1:'Very conservative', 2:'Conservative', 3:'Balanced', 4:'Aggressive', 5:'Very aggressive'};
+document.getElementById('thesis-ownership').addEventListener('input', e => {
+  document.getElementById('thesis-ownership-val').textContent = e.target.value + '%';
+});
+document.getElementById('thesis-risk').addEventListener('input', e => {
+  document.getElementById('thesis-risk-val').textContent = riskLabels[e.target.value];
+});
+
+document.getElementById('btn-test-connection').addEventListener('click', async () => {
+  const el = document.getElementById('connection-status');
+  el.textContent = 'Testing...';
+  try {
+    const res = await fetch('https://api.github.com/rate_limit');
+    if (res.ok) {
+      const data = await res.json();
+      el.textContent = 'Live fetch works. ' + data.rate.remaining + ' of ' + data.rate.limit + ' unauthenticated GitHub requests left this hour.';
+    } else {
+      el.textContent = 'GitHub responded with status ' + res.status + ', likely rate-limited, wait an hour or lower request volume.';
+    }
+  } catch (err) {
+    el.textContent = 'Blocked before reaching GitHub. If you are viewing this inside a chat preview, open the downloaded HTML file directly in a browser tab instead.';
+  }
+});
+
+// ---------- TABS ----------
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+    if (tab.dataset.tab === 'screening') renderCandidates('screening-results', applyNewFounderFilter(Object.values(store.candidates)));
+    if (tab.dataset.tab === 'diligence') renderCandidates('diligence-results', applyNewFounderFilter(Object.values(store.candidates)), true);
+    if (tab.dataset.tab === 'decision') refreshMemoSelect();
+  });
+});
+
+// ---------- CONTENT ANALYSIS LEXICON (from founder_keywords_sentiment_tracking.csv) ----------
+// Mixed-sentiment themes carry an explicit negative subset, curated from the
+// negative-leaning terms already present in that theme's own keyword list.
+const LEXICON = [
+  { theme: 'founder_identity', sentiment: 'Neutral', keywords: ['founder name', 'startup name', 'cofounder', 'ceo', 'cto', 'founder linkedin', 'founder profile'] },
+  { theme: 'execution', sentiment: 'Positive', keywords: ['launched', 'shipped', 'released', 'built', 'prototype', 'demo', 'product update', 'milestone'] },
+  { theme: 'credibility', sentiment: 'Positive', keywords: ['speaking', 'podcast', 'interview', 'quote', 'featured', 'panel', 'conference', 'guest post'] },
+  { theme: 'technical_depth', sentiment: 'Positive', keywords: ['github', 'repo', 'commit', 'architecture', 'api', 'open source', 'patent', 'benchmark'] },
+  { theme: 'market_signal', sentiment: 'Positive', keywords: ['customer', 'pilot', 'deployment', 'contract', 'waitlist', 'partnership', 'case study'] },
+  { theme: 'growth_signal', sentiment: 'Mixed', negative: ['churn'], keywords: ['arr', 'mrr', 'revenue', 'users', 'dau', 'mau', 'retention', 'churn', 'expansion'] },
+  { theme: 'team_signal', sentiment: 'Mixed', negative: [], keywords: ['hiring', 'joined', 'founding engineer', 'advisor', 'team', 'org', 'culture'] },
+  { theme: 'risk_signal', sentiment: 'Negative', keywords: ['lawsuit', 'complaint', 'fraud', 'controversy', 'churn', 'layoff', 'shutdown', 'missed target'] },
+  { theme: 'trait_signal', sentiment: 'Positive', keywords: ['resilient', 'coachable', 'transparent', 'honest', 'adaptive', 'thoughtful', 'decisive'] },
+  { theme: 'negative_trait_signal', sentiment: 'Negative', keywords: ['arrogant', 'evasive', 'defensive', 'misleading', 'toxic', 'combative', 'blame'] },
+  { theme: 'market_fit', sentiment: 'Mixed', negative: ['adoption barrier'], keywords: ['pricing', 'buyer', 'procurement', 'compliance', 'workflow', 'adoption barrier', 'onboarding'] },
+  { theme: 'defensibility', sentiment: 'Positive', keywords: ['moat', 'proprietary', 'network effects', 'data moat', 'distribution moat', 'workflow lock-in'] },
+  { theme: 'disclosure_gap', sentiment: 'Negative', keywords: ['not disclosed', 'unavailable', 'confidential', 'undisclosed', 'estimate only'] },
+  { theme: 'contradiction', sentiment: 'Negative', keywords: ['claimed', 'versus', 'inconsistent', 'mismatch', 'outdated', 'contradiction', 'correction'] },
+  { theme: 'no_social_alt', sentiment: 'Neutral', keywords: ['portfolio', 'alumni', 'registry', 'filing', 'patent', 'website bio', 'speaker bio', 'publications'] },
+];
+
+// ---------- AXIS RUBRIC (from founder_scoring_sourcing_layer.csv) ----------
+// Which themes feed which screening axis, so keyword hits land on the axis
+// they actually speak to instead of one undifferentiated pile.
+const AXIS_THEMES = {
+  founder: ['execution', 'credibility', 'technical_depth', 'trait_signal', 'negative_trait_signal', 'team_signal'],
+  market: ['market_signal', 'growth_signal'],
+  ideaVsMarket: ['defensibility', 'market_fit', 'no_social_alt'],
+  trust: ['risk_signal', 'disclosure_gap', 'contradiction'],
+};
+const THEME_LABELS = {
+  founder_identity: 'Founder identity', execution: 'Execution', credibility: 'Credibility',
+  technical_depth: 'Technical depth', market_signal: 'Market signal', growth_signal: 'Growth signal',
+  team_signal: 'Team signal', risk_signal: 'Risk signal', trait_signal: 'Founder trait',
+  negative_trait_signal: 'Behavioral red flag', market_fit: 'Market fit', defensibility: 'Defensibility',
+  disclosure_gap: 'Disclosure gap', contradiction: 'Contradiction', no_social_alt: 'No-social sourcing',
+};
+
+// Scan whatever text we hold on a candidate (headline, evidence, bio) for
+// lexicon hits, and split them into positive and negative per theme sentiment.
+function analyzeContent(text) {
+  const lower = (text || '').toLowerCase();
+  const hits = { positive: [], negative: [], neutral: [] };
+  for (const t of LEXICON) {
+    const matched = t.keywords.filter(k => lower.includes(k));
+    if (matched.length === 0) continue;
+    for (const k of matched) {
+      const entry = { theme: t.theme, label: THEME_LABELS[t.theme], keyword: k };
+      if (t.sentiment === 'Positive') hits.positive.push(entry);
+      else if (t.sentiment === 'Negative') hits.negative.push(entry);
+      else if (t.sentiment === 'Mixed') (t.negative || []).includes(k) ? hits.negative.push(entry) : hits.positive.push(entry);
+      else hits.neutral.push(entry);
+    }
+  }
+  return hits;
+}
+
+// Score a single axis 0-100 from the hits that belong to its themes only,
+// baseline 50, each positive hit pushes up, each negative hit pushes down harder.
+function axisContentScore(hits, themeList) {
+  const pos = hits.positive.filter(h => themeList.includes(h.theme)).length;
+  const neg = hits.negative.filter(h => themeList.includes(h.theme)).length;
+  return Math.max(0, Math.min(100, 50 + pos * 9 - neg * 14));
+}
+
+function groupHitsToEvidence(hits) {
+  const byTheme = {};
+  for (const h of [...hits.positive, ...hits.negative, ...hits.neutral]) {
+    byTheme[h.theme] = byTheme[h.theme] || { label: h.label, keywords: [], negative: hits.negative.includes(h) };
+    byTheme[h.theme].keywords.push(h.keyword);
+  }
+  return Object.values(byTheme).map(t => ({
+    claim: t.label + ' keywords detected: ' + t.keywords.join(', '),
+    conf: t.negative ? 'medium' : 'low',
+    note: 'content analysis, keyword-matched against the founder sourcing lexicon, verify before citing in a memo',
+  }));
+}
+
+// ---------- FOUNDER SCORE (transparent formula, four weighted sources) ----------
+// GitHub, LinkedIn, and scholarly activity are joined by a fourth source, the
+// content sentiment layer, which reads whatever text we hold on a founder
+// against the sourcing lexicon above. LinkedIn and scholarly still carry the
+// heaviest individual weight, content sentiment is what sharpens both of them.
+const WEIGHTS = { github: 0.20, linkedin: 0.30, scholarly: 0.25, content: 0.25 };
+
+function githubComposite(raw) {
+  const starsScore = Math.min(100, Math.log10((raw.stars || 0) + 1) * 28);
+  const followerScore = Math.min(100, Math.log10((raw.followers || 0) + 1) * 24);
+  const repoScore = Math.min(100, (raw.publicRepos || 0) * 3);
+  const recencyScore = raw.recentlyActive ? 100 : 40;
+  return starsScore * 0.35 + followerScore * 0.2 + repoScore * 0.2 + recencyScore * 0.25;
+}
+
+function linkedinComposite(li) {
+  if (!li) return 0;
+  const connScore = Math.min(100, Math.log10((li.connections || 0) + 1) * 22);
+  const engagementScore = Math.min(100, li.engagement || 0);
+  const relevanceScore = Math.min(100, li.relevance || 0);
+  return connScore * 0.35 + engagementScore * 0.35 + relevanceScore * 0.3;
+}
+
+function scholarlyComposite(sch) {
+  if (!sch) return 0;
+  const paperScore = Math.min(100, (sch.papers || 0) * 14);
+  const citationScore = Math.min(100, Math.log10((sch.citations || 0) + 1) * 26);
+  const hIndexScore = Math.min(100, (sch.hIndex || 0) * 12);
+  return paperScore * 0.3 + citationScore * 0.45 + hIndexScore * 0.25;
+}
+
+// simple deterministic hash so simulated LinkedIn numbers stay stable across re-scans
+// of the same handle, rather than jumping around randomly on every click
+function seedFrom(str) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) { h = (h * 31 + str.charCodeAt(i)) >>> 0; }
+  return h;
+}
+function simulateLinkedIn(seedStr, sectorRelevanceHint) {
+  const h = seedFrom(seedStr);
+  return {
+    connections: 80 + (h % 900),
+    engagement: 20 + (h % 70),
+    relevance: sectorRelevanceHint != null ? sectorRelevanceHint : 30 + (h % 60),
+    headline: 'simulated LinkedIn profile signal',
+  };
+}
+
+async function lookupScholar(name) {
+  if (!name) return null;
+  try {
+    const searchRes = await fetch(`https://api.semanticscholar.org/graph/v1/author/search?query=${encodeURIComponent(name)}&limit=1`);
+    if (!searchRes.ok) return null;
+    const searchData = await searchRes.json();
+    if (!searchData.data || searchData.data.length === 0) return null;
+    const authorId = searchData.data[0].authorId;
+    const detailRes = await fetch(`https://api.semanticscholar.org/graph/v1/author/${authorId}?fields=name,paperCount,citationCount,hIndex`);
+    if (!detailRes.ok) return null;
+    const detail = await detailRes.json();
+    return { papers: detail.paperCount || 0, citations: detail.citationCount || 0, hIndex: detail.hIndex || 0, live: true, matchedName: detail.name };
+  } catch (err) {
+    return null;
+  }
+}
+
+function computeFounderScore(sources, prevScore) {
+  const gh = githubComposite(sources.github || {});
+  const li = linkedinComposite(sources.linkedin || {});
+  const sch = scholarlyComposite(sources.scholarly || {});
+  const ct = sources.contentScore != null ? sources.contentScore : 50;
+  const base = gh * WEIGHTS.github + li * WEIGHTS.linkedin + sch * WEIGHTS.scholarly + ct * WEIGHTS.content;
+  // Founder Score never resets: blend toward new evidence rather than overwrite,
+  // simulating cumulative memory across applications.
+  const blended = prevScore != null ? (prevScore * 0.4 + base * 0.6) : base;
+  return { score: Math.round(blended), breakdown: { github: Math.round(gh), linkedin: Math.round(li), scholarly: Math.round(sch), content: Math.round(ct) } };
+}
+
+function axisFromScore(score) {
+  if (score >= 66) return { label: 'Bullish', cls: 'bull' };
+  if (score >= 40) return { label: 'Neutral', cls: 'neutral' };
+  return { label: 'Bear', cls: 'bear' };
+}
+
+// ---------- GITHUB SOURCING (live) ----------
+document.getElementById('btn-scan-github').addEventListener('click', async () => {
+  const status = document.getElementById('sourcing-status');
+  status.textContent = 'Scanning GitHub across sectors, then cross-referencing LinkedIn and scholarly signal...';
+  const t = thesis();
+  const topicMap = {
+    'AI infrastructure': ['llm', 'inference'],
+    'Developer tools': ['developer-tools'],
+    'Vertical AI agents': ['ai-agents'],
+    'Robotics': ['robotics'],
+    'Biotech': ['bioinformatics', 'computational-biology'],
+    'Climate': ['climate-tech', 'sustainability'],
+    'Fintech': ['fintech', 'payments'],
+  };
+  // "All sectors" runs one topic from each bucket so sourcing isn't locked to a single vertical
+  const topics = t.sector === 'All sectors'
+    ? Object.values(topicMap).map(arr => arr[0])
+    : (topicMap[t.sector] || ['ai']);
+  try {
+    let allItems = [];
+    for (const topic of topics) {
+      const res = await fetch(`https://api.github.com/search/repositories?q=topic:${topic}+created:>2025-01-01&sort=updated&order=desc&per_page=6`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.items) allItems = allItems.concat(data.items.map(it => ({ ...it, _topic: topic })));
+      }
+    }
+    if (allItems.length === 0) {
+      status.textContent = 'No matching repositories found across these sectors, try again in a moment.';
+      return;
+    }
+    let added = 0, skipped = 0;
+    for (const repo of allItems) {
+      const ownerRes = await fetch(repo.owner.url);
+      const owner = ownerRes.ok ? await ownerRes.json() : {};
+      const githubRaw = {
+        stars: repo.stargazers_count,
+        followers: owner.followers || 0,
+        publicRepos: owner.public_repos || 0,
+        recentlyActive: true,
+      };
+      const newFounder = isNewFounder(githubRaw);
+      if (t.newFoundersOnly && !newFounder) { skipped++; continue; }
+
+      const id = 'gh-' + repo.owner.login;
+      const prev = store.candidates[id];
+
+      const scholarly = await lookupScholar(owner.name);
+      const linkedin = simulateLinkedIn(repo.owner.login, scholarly ? 70 : null);
+
+      const corpus = [repo.name, repo.description, owner.bio, repo._topic, owner.name].filter(Boolean).join(' ');
+      const contentHits = analyzeContent(corpus);
+      const founderContentScore = axisContentScore(contentHits, AXIS_THEMES.founder);
+      const marketContentScore = axisContentScore(contentHits, AXIS_THEMES.market);
+      const ideaContentScore = axisContentScore(contentHits, AXIS_THEMES.ideaVsMarket);
+
+      const sources = { github: githubRaw, linkedin, scholarly: scholarly || simulateScholarly(repo.owner.login), contentScore: founderContentScore };
+      const { score: founderScore, breakdown } = computeFounderScore(sources, prev ? prev.founderScore : null);
+
+      const evidence = [
+        { claim: repo.stargazers_count + ' stars on ' + repo.full_name, conf: 'high', note: 'fetched live from the GitHub API' },
+        { claim: (owner.followers || 0) + ' GitHub followers', conf: 'high', note: 'fetched live from the GitHub API' },
+        { claim: linkedin.connections + ' LinkedIn connections, engagement score ' + linkedin.engagement, conf: 'low', note: 'simulated, wire a licensed provider such as Proxycurl for production' },
+        ...groupHitsToEvidence(contentHits),
+      ];
+      if (scholarly) {
+        evidence.push({ claim: scholarly.papers + ' papers, ' + scholarly.citations + ' citations, h-index ' + scholarly.hIndex, conf: 'high', note: 'fetched live from Semantic Scholar, matched on "' + scholarly.matchedName + '"' });
+      } else {
+        evidence.push({ claim: 'No Semantic Scholar match found', conf: 'medium', note: 'absence of signal, flagged rather than ignored, does not by itself penalize the founder' });
+      }
+
+      store.candidates[id] = {
+        id,
+        name: owner.name || repo.owner.login,
+        handle: '@' + repo.owner.login,
+        source: 'outbound-github',
+        sourceLabel: 'GitHub · live',
+        sector: repo._topic,
+        live: true,
+        newFounder,
+        headline: repo.name + ' — ' + (repo.description || 'no description provided'),
+        location: owner.location || 'location not public',
+        founderScore,
+        scoreBreakdown: breakdown,
+        contentHits,
+        prevFounderScore: prev ? prev.founderScore : null,
+        raw: sources,
+        evidence,
+        axes: {
+          founder: { score: founderScore, ...axisFromScore(founderScore) },
+          market: { score: marketContentScore, ...axisFromScore(marketContentScore), note: 'derived from market_signal and growth_signal keyword hits in available content' },
+          ideaVsMarket: { score: ideaContentScore, label: ideaContentScore >= 60 ? 'Defensible, evidence found' : (founderScore > 60 ? 'Team strong enough to pivot' : 'Idea needs to survive as-is'), cls: ideaContentScore >= 60 ? 'bull' : (founderScore > 60 ? 'bull' : 'neutral') },
+        },
+      };
+      added++;
+    }
+    document.getElementById('mem-count').textContent = Object.keys(store.candidates).length;
+    status.textContent = 'Pulled ' + added + ' new-founder candidates across ' + topics.length + ' sectors' + (skipped ? ' (' + skipped + ' already-established builders filtered out)' : '') + '.';
+    renderCandidates('sourcing-results', applyNewFounderFilter(Object.values(store.candidates)));
+  } catch (err) {
+    const isNetworkBlock = err.message === 'Failed to fetch' || err.name === 'TypeError';
+    status.textContent = isNetworkBlock
+      ? 'Live sourcing was blocked before it reached GitHub, this usually means the page is running inside a sandboxed preview. Open the downloaded HTML file directly in a browser tab to enable live fetches. Falling back to simulated signals below.'
+      : 'GitHub sourcing failed (' + err.message + '). Falling back to simulated outbound signals below.';
+  }
+});
+
+function simulateScholarly(seedStr) {
+  const h = seedFrom(seedStr + '-scholar');
+  // most builders won't have a scholarly footprint, keep this sparse and low-confidence
+  if (h % 3 !== 0) return { papers: 0, citations: 0, hIndex: 0 };
+  return { papers: 1 + (h % 4), citations: h % 60, hIndex: 1 + (h % 5) };
+}
+
+
+// ---------- SIMULATED MULTI-SOURCE OUTBOUND ----------
+document.getElementById('btn-scan-outbound').addEventListener('click', () => {
+  const sims = [
+    { name: 'Priya Nataraj', handle: '@priyan', source: 'outbound-arxiv', sourceLabel: 'arXiv · simulated', sector: 'AI infrastructure',
+      headline: 'Co-author, "Sparse retrieval for long-context agents" (2026), shipped a benchmark repo and a proprietary retrieval architecture', location: 'Cambridge, MA',
+      scholarly: { papers: 3, citations: 41, hIndex: 3 }, linkedin: { connections: 640, engagement: 58, relevance: 80 } },
+    { name: 'Tomas Reyes', handle: '@treyes', source: 'outbound-producthunt', sourceLabel: 'Product Hunt · simulated', sector: 'Fintech',
+      headline: 'Launched "Fieldnote", #3 Product of the Day, first paying customers and a waitlist for expense tracking, pricing still not disclosed', location: 'Berlin, DE',
+      scholarly: { papers: 0, citations: 0, hIndex: 0 }, linkedin: { connections: 310, engagement: 44, relevance: 65 } },
+    { name: 'Ada Whitfield', handle: '@adawhitfield', source: 'outbound-patent', sourceLabel: 'Patent filing · simulated', sector: 'Robotics',
+      headline: 'Filed a provisional patent for on-device model compression, workflow lock-in with two pilot deployments in edge robotics', location: 'Not disclosed',
+      scholarly: { papers: 1, citations: 6, hIndex: 1 }, linkedin: { connections: 190, engagement: 22, relevance: 70 } },
+    { name: 'Kwame Asante', handle: '@kasante', source: 'outbound-scholar', sourceLabel: 'Semantic Scholar · simulated', sector: 'Biotech',
+      headline: 'PhD researcher spinning out a protein-folding startup from lab work, hiring a founding engineer, data moat from proprietary lab datasets', location: 'Basel, CH',
+      scholarly: { papers: 5, citations: 88, hIndex: 4 }, linkedin: { connections: 420, engagement: 35, relevance: 85 } },
+  ];
+  for (const s of sims) {
+    const id = 'sim-' + s.handle;
+    const prev = store.candidates[id];
+    const contentHits = analyzeContent([s.headline, s.sector].join(' '));
+    const founderContentScore = axisContentScore(contentHits, AXIS_THEMES.founder);
+    const marketContentScore = axisContentScore(contentHits, AXIS_THEMES.market);
+    const ideaContentScore = axisContentScore(contentHits, AXIS_THEMES.ideaVsMarket);
+    const sources = { github: { stars: 20, followers: 5, publicRepos: 2, recentlyActive: false }, linkedin: s.linkedin, scholarly: s.scholarly, contentScore: founderContentScore };
+    const { score: founderScore, breakdown } = computeFounderScore(sources, prev ? prev.founderScore : null);
+    const evidence = [
+      { claim: s.scholarly.papers + ' papers, ' + s.scholarly.citations + ' citations, h-index ' + s.scholarly.hIndex, conf: s.scholarly.papers ? 'medium' : 'low', note: 'simulated, wire the Semantic Scholar or arXiv API for production' },
+      { claim: s.linkedin.connections + ' LinkedIn connections, engagement score ' + s.linkedin.engagement, conf: 'low', note: 'simulated, wire a licensed provider such as Proxycurl for production' },
+      { claim: 'Minimal GitHub footprint', conf: 'medium', note: 'absence of signal in this channel, weighted lightly rather than penalized' },
+      ...groupHitsToEvidence(contentHits),
+    ];
+    store.candidates[id] = {
+      ...s, id, live: false, newFounder: true, founderScore, scoreBreakdown: breakdown, contentHits, prevFounderScore: prev ? prev.founderScore : null,
+      raw: sources, evidence,
+      axes: {
+        founder: { score: founderScore, ...axisFromScore(founderScore) },
+        market: { score: marketContentScore, ...axisFromScore(marketContentScore), note: 'derived from market_signal and growth_signal keyword hits in available content' },
+        ideaVsMarket: { score: ideaContentScore, label: ideaContentScore >= 60 ? 'Defensible, evidence found' : 'Early signal, cold-start case', cls: ideaContentScore >= 60 ? 'bull' : 'neutral' },
+      },
+    };
+  }
+  document.getElementById('mem-count').textContent = Object.keys(store.candidates).length;
+  document.getElementById('sourcing-status').textContent = 'Added simulated candidates spanning AI infra, fintech, robotics, and biotech, all pre-track-record.';
+  renderCandidates('sourcing-results', applyNewFounderFilter(Object.values(store.candidates)));
+});
+
+document.getElementById('btn-add-inbound').addEventListener('click', () => {
+  const id = 'inbound-' + Date.now();
+  const headline = 'Deck submitted, no public track record yet, this is the cold-start case the brief asks you to handle';
+  const contentHits = analyzeContent(headline);
+  const founderContentScore = axisContentScore(contentHits, AXIS_THEMES.founder);
+  const marketContentScore = axisContentScore(contentHits, AXIS_THEMES.market);
+  const ideaContentScore = axisContentScore(contentHits, AXIS_THEMES.ideaVsMarket);
+  const sources = { github: { stars: 0, followers: 0, publicRepos: 1, recentlyActive: true }, linkedin: { connections: 90, engagement: 10, relevance: 40 }, scholarly: { papers: 0, citations: 0, hIndex: 0 }, contentScore: founderContentScore };
+  const { score: founderScore, breakdown } = computeFounderScore(sources, null);
+  store.candidates[id] = {
+    id, name: 'Inbound applicant #' + (Object.keys(store.candidates).length + 1), handle: 'first-time founder',
+    source: 'inbound', sourceLabel: 'Inbound application', live: false, newFounder: true,
+    headline, location: 'Self-reported',
+    founderScore, scoreBreakdown: breakdown, contentHits, prevFounderScore: null, raw: sources,
+    evidence: [
+      { claim: 'Company name and deck submitted', conf: 'high', note: 'minimum application bar per the brief' },
+      { claim: 'No GitHub, no funding, no scholarly record found', conf: 'low', note: 'absence of signal, do not penalize by default, score on the deck and any public footprint instead' },
+      ...groupHitsToEvidence(contentHits),
+    ],
+    axes: {
+      founder: { score: founderScore, ...axisFromScore(founderScore) },
+      market: { score: marketContentScore, ...axisFromScore(marketContentScore), note: 'derive from deck market sizing claims once the deck is parsed' },
+      ideaVsMarket: { score: ideaContentScore, label: 'Unproven, needs Diligence pass', cls: 'neutral' },
+    },
+  };
+  document.getElementById('mem-count').textContent = Object.keys(store.candidates).length;
+  renderCandidates('sourcing-results', applyNewFounderFilter(Object.values(store.candidates)));
+});
+
+// re-render the active view when the new-founders-only toggle changes
+document.getElementById('thesis-new-only').addEventListener('change', () => {
+  const activeTab = document.querySelector('.tab.active').dataset.tab;
+  if (activeTab === 'sourcing') renderCandidates('sourcing-results', applyNewFounderFilter(Object.values(store.candidates)));
+  if (activeTab === 'screening') renderCandidates('screening-results', applyNewFounderFilter(Object.values(store.candidates)));
+  if (activeTab === 'diligence') renderCandidates('diligence-results', applyNewFounderFilter(Object.values(store.candidates)), true);
+});
+
+// ---------- RENDER CANDIDATE CARDS ----------
+function renderCandidates(containerId, list, showEvidence) {
+  const el = document.getElementById(containerId);
+  if (!list || list.length === 0) {
+    el.innerHTML = '<div class="empty">No candidates yet. Run a sourcing scan first.</div>';
+    return;
+  }
+  el.innerHTML = list.map(c => {
+    const delta = c.prevFounderScore != null ? c.founderScore - c.prevFounderScore : null;
+    const sealCls = delta > 0 ? 'up' : delta < 0 ? 'down' : '';
+    const evidenceHtml = showEvidence ? `
+      <ul class="evidence-list">
+        ${c.evidence.map(e => `<li><span class="conf ${e.conf}">${e.conf}</span><span>${e.claim}<br><span style="color:var(--ink-soft)">${e.note}</span></span></li>`).join('')}
+      </ul>` : '';
+    const rationale = c.rationale ? `<div class="rationale-box">${c.rationale}</div>` : '';
+    const chips = c.contentHits ? `
+      <div class="signal-chips">
+        ${[...new Set(c.contentHits.positive.map(h => h.label))].map(l => `<span class="chip pos">+ ${l}</span>`).join('')}
+        ${[...new Set(c.contentHits.negative.map(h => h.label))].map(l => `<span class="chip neg">! ${l}</span>`).join('')}
+      </div>` : '';
+    return `
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <p class="card-name">${c.name}</p>
+          <p class="card-meta">${c.handle} · ${c.location}</p>
+          <span class="tag ${c.live ? 'live' : 'sim'}">${c.sourceLabel}</span>
+          <span class="tag ${c.newFounder === false ? 'established' : 'new'}">${c.newFounder === false ? 'Established' : 'New founder'}</span>
+        </div>
+        <div class="seal ${sealCls}">
+          <span class="score">${c.founderScore}</span>
+          <span class="lbl">Founder Score</span>
+        </div>
+      </div>
+      <p class="card-desc">${c.headline}</p>
+      ${c.scoreBreakdown ? `<div class="card-meta" style="margin-bottom:8px;">Founder Score weighting &middot; GitHub ${c.scoreBreakdown.github} &middot; LinkedIn ${c.scoreBreakdown.linkedin} &middot; Scholarly ${c.scoreBreakdown.scholarly} &middot; Content ${c.scoreBreakdown.content}</div>` : ''}
+      <div class="axes">
+        <div class="axis"><div class="axis-label">Founder</div><div class="axis-val ${c.axes.founder.cls}">${c.axes.founder.label}</div></div>
+        <div class="axis"><div class="axis-label">Market</div><div class="axis-val ${c.axes.market.cls}">${c.axes.market.label}</div></div>
+        <div class="axis"><div class="axis-label">Idea × Market</div><div class="axis-val ${c.axes.ideaVsMarket.cls}">${c.axes.ideaVsMarket.label}</div></div>
+      </div>
+      ${rationale}
+      ${chips}
+      ${evidenceHtml}
+    </div>`;
+  }).join('');
+}
+
+// ---------- CLAUDE-POWERED NATURAL LANGUAGE QUERY ----------
+document.getElementById('btn-query').addEventListener('click', async () => {
+  const q = document.getElementById('query-input').value.trim();
+  const status = document.getElementById('query-status');
+  const list = applyNewFounderFilter(Object.values(store.candidates));
+  if (!q) { status.textContent = 'Type a compound query first.'; return; }
+  if (list.length === 0) { status.textContent = 'Source some candidates first.'; return; }
+  status.textContent = 'Reasoning over ' + list.length + ' candidates...';
+  try {
+    const payload = list.map(c => ({
+      id: c.id, name: c.name, headline: c.headline, location: c.location, founderScore: c.founderScore,
+      evidence: c.evidence.map(e => e.claim),
+      contentFlags: c.contentHits ? { positiveThemes: [...new Set(c.contentHits.positive.map(h => h.label))], negativeThemes: [...new Set(c.contentHits.negative.map(h => h.label))] } : null,
+    }));
+    const prompt = `You are the screening layer of a venture capital sourcing system.
+Thesis: ${JSON.stringify(thesis())}
+Query: "${q}"
+Candidates: ${JSON.stringify(payload)}
+
+Rank the candidates against the query and thesis. Respond with ONLY valid JSON, no markdown fences, no preamble, in this exact shape:
+{"ranked": [{"id": "...", "rationale": "one sentence, under 25 words, citing a specific candidate fact"}]}
+Order from best fit to worst fit. Include every candidate id exactly once.`;
+
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-6",
+        max_tokens: 1000,
+        messages: [{ role: "user", content: prompt }],
+      }),
+    });
+    const data = await res.json();
+    const text = data.content.map(b => b.text || '').join('').replace(/```json|```/g, '').trim();
+    const parsed = JSON.parse(text);
+    const ranked = parsed.ranked.map(r => ({ ...store.candidates[r.id], rationale: r.rationale })).filter(Boolean);
+    status.textContent = 'Ranked ' + ranked.length + ' candidates against: "' + q + '"';
+    renderCandidates('screening-results', ranked);
+  } catch (err) {
+    status.textContent = 'Query resolution failed (' + err.message + '). Showing unranked list.';
+    renderCandidates('screening-results', list);
+  }
+});
+
+// ---------- DECISION / MEMO ----------
+function refreshMemoSelect() {
+  const sel = document.getElementById('memo-founder-select');
+  const list = applyNewFounderFilter(Object.values(store.candidates));
+  sel.innerHTML = '<option value="">Select a founder to draft a business memo</option>' +
+    list.map(c => `<option value="${c.id}">${c.name} (${c.sourceLabel})</option>`).join('');
+}
+
+document.getElementById('btn-draft-memo').addEventListener('click', async () => {
+  const id = document.getElementById('memo-founder-select').value;
+  const status = document.getElementById('memo-status');
+  const out = document.getElementById('memo-output');
+  if (!id) { status.textContent = 'Pick a founder first.'; return; }
+  const c = store.candidates[id];
+  const t = thesis();
+  status.textContent = 'Drafting the memo...';
+  out.innerHTML = '';
+  try {
+    const prompt = `You are the reasoning layer of a venture capital system, drafting a business memo for a VC considering a $${t.check} first check into a new, first-time founder.
+Fund thesis: ${JSON.stringify(t)}
+Founder record: ${JSON.stringify({ name: c.name, location: c.location, headline: c.headline, founderScore: c.founderScore, axes: c.axes, evidence: c.evidence })}
+Content analysis flags: ${JSON.stringify(c.contentHits ? { positiveThemes: [...new Set(c.contentHits.positive.map(h => h.label))], negativeThemes: [...new Set(c.contentHits.negative.map(h => h.label))] } : {})}
+
+Draft a business memo with exactly four sections:
+
+1. Founder profile and key facts, a short paragraph plus a bullet list of key facts drawn only from the founder record. Where a fact is not available, write "Not disclosed" rather than inventing one.
+
+2. A Business Model Canvas for the founder's idea, one or two short phrases per block, inferred reasonably from the headline and evidence. Since this is inferred rather than founder-confirmed, prefix any genuinely speculative block with "Assume:" and leave it un-prefixed only where the founder record directly supports it.
+
+3. Investment dollar and allocation recommendation for the $${t.check} check, a percentage breakdown across at most 5 categories (e.g. engineering and product, go-to-market, cloud and infra costs, founder salary and runway, legal and ops) that sum to 100, plus a one-sentence rationale and an estimated runway in months.
+
+4. Questions and concerns from a VC standpoint, 4 to 6 direct questions a VC should ask this founder before wiring the check, focused on the actual gaps and risks in this specific record, not generic boilerplate questions. If any negative content analysis themes were flagged (risk signal, behavioral red flag, disclosure gap, contradiction), write at least one question that directly probes that specific flag.
+
+End with a one-line recommendation, either "Advance to $${t.check} check" or "Pass, request more evidence", plus a one-sentence reason.
+Respond with ONLY valid JSON, no markdown fences, in this exact shape:
+{"founderProfile": {"summary": "...", "keyFacts": ["...", "..."]}, "canvas": {"keyPartners": "...", "keyActivities": "...", "keyResources": "...", "valuePropositions": "...", "customerRelationships": "...", "channels": "...", "customerSegments": "...", "costStructure": "...", "revenueStreams": "..."}, "investment": {"allocation": [{"category": "...", "pct": 0}], "rationale": "...", "runwayMonths": 0}, "vcQuestions": ["...", "..."], "recommendation": "...", "reason": "..."}`;
+
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-6",
+        max_tokens: 1400,
+        messages: [{ role: "user", content: prompt }],
+      }),
+    });
+    const data = await res.json();
+    const text = data.content.map(b => b.text || '').join('').replace(/```json|```/g, '').trim();
+    const m = JSON.parse(text);
+    status.textContent = '';
+
+    const allocColors = ['#2F6F4E', '#B08D3E', '#4B5450', '#A6392D', '#14181C'];
+    const allocBar = m.investment.allocation.map((a, i) =>
+      `<div class="alloc-seg" style="width:${a.pct}%; background:${allocColors[i % allocColors.length]};">${a.pct}%</div>`).join('');
+    const allocList = m.investment.allocation.map((a, i) =>
+      `<li><span style="display:inline-block;width:9px;height:9px;background:${allocColors[i % allocColors.length]};border-radius:2px;margin-right:6px;"></span>${a.category}, ${a.pct}% of $${t.check.toLocaleString()}</li>`).join('');
+
+    out.innerHTML = `
+      <div class="memo">
+        <div class="memo-banner">
+          <div>
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; color:#9aa89f;">New founder</div>
+            <div style="font-family:'Fraunces',serif; font-size:18px;">${c.name}</div>
+          </div>
+          <div class="amt"><span class="lbl">Recommendation</span>${m.recommendation}</div>
+        </div>
+        <p style="color:var(--ink-soft); font-size:12.5px;">${m.reason}</p>
+
+        <h2>Founder profile and key facts</h2>
+        <p>${m.founderProfile.summary}</p>
+        <ul>${m.founderProfile.keyFacts.map(f => `<li>${f.startsWith('Not disclosed') ? '<span class="gap">' + f + '</span>' : f}</li>`).join('')}</ul>
+
+        <h2>Business Model Canvas</h2>
+        <div class="canvas-grid">
+          <div class="canvas-cell cc-partners"><span class="cc-label">Key Partners</span><p>${m.canvas.keyPartners}</p></div>
+          <div class="canvas-cell cc-activities"><span class="cc-label">Key Activities</span><p>${m.canvas.keyActivities}</p></div>
+          <div class="canvas-cell cc-value"><span class="cc-label">Value Propositions</span><p>${m.canvas.valuePropositions}</p></div>
+          <div class="canvas-cell cc-relationships"><span class="cc-label">Customer Relationships</span><p>${m.canvas.customerRelationships}</p></div>
+          <div class="canvas-cell cc-segments"><span class="cc-label">Customer Segments</span><p>${m.canvas.customerSegments}</p></div>
+          <div class="canvas-cell cc-resources"><span class="cc-label">Key Resources</span><p>${m.canvas.keyResources}</p></div>
+          <div class="canvas-cell cc-channels"><span class="cc-label">Channels</span><p>${m.canvas.channels}</p></div>
+          <div class="canvas-cell cc-costs"><span class="cc-label">Cost Structure</span><p>${m.canvas.costStructure}</p></div>
+          <div class="canvas-cell cc-revenue"><span class="cc-label">Revenue Streams</span><p>${m.canvas.revenueStreams}</p></div>
+        </div>
+
+        <h2>Investment amount and allocation recommendation</h2>
+        <p>$${t.check.toLocaleString()} first check, structured for roughly ${m.investment.runwayMonths} months of runway.</p>
+        <div class="alloc-bar">${allocBar}</div>
+        <ul>${allocList}</ul>
+        <p style="color:var(--ink-soft);">${m.investment.rationale}</p>
+
+        <h2>Questions and concerns from a VC standpoint</h2>
+        ${m.vcQuestions.map((q, i) => `<div class="qbox"><span class="qn">Q${i + 1}</span>${q}</div>`).join('')}
+
+        <h2>Trust Score, evidence behind this memo</h2>
+        <ul>${c.evidence.map(e => `<li><span class="conf ${e.conf}">${e.conf}</span> ${e.claim}, ${e.note}</li>`).join('')}</ul>
+      </div>`;
+  } catch (err) {
+    status.textContent = 'Memo drafting failed (' + err.message + '). Check the API wiring and try again.';
+  }
+});
+</script>
+</body>
+</html>
