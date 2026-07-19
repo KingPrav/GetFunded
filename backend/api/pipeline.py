@@ -234,7 +234,9 @@ def source_and_score_github_candidate(db: Session, repo: dict, sector_label: str
     deep_tech = is_deep_tech(sector_label, repo.get("topics", []))
     scholar_score = None
     if deep_tech:
-        scholar_score = ingest_scholar(db, founder.id, company.id, founder.name)
+        scholar_score = ingest_scholar(
+            db, founder.id, company.id, founder.name, target_keywords={sector_label.lower()}
+        )
         claim_dicts += scholar_claims(scholar_score)
 
     claim_dicts = _fill_unobserved_components(claim_dicts, "Founder")

@@ -82,21 +82,31 @@ def scholar_claims(scholar_score: dict) -> list[dict]:
     if scholar_score.get("score") is None:
         return []
 
-    sub = scholar_score["sub_scores"]
     raw = scholar_score.get("raw_metrics", {})
     now = _NOW()
+    relevance = raw.get("match_relevance_ratio", 0.0)
+    recent_year = raw.get("most_recent_paper_year")
+    recent_note = f", most recent {recent_year}" if recent_year else ""
+
+    # trust_score scales with how topically relevant the matched author's papers are
+    # to this founder's sector — a strong relevance match is trusted closer to a
+    # verified GitHub claim, a weak/no match stays capped low. See
+    # ingestion/semanticscholar.py for how relevance is computed.
+    trust_score = round(50 + 40 * relevance)
+
     return [{
         "text": f"{raw.get('paper_count', 0)} papers, {raw.get('citation_count', 0)} citations, "
-                f"h-index {raw.get('h_index', 0)} (matched \"{raw.get('matched_name')}\", unverified by affiliation)",
+                f"h-index {raw.get('h_index', 0)}{recent_note} (matched \"{raw.get('matched_name')}\", "
+                f"topical relevance {round(relevance * 100)}%)",
         "axis": "Founder", "component": "Background & execution",
         "vsp_code": vsp_code_of("Background & execution"),
         "value_numeric": raw.get("paper_count"), "unit": "papers",
-        "strength_0_100": round(
-            (sub["publication_count"] + sub["citation_impact"] + sub["h_index"]) / 3 * 10, 1
-        ),
-        # verified via API, but trust capped for the name-disambiguation risk already
-        # documented in ingestion/semanticscholar.py
-        "evidence_state": "verified", "trust_score": 60, "source_tier": 2,
+        # use the properly-weighted overall score directly (publication 25% / citation
+        # 30% / h-index 20% / recency 25%) instead of re-averaging the sub-scores
+        "strength_0_100": round(scholar_score["score"] * 10, 1),
+        # verified via API, but trust reflects the disambiguation risk documented in
+        # ingestion/semanticscholar.py — scaled by topical relevance, not flat.
+        "evidence_state": "verified", "trust_score": trust_score, "source_tier": 2,
         "observed_at": now,
     }]
 
